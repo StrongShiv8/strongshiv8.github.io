@@ -79,19 +79,19 @@ boris : secret1!
 
 Lets check the pop3 service now and see what we can →
 
-![79-6.png](GoldenEye/79-6.png)
+![79-6.png](/Vulnhub-Files/img/GoldenEye/79-6.png)
 
-![79-7.png](GoldenEye/79-7.png)
+![79-7.png](/Vulnhub-Files/img/GoldenEye/79-7.png)
 
-![79-8.png](GoldenEye/79-8.png)
+![79-8.png](/Vulnhub-Files/img/GoldenEye/79-8.png)
 
-![79-8.png](GoldenEye/79-8%201.png)
+![79-8.png](/Vulnhub-Files/img/GoldenEye/79-8%201.png)
 
-![79-9.png](GoldenEye/79-9.png)
+![79-9.png](/Vulnhub-Files/img/GoldenEye/79-9.png)
 
 Now lets check the password for natalya user →
 
-![79-10.png](GoldenEye/79-10.png)
+![79-10.png](/Vulnhub-Files/img/GoldenEye/79-10.png)
 
 ```bash
 natalya : bird
@@ -99,9 +99,9 @@ natalya : bird
 
 Lets try it out →
 
-![79-11.png](GoldenEye/79-11.png)
+![79-11.png](/Vulnhub-Files/img/GoldenEye/79-11.png)
 
-![79-12.png](GoldenEye/79-12.png)
+![79-12.png](/Vulnhub-Files/img/GoldenEye/79-12.png)
 
 ```bash
 username: xenia
@@ -110,21 +110,21 @@ password: RCP90rulez!
 
 → **severnaya-station.com in `/etc/hosts`.**
 
-![79-13.png](GoldenEye/79-13.png)
+![79-13.png](/Vulnhub-Files/img/GoldenEye/79-13.png)
 
-![79-14.png](GoldenEye/79-14.png)
+![79-14.png](/Vulnhub-Files/img/GoldenEye/79-14.png)
 
-![79-15.png](GoldenEye/79-15.png)
+![79-15.png](/Vulnhub-Files/img/GoldenEye/79-15.png)
 
 Lets see the password for this user like that →
 
-![79-16.png](GoldenEye/79-16.png)
+![79-16.png](/Vulnhub-Files/img/GoldenEye/79-16.png)
 
 ```bash
 doak : goat
 ```
 
-![79-17.png](GoldenEye/79-17.png)
+![79-17.png](/Vulnhub-Files/img/GoldenEye/79-17.png)
 
 ```bash
 username: dr_doak
@@ -133,52 +133,52 @@ password: 4England!
 
 After login I got this file →
 
-![79-18.png](GoldenEye/79-18.png)
+![79-18.png](/Vulnhub-Files/img/GoldenEye/79-18.png)
 
-![79-19.png](GoldenEye/79-19.png)
+![79-19.png](/Vulnhub-Files/img/GoldenEye/79-19.png)
 
-![79-20.png](GoldenEye/79-20.png)
+![79-20.png](/Vulnhub-Files/img/GoldenEye/79-20.png)
 
-![79-21.png](GoldenEye/79-21.png)
+![79-21.png](/Vulnhub-Files/img/GoldenEye/79-21.png)
 
 ```bash
 admin : xWinter1995x!
 ```
 
-![79-22.png](GoldenEye/79-22.png)
+![79-22.png](/Vulnhub-Files/img/GoldenEye/79-22.png)
 
-![79-23.png](GoldenEye/79-23.png)
+![79-23.png](/Vulnhub-Files/img/GoldenEye/79-23.png)
 
 Now included the python reverse shell →
 
-![79-25.png](GoldenEye/79-25.png)
+![79-25.png](/Vulnhub-Files/img/GoldenEye/79-25.png)
 
 Now I get the reverse shell →
 
 As my shell called by the spell checker funciton →
 
-![80-1.png](GoldenEye/80-1.png)
+![80-1.png](/Vulnhub-Files/img/GoldenEye/80-1.png)
 
-![80-2.png](GoldenEye/80-2.png)
+![80-2.png](/Vulnhub-Files/img/GoldenEye/80-2.png)
 
 Here the OS is very outdated so lets find an exploit for it →
 
-![80-3.png](GoldenEye/80-3.png)
+![80-3.png](/Vulnhub-Files/img/GoldenEye/80-3.png)
 
 Since gcc is not present in the victim machine so I replaced it with cc which used to run in the time of UNIX systems.
 
 Now After transfering the exploit to victim machine lets exploit it →
 
-![80-4.png](GoldenEye/80-4.png)
+![80-4.png](/Vulnhub-Files/img/GoldenEye/80-4.png)
 
-![80-5.png](GoldenEye/80-5.png)
+![80-5.png](/Vulnhub-Files/img/GoldenEye/80-5.png)
 
-![80-6.png](GoldenEye/80-6.png)
+![80-6.png](/Vulnhub-Files/img/GoldenEye/80-6.png)
 
 ```bash
 flag.txt → 568628e0d993b1973adc718237da6e93
 ```
 
-![80-7.png](GoldenEye/80-7.png)
+![80-7.png](/Vulnhub-Files/img/GoldenEye/80-7.png)
 
 ---
