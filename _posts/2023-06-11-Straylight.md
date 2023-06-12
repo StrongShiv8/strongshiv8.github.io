@@ -144,4 +144,6 @@ Now I have a connection between these 2 machines >
 
 Now lets go to `Neuromancer` Machine →
 
-[Neuromancer](2023-06-11-Neuromancer.md)
+<p>
+<a href='/posts/Neuromancer/index.html'>Neuromancer</a>
+</p>
