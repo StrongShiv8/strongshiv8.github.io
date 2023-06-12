@@ -32,8 +32,8 @@ This is a plaintext code snippet.
 ```
 
 <!-- ![Test](/Vulnhub-Files/img/Bob/Untitled%203.png "Test") -->
-
-<a href="Vulnhub-Files/img/Bob/Untitled%203.png"><img src="Vulnhub-Files/img/Bob/Untitled%203.png"></a>
-
+<p>
+<a href="/Vulnhub-Files/img/Bob/Untitled%203.png"><img src="/Vulnhub-Files/img/Bob/Untitled%203.png"></a>
+</p>
 
 [Google](https://google.com)
