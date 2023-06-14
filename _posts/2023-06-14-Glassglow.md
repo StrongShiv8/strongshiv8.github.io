@@ -1,4 +1,7 @@
-# Glassglow
+---
+categories: [proving-ground-play]
+tags: [proving-ground,walkthrough,pentest]
+---
 
 Lets check the IP address of this Victim machine →
 

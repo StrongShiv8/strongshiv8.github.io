@@ -1,4 +1,7 @@
-# Deception
+---
+categories: [proving-ground-play]
+tags: [proving-ground,walkthrough,pentest]
+---
 
 Lets check the Victim Machines IP address ⤵️
 

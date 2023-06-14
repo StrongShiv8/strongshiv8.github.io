@@ -1,4 +1,7 @@
-# LazySysAdmin
+---
+categories: [proving-ground-play]
+tags: [proving-ground,walkthrough,pentest]
+---
 
 Lets check the Victim Machine’s IP address ⤵️
 

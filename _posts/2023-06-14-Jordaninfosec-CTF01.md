@@ -1,4 +1,7 @@
-# Jordaninfosec-CTF01
+---
+categories: [proving-ground-play]
+tags: [proving-ground,walkthrough,pentest]
+---
 
 Let’s check the IP address of the victim machine →
 

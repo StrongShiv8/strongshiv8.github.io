@@ -1,4 +1,7 @@
-# Funbox-Easy-Enum
+---
+categories: [proving-ground-play]
+tags: [proving-ground,walkthrough,pentest]
+---
 
 ## **Description [⤵️](https://www.vulnhub.com/entry/funbox-easyenum,565/)**
 

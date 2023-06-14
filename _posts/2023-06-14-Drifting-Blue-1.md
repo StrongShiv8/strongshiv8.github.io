@@ -1,4 +1,7 @@
-# Drifting-Blue-1
+---
+categories: [proving-ground-play]
+tags: [proving-ground,walkthrough,pentest]
+---
 
 ## **Description ⤵️**
 

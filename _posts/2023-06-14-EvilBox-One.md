@@ -1,4 +1,8 @@
-# EvilBox-One
+---
+categories: [proving-ground-play]
+tags: [proving-ground,walkthrough,pentest]
+---
+
 
 Lets find out the IP of this Machine First ➡️
 
