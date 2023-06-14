@@ -2,7 +2,7 @@
 
 Lets find out the IP of this Machine First ➡️
 
-![Untitled](EvilBox-One/Untitled.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled.png)
 
 ```jsx
 IP : 10.10.2.51
@@ -32,7 +32,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ➡️
 
-![Untitled](EvilBox-One/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%201.png)
 
 Now lets see the Directory Listing files —>
 
@@ -40,7 +40,7 @@ Now lets see the Directory Listing files —>
 feroxbuster -u http://10.0.2.51:80/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o ferox_80.json --depth 2 -C 403,404 -x php,html,txt,js
 ```
 
-![Untitled](EvilBox-One/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%202.png)
 
 Now lets look at `/secret/evil.php` file —>
 
@@ -48,7 +48,7 @@ Since it is blank I think this url is vulnerable to directory traversal attack ,
 
 Lets use burpsuite for that —>
 
-![Untitled](EvilBox-One/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%203.png)
 
 parameter fuzzing list ⤵️
 
@@ -56,25 +56,25 @@ parameter fuzzing list ⤵️
 
 Lets see the result on web —>
 
-![Untitled](EvilBox-One/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%204.png)
 
 Now I know user mowree so lets access for ssh private key through `/home/mowree/.ssh/id_rsa` →
 
 [http://10.0.2.51/secret/evil.php?command=/home/mowree/.ssh/id_rsa](http://10.0.2.51/secret/evil.php?command=/home/mowree/.ssh/id_rsa)
 
-![Untitled](EvilBox-One/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%205.png)
 
 Lets get this file and decode its paraphrase value through john-the-ripper tool →
 
-![Untitled](EvilBox-One/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%206.png)
 
-![Untitled](EvilBox-One/Untitled%207.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%207.png)
 
 so the paraphrase for ssh login is : `unicorn`
 
 Now its time for ssh login →
 
-![Untitled](EvilBox-One/Untitled%208.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%208.png)
 
 Lets check what we got here →
 
@@ -125,7 +125,7 @@ shiv:$1$salt$qJH7.N4xYta3aEG/dfqo/0:0:0::/root:/bin/bash
 
 I named the user `shiv`. now lets write into the `/etc/passwd` file with nano →
 
-![Untitled](EvilBox-One/Untitled%209.png)
+![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%209.png)
 
 Now lets switch to shiv user —>
 

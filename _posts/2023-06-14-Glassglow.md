@@ -2,7 +2,7 @@
 
 Lets check the IP address of this Victim machine →
 
-![Untitled](Glassglow/Untitled.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled.png)
 
 ```bash
 IP : 192.168.249.134
@@ -32,7 +32,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ⤵️
 
-![Untitled](Glassglow/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%201.png)
 
 while Directory Traversal I got these directories →
 
@@ -67,45 +67,45 @@ while Directory Traversal I got these directories →
 
 Since it contains CMS as joomla so lets enumerate accordingly —>
 
-![Untitled](Glassglow/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%202.png)
 
-![Untitled](Glassglow/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%203.png)
 
-![Untitled](Glassglow/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%204.png)
 
 So I have `Joomla! 3.7 version` ➡️
 
 Now lets login brute force this site ⤵️
 
-![Untitled](Glassglow/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%205.png)
 
 Now lets create a wordlists with cewl tool from the joomla web page ➡️
 
-![Untitled](Glassglow/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%206.png)
 
 Lets brute force this site using burpsuite and take username as `joomla` ⬇️
 
-![Untitled](Glassglow/Untitled%207.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%207.png)
 
-![Untitled](Glassglow/Untitled%208.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%208.png)
 
 Now I got the password as `Gotham` , Lets login ➡️
 
-![Untitled](Glassglow/Untitled%209.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%209.png)
 
 Now lets uplaod the reverse shell php code into Templates > Beez3 Details and Files > error.php ⬇️
 
-![Untitled](Glassglow/Untitled%2010.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2010.png)
 
 URL to load the reverse shell -> `http://192.168.249.134/joomla/templates/beez3/error.php`
 
 In response to that I got my reverse shell →
 
-![Untitled](Glassglow/Untitled%2011.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2011.png)
 
 Now lets look into `configuration.php` file ➡️
 
-![Untitled](Glassglow/Untitled%2012.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2012.png)
 
 ```bash
 joomla : babyjoker
@@ -113,11 +113,11 @@ joomla : babyjoker
 
 Lets look into the mysql database —>
 
-![Untitled](Glassglow/Untitled%2013.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2013.png)
 
 I got rob as a user also so lets decode this encrypted value to get the password ⬇️
 
-![Untitled](Glassglow/Untitled%2014.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2014.png)
 
 ```bash
 Pz8/QWxsSUhhdmVBcmVOZWdhdGl2ZVRob3VnaHRzPz8/	:	???AllIHaveAreNegativeThoughts???
@@ -153,7 +153,7 @@ rob@glasgowsmile:~$
 
 Now I have to use a vigenere decode with key Z to decode this ⬆️ string .
 
-![Untitled](Glassglow/Untitled%2015.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2015.png)
 
 ```bash
 Hello Dear, Arthur suffers from severe mental illness but we see little sympathy for his condition. This relates to his feeling about being ignored. You can find an entry in his journal reads, "The worst part of having a mental illness is people expect you to behave as if you don't."
@@ -243,11 +243,11 @@ JKR{284a3753ec11a592ee34098b8cb43d52}
 
 Now With pspy64 I got to know about the cron activity thorougly →
 
-![Untitled](Glassglow/Untitled%2016.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2016.png)
 
 So lets see what this machine is running behind my back →
 
-![Untitled](Glassglow/Untitled%2017.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2017.png)
 
 Now lets alter into `.trash_old` file so that I can have a root user ⤵️
 
@@ -275,11 +275,11 @@ Now lets add a reverse shell code to get to root ->
 
 After adding the shell code ➡️
 
-![Untitled](Glassglow/Untitled%2018.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2018.png)
 
 In to response I got this ⬇️
 
-![Untitled](Glassglow/Untitled%2019.png)
+![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2019.png)
 
 ```bash
 # cat root.txt

@@ -2,7 +2,7 @@
 
 Lets check the Victim Machine’s IP address ⤵️
 
-![Untitled](LazySysAdmin/Untitled.png)
+![Untitled](/Vulnhub-Files/img/LazySysAdmin/Untitled.png)
 
 ```bash
 IP : 192.168.249.131
@@ -50,7 +50,7 @@ Service Info: Hosts: LAZYSYSADMIN, Admin.local; OS: Linux; CPE: cpe:/o:linux:lin
 
 ## Web Enumeration ➡️
 
-![Untitled](LazySysAdmin/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/LazySysAdmin/Untitled%201.png)
 
 ### Directory Traversal ⤵️
 
@@ -119,19 +119,19 @@ by Ben "epi" Risher 🤓                 ver: 2.9.1
 
 Now Lets check the wordpress site now ⤵️
 
-![Untitled](LazySysAdmin/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/LazySysAdmin/Untitled%202.png)
 
 Now I get a username as `togie` so lets try ssh brute force ➡️
 
-![Untitled](LazySysAdmin/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/LazySysAdmin/Untitled%203.png)
 
 Let’s SSH now ⤵️
 
-![Untitled](LazySysAdmin/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/LazySysAdmin/Untitled%204.png)
 
 Now see what this user can do ➡️
 
-![Untitled](LazySysAdmin/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/LazySysAdmin/Untitled%205.png)
 
 Proof.txt file ⬇️
 

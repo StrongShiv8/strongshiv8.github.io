@@ -2,7 +2,7 @@
 
 Let’s check the IP address of the victim machine →
 
-![Untitled](Jordaninfosec-CTF01/Untitled.png)
+![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled.png)
 
 ```bash
 IP : 10.0.2.46 
@@ -16,15 +16,15 @@ IP : 10.0.2.46
 
 ## Web Enumeration ⤵️
 
-![Untitled](Jordaninfosec-CTF01/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled%201.png)
 
-![Untitled](Jordaninfosec-CTF01/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled%202.png)
 
 hint.txt —>
 
-![Untitled](Jordaninfosec-CTF01/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled%203.png)
 
-![Untitled](Jordaninfosec-CTF01/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled%204.png)
 
 ```jsx
 <!--	username : admin
@@ -35,11 +35,11 @@ hint.txt —>
 
 Lets login into this site —> 
 
-![Untitled](Jordaninfosec-CTF01/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled%205.png)
 
 and now upload the reverse shell file here —>
 
-![Untitled](Jordaninfosec-CTF01/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled%206.png)
 
 As ⬆️ I got success in uploading the files so lets load that shell file ➡️
 
@@ -49,7 +49,7 @@ URL --> http://10.0.2.46/uploaded_files/shell.php
 
 In response to that I got this —> 
 
-![Untitled](Jordaninfosec-CTF01/Untitled%207.png)
+![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled%207.png)
 
 Actually, this statement of hidden file was a little misleading, because the file we are looking for was not hidden… I tried to search for user, pass, etc… files, but unfortunately, none of them worked. Lastly, I tried `find / -name cred*`, which revealed the /etc/mysql/conf.d/credentials.txt file.
 

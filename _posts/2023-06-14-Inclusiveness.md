@@ -2,7 +2,7 @@
 
 Lets check the IP address ➡️
 
-![Untitled](Inclusiveness/Untitled.png)
+![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled.png)
 
 ```jsx
 IP : 10.10.2.50
@@ -48,11 +48,11 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ➡️
 
-![Untitled](Inclusiveness/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled%201.png)
 
 Lets see the directory listing files —>
 
-![Untitled](Inclusiveness/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled%202.png)
 
 Now lets check the `robots.txt` file ➡️
 
@@ -60,19 +60,19 @@ Now lets check the `robots.txt` file ➡️
 
 Now lets look at this directory —>
 
-![Untitled](Inclusiveness/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled%203.png)
 
 Lets check for english link which leads me for directory traversal attack → `/etc/passwd` →
 
-![Untitled](Inclusiveness/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled%204.png)
 
 Other than this I was unable to get any foothold into any internal directory files so I brute-force with LFI Injection payloads through burpsuite and I got this file —> `/etc/vsftpd.conf`
 
-![Untitled](Inclusiveness/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled%205.png)
 
 Now I have also access with ftp so lets upload the reverse shell file in it —>
 
-![Untitled](Inclusiveness/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled%206.png)
 
 Now I have uploaded the file in location /ftp/pub/shell.php lets load it and get my reverse shell →
 
@@ -80,7 +80,7 @@ URL —> `http://10.0.2.50/secret_information/?lang=/var/ftp/pub/shell.php`
 
 In response to that I got this —>
 
-![Untitled](Inclusiveness/Untitled%207.png)
+![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled%207.png)
 
 Now lets recon further ⤵️
 

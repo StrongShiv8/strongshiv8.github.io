@@ -2,7 +2,7 @@
 
 Lets find out the IP of this Machine First ➡️
 
-![Untitled](BottleNeck/Untitled.png)
+![Untitled](/Vulnhub-Files/img/BottleNeck/Untitled.png)
 
 ```jsx
 IP : 10.10.2.31
@@ -10,7 +10,7 @@ IP : 10.10.2.31
 
 ## Port Scan Results ➡️
 
-![Untitled](BottleNeck/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/BottleNeck/Untitled%201.png)
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Bottleneck]
@@ -33,9 +33,9 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ➡️
 
-![Untitled](BottleNeck/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/BottleNeck/Untitled%202.png)
 
-![Untitled](BottleNeck/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/BottleNeck/Untitled%203.png)
 
 Now When I visited the page I encountered with this link ⤵️
 
@@ -57,14 +57,14 @@ echo $url
 echo $(curl -s -vv "$url")
 ```
 
-![Untitled](BottleNeck/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/BottleNeck/Untitled%204.png)
 
 Lets run this >>
 
 Now From the web Browser we get this >>
 
-![Untitled](BottleNeck/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/BottleNeck/Untitled%205.png)
 
 Now Lets try to load the reverse shell script from outside >>
 
-![Untitled](BottleNeck/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/BottleNeck/Untitled%206.png)

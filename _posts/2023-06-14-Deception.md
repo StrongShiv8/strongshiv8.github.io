@@ -2,7 +2,7 @@
 
 Lets check the Victim Machines IP address ⤵️
 
-![Untitled](Deception/Untitled.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled.png)
 
 ```bash
 IP : 10.0.2.40
@@ -10,7 +10,7 @@ IP : 10.0.2.40
 
 ## Port Scan Results ➡️
 
-![Untitled](Deception/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%201.png)
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Deception]
@@ -34,33 +34,33 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ➡️
 
-![Untitled](Deception/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%202.png)
 
 Now with directory traversal I got wordpress ➡️
 
-![Untitled](Deception/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%203.png)
 
-![Untitled](Deception/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%204.png)
 
 Now with wpscan results I got 2 users ⬇️
 
-![Untitled](Deception/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%205.png)
 
 Now after directory listing in `wordpress` I got many things like ⬇️
 
-![Untitled](Deception/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%206.png)
 
 `robots.html` >>
 
-![Untitled](Deception/Untitled%207.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%207.png)
 
 `admindelete.html` >>
 
-![Untitled](Deception/Untitled%208.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%208.png)
 
 Now let ‘s find api tokens ➡️
 
-![Untitled](Deception/Untitled%209.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%209.png)
 
 ```bash
 API old0 : 5F4DCC3B5AA
@@ -73,11 +73,11 @@ API token : 5F4DCC3B5AA765D61D8327DEB882CF99
 
 After decoding this md5 hash , I got this >>
 
-![Untitled](Deception/Untitled%2010.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%2010.png)
 
 Now lets load this with wordpress url ⤵️
 
-![Untitled](Deception/Untitled%2011.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%2011.png)
 
 ```bash
 Credentials for SSH >>
@@ -127,13 +127,13 @@ JUST BELIEVE IN YOU!!
 
 Now lets check the SUIDs files ➡️
 
-![Untitled](Deception/Untitled%2012.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%2012.png)
 
 Lets exploit with python2.7 ⤵️
 
-![Untitled](Deception/Untitled%2013.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%2013.png)
 
-![Untitled](Deception/Untitled%2014.png)
+![Untitled](/Vulnhub-Files/img/Deception/Untitled%2014.png)
 
 I found the 2nd flag inside the haclabs directory >>
 

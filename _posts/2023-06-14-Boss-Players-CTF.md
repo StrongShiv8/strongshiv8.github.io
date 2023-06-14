@@ -2,7 +2,7 @@
 
 Let’s find the IP Address first >>
 
-![Untitled](Boss-Players-CTF/Untitled.png)
+![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled.png)
 
 ```
 IP : 10.0.2.38
@@ -32,29 +32,29 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ⬇️
 
-![Untitled](Boss-Players-CTF/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%201.png)
 
 Source Code ⬇️
 
-![Untitled](Boss-Players-CTF/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%202.png)
 
-![Untitled](Boss-Players-CTF/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%203.png)
 
 lets load that file ➡️
 
-![Untitled](Boss-Players-CTF/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%204.png)
 
 Now lets try Command Injection ⤵️
 
-![Untitled](Boss-Players-CTF/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%205.png)
 
 Now lets try reverse shell command of python ➡️
 
-![Untitled](Boss-Players-CTF/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%206.png)
 
 Now lets check the SUIDs and GUIDs files for execution ⤵️
 
-![Untitled](Boss-Players-CTF/Untitled%207.png)
+![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%207.png)
 
 ```bash
 # cat root.txt
@@ -63,4 +63,4 @@ Y29uZ3JhdHVsYXRpb25zCg==
 #
 ```
 
-![Untitled](Boss-Players-CTF/Untitled%208.png)
+![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%208.png)

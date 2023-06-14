@@ -2,7 +2,7 @@
 
 Lets check the IP address now →
 
-![Untitled](Fowsniff-CTF/Untitled.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled.png)
 
 ```jsx
 IP : 10.0.2.47
@@ -38,31 +38,31 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ⤵️
 
-![Untitled](Fowsniff-CTF/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%201.png)
 
 From directory traversal I got different files / directories —>
 
-![Untitled](Fowsniff-CTF/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%202.png)
 
 On front page I noticed this text ➡️
 
-![Untitled](Fowsniff-CTF/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%203.png)
 
 So lets check the official Twitter handle of @fowsniffcorp —>
 
-![Untitled](Fowsniff-CTF/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%204.png)
 
 Lets check the paste bin file —> 
 
-![Untitled](Fowsniff-CTF/Untitled%205.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%205.png)
 
 Now lets follow through to the link for “password dump“ —>
 
-![Untitled](Fowsniff-CTF/Untitled%206.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%206.png)
 
 Lets decode the passwords for pop3 service ➡️
 
-![Untitled](Fowsniff-CTF/Untitled%207.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%207.png)
 
 ```jsx
 mauer@fowsniff:8a28a94a588a95b80163709ab4313aa4		: mailcall
@@ -80,37 +80,37 @@ Now lets create a users.txt and pass.txt file from above credentials ,
 
 so that  I can brute force for pop3 service login credentials ➡️
 
-![Untitled](Fowsniff-CTF/Untitled%208.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%208.png)
 
 Lets log into the pop3 mail service ⬇️
 
-![Untitled](Fowsniff-CTF/Untitled%209.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%209.png)
 
 Lets retrieve  1 & 2 ➡️
 
-![Untitled](Fowsniff-CTF/Untitled%2010.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2010.png)
 
 password : S1ck3nBluff+secureshell
 
-![Untitled](Fowsniff-CTF/Untitled%2011.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2011.png)
 
 Now lets brute force again for ssh service with that password and with users.txt (users) ➡️
 
-![Untitled](Fowsniff-CTF/Untitled%2012.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2012.png)
 
 Now SSH login time, Local Privilege Escalation time ➡️ 
 
-![Untitled](Fowsniff-CTF/Untitled%2013.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2013.png)
 
 Now I found many users so far and also a file named as `/opt/cube/cube.sh` —>
 
-![Untitled](Fowsniff-CTF/Untitled%2014.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2014.png)
 
 Since this file have a permission to write so I inserted the nc reverse shell command into it.
 
 And I have also noticed that this file is executed In the time of login so Lets login again and capture the response from it.
 
-![Untitled](Fowsniff-CTF/Untitled%2015.png)
+![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2015.png)
 
 WOW!! I got root not expecting this , but I am happy now ROOT !!
 
