@@ -5,9 +5,9 @@ tags: [proving-ground,walkthrough,pentest]
 
 ## **Description ⤵️**
 
-
+>
 💡 This machine consists of username enumeration through bruteforce then access the webshell after that play with SUIDs comamds for root !
-
+{: .prompt-info }
 
 
 ### Let’s find the IP Address first >>

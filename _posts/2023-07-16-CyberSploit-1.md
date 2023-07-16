@@ -5,13 +5,13 @@ tags: [proving-ground,walkthrough,pentest]
 
 ## **Description ⤵️**
 
-
+>
 💡 [CyberSploit-1](https://vulnhub.com/entry/cybersploit-1,506/)
-
+<br>
 THIS IS A MACHINE FOR COMPLETE BEGINNER , THERE ARE THREE FALGS AVAILABLE IN THIS VM.
-
+<br>
 FROM THIS VMs YOU WILL LEARN ABOUT ENCODER-DECODER & EXPLOIT-DB.
-
+{: .prompt-info }
 
 
 ### Let’s find the IP Address first >>
@@ -74,7 +74,7 @@ Now lets use this ⬆️ above string to use as a password for ssh login So, let
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/CyberSploit]
 └─$ ssh itsskv@192.168.195.92                    
-The authenticity of host '192.168.195.92 (192.168.195.92)' can't be established.
+The authenticity of host '192.168.195.92 (192.168.195.92)' cant be established.
 ECDSA key fingerprint is SHA256:19IzxsJJ/ZH00ix+vmS6+HQqDcXtk9k30aT3K643kSs.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes

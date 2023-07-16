@@ -5,9 +5,9 @@ tags: [proving-ground,walkthrough,pentest]
 
 ## **Description ⤵️**
 
-
+>
 💡 This machine is new and very interesting in terms of file upload and getting shell after altering with .ssh directory .
-
+{: .prompt-info }
 
 
 ### Let’s find the IP Address first >>
@@ -208,7 +208,7 @@ Your identification has been saved in id_rsa
 Your public key has been saved in id_rsa.pub
 The key fingerprint is:
 SHA256:0EVUwRGUiPRxpxY+B5+ryFEq9wfwiq+BUsaz0yRNDcw kali@kali
-The key's randomart image is:
+The keys randomart image is:
 +---[RSA 3072]----+
 |       +o+==X=.  |
 |       .E=.+o* . |
@@ -249,7 +249,7 @@ Now lets try ssh into the alfredo user →
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Amaterasu]
 └─$ sudo ssh alfredo@192.168.230.249 -p 25022 -i id_rsa
 [sudo] password for kali: 
-The authenticity of host '[192.168.230.249]:25022 ([192.168.230.249]:25022)' can't be established.
+The authenticity of host '[192.168.230.249]:25022 ([192.168.230.249]:25022)' cant be established.
 ED25519 key fingerprint is SHA256:kflJUZqQzlDWxXgGuod+HGsJPk++nvt5ZyveJgx1jgQ.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes

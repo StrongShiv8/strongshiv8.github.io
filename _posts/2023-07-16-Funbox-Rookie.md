@@ -5,19 +5,19 @@ tags: [proving-ground,walkthrough,pentest]
 
 ## **Description ⤵️**
 
-
+>
 💡 [Funbox : Rookie](https://www.vulnhub.com/entry/funbox-rookie,520/)
-
+<br>
 Boot2Root ! This can be a real life scenario if rockies becomes admins. Easy going in round about 15 mins. Bit more, if you are find and stuck in the rabbit-hole first.
-
+<br>
 This VM is created/tested with Virtualbox. Maybe it works with vmware.
-
+<br>
 If you need hints, call me on twitter: @0815R2d2
-
+<br>
 Have fun...
-
+<br>
 This works better with VirtualBox rather than VMware.
-
+{: .prompt-info }
 
 
 ### Let’s find the IP Address first >>
@@ -49,7 +49,7 @@ PORT   STATE SERVICE VERSION
 | -rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 miriam.zip
 | -r--r--r--   1 ftp      ftp          1477 Jul 25  2020 tom.zip
 | -rw-r--r--   1 ftp      ftp           170 Jan 10  2018 welcome.msg
-|_-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 zlatan.zip
+| -rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 zlatan.zip
 22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
 |   2048 f9:46:7d:fe:0c:4d:a9:7e:2d:77:74:0f:a2:51:72:51 (RSA)
@@ -145,7 +145,7 @@ Archive:  tom.zip
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Funbox-Rookie/192.168.225.107]
 └─$ ssh tom@192.168.225.107 -i id_rsa 
-The authenticity of host '192.168.225.107 (192.168.225.107)' can't be established.
+The authenticity of host '192.168.225.107 (192.168.225.107)' cant be established.
 ED25519 key fingerprint is SHA256:ZBER3N78DusT56jsi/IGcAxcCB2W5CZWUJTbc3K4bZc.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
