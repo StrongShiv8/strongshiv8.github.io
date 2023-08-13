@@ -37,3 +37,11 @@ This is a plaintext code snippet.
 </p>
 
 [Google](https://google.com)
+
+```mermaid
+graph LR
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
+```
