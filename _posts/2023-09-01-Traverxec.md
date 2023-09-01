@@ -1,6 +1,9 @@
 ---
 categories: [hackthebox , walkthrough]
 tags: [Password Cracking, PrivEsc, Public Exploit]
+image:
+  path: /Vulnhub-Files/img/Traverxec/front.png
+  alt: https://www.hackthebox.com/achievement/machine/595651/217
 ---
 
 ### Lets see the IP address →
