@@ -2,7 +2,7 @@
 categories: [hackthebox , walkthrough]
 tags: [Password Cracking, PrivEsc, Public Exploit]
 ---
-# Traverxec
+
 ### Lets see the IP address →
 
 ```bash

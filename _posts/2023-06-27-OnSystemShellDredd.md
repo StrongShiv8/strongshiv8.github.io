@@ -1,7 +1,7 @@
 ---
 title: On System Shell Dredd
-categories: [proving-ground-play]
-tags: [proving-ground,walkthrough,pentest]
+categories: [proving-ground-play , walkthrough]
+tags: [FTP, SUIDs, PrivEsc]
 ---
 
 ### Let’s find the IP Address first >>
