@@ -242,7 +242,7 @@ david@traverxec:~$
 
 Now I find the version of sudo outdated so I tried this exploit directly and I got what I wanted →
 
-[exploit_nss.py](https:/github.com/worawit/CVE-2021-3156/blob/main/exploit_nss.py/) 
+[exploit_nss.py File](https:/github.com/worawit/CVE-2021-3156/blob/main/exploit_nss.py) 
 
 ```bash
 www-data@traverxec:/$ sudo -V
