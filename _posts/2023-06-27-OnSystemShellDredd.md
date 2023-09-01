@@ -1,4 +1,5 @@
 ---
+title: On System Shell Dredd
 categories: [proving-ground-play]
 tags: [proving-ground,walkthrough,pentest]
 ---
