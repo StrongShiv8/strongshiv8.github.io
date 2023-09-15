@@ -2,7 +2,7 @@
 categories: [hackthebox , walkthrough]
 tags: [Password Cracking, PrivEsc, Public Exploit]
 image:
-  path: Traverxec/front.png
+  path: /Vulnhub-Files/img/Traverxec/front.png
   alt: https://www.hackthebox.com/achievement/machine/595651/217
 ---
 
