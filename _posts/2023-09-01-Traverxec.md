@@ -2,7 +2,7 @@
 categories: [hackthebox , walkthrough]
 tags: [Password Cracking, PrivEsc, Public Exploit]
 image:
-  path: /Vulnhub-Files/img/Traverxec/front.png
+  path: Traverxec/front.png
   alt: https://www.hackthebox.com/achievement/machine/595651/217
 ---
 
@@ -34,7 +34,7 @@ Service Info: ; CPE: cpe:/o:linux:linux_kernel
 
 ## Web Enumeration ⤵️
 
-![Untitled](/Vulnhub-Files/img//Vulnhub-Files/img/Traverxec/Untitled.png)
+![Untitled](/Vulnhub-Files/img/Traverxec/Untitled.png)
 
 Lets search an exploit related to `nostromo 1.9.6`  →
 
@@ -75,7 +75,7 @@ www-data
 
 Now lets try reverse shell command execution from it →
 
-![Untitled](/Vulnhub-Files/img//Vulnhub-Files/img/Traverxec/Untitled%201.png)
+![Untitled](/Vulnhub-Files/img/Traverxec/Untitled%201.png)
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/HTB/Traverxec]
@@ -109,7 +109,7 @@ hashes.txt = $1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/
 commands : hashcat -m 500 hashes.txt /usr/share/wordlists/rockyou.txt
 ```
 
-![Untitled](/Vulnhub-Files/img//Vulnhub-Files/img/Traverxec/Untitled%202.png)
+![Untitled](/Vulnhub-Files/img/Traverxec/Untitled%202.png)
 
 ```bash
 $1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/:Nowonly4me
@@ -128,7 +128,7 @@ Lets find something else →
 
 Now while checking the `nostromo/conf/nhttpd.conf` →
 
-![Untitled](/Vulnhub-Files/img//Vulnhub-Files/img/Traverxec/Untitled%203.png)
+![Untitled](/Vulnhub-Files/img/Traverxec/Untitled%203.png)
 
 so since I am not allowed to enter into david so lets list file inside of david user using `public_www` →
 
@@ -217,7 +217,7 @@ www-data@traverxec:/tmp/Data/home/david/.ssh$
 
 Lets see the paraphrase of `id_rsa` from cracking it through `john the ripper` →
 
-![Untitled](/Vulnhub-Files/img//Vulnhub-Files/img/Traverxec/Untitled%204.png)
+![Untitled](/Vulnhub-Files/img/Traverxec/Untitled%204.png)
 
 Lets try the SSH login now with password and private key too →
 
@@ -244,7 +244,7 @@ david@traverxec:~$
 ```
 
 Now I find the version of sudo outdated so I tried this exploit directly and I got what I wanted →
-[exploit_nss.py File](/Vulnhub-Files/img/https://github.com/worawit/CVE-2021-3156/blob/main/exploit_nss.py) 
+[exploit_nss.py File](https://github.com/worawit/CVE-2021-3156/blob/main/exploit_nss.py)
 
 ```bash
 www-data@traverxec:/$ sudo -V
