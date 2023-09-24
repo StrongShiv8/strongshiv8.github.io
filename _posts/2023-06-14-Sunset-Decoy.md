@@ -1,6 +1,7 @@
 ---
-categories: [proving-ground-play,sunset]
-tags: [PrivEsc,sunset]
+title: Sunset Decoy
+categories: [Sunset, Proving Grounds Play, Walkthrough]
+tags: [PrivEsc, fcrackzip, Password Cracking, Chkrootkit]
 ---
 
 Lets check the IP address first —>
