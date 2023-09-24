@@ -1,5 +1,5 @@
 ---
-categories: [hackthebox , walkthrough]
+categories: [hackthebox , Walkthrough]
 tags: [PrivEsc, Public Exploit, git]
 image:
   path: /Vulnhub-Files/img/Pilgrimage/Untitled.png

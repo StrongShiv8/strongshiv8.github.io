@@ -1,6 +1,6 @@
 ---
 title: ICSS CTF
-categories: [vulnhub , Walkthrough]
+categories: [VulnHub , Walkthrough]
 tags: [Fuzzing, LFI, SUIDs]
 image:
   path: /Vulnhub-Files/img/ICSS_team_CTF/Untitled.png

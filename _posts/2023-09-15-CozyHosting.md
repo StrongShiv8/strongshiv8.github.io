@@ -1,5 +1,5 @@
 ---
-categories: [hackthebox , walkthrough]
+categories: [hackthebox , Walkthrough]
 tags: [Command  Injection, GTFObin, PostgreSQL, Session Hijacking, springframework]
 image:
   path: /Vulnhub-Files/img/CozyHosting/Untitled.png

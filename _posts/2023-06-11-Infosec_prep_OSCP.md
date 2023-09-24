@@ -1,6 +1,6 @@
 ---
-categories: [vulnhub]
-tags: [vulnhub,walkthrough,pentest]
+categories: [VulnHub, Walkthrough]
+tags: [PrivEsc]
 ---
 # Infosec_prep_OSCP
 

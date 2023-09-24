@@ -1,6 +1,6 @@
 ---
-categories: [proving-ground-play]
-tags: [proving-ground,walkthrough,pentest]
+categories: [Proving Grounds Play, Walkthrough]
+tags: [PrivEsc]
 ---
 
 ## **Description [⤵️](https://www.vulnhub.com/entry/funbox-easy,526/)**

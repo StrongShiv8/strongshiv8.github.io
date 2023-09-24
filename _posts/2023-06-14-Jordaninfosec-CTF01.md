@@ -1,6 +1,6 @@
 ---
-categories: [proving-ground-play]
-tags: [proving-ground,walkthrough,pentest]
+categories: [Proving Grounds Play, Walkthrough]
+tags: [PrivEsc]
 ---
 
 Let’s check the IP address of the victim machine →

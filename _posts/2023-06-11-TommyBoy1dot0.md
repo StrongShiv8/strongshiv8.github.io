@@ -1,12 +1,12 @@
 ---
-categories: [vulnhub]
-tags: [vulnhub,walkthrough,pentest]
+title: TommyBoy v1.0
+categories: [VulnHub, Walkthrough]
+tags: [PrivEsc , Wordpress, OSINT, FTP, Password Generate, fcrackzip, Password Bruteforce, SUIDs]
+image:
+  path: /Vulnhub-Files/img/TommyBoy1dot0/Untitled.png
+  alt: TommyBoy v1.0 💻 
 ---
-# TommyBoy1dot0
 
-
-
-![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled.png)
 
 ## **DESCRIPTION ⤵️**
 
@@ -260,10 +260,11 @@ THE END !!
 
 ---
 
-# **Summery Notes→**
+>**Summery Notes→**
 
 - Got to learn so many things like cracking zip file was first time .
 - Then user-agent configeration was new .
 - Find FTP was very tricky part.
 - New part was password generation with crunch with that combinations.
 - Very Best machine lets you suffer very much , I did too , but enjoyed it.
+{: .prompt-tip }

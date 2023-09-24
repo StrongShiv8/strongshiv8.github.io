@@ -1,6 +1,6 @@
 ---
 title: Demo Site
-tags: [vulnhub,walkthrough,pentest]     # TAG names should always be lowercase
+tags: [PrivEsc]     # TAG names should always be lowercase
 author: Shivendra Prajapati
 categories: [Demo]
 pin: true

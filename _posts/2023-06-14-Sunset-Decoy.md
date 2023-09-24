@@ -1,6 +1,6 @@
 ---
 categories: [proving-ground-play,sunset]
-tags: [proving-ground,walkthrough,pentest,sunset]
+tags: [PrivEsc,sunset]
 ---
 
 Lets check the IP address first —>
