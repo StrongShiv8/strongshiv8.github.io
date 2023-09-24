@@ -1,6 +1,6 @@
 ---
 title: Sunset Midnight
-categories: [Sunset, Proving Grounds Play, Walkthrough]]
+categories: [Proving Grounds Play, Sunset]
 tags: [PrivEsc, Wordpress, Password Bruteforce, mysql, SUIDs]
 ---
 

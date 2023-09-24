@@ -1,5 +1,5 @@
 ---
-categories: [hackthebox , Walkthrough]
+categories: [HackTheBox]
 tags: [Password Cracking, PrivEsc, Public Exploit]
 image:
   path: /Vulnhub-Files/img/Traverxec/front.png

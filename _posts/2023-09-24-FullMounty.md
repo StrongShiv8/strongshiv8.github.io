@@ -1,5 +1,5 @@
 ---
-categories: [PwnTillDawn , Walkthrough]
+categories: [PwnTillDawn]
 tags: [Kernel Exploit, DirtyCow, NFS]
 image:
   path: /Vulnhub-Files/img/FullMounty/Untitled.png

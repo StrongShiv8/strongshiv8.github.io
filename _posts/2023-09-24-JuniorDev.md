@@ -1,5 +1,5 @@
 ---
-categories: [PwnTillDawn , Walkthrough]
+categories: [PwnTillDawn]
 tags: [Jenkins, Password Cracking, Port Forwording, Python Command Injection]
 image:
   path: /Vulnhub-Files/img/JuniorDev/Untitled.png

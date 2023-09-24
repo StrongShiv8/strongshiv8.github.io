@@ -1,6 +1,6 @@
 ---
 title: TommyBoy v1.0
-categories: [VulnHub, Walkthrough]
+categories: [VulnHub]
 tags: [PrivEsc , Wordpress, OSINT, FTP, Password Generate, fcrackzip, Password Bruteforce, SUIDs]
 image:
   path: /Vulnhub-Files/img/TommyBoy1dot0/Untitled.png

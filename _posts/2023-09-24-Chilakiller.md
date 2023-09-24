@@ -1,5 +1,5 @@
 ---
-categories: [PwnTillDawn , Walkthrough]
+categories: [PwnTillDawn]
 tags: [Drupal, Hid$Trial, .config, Metasploit]
 image:
   path: /Vulnhub-Files/img/Chilakiller/Untitled.png

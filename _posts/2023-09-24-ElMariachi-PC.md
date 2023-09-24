@@ -1,6 +1,6 @@
 ---
 title: ElMariachi-PC
-categories: [PwnTillDawn , Walkthrough]
+categories: [PwnTillDawn]
 tags: [Public Exploit, PrivEsc]
 image:
   path: /Vulnhub-Files/img/ElMariachi-PC/Untitled.png

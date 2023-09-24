@@ -1,6 +1,6 @@
 ---
 title: Sunset Decoy
-categories: [Sunset, Proving Grounds Play, Walkthrough]
+categories: [Proving Grounds Play, Sunset]
 tags: [PrivEsc, fcrackzip, Password Cracking, Chkrootkit]
 ---
 

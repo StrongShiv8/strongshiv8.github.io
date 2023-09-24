@@ -13,7 +13,7 @@ image:
 
 # Normal demo Site
 
-## These reports are of vulnhub walkthroughs ->     
+## These reports are of vulnhub s ->     
 
 > This is an output for a info type file
 {: .prompt-info }

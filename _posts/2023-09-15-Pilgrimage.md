@@ -1,5 +1,5 @@
 ---
-categories: [hackthebox , Walkthrough]
+categories: [HackTheBox]
 tags: [PrivEsc, Public Exploit, git]
 image:
   path: /Vulnhub-Files/img/Pilgrimage/Untitled.png
@@ -348,7 +348,7 @@ blacklist=("Executable script" "Microsoft executable")
 	filename="/var/www/pilgrimage.htb/shrunk/$(/usr/bin/echo "$FILE" | /usr/bin/tail -n 1 | /usr/bin/sed -n -e 's/^.*CREATE //p')"
 	binout="$(/usr/local/bin/binwalk -e "$filename")"
         for banned in "${blacklist[@]}"; do
-		if [[ "$binout" == *"$banned"* ]]; then
+		if [[ "$binout" == *"$banned"*]]; then
 			/usr/bin/rm "$filename"
 			break
 		fi

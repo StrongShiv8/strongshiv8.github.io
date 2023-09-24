@@ -1,5 +1,5 @@
 ---
-categories: [VulnHub, Walkthrough]
+categories: [VulnHub]
 tags: [PrivEsc]
 ---
 # Infosec_prep_OSCP

@@ -1,5 +1,5 @@
 ---
-categories: [Proving Grounds Play, Walkthrough]
+categories: [Proving Grounds Play]
 tags: [PrivEsc]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: On System Shell Dredd
-categories: [Proving Grounds Play, Walkthrough]
+categories: [Proving Grounds Play]
 tags: [FTP, SUIDs, PrivEsc]
 ---
 
