@@ -40,7 +40,7 @@ This is a plaintext code snippet.
 
 <!-- ![Test](/Vulnhub-Files/img/Bob/Untitled%203.png "Test") -->
 <p>
-<a href="/Vulnhub-Files/img/Bob/Untitled%203.png"><img src="/Vulnhub-Files/img/Bob/Untitled%203.png"></a>
+<a href="/Vulnhub-Files/img/Bob/Untitled%203.png"><img src="/Vulnhub-Files/img/Bob/Untitled%203.png" alt="This picture is a part of img src code !"></a>
 </p>
 
 [Google](https://google.com)
