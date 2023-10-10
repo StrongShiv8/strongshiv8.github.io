@@ -1,6 +1,6 @@
 ---
 categories: [PwnTillDawn]
-tags: [Drupal, Hid$Trial, .config, Metasploit]
+tags: [Drupal, Hid&Trial, .config, Metasploit]
 image:
   path: /Vulnhub-Files/img/Chilakiller/Untitled.png
   alt: Chilakiller -> https://www.wizlynxgroup.com/ , https://online.pwntilldawn.com/
@@ -220,7 +220,7 @@ Module options (exploit/unix/webapp/drupal_drupalgeddon2):
    RPORT        80               yes       The target port (TCP)
    SSL          false            no        Negotiate SSL/TLS for outgoing connections
    TARGETURI    /restaurante/    yes       Path to Drupal install
-   VHOST                         no        HTTP server virtual host
+   subdomain                         no        HTTP server virtual host
 
 Payload options (php/meterpreter/reverse_tcp):
 

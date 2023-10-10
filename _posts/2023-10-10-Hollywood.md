@@ -197,7 +197,7 @@ Module options (exploit/windows/http/apache_activemq_traversal_upload):
    SSL        false                  no        Negotiate SSL/TLS for outgoing connections
    TARGETURI  /                      yes       The base path to the web application
    USERNAME   admin                  yes       Username to authenticate with
-   VHOST                             no        HTTP server virtual host
+   subdomain                             no        HTTP server virtual host
 
 Payload options (java/jsp_shell_reverse_tcp):
 
