@@ -15,7 +15,7 @@ This box should be easy. This machine was created for the InfoSec Prep Discord S
 
 The box was created with VMWare Workstation, but it should work with VMWare Player and Virtualbox. Upon booting up it should display an IP address. This is the target address based on whatever settings you have. You should verify the address just incase.
 
-Find the flag.txt in /root/ and submit it to the TryHarder bot on Discord to enter the give away. The command is only available for so long. So if you are just joining the server or doing the box for fun, the command won't be there any longer at a later time.
+Find the flag.txt in /root/ and submit it to the TryHarder bot on Discord to enter the give away. The command is only available for so long. So if you are just joining the server or doing the box for fun, the command would not be there any longer at a later time.
 
 Please do not publish any write ups for this box until August 7, 2020 as this is probably when the give away will end. After that, fair game!
 

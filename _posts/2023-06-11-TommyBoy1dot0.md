@@ -24,7 +24,7 @@ image:
 
 **=================**
 
-**The primary objective is to restore a backup copy of the homepage to Callahan Auto's server. However, to consider the box fully pwned, you'll need to collect 5 flags strewn about the system, and use the data inside them to unlock one final message.**
+**The primary objective is to restore a backup copy of the homepage to Callahan Auto is server. However, to consider the box fully pwned, you'll need to collect 5 flags strewn about the system, and use the data inside them to unlock one final message.**
 
 ### **OTHER INFO ⤵️**
 
@@ -135,7 +135,7 @@ Now after scaning all the ports I got this -→
 
 `port 65534 OPEN FTP` →
 
-let's access it with nickburns username and password both. →
+let is access it with nickburns username and password both. →
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2018.png)
 
@@ -149,7 +149,7 @@ Now with steve jobs as a hint I changed the user agent to an iphone and I got th
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2021.png)
 
-Now let's use the user-agent of iphone and brute-force the directory →
+Now let is use the user-agent of iphone and brute-force the directory →
 
 ```bash
 command → 
@@ -229,7 +229,7 @@ pass : CaptainLimpWrist!!!
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2036.png)
 
-changed the file name as stated earliar after transfering it Now let's access it →
+changed the file name as stated earliar after transfering it Now let is access it →
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2037.png)
 

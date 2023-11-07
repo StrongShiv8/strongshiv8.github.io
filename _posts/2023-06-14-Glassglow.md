@@ -27,7 +27,7 @@ PORT   STATE SERVICE VERSION
 |   256 4c8c4565a484e8b1507777a93a960631 (ECDSA)
 |_  256 09e994236097f720cceed6c19bda188e (ED25519)
 80/tcp open  http    Apache httpd 2.4.38 ((Debian))
-|_http-title: Site doesn't have a title (text/html).
+|_http-title: Site does not have a title (text/html).
 |_http-server-header: Apache/2.4.38 (Debian)
 MAC Address: 00:0C:29:E0:E5:1E (VMware)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
@@ -148,7 +148,7 @@ NO HINTS.
 
 rob@glasgowsmile:~$
 rob@glasgowsmile:~$ cat Abnerineedyourhelp 
-Gdkkn Cdzq, Zqsgtq rteedqr eqnl rdudqd ldmszk hkkmdrr ats vd rdd khsskd rxlozsgx enq ghr bnmchshnm. Sghr qdkzsdr sn ghr eddkhmf zants adhmf hfmnqdc. Xnt bzm ehmc zm dmsqx hm ghr intqmzk qdzcr, "Sgd vnqrs ozqs ne gzuhmf z ldmszk hkkmdrr hr odnokd dwodbs xnt sn adgzud zr he xnt cnm's."
+Gdkkn Cdzq, Zqsgtq rteedqr eqnl rdudqd ldmszk hkkmdrr ats vd rdd khsskd rxlozsgx enq ghr bnmchshnm. Sghr qdkzsdr sn ghr eddkhmf zants adhmf hfmnqdc. Xnt bzm ehmc zm dmsqx hm ghr intqmzk qdzcr, "Sgd vnqrs ozqs ne gzuhmf z ldmszk hkkmdrr hr odnokd dwodbs xnt sn adgzud zr he xnt cnm is."
 Mnv H mddc xntq gdko Zamdq, trd sghr ozrrvnqc, xnt vhkk ehmc sgd qhfgs vzx sn rnkud sgd dmhflz. RSLyzF9vYSj5aWjvYFUgcFfvLCAsXVskbyP0aV9xYSgiYV50byZvcFggaiAsdSArzVYkLZ==
 rob@glasgowsmile:~$
 
@@ -159,7 +159,7 @@ Now I have to use a vigenere decode with key Z to decode this ⬆️ string .
 ![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2015.png)
 
 ```bash
-Hello Dear, Arthur suffers from severe mental illness but we see little sympathy for his condition. This relates to his feeling about being ignored. You can find an entry in his journal reads, "The worst part of having a mental illness is people expect you to behave as if you don't."
+Hello Dear, Arthur suffers from severe mental illness but we see little sympathy for his condition. This relates to his feeling about being ignored. You can find an entry in his journal reads, "The worst part of having a mental illness is people expect you to behave as if you do not."
 Now I need your help Abner, use this password, you will find the right way to solve the enigma. STMzaG9wZTk5bXkwZGVhdGgwMDBtYWtlczQ0bW9yZThjZW50czAwdGhhbjBteTBsaWZlMA==
 
 Lets decode this password which is base64 encoded >
@@ -223,7 +223,7 @@ abner@glasgowsmile:/tmp$ ls
 dear_penguins  pspy64
 abner@glasgowsmile:/tmp$
 abner@glasgowsmile:/tmp$ cat dear_penguins 
-My dear penguins, we stand on a great threshold! It's okay to be scared; many of you won't be coming back. Thanks to Batman, the time has come to punish all of God's children! First, second, third and fourth-born! Why be biased?! Male and female! Hell, the sexes are equal, with their erogenous zones BLOWN SKY-HIGH!!! FORWAAAAAAAAAAAAAARD MARCH!!! THE LIBERATION OF GOTHAM HAS BEGUN!!!!!
+My dear penguins, we stand on a great threshold! It is okay to be scared; many of you would not be coming back. Thanks to Batman, the time has come to punish all of God is children! First, second, third and fourth-born! Why be biased?! Male and female! Hell, the sexes are equal, with their erogenous zones BLOWN SKY-HIGH!!! FORWAAAAAAAAAAAAAARD MARCH!!! THE LIBERATION OF GOTHAM HAS BEGUN!!!!!
 scf4W7q4B4caTMRhSFYmktMsn87F35UkmKttM5Bz
 abner@glasgowsmile:/tmp$
 abner@glasgowsmile:/tmp$ su penguin

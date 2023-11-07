@@ -345,7 +345,7 @@ emily@pilgrimage:/$ cat /usr/sbin/malwarescan.sh
 blacklist=("Executable script" "Microsoft executable")
 
 /usr/bin/inotifywait -m -e create /var/www/pilgrimage.htb/shrunk/ | while read FILE; do
-	filename="/var/www/pilgrimage.htb/shrunk/$(/usr/bin/echo "$FILE" | /usr/bin/tail -n 1 | /usr/bin/sed -n -e 's/^.*CREATE //p')"
+	filename="/var/www/pilgrimage.htb/shrunk/$(/usr/bin/echo "$FILE" | /usr/bin/tail -n 1 | /usr/bin/sed -n -e  is/^.*CREATE //p')"
 	binout="$(/usr/local/bin/binwalk -e "$filename")"
         for banned in "${blacklist[@]}"; do
 		if [[ "$binout" == *"$banned"*]]; then

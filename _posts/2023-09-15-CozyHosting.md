@@ -262,7 +262,7 @@ ED25519 key fingerprint is SHA256:x/7yQ53dizlhq7THoanU79X7U63DSQqSi39NPLqRKHM.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'cozyhosting.htb' (ED25519) to the list of known hosts.
-josh@cozyhosting.htb's password: 
+josh@cozyhosting.htb is password: 
 Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.0-82-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com

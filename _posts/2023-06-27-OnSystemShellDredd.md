@@ -68,7 +68,7 @@ Now in this FTP session I got a private key ( `id_rsa` ) for ssh login and a use
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/monitoring]
 └─$ ssh hannah@192.168.222.130 -i id_rsa -p 61000 
-The authenticity of host '[192.168.222.130]:61000 ([192.168.222.130]:61000)' can't be established.
+The authenticity of host '[192.168.222.130]:61000 ([192.168.222.130]:61000)' can not be established.
 ED25519 key fingerprint is SHA256:6tx3ODoidGvtQl+T9gJivu3xnndw7PXje1XLn+lZuSM.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes

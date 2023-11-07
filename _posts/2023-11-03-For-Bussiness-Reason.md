@@ -9,7 +9,7 @@ image:
 
 ## Description ⤵️
 
-This machine is <kbd>*For Bussiness Reasons*</kbd> , It is from TryHackMe Platform and categorized as Medium machine . This Machine is based on Pivoting .
+This machine is *<kbd>For Bussiness Reasons</kbd>* , It is from TryHackMe Platform and categorized as Medium machine . This Machine is based on Pivoting .
 
 ## Port Scan Results ⤵️
 
@@ -203,7 +203,7 @@ _______________________________________________________________
             \  /\  /  | |     ____) | (__| (_| | | | |
              \/  \/   |_|    |_____/ \___|\__,_|_| |_|
 
-         WordPress Security Scanner by the WPScan Team
+         'WordPress Security Scanner by the WPScan Team
                          Version 3.8.25
        Sponsored by Automattic - https://automattic.com/
        @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
@@ -255,7 +255,7 @@ define( 'DB_HOST', 'db');
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8');
 
-/** The Database Collate type. Don't change this if in doubt. */
+/** The Database Collate type. Do not change this if in doubt. */
 define( 'DB_COLLATE', '');
 ```
 
@@ -301,7 +301,7 @@ ED25519 key fingerprint is SHA256:U14271OTfB1vLbhGF52YlyhN4QwdxK/ukXix+l83+iI.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '[127.0.0.1]:1234' (ED25519) to the list of known hosts.
-sysadmin@127.0.0.1's password: 
+sysadmin@127.0.0.1s password: 
 Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-62-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com

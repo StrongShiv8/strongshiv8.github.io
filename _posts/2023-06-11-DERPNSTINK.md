@@ -25,7 +25,7 @@ tags: [PrivEsc]
 
 **find all 4 flags eventually leading you to full root access.**
 
-**Don't forget to #tryharder**
+**Do not forget to #tryharder**
 
 **Example: flag1(AB0BFD73DAAEC7912DCDCA1BA0BA3D05). Do not waste time decrypting the hash in the flag as it has no value in the challenge other than an identifier.**
 
@@ -144,7 +144,7 @@ Flag 3 → flag3(07f62b021771d3cf67e2e1faf18769cc5e5c119ad7d4d1847a11e11d6d5a7ec
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%2023.png)
 
-Let's import this pcap file to attackers machine →
+Let is import this pcap file to attackers machine →
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%2024.png)
 

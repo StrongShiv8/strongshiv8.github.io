@@ -167,7 +167,7 @@ ED25519 key fingerprint is SHA256:TgNhCKF6jUX7MG8TC01/MUj/+u0EBasUVsdSQMHdyfY.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '10.10.11.233' (ED25519) to the list of known hosts.
-metalytics@10.10.11.233's password: 
+metalytics@10.10.11.233 is password: 
 Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.2.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com

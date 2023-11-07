@@ -8,7 +8,7 @@ tags: [PrivEsc]
 >
 💡 Boot2root in 6 steps for script-kiddies.
 
-Timeframe to root this box: 20 mins to never ever. It's on you.
+Timeframe to root this box: 20 mins to never ever. It is on you.
 
 # **HINTS:**
 

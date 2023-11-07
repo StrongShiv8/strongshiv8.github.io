@@ -79,7 +79,7 @@ ECDSA key fingerprint is SHA256:19IzxsJJ/ZH00ix+vmS6+HQqDcXtk9k30aT3K643kSs.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '192.168.195.92' (ECDSA) to the list of known hosts.
-itsskv@192.168.195.92's password: 
+itsskv@192.168.195.92 is password: 
 Welcome to Ubuntu 12.04.5 LTS (GNU/Linux 3.13.0-32-generic i686)
 
  * Documentation:  https://help.ubuntu.com/

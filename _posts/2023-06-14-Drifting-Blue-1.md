@@ -97,7 +97,7 @@ Now I checked SUIDs and GUIDs files →
 
 ![166-17.png](/Vulnhub-Files/img/Drifting-Blue-1/166-17.png)
 
-I am not able to run any exploit of exim so let's check the kernel version and exploit it accordingly →
+I am not able to run any exploit of exim so let is check the kernel version and exploit it accordingly →
 
 ![166-18.png](/Vulnhub-Files/img/Drifting-Blue-1/166-18.png)
 

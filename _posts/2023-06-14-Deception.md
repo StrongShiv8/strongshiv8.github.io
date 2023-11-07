@@ -92,14 +92,14 @@ password : password    >> 5F4DCC3B5AA765D61D8327DEB882CF99
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Deception]
 └─$ sudo ssh yash@10.0.2.40    
 [sudo] password for kali: 
-The authenticity of host '10.0.2.40 (10.0.2.40)' can't be established.
+The authenticity of host '10.0.2.40 (10.0.2.40)' can not be established.
 ED25519 key fingerprint is SHA256:akKQEcWIOuFc7fx+2sf5jLIEVND/B8BYsa+iUz05NCA.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '10.0.2.40' (ED25519) to the list of known hosts.
-yash@10.0.2.40's password: 
+yash@10.0.2.40 is password: 
 Permission denied, please try again.
-yash@10.0.2.40's password: 
+yash@10.0.2.40 is password: 
 Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 5.0.0-23-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com

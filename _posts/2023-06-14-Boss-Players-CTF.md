@@ -27,7 +27,7 @@ PORT   STATE SERVICE VERSION
 |   256 249e2718dfa4783b0d118a9272bd058d (ECDSA)
 |_  256 26328d73890529438ea113ba4f8353f8 (ED25519)
 80/tcp open  http    Apache httpd 2.4.38 ((Debian))
-|_http-title: Site doesn't have a title (text/html).
+|_http-title: Site does not have a title (text/html).
 |_http-server-header: Apache/2.4.38 (Debian)
 MAC Address: 08:00:27:E0:9B:01 (Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel

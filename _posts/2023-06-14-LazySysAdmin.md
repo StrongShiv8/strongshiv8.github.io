@@ -144,7 +144,7 @@ WX6k7NJtA8gfk*w5J3&T@*Ga6!0o5UP89hMVEQ#PT9851
 
 Well done :)
 
-Hope you learn't a few things along the way.
+Hope you lear not a few things along the way.
 
 Regards,
 

