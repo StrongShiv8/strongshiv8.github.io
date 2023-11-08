@@ -1,7 +1,7 @@
 ---
 title: Year of the FOX
 categories: [TryHackMe]
-tags: [SMB, Password Bruteforce, Command Injection, Port Forwording, SSH Bruteforce, SUIDs]
+tags: [SMB, Password Bruteforce, Command Injection, Port Forwarding, SSH Bruteforce, SUIDs]
 image:
   path: https://i.ytimg.com/vi/52ve4d89fYg/maxresdefault.jpg
   alt: Year of the FOX 🦊 

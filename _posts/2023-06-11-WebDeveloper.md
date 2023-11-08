@@ -1,9 +1,10 @@
 ---
 categories: [VulnHub]
-tags: [PrivEsc]
+tags: [Wordpress, Wireshark, PrivEsc]
+image:
+  path: /Vulnhub-Files/img/WebDeveloper/Untitled%202.png
+  alt: WebDeveloper Machine 🕸️
 ---
-# WebDeveloper
-
 
 
 ## Description ⤵️
@@ -37,7 +38,7 @@ IP : 192.168.56.107
 
 ![Untitled](/Vulnhub-Files/img/WebDeveloper/Untitled%201.png)
 
-```bash
+```text
 Open Ports >
 22	SSH
 80	HTTP
@@ -46,6 +47,8 @@ Open Ports >
 ---
 
 ## Web Enumeration ⤵️
+
+I checked the port 80 :
 
 ![Untitled](/Vulnhub-Files/img/WebDeveloper/Untitled%202.png)
 

@@ -42,7 +42,7 @@ image:
 
 ◇ RobertWinkel for additional detailed testing and suggestions for tweaking the VM for a better overall experience.
 
-Let’s find the IP Address first →
+## **Let’s find the IP Address first →**
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%201.png)
 
@@ -260,11 +260,11 @@ THE END !!
 
 ---
 
->**Summery Notes→**
-
-- Got to learn so many things like cracking zip file was first time .
-- Then user-agent configeration was new .
-- Find FTP was very tricky part.
-- New part was password generation with crunch with that combinations.
-- Very Best machine lets you suffer very much , I did too , but enjoyed it.
+> **Summery Notes→**
+>
+> - Got to learn so many things like cracking zip file was first time .
+> - Then user-agent configeration was new .
+> - Find FTP was very tricky part.
+> - New part was password generation with crunch with that combinations.
+> - Very Best machine lets you suffer very much , I did too , but enjoyed it.
 {: .prompt-tip }

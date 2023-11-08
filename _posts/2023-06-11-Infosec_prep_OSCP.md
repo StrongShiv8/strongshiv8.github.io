@@ -1,9 +1,11 @@
 ---
+title: InfoSec Prep OSCP
 categories: [VulnHub]
-tags: [PrivEsc]
+tags: [PrivEsc, Recon]
+image:
+  path: https://i.ytimg.com/vi/hL-gSSs20Gc/maxresdefault.jpg
+  alt: InfoSec Prep OSCP Machine !
 ---
-# Infosec_prep_OSCP
-
 
 
 ## **Description ⤵️**
@@ -27,7 +29,7 @@ This works better with VirtualBox rather than VMware. ## Changelog 2020/07/10 - 
 
 
 
-Let’s find the IP Address first >>
+### **Let’s find the IP Address first >>**
 
 ![77-1.png](/Vulnhub-Files/img/Infosec_prep_OSCP/77-1.png)
 

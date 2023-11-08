@@ -1,6 +1,6 @@
 ---
 categories: [PwnTillDawn]
-tags: [Jenkins, Password Cracking, Port Forwording, Python Command Injection]
+tags: [Jenkins, Password Cracking, Port Forwarding, Python Command Injection]
 image:
   path: /Vulnhub-Files/img/JuniorDev/Untitled.png
   alt: Junior Dev -> https://www.wizlynxgroup.com/ , https://online.pwntilldawn.com/

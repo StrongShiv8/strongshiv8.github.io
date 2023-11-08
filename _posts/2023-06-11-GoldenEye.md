@@ -1,10 +1,11 @@
 ---
+title: GoldenEye
 categories: [VulnHub]
-tags: [PrivEsc]
+tags: [POP3, Password Bruteforce, PrivEsc, Kernel Exploit, moodle]
+image:
+  path: /Vulnhub-Files/img/GoldenEye/Untitled%205.png
+  alt: GoldenEye Machine !
 ---
-# GoldenEye
-
-
 
 ## **Description ⤵️**
 
@@ -17,11 +18,11 @@ I'd rate it as Intermediate, it has a good variety of techniques needed to get r
 
 I've created and validated on VMware and VirtualBox. You would not need any extra tools other than what is on Kali by default. Will need to be setup as Host-Only, and on VMware you may need to click "retry" if prompted, upon initially starting it up because of formatting.
 
-## Changelog Beta - 2018-05-02 v1 - 2018-05-04
+ Changelog Beta - 2018-05-02 v1 - 2018-05-04
 
 
 
-Let’s find the IP Address first >>
+### **Let’s find the IP Address first >>**
 
 ![Untitled](/Vulnhub-Files/img/GoldenEye/Untitled.png)
 
