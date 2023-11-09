@@ -1,10 +1,14 @@
 ---
 title: Sunset Decoy
 categories: [Proving Grounds Play, Sunset]
-tags: [PrivEsc, fcrackzip, Password Cracking, Chkrootkit]
+tags: [Public Exploit, chrootkit, fcrackzip, hashcat, vim, PrivEsc]
+image:
+  path: https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2020/12/sunsetdecoy.png?fit=1200%2C864&w=640
+  alt:  Sunset-Decoy Machine 🖥️
 ---
 
-Lets check the IP address first —>
+
+### Lets check the IP address first —>
 
 ![Untitled](/Vulnhub-Files/img/Sunset-Decoy/Untitled.png)
 

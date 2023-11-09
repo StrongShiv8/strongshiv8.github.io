@@ -1,24 +1,29 @@
 ---
-categories: [Proving Grounds Play]
-tags: [PrivEsc]
+title: Funbox Easy
+categories: [Proving Grounds Play, Funbox]
+tags: [PrivEsc, Sqlmap, timedatectl]
+image:
+  path: https://www.piratemoo.com/content/images/2022/12/funboxeasy.png
+  alt:  Funbox-Easy Machine 🖥️
 ---
+
 
 ## **Description [⤵️](https://www.vulnhub.com/entry/funbox-easy,526/)**
 
 >
 💡 Boot2Root ! Easy going, but with this Funbox you have to spend a bit more time. Much more, if you stuck in good traps. But most of the traps have hints, that they are traps.
-
+<br>
 If you need hints, call me on twitter: @0815R2d2
-
+<br>
 Have fun...
-
+<br>
 This works better with VirtualBox rather than VMware
-
+<br>
 This works better with VirtualBox rather than VMware.
-
+<br>
 {: .prompt-info }
 
-Let’s find the IP Address first >>
+### Let’s find the IP Address first >>
 
 ![164-1.png](/Vulnhub-Files/img/Funbox-Easy/164-1.png)
 

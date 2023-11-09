@@ -1,25 +1,28 @@
 ---
 title: Sunset Midnight
 categories: [Proving Grounds Play, Sunset]
-tags: [PrivEsc, Wordpress, Password Bruteforce, mysql, SUIDs]
+tags: [Password Bruteforce, PrivEsc, SUIDs, mysql, status, Wordpress]
+image:
+  path: https://www.infosecarticles.com/content/images/2020/09/midnight.png
+  alt:  Sunset Midnight Machine 🖥️
 ---
+
 
 ## **Description ⤵️**
 
 >
 💡 [sunset: midnight](https://vulnhub.com/entry/sunset-midnight,517/) ⤵️
-
-Difficulty: Intermediate
-
-Important!: Before auditing this machine make sure you add the host "sunset-midnight" to your /etc/hosts file, otherwise it may not work as expected.
-
+<br>
+**Difficulty:** Intermediate
+<br>
+**Important!:** Before auditing this machine make sure you add the host "sunset-midnight" to your /etc/hosts file, otherwise it may not work as expected.
+<br>
 It is recommended to run this machine in Virtualbox.
-
+<br>
 This works better with ViritualBox rather than VMware
+{: .prompt-tip }
 
-{: .prompt-info }
-
-Let’s find the IP Address first >>
+### Let’s find the IP Address first >>
 
 ![153-1.png](/Vulnhub-Files/img/Sunset-midnight/153-1.png)
 
@@ -38,7 +41,7 @@ OPEN PORTS >
 3306 mysql
 ```
 
----
+
 
 ## Web Enumeration ⤵️
 

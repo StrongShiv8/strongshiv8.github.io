@@ -1,13 +1,17 @@
 ---
+title: Empire Breakout
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [PrivEsc, SUIDs]
+image:
+  path: https://i.ytimg.com/vi/avxULb5lELg/maxresdefault.jpg
+  alt:  Empire breakout Machine 🖥️
 ---
+
 
 ## **Description ⤵️**
 
->
-💡 This machine consists of username enumeration through bruteforce then access the webshell after that play with SUIDs comamds for root !
-{: .prompt-info }
+> 💡 This machine consists of username enumeration through bruteforce then access the webshell after that play with SUIDs comamds for root !
+{: .prompt-tip }
 
 
 ### Let’s find the IP Address first >>

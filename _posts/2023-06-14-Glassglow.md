@@ -1,9 +1,14 @@
 ---
+title: Glassglow
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [Joomla, Password Generate, mysql, pspy64, PrivEsc]
+image:
+  path: /Vulnhub-Files/img/Glassglow/Untitled%201.png
+  alt:  Glassglow Machine 🖥️
 ---
 
-Lets check the IP address of this Victim machine →
+
+### Lets check the IP address of this Victim machine →
 
 ![Untitled](/Vulnhub-Files/img/Glassglow/Untitled.png)
 
@@ -298,7 +303,7 @@ In to response I got this ⬇️
 
 Congratulations!
 
-You've got the Glasgow Smile!
+You have got the Glasgow Smile!
 
 JKR{68028b11a1b7d56c521a90fc18252995}
 

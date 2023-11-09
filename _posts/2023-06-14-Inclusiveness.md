@@ -1,13 +1,18 @@
 ---
+title: Inclusiveness
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [FTP, LFI, PrivEsc]
+image:
+  path: https://miro.medium.com/v2/resize:fit:1200/1*fiNtXsFnX5MR7BPQV_wBvg.png
+  alt:  Inclusiveness Machine 🖥️
 ---
 
-Lets check the IP address ➡️
+
+### Lets check the IP address ➡️
 
 ![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled.png)
 
-```jsx
+```bash
 IP : 10.10.2.50
 ```
 

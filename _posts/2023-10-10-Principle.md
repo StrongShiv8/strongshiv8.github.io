@@ -1,6 +1,6 @@
 ---
 categories: [HackMyVM]
-tags: [Fuzzing, RFI, SSH keys, SUIDs, python, subdomain, PrivEsc]  
+tags: [Fuzzing, RFI, SSH keys, SUIDs, Python, subdomain, PrivEsc]  
 image:
   path: /Vulnhub-Files/img/Principle/Untitled.png
   alt: Principle HackMyVM machine ⭐
@@ -8,7 +8,7 @@ image:
 
 ## Description ⤵️
 
-This machine is *Principle* , It is from HackMyVM Platform and categorized as Medium machine . 
+This machine is <kbd>*Principle*</kbd> , It is from HackMyVM Platform and categorized as Medium machine . 
 
 ## Port Scan Results ⤵️
 

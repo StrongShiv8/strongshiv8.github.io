@@ -1,29 +1,33 @@
 ---
-categories: [Proving Grounds Play]
-tags: [PrivEsc]
+title: Funbox Easy Enum
+categories: [Proving Grounds Play, Funbox]
+tags: [Recon, hashcat, mysql, PrivEsc]
+image:
+  path: https://miro.medium.com/v2/resize:fit:1400/1*we9s0xOUbsVCChFRJuPo7A.jpeg
+  alt:  Funbox-Easy-Enum Machine 🖥️
 ---
 
 ## **Description [⤵️](https://www.vulnhub.com/entry/funbox-easyenum,565/)**
 
 >
 💡 Boot2root in 6 steps for script-kiddies.
-
+<br>
 Timeframe to root this box: 20 mins to never ever. It is on you.
-
+<br>
 # **HINTS:**
-
+<br>
 Enum without sense, costs you too many time:
-
+<br>
 1. Use "Daisys best friend" for information gathering.
 2. Visit "Karla at home".
 3. John and Hydra loves only rockyou.txt
 4. Enum/reduce the users to brute force with or brute force the rest of your life.
-
+<br>
 This works better with VirtualBox rather than VMware
+<br>
+{: .prompt-tip }
 
-{: .prompt-info }
-
-Let’s find the IP Address first >>
+### Let’s find the IP Address first >>
 
 ![165-1.png](/Vulnhub-Files/img/Funbox-Easy-Enum/165-1.png)
 
@@ -41,7 +45,7 @@ OPEN PORTS >
 80  HTTP
 ```
 
----
+<hr>
 
 ## Web Enumeration ⤵️
 

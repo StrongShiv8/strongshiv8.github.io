@@ -1,9 +1,14 @@
 ---
+title: LazySysAdmin
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [Password Bruteforce, PrivEsc]
+image:
+  path: https://www.infosecarticles.com/content/images/2020/09/mondays.png
+  alt:  LazySysAdmin Machine 🖥️
 ---
 
-Lets check the Victim Machine’s IP address ⤵️
+
+### Lets check the Victim Machine’s IP address ⤵️
 
 ![Untitled](/Vulnhub-Files/img/LazySysAdmin/Untitled.png)
 

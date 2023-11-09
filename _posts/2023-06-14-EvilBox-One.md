@@ -1,14 +1,19 @@
 ---
+title: EvilBox-One
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [LFI, PrivEsc, passwd]
+image:
+  path: https://rotnemzero.com/wp-content/uploads/2023/07/featured-3.jpg
+  alt:  EvilBox-One Machine 🖥️
 ---
 
 
-Lets find out the IP of this Machine First ➡️
+
+### Lets find out the IP of this Machine First ➡️
 
 ![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled.png)
 
-```jsx
+```bash
 IP : 10.10.2.51
 ```
 

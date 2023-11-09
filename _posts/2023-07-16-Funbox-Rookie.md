@@ -1,7 +1,12 @@
 ---
-categories: [Proving Grounds Play]
-tags: [PrivEsc]
+title: Funbox Rookie
+categories: [Proving Grounds Play, Funbox]
+tags: [FTP, Public Exploit, Unzip, PrivEsc]
+image:
+  path: https://miro.medium.com/v2/resize:fit:512/1*hN7YDho1p8S7uOdLjj-8Mw.png
+  alt:  Funbox-Rookie Machine 🖥️
 ---
+
 
 ## **Description ⤵️**
 
@@ -229,3 +234,5 @@ root@funbox2:/root# cat proof.txt
 7ca58542dc8a0d0181aaf812ae214c69
 root@funbox2:/root#
 ```
+
+Now I am root !!

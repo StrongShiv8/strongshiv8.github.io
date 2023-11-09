@@ -1,9 +1,14 @@
 ---
+title: Deception
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [Recon, SUIDs, python, Wordpress, PrivEsc]
+image:
+  path: /Vulnhub-Files/img/Deception/Untitled%202.png
+  alt:  Deception Machine 🖥️
 ---
 
-Lets check the Victim Machines IP address ⤵️
+
+### Lets check the Victim Machines IP address ⤵️
 
 ![Untitled](/Vulnhub-Files/img/Deception/Untitled.png)
 

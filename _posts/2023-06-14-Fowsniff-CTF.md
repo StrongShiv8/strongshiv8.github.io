@@ -1,19 +1,23 @@
 ---
+title: Fowsniff CTF
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [OSINT, POP3, Password Bruteforce, PrivEsc]
+image:
+  path: https://miro.medium.com/v2/resize:fit:1200/1*rkzQab5x2tu9xhRLLd7c7w.png
+  alt:  Fowsniff CTF Machine 🖥️
 ---
 
-Lets check the IP address now →
+### Lets check the IP address now →
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled.png)
 
-```jsx
+```bash
 IP : 10.0.2.47
 ```
 
 ## Port Scan Results ⤵️
 
-```jsx
+```bash
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Fowsniff]
 └─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.47
 Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-04 21:51 IST
@@ -67,7 +71,7 @@ Lets decode the passwords for pop3 service ➡️
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%207.png)
 
-```jsx
+```bash
 mauer@fowsniff:8a28a94a588a95b80163709ab4313aa4		: mailcall
 mustikka@fowsniff:ae1644dac5b77c0cf51e0d26ad6d7e56	: bilbo101
 tegel@fowsniff:1dc352435fecca338acfd4be10984009		: apples01
@@ -117,12 +121,12 @@ And I have also noticed that this file is executed In the time of login so Lets 
 
 WOW!! I got root not expecting this , but I am happy now ROOT !!
 
-```jsx
+```bash
 # cat flag.txt
    ___                        _        _      _   _             _ 
   / __|___ _ _  __ _ _ _ __ _| |_ _  _| |__ _| |_(_)___ _ _  __| |
  | (__/ _ \ ' \/ _` | '_/ _` |  _| || | / _` |  _| / _ \ ' \(_-<_|
-  \___\___/_||_\__, |_| \__,_|\__|\_,_|_\__,_|\__|_\___/_||_/__(_)
+  \___\___/_||_\__, |_| \__,_|\__|\_,_|_\__,_|\__|_\___/_||_/__(_)'
                |___/ 
 
  (_)
@@ -151,7 +155,7 @@ Special thanks to psf, @nbulischeck and the whole Fofao Team.
 
 I have also found these .txt files as hint I guess so , therefore I can access them now as I am ROOT now 😎 —>
 
-```jsx
+```bash
 /home/seina/doubt.txt
 /home/stone/early.txt
 /home/stone/email_to_all.txt

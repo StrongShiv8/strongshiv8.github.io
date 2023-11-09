@@ -1,22 +1,26 @@
 ---
+title: Drifting Blue 1
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [DirtyCow, Password Bruteforce, PrivEsc, fcrackzip]
+image:
+  path: /Vulnhub-Files/img/Drifting-Blue-1/166-3.png
+  alt:  Drifting Blue 1 Machine 🖥️
 ---
+
 
 ## **Description ⤵️**
 
 >
 💡 [DriftingBlues: 1](https://www.vulnhub.com/entry/driftingblues-1,625/)
-
+<br>
 get flags
-
-difficulty: easy
-
-about vm: tested and exported from virtualbox. dhcp and nested vtx/amdv enabled. you can contact me by email (it should be on my profile) for troubleshooting or questions.
-
+<br>
+**difficulty:** easy
+<br>
+**about vm:** tested and exported from virtualbox. dhcp and nested vtx/amdv enabled. you can contact me by email (it should be on my profile) for troubleshooting or questions.
 {: .prompt-info }
 
-Let’s find the IP Address first >>
+### Let’s find the IP Address first >>
 
 ![166-1.png](/Vulnhub-Files/img/Drifting-Blue-1/166-1.png)
 

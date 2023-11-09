@@ -21,7 +21,7 @@ Neuromancer → is within a non-public network with 1 NIC. Your Kali box should 
 This works better with VirtualBox rather than VMware
 {: .prompt-info }
 
-Let’s find the IP Address first >>
+### Let’s find the IP Address first >>
 
 ![Untitled](/Vulnhub-Files/img/Straylight/Untitled.png)
 

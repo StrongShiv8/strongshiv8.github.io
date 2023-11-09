@@ -1,14 +1,21 @@
 ---
+title: CyberSploit 1
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [Kernal Exploit, PrivEsc]
+image:
+  path: /Vulnhub-Files/img/CyberSploit-1/Untitled.png
+  alt:  CyberSploit 1 Machine 🖥️
 ---
+
 
 ## **Description ⤵️**
 
 >
 💡 [CyberSploit-1](https://vulnhub.com/entry/cybersploit-1,506/)
 <br>
-THIS IS A MACHINE FOR COMPLETE BEGINNER , THERE ARE THREE FALGS AVAILABLE IN THIS VM.
+THIS IS A MACHINE FOR COMPLETE BEGINNER , 
+<br>
+THERE ARE THREE FALGS AVAILABLE IN THIS VM.
 <br>
 FROM THIS VMs YOU WILL LEARN ABOUT ENCODER-DECODER & EXPLOIT-DB.
 {: .prompt-info }

@@ -1,13 +1,18 @@
 ---
+title: Amaterasu
 categories: [Proving Grounds Play]
-tags: [PrivEsc]
+tags: [authorized_keys, crontab, PrivEsc]
+image:
+  path: https://i.ytimg.com/vi/SReeiX2pQnY/hqdefault.jpg
+  alt:  Amaterasu Machine 🖥️
 ---
+
 
 ## **Description ⤵️**
 
 >
 💡 This machine is new and very interesting in terms of file upload and getting shell after altering with .ssh directory .
-{: .prompt-info }
+{: .prompt-tip }
 
 
 ### Let’s find the IP Address first >>

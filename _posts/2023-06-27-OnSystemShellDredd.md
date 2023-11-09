@@ -1,8 +1,12 @@
 ---
-title: On System Shell Dredd
+title: OnSystemShellDredd
 categories: [Proving Grounds Play]
-tags: [FTP, SUIDs, PrivEsc]
+tags: [FTP, PrivEsc, SUIDs]
+image:
+  path: https://miro.medium.com/v2/resize:fit:1200/1*fiNtXsFnX5MR7BPQV_wBvg.png
+  alt:  OnSystemShellDredd Machine 🖥️
 ---
+
 
 ### Let’s find the IP Address first >>
 
