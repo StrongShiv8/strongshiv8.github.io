@@ -1,6 +1,6 @@
 ---
 categories: [HackMyVM]
-tags: [Fuzzing, RFI, SSH keys, SUIDs, Python, subdomain, PrivEsc]  
+tags: [Fuzzing, RFI, SSH keys, SUIDs, python, subdomain, PrivEsc]  
 image:
   path: /Vulnhub-Files/img/Principle/Untitled.png
   alt: Principle HackMyVM machine ⭐

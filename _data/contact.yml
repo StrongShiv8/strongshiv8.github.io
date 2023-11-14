@@ -19,6 +19,10 @@
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 #
+- type: hackthebox
+  icon: 'fa-solid fa-cube'
+  url: 'https://app.hackthebox.com/users/595651'
+
 - type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/shivendra-prajapati-a788401a5/'                  # Fill with your Linkedin homepage
