@@ -7,7 +7,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /Vulnhub-Files/img/Ha-Natraj/Untitled%201.png
+  path: /Vulnhub-Files/img/Ha-Natraj/Untitled%201.png 
   alt: Jai mahadev 👏
 ---
 
