@@ -56,15 +56,10 @@ layout: page
         title="Pinned"></i>
       {% endif %}
     </div>
-    <div class="post-thumbnail">
-      <div style="text-align: center">
-        <br><a href="{{ post.url | relative_url }}"><img src="{{ post.thumbnail }}" width="400" align="center" /> </a>
-      </div>
-    </div>
     <div class="post-excerpt">
     {% if post.excerpt %}
-      <p>{{ post.excerpt | markdownify }}</p>
-      <p><a href="{{ post.url | relative_url }}" class="more-link">{{ site.data.theme.t.read_more | default: 'Read Post ' }} <i class='fas fa-folder-open'></i></a></p>
+      {{ post.excerpt | markdownify }}
+      <a href="{{ post.url | relative_url }}" class="more-link">{{ site.data.theme.t.read_more | default: 'Read Post ' }} <i class='fas fa-folder-open'></i></a>
     {% endif %}
     </div>
 
