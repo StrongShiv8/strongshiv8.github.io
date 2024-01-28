@@ -5,9 +5,7 @@ tags: [Active Directory, AllowedToDelegate, BloodHound, PrivEsc, ReadGMSAPasswor
 img_path: /Vulnhub-Files/img/
 image:
   path: Intelligence/Untitled.jpeg
-  alt: Active Directory Medium level Machine 📂 ...
-date: 2024-01-14
----
+  alt: Active Directory Medium level Machine 📂 ...---
 
 
 
