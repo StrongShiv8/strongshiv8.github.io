@@ -1,7 +1,7 @@
 ---
 title: VulnNet Active
 categories: [TryHackMe]
-tags: [Active Directory, SMB, redis-cli, responder, PrivEsc, SharpHound, BloodHound, GenericWrite, SharpGPOAbuse, PrivEsc]
+tags: [Active Directory, SMB, redis-cli, responder, PrivEsc, SharpHound, BloodHound, GenericWrite, SharpGPOAbuse, GPO, PrivEsc]
 image:
   path: /Vulnhub-Files/img/VulnNet/front.png
   alt: VulnNet Active TryHackMe Machine 💻 
