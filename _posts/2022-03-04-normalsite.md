@@ -34,9 +34,10 @@ image:
 `/path/to/a/file.extend`{: .filepath}
 
 
-```
+```text
 This is a plaintext code snippet.
 ```
+{: .nolineno}
 
 <!-- ![Test](/Vulnhub-Files/img/Bob/Untitled%203.png "Test") -->
 <p>

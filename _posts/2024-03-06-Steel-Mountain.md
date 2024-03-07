@@ -1,7 +1,7 @@
 ---
 
 categories: [TryHackMe]
-tags: [ Windows, HFS, Unquoted_Service_Path, Public_Exploit, PrivEsc]
+tags: [ Windows, HFS, Unquoted_Service_Path, Public Exploit, PrivEsc]
 img_path: /assets/images/
 image:
   path: https://miro.medium.com/v2/resize:fit:1400/0*V8ENEIkiF6Ym5wbv.png
@@ -72,6 +72,7 @@ Host script results:
 |_  message_signing: disabled (dangerous, but default)
 |_nbstat: NetBIOS name: STEELMOUNTAIN, NetBIOS user: <unknown>, NetBIOS MAC: 02:31:ea:79:46:4d (unknown)
 ```
+{: .nolineno}
 ## Web Enumeration ⤵️
 
 while checking port 8080 I got this <mark style="background: #ADCCFFA6;">HFS file server</mark> site and its version noticeable ->
@@ -104,6 +105,7 @@ PS C:\Users\bill\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup> 
 steelmountain
 PS C:\Users\bill\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup> 
 ```
+{: .nolineno}
 
 I uploaded winpeas.exe Tool to enumerate further and I got some info 🔽
 ![Image](Pasted%20image%2020240304104921.png)
@@ -124,6 +126,7 @@ Payload size: 351 bytes
 Final size of exe file: 73802 bytes
 Saved as: Advanced.exe
 ```
+{: .nolineno}
 Lets upload it now ->
 ![Image](Pasted%20image%2020240304115351.png)
 I got response on my <mark style="background: #FF5582A6;">netcat</mark> listener on port 445 ->
@@ -167,4 +170,5 @@ type Desktop\root.txt
 9af5f314f57607c00fd09803a587db80
 C:\Users\Administrator>
 ```
+{: .nolineno}
 I am Administrator Now !!

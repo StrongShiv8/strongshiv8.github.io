@@ -36,6 +36,7 @@ This works better with VirtualBox rather than VMware. ## Changelog 2020/07/10 - 
 ```bash
 IP : 10.0.2.20
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -49,6 +50,7 @@ OPEN PORTS >
 80    HTTP
 33060 mysql
 ```
+{: .nolineno}
 
 ---
 
@@ -71,6 +73,7 @@ Now lets try Shell with this private key →
 ```bash
 Commands →  ssh oscp@10.0.2.21 -i private_key_openssl
 ```
+{: .nolineno}
 
 ![91-1.png](/Vulnhub-Files/img/Infosec_prep_OSCP/91-1.png)
 
@@ -79,6 +82,7 @@ Commands →  ssh oscp@10.0.2.21 -i private_key_openssl
 ```bash
 wordpress : Oscp12345!
 ```
+{: .nolineno}
 
 ![91-3.png](/Vulnhub-Files/img/Infosec_prep_OSCP/91-3.png)
 

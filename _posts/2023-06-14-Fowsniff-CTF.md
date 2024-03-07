@@ -14,6 +14,7 @@ image:
 ```bash
 IP : 10.0.2.47
 ```
+{: .nolineno}
 
 ## Port Scan Results ⤵️
 
@@ -42,6 +43,7 @@ PORT    STATE SERVICE VERSION
 MAC Address: 08:00:27:FE:40:C2 (Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -82,6 +84,7 @@ mursten@fowsniff:0e9588cb62f4b6f27e33d449e2ba0b3b	: carp4ever
 parede@fowsniff:4d6e42f56e127803285a0a7649b5ab11	: orlando12
 sciana@fowsniff:f7fd98d380735e859f8b2ffbbede5a7e	: 07011972
 ```
+{: .nolineno}
 
 Now lets create a users.txt and pass.txt file from above credentials ,
 
@@ -152,6 +155,7 @@ Special thanks to psf, @nbulischeck and the whole Fofao Team.
 
 #
 ```
+{: .nolineno}
 
 I have also found these .txt files as hint I guess so , therefore I can access them now as I am ROOT now 😎 —>
 

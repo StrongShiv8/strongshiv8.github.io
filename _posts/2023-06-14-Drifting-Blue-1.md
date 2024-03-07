@@ -27,6 +27,7 @@ get flags
 ```bash
 IP : 10.0.2.19
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -36,6 +37,7 @@ IP : 10.0.2.19
 OPEN PORT >
 80   HTTP
 ```
+{: .nolineno}
 
 ---
 
@@ -60,6 +62,7 @@ Now I have to crack the password for the sapmmer.zip file →
 ```bash
 myspace4
 ```
+{: .nolineno}
 
 ![166-9.png](/Vulnhub-Files/img/Drifting-Blue-1/166-9.png)
 
@@ -68,6 +71,7 @@ myspace4
 ```bash
 mayer : lionheart
 ```
+{: .nolineno}
 
 ![166-11.png](/Vulnhub-Files/img/Drifting-Blue-1/166-11.png)
 
@@ -92,6 +96,7 @@ Now Only I have to load this url → **[http://10.0.2.19/textpattern/files/shell
 ```bash
 drifter : imjustdrifting31
 ```
+{: .nolineno}
 
 ![166-15.png](/Vulnhub-Files/img/Drifting-Blue-1/166-15.png)
 

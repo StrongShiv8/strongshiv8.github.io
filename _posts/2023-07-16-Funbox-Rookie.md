@@ -30,6 +30,7 @@ This works better with VirtualBox rather than VMware.
 ```bash
 IP : 192.168.225.107
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -67,6 +68,7 @@ PORT   STATE SERVICE VERSION
 |_/logs/
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 
 ---
 
@@ -120,12 +122,14 @@ drwxr-xr-x   2 ftp      ftp          4096 Jul 25  2020 ..
 226 Transfer complete
 ftp>
 ```
+{: .nolineno}
 
 Now I downloaded all the files into the attackers machine →
 
 ```bash
 wget -r ftp://192.168.225.107
 ```
+{: .nolineno}
 
 Now lets dig into the files →
 
@@ -136,6 +140,7 @@ with the help of fcrackzip tool I cracked the zip passwords →
 ```bash
 PASSWORD FOUND!!!!: pw == iubire
 ```
+{: .nolineno}
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Funbox-Rookie/192.168.225.107]
@@ -144,6 +149,7 @@ Archive:  tom.zip
 [tom.zip] id_rsa password: 
   inflating: id_rsa
 ```
+{: .nolineno}
 
 ## SHELL ⤵️
 
@@ -186,6 +192,7 @@ tom@funbox2:~$ cat local.txt
 866bc12b3cc3f88f2bcfb8d091713b46
 tom@funbox2:~$
 ```
+{: .nolineno}
 
 Now lets see the Sudo version →
 
@@ -197,6 +204,7 @@ Sudoers file grammar version 46
 Sudoers I/O plugin version 1.8.21p2
 tom@funbox2:~$
 ```
+{: .nolineno}
 
 Lets search an exploit for this Sudo version →
 
@@ -234,5 +242,6 @@ root@funbox2:/root# cat proof.txt
 7ca58542dc8a0d0181aaf812ae214c69
 root@funbox2:/root#
 ```
+{: .nolineno}
 
 Now I am root !!

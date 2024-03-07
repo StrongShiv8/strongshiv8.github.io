@@ -15,6 +15,7 @@ image:
 ```bash
 IP : 10.10.2.50
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -53,6 +54,7 @@ PORT   STATE SERVICE VERSION
 MAC Address: 08:00:27:6F:A3:19 (Oracle VirtualBox virtual NIC)
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 
 ## Web Enumeration ➡️
 
@@ -119,6 +121,7 @@ drwxr-xr-x  2 tom  tom   4096 Feb  8  2020 Videos
 -rw-r--r--  1 tom  tom    448 Feb  8  2020 rootshell.c
 www-data@inclusiveness:/home/tom$
 ```
+{: .nolineno}
 
 Lets check the `rootshell` file which executes as root and I have access to read `rootshell.c` file →
 
@@ -150,6 +153,7 @@ int main() {
 
 www-data@inclusiveness:/home/tom$
 ```
+{: .nolineno}
 
 Now In this program whoami should be equal to tom to get our shell so I have to make whoami which says echo’s tom and it will execute accordingly →
 

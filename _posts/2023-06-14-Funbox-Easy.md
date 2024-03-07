@@ -30,6 +30,7 @@ This works better with VirtualBox rather than VMware.
 ```bash
 IP : 10.0.2.17
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -41,6 +42,7 @@ OPEN PORTS >
 80     HTTP
 33060  mysql
 ```
+{: .nolineno}
 
 ---
 
@@ -55,9 +57,11 @@ OPEN PORTS >
 So with sql injection on store site I got this →
 
 ```
+{: .nolineno}
 command :
 sqlmap -u "<URL>" --risk 3 --level 5
 ```
+{: .nolineno}
 
 ![164-6.png](/Vulnhub-Files/img/Funbox-Easy/164-6.png)
 
@@ -66,6 +70,7 @@ sqlmap -u "<URL>" --risk 3 --level 5
 ```bash
 admin : admin
 ```
+{: .nolineno}
 
 ![164-8.png](/Vulnhub-Files/img/Funbox-Easy/164-8.png)
 
@@ -96,6 +101,7 @@ Now I got too much options so lets try least interesting one time →
 ```bash
 command : sudo /usr/bin/time /bin/sh
 ```
+{: .nolineno}
 
 ![164-14.png](/Vulnhub-Files/img/Funbox-Easy/164-14.png)
 

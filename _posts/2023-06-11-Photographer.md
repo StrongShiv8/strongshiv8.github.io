@@ -21,6 +21,7 @@ This machine was developed to prepare for OSCP. It is boot2root, tested on Virtu
 ```bash
 IP : 10.0.2.25
 ```
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -35,6 +36,7 @@ OPEN PORTS >
 445  SMB
 8000 HTTP
 ```
+{: .nolineno}
 
 ---
 
@@ -67,6 +69,7 @@ So the final credentials were →
 ID     : daisa@photographer.com
 pass : babygirl
 ```
+{: .nolineno}
 
 ![128-4.png](/Vulnhub-Files/img/Photographer/128-4.png)
 
@@ -93,6 +96,7 @@ Then I executed the python reverse shell code and I got this →
 ```bash
 user.txt → d41d8cd98f00b204e9800998ecf8427e
 ```
+{: .nolineno}
 
 while cheching the SUID file I got this →
 
@@ -107,6 +111,7 @@ while cheching the SUID file I got this →
 ```bash
 proof.txt → d41d8cd98f00b204e9800998ecf8427e
 ```
+{: .nolineno}
 
 <hr>
 <br>

