@@ -1,4 +1,5 @@
 ---
+comments: true
 categories: [TryHackMe]
 img_path: /assets/images/
 tags: [ PrivEsc, Port Forwording, socat, shutdown, Password Bruteforce]
