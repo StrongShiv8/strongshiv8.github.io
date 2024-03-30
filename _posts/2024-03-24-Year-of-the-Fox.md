@@ -439,7 +439,7 @@ drwxr-xr-x 2 fox  fox  4096 Jun 20  2020 samba
 -rw-r--r-- 1 fox  fox     0 May 28  2020 .sudo_as_admin_successful
 -rw-r--r-- 1 root root   38 May 31  2020 user-flag.txt
 fox@year-of-the-fox:~$ cat user-flag.txt 
-THM{Njg3NWZhNDBjMmNlMzNkMGZmMDBhYjhk}
+THM{FLAG_FLAG_FLAG_FLAG_FLAG_FLAG}
 fox@year-of-the-fox:~$ sudo -l
 Matching Defaults entries for fox on year-of-the-fox:
     env_reset, mail_badpass
@@ -496,4 +496,5 @@ root@year-of-the-fox:/home/rascal#
 ```
 {: .nolineno}
 
-### This machine mainly teaches me about Port Forwording !!
+>This machine mainly teaches me about Port Forwarding !!
+{: .prompt-tip }

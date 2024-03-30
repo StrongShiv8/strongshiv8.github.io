@@ -80,13 +80,13 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/86778552?s=400&u=09323326c0f71655a1cbd0631810eea5c7b0eca8&v=4
+avatar: /assets/images/avatar.jpeg
 
 # boolean type, the global switch for TOC in posts.
 toc: true
 
 comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: giscus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -96,14 +96,15 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    repo:               "StrongShiv8/strongshiv8.github.io" # <gh-username>/<repo>
+    repo_id:            "R_kgDOJuXAnw"
+    category:           "Comments"
+    category_id:        "DIC_kwDOJuXAn84CeVpt"
+    mapping:            "pathname" # optional, default to 'pathname'
+    input_position:     "bottom"   # optional, default to 'bottom'
+    lang:               "en"       # optional, default to the value of `site.lang`
+    reactions_enabled:  '1'        # optional, default to the value of `1`
+    theme:              "preferred_color_scheme"
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
@@ -158,7 +159,8 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: assets/img/favicons
+      path: assets/images/favicons
+      path: assets/images/avatar
     values:
       swcache: true
   - scope:
