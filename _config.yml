@@ -160,7 +160,6 @@ defaults:
       permalink: /:title/
   - scope:
       path: assets/images/favicons
-      path: assets/images/avatar
     values:
       swcache: true
   - scope:
