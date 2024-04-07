@@ -311,3 +311,7 @@ cat FLAG72.txt
 ab77beb9cdadc97f3644a00706076293ee8cbbd2
 root@dev1:~#
 ```
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

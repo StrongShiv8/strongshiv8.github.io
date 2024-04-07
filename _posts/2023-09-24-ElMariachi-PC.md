@@ -97,3 +97,7 @@ Now When I entered ‘Windows’ in the Text Box and the Web OS open up and ther
 {: .nolineno}
 
 Hence the machine is in Attackers control can have a reverse shell though execution of revrese shell code through web OS to Attcker’s machine but no need .
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

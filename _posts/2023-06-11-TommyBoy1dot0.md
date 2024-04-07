@@ -282,3 +282,7 @@ THE END !!
 > - New part was password generation with crunch with that combinations.
 > - Very Best machine lets you suffer very much , I did too , but enjoyed it.
 {: .prompt-tip }
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

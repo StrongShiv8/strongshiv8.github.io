@@ -215,3 +215,7 @@ o
 flag{omg_you_did_it_YAY}
 root@inclusiveness:/root#
 ```
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

@@ -296,3 +296,7 @@ C:\Users\Administrator>
 {: .nolineno}
 
 I am Administrator Now as I have full access !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

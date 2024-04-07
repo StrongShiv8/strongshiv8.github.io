@@ -121,3 +121,7 @@ Now lets run **su firefart** →
 ![166-21.png](/Vulnhub-Files/img/Drifting-Blue-1/166-21.png)
 
 ---
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

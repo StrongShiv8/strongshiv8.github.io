@@ -76,3 +76,7 @@ Y29uZ3JhdHVsYXRpb25zCg==
 {: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%208.png)
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

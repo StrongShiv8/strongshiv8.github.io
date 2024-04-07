@@ -108,3 +108,7 @@ command : sudo /usr/bin/time /bin/sh
 ![164-15.png](/Vulnhub-Files/img/Funbox-Easy/164-15.png)
 
 ---
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

@@ -143,3 +143,7 @@ goat : thebest
 ![165-21.png](/Vulnhub-Files/img/Funbox-Easy-Enum/165-21.png)
 
 ---
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

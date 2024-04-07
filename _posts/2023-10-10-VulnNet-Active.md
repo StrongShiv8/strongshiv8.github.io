@@ -770,3 +770,7 @@ smb: \Users\Administrator\Desktop\>
 {: .nolineno}
 
 Now I am the Administrator !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

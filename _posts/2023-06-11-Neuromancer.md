@@ -44,3 +44,8 @@ Full Discloser →
 **for piviting between the systems (Neuromance , Straylight , Kali)**
 
 - List
+
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

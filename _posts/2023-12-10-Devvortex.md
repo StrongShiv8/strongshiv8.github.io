@@ -288,3 +288,7 @@ sudo /usr/bin/apport-cli -c /var/crash/<random_text>.crash
 {: .nolineno}
 
 After entering this command I would get root access but the crash file is deleted from the machine and I can’t execute this command so can’t able to get root access .
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

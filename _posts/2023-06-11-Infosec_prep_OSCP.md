@@ -97,3 +97,7 @@ As found in SGID →
 ```bash
 flag.txt → d73b04b0e696b0945283defa3eee4538
 ```
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

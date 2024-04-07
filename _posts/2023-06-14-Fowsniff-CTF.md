@@ -172,3 +172,7 @@ I have also found these .txt files as hint I guess so , therefore I can access t
 /home/mauer/pajamas.txt
 /root/flag.txt
 ```
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

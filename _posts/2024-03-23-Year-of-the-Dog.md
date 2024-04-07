@@ -410,3 +410,7 @@ bash-4.4#
 {: .nolineno}
 
 I am root Now !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

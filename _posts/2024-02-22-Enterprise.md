@@ -305,3 +305,7 @@ C:\Users\Administrator\Desktop>
 ```
 {: .nolineno}
 I am <span style="color:#f04276">Administrator</span> Now !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

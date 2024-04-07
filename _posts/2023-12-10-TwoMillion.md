@@ -245,3 +245,7 @@ admin@2million:/var/mail$
 ![Untitled](TwoMillion/Untitled%2022.png)
 
 I am root now !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

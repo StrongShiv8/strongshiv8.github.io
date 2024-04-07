@@ -498,3 +498,7 @@ root@year-of-the-fox:/home/rascal#
 
 >This machine mainly teaches me about Port Forwarding !!
 {: .prompt-tip }
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

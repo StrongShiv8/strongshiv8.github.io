@@ -152,3 +152,7 @@ cat root.txt
 Thanks for playing! - Felipe Winsnes (@whitecr0wz)
 root@60832e9f188106ec5bcc4eb7709ce592:~#
 ```
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

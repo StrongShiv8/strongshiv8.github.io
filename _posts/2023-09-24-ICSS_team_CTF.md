@@ -298,3 +298,7 @@ root@ICSSteam:/home/icss#
 {: .nolineno}
 
 Now I can access anything !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

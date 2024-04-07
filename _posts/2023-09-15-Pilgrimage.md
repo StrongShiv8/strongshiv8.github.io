@@ -482,3 +482,8 @@ root@pilgrimage:~#
 
 I got the root !!
 
+
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

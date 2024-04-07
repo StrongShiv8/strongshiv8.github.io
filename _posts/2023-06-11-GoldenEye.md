@@ -193,3 +193,7 @@ flag.txt → 568628e0d993b1973adc718237da6e93
 ![80-7.png](/Vulnhub-Files/img/GoldenEye/80-7.png)
 
 ---
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

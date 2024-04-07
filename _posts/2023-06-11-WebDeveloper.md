@@ -119,3 +119,7 @@ Now the flag →
 ![Untitled](/Vulnhub-Files/img/WebDeveloper/Untitled%2012.png)
 
 ---
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

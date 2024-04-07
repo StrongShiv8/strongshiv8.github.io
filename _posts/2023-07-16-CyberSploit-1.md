@@ -258,3 +258,7 @@ root@cybersploit-CTF:/root#
 {: .nolineno}
 
 ---
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

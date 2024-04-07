@@ -53,3 +53,7 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

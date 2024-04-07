@@ -199,3 +199,7 @@ evait@FullMounty:~#
 {: .nolineno}
 
 Now I am root !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

@@ -152,3 +152,8 @@ Now I have a connection between these 2 machines >
 
 Now lets go to `Neuromancer` Machine →
 
+
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

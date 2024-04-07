@@ -350,3 +350,7 @@ C:\>
 {: .nolineno}
 
 Now I have Administrators privileges too so , I can find all the FLAGs from here !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

@@ -540,3 +540,7 @@ I think this value is <span style="color:#00ff91">hex encoded</span> so I tired 
 _A root FLAG !_
 
 I am administrator now !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

@@ -197,3 +197,7 @@ Flag 2 → flag2(a7d355b26bda6bf1196ccffead0b2cf2b81f0a9de5b4876b44407f1dc07e51e
 {: .prompt-tip }
 
 <hr>
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

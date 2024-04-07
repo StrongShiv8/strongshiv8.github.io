@@ -133,3 +133,7 @@ Good job :)
 You find 5 flags and got their points and finish the first scenario....
 root@Jordaninfosec-CTF01:/var/www/html#
 ```
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }

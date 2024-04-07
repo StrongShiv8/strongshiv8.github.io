@@ -628,3 +628,7 @@ I have detected an intruder, stealing accounts: elohim
 {: .nolineno}
 
 I am root now !!
+
+> If you have any questions or suggestions, please leave a comment below.
+Thank You ! 
+{: .prompt-tip }
