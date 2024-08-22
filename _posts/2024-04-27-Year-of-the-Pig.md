@@ -1,5 +1,6 @@
 ---
 categories: [TryHackMe]
+description: Some pigs do fly...
 tags: [ Fuzzing, PrivEsc, SUIDs, pkexec, wfuzz, cewl]
 img_path: /assets/images/
 image:

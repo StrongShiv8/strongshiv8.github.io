@@ -1,6 +1,6 @@
 ---
 categories: [HackMyVM]
-tags: [FTP, Cewl, Password Bruteforce, PrivEsc]  
+tags: [FTP, cewl, Password Bruteforce, PrivEsc]  
 img_path: /Vulnhub-Files/img/
 image:
   path: Economist/Untitled.png
