@@ -1,5 +1,4 @@
 ---
-author: StrongShiv8
 categories: [TryHackMe]
 tags: [ Fuzzing, PrivEsc, SUIDs, pkexec, wfuzz, cewl]
 img_path: /assets/images/

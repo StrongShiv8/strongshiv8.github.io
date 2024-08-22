@@ -1,7 +1,7 @@
 ---
 title: Drifting Blue 1
 categories: [Proving Grounds Play]
-tags: [DirtyCow, Password Bruteforce, PrivEsc, fcrackzip]
+tags: [DirtyCow, Password Bruteforce, PrivEsc, fcrackzip, File Upload]
 image:
   path: /Vulnhub-Files/img/Drifting-Blue-1/166-3.png
   alt:  Drifting Blue 1 Machine 🖥️

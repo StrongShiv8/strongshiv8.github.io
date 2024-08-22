@@ -1,6 +1,9 @@
 ---
 categories: [VulnHub]
-tags: [PrivEsc]
+tags: [PrivEsc, LFI, SMTP, iptable, screen 4.5.0, pivoting]
+image:
+  path: https://benheater.com/content/images/2024/05/vulnhub-logo.jpg
+  alt: Starlight Machine 📷
 ---
 # Straylight
 
@@ -16,7 +19,7 @@ Virtual Box Lab setup instructions are included in the zip download, but here is
 <br><br>
 Straylight → simulates a public facing server with 2 NICS. Cap this first, then pivot to the final machine.
 <br><br>
-Neuromancer → is within a non-public network with 1 NIC. Your Kali box should ONLY be on the same virtual network as Straylight.
+[Neuromancer](https://strongshiv8.github.io/posts/Neuromancer/) → is within a non-public network with 1 NIC. Your Kali box should ONLY be on the same virtual network as Straylight.
 <br><br>
 This works better with VirtualBox rather than VMware
 {: .prompt-info }
@@ -54,7 +57,7 @@ Let’s check different ports too →
 
 ![Untitled](/Vulnhub-Files/img/Straylight/Untitled%203.png)
 
-Lets try admin : admin and I got In →
+Lets try `admin : admin` default cred and I got In →
 
 ![Untitled](/Vulnhub-Files/img/Straylight/Untitled%204.png)
 
@@ -68,7 +71,7 @@ Now access them and found this :
 
 ![Untitled](/Vulnhub-Files/img/Straylight/Untitled%207.png)
 
-After digging deeper into `/turning-bolo/` directory I got this →
+After digging deeper into `/turning-bolo/` directory I got this LFI vulnerability that leads me access the log files →
 
 ![Untitled](/Vulnhub-Files/img/Straylight/Untitled%208.png)
 
@@ -150,7 +153,7 @@ command : iptables -t nat -A PREROUTING -i enp0s3 -p tcp --dport 3333 -j DNAT --
 
 Now I have a connection between these 2 machines >
 
-Now lets go to `Neuromancer` Machine →
+Now lets go to `Neuromancer` Machine → [Neuromancer](https://strongshiv8.github.io/posts/Neuromancer/).
 
 
 

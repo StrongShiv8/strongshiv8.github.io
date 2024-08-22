@@ -10,30 +10,30 @@ image:
 ## **Description ⤵️**
 
 
-💡 **DIFFICULTY →** [DerpNStink](https://www.vulnhub.com/entry/derpnstink-1,221/)
-
-Beginner
-
-DESCRIPTION →
-
-Mr. Derp and Uncle Stinky are two system administrators who are starting their own company, DerpNStink. Instead of hiring qualified professionals to build up their IT landscape, they decided to hack together their own system which is almost ready to go live...
-
-INSTRUCTIONS →
-
-This is a boot2root Ubuntu based virtual machine. It was tested on VMware Fusion and VMware Workstation12 using DHCP settings for its network interface. It was designed to model some of the earlier machines I encountered during my OSCP labs also with a few minor curve-balls but nothing too fancy. Stick to your classic hacking methodology and enumerate all the things!
-
-Your goal is to remotely attack the VM and
-
-find all 4 flags eventually leading you to full root access.
-
-Do not forget to #tryharder
-
-Example: flag1(AB0BFD73DAAEC7912DCDCA1BA0BA3D05). Do not waste time decrypting the hash in the flag as it has no value in the challenge other than an identifier.
-
-CONTACT →
-
-Hit me up if you enjoy this VM! Twitter: @securekomodo Email: hackerbryan@protonmail.com
-
+>💡 **DIFFICULTY →** [DerpNStink](https://www.vulnhub.com/entry/derpnstink-1,221/)
+>
+>**Level** : **Beginner**
+>
+>ABOUT →
+>
+>Mr. Derp and Uncle Stinky are two system administrators who are starting their own company, DerpNStink. Instead of hiring qualified professionals to build up their IT landscape, they decided to hack together their own system which is almost ready to go live...
+>
+>INSTRUCTIONS →
+>
+>This is a boot2root Ubuntu based virtual machine. It was tested on VMware Fusion and VMware Workstation12 using DHCP settings for its network interface. It was designed to model some of the earlier machines I encountered during my OSCP labs also with a few minor curve-balls but nothing too fancy. Stick to your classic hacking methodology and enumerate all the things!
+>
+>Your goal is to remotely attack the VM and
+>
+>find all 4 flags eventually leading you to full root access.
+>
+>Do not forget to #tryharder
+>
+>Example: flag1(AB0BFD73DAAEC7912DCDCA1BA0BA3D05). Do not waste time decrypting the hash in the flag as it has no value in the challenge other than an identifier.
+>
+>CONTACT →
+>
+>Hit me up if you enjoy this VM! Twitter: @securekomodo Email: hackerbryan@protonmail.com
+{: .prompt-info }
 
 #### **Let’s find the IP Address first >>**
 
@@ -80,10 +80,6 @@ Then lets find the username and password →
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%207.png)
 
-Now lets login and upload the image which consist of a payload →
-
-![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%208.png)
-
 Through enumeration I got this →
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%209.png)
@@ -98,6 +94,10 @@ Flag 1 →  flag1(52E37291AEDF6A46D7D0BB8A6312F4F9F1AA4975C248C3F0E008CBA09D6E91
 It time to upload our payload →
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%2011.png)
+
+I used this payload since the supports jpeg or I can also try to upload the php file like above.
+
+![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%208.png)
 
 Finally got the reverse shell → 
 
@@ -163,9 +163,9 @@ mrderp → derpderpderpderpderpderpderp
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%2025.png)
 
-Now I have created a file name derpy.sh →
+Now I have created a file name `derpy.sh` →
 
-**`echo** "**/**bin**/bash"** > derpy.sh`
+**`echo "/bin/bash" > derpy.sh`
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%2026.png)
 
@@ -185,16 +185,18 @@ Flag 2 → flag2(a7d355b26bda6bf1196ccffead0b2cf2b81f0a9de5b4876b44407f1dc07e51e
 ```
 {: .nolineno}
 
+Finally I am root !!
+<br>
 <hr>
 <br>
 # **Summery Notes →**
 
 >
-> - This machine was very good , I enjoed the password extraction part from mysql server and decrypting the hash of it and getting the password of stinky was Awesome.
-> - Then Extracting another password from pcap file of user mrderpy like old sake . But it was lengthy through.
+> - This machine was very good , I enjoyed the password extraction part from mysql server and decrypting the hash of it and getting the password of stinky was Awesome.
+> - Then Extracting another password from pcap file of user `mrderpy` like old sake . But it was lengthy through.
 > - Then lastly got the root and all the flags too.
 > - Very Good machine (Teaches you many things)
-{: .prompt-tip }
+{: .prompt-info }
 
 <hr>
 

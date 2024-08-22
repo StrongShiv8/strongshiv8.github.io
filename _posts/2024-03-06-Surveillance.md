@@ -1,5 +1,4 @@
 ---
-
 categories: [HackTheBox]
 tags: [ Public Exploit, Port Forwarding, PrivEsc, Password Cracking]
 img_path: /assets/images/

@@ -1,5 +1,4 @@
 ---
-
 categories: [TryHackMe]
 tags: [ SeImpersonatePrivilege, PrivEsc, SMB, Windows]
 Level: 

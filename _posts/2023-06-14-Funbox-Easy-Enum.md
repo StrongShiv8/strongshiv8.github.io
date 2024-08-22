@@ -1,13 +1,22 @@
 ---
-title: Funbox Easy Enum
+title: Funbox-:-EasyEnum
 categories: [Proving Grounds Play, Funbox]
-tags: [Recon, hashcat, mysql, PrivEsc]
+tags: [Recon, hashcat, mysql, PrivEsc, File Upload]
 image:
   path: https://miro.medium.com/v2/resize:fit:1400/1*we9s0xOUbsVCChFRJuPo7A.jpeg
   alt:  Funbox-Easy-Enum Machine 🖥️
 ---
 
-## **Description [⤵️](https://www.vulnhub.com/entry/funbox-easyenum,565/)**
+
+| Machine     | <center>Details</center>                                                  |
+| ----------- | ------------------------------------------------------------------------- |
+| **Vulnhub** | https://www.vulnhub.com/entry/funbox-easyenum,565/                        |
+| **Level**   | <center>script-kiddies</center>                                           |
+| **Creator** | <center>[0815R2d2](https://www.vulnhub.com/author/0815r2d2,714/)</center> |
+
+
+
+## **Description ⤵️**
 
 >
 💡 Boot2root in 6 steps for script-kiddies.

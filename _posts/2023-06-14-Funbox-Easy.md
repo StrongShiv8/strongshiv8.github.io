@@ -1,14 +1,20 @@
 ---
-title: Funbox Easy
+title: Funbox-:-Easy
 categories: [Proving Grounds Play, Funbox]
-tags: [PrivEsc, Sqlmap, timedatectl]
+tags: [PrivEsc, Sqlmap, timedatectl, File Upload, time]
 image:
   path: https://www.piratemoo.com/content/images/2022/12/funboxeasy.png
   alt:  Funbox-Easy Machine 🖥️
 ---
 
+| Machine     | <center>Details</center>                                                  |
+| ----------- | ------------------------------------------------------------------------- |
+| **Vulnhub** | https://www.vulnhub.com/entry/funbox-easy,526/                            |
+| **Level**   | <center>script-kiddies</center>                                           |
+| **Creator** | <center>[0815R2d2](https://www.vulnhub.com/author/0815r2d2,714/)</center> |
 
-## **Description [⤵️](https://www.vulnhub.com/entry/funbox-easy,526/)**
+
+## **Description ⤵️**
 
 >
 💡 Boot2Root ! Easy going, but with this Funbox you have to spend a bit more time. Much more, if you stuck in good traps. But most of the traps have hints, that they are traps.
@@ -44,7 +50,7 @@ OPEN PORTS >
 ```
 {: .nolineno}
 
----
+
 
 ## Web Enumeration ⤵️
 
@@ -56,8 +62,7 @@ OPEN PORTS >
 
 So with sql injection on store site I got this →
 
-```
-{: .nolineno}
+```bash
 command :
 sqlmap -u "<URL>" --risk 3 --level 5
 ```

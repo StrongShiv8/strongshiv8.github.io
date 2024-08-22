@@ -1,7 +1,7 @@
 ---
 title: Boss Players CTF
 categories: [Proving Grounds Play]
-tags: [Command  Injection, Recon, SUIDs, find, PrivEsc]
+tags: [Command Injection, Recon, SUIDs, find, PrivEsc, RFI, grep]
 image:
   path: https://miro.medium.com/v2/resize:fit:1200/1*fiNtXsFnX5MR7BPQV_wBvg.png
   alt:  Boss Players CTF Machine 🖥️

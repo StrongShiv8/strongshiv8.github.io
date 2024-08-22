@@ -1,5 +1,4 @@
 ---
-
 categories: [TryHackMe]
 tags: [ Windows, HFS, Unquoted_Service_Path, Public Exploit, PrivEsc]
 img_path: /assets/images/

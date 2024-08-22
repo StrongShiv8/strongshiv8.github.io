@@ -1,5 +1,4 @@
 ---
-
 categories: [TryHackMe]
 tags: [ Active Directory, Unquoted_Service_Path, GetUserSPNs.py, PrivEsc, OSINT, RDP]
 img_path: /assets/images/

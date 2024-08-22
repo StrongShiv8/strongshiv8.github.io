@@ -1,5 +1,4 @@
 ---
-author: StrongShiv8
 categories: [HackTheBox]
 tags: [ api, Nagios, PrivEsc, UDP, SNMP, SQLi, sqlmap, CMS]
 img_path: /assets/images/

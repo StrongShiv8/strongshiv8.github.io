@@ -1,7 +1,7 @@
 ---
 title: Deception
 categories: [Proving Grounds Play]
-tags: [Recon, SUIDs, python, Wordpress, PrivEsc]
+tags: [Recon, SUIDs, python, Wordpress, PrivEsc, CMS]
 image:
   path: /Vulnhub-Files/img/Deception/Untitled%202.png
   alt:  Deception Machine 🖥️
@@ -46,13 +46,13 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ![Untitled](/Vulnhub-Files/img/Deception/Untitled%202.png)
 
-Now with directory traversal I got wordpress ➡️
+Now with directory traversal through `feroxbuster` Tool, I got wordpress site ➡️
 
 ![Untitled](/Vulnhub-Files/img/Deception/Untitled%203.png)
 
 ![Untitled](/Vulnhub-Files/img/Deception/Untitled%204.png)
 
-Now with wpscan results I got 2 users ⬇️
+Now with `wpscan` Tool results I got 2 users ⬇️
 
 ![Untitled](/Vulnhub-Files/img/Deception/Untitled%205.png)
 

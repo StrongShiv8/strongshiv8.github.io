@@ -1,6 +1,6 @@
 ---
 categories: [VulnHub]
-tags: [Wordpress, Wireshark, PrivEsc]
+tags: [Wordpress, Wireshark, PrivEsc, CMS, tcpdump]
 image:
   path: /Vulnhub-Files/img/WebDeveloper/Untitled%202.png
   alt: WebDeveloper Machine 🕸️

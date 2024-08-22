@@ -1,11 +1,21 @@
 ---
-title: Fowsniff CTF
+title: Fowsniff-:-1
 categories: [Proving Grounds Play]
 tags: [OSINT, POP3, Password Bruteforce, PrivEsc]
 image:
   path: https://miro.medium.com/v2/resize:fit:1200/1*rkzQab5x2tu9xhRLLd7c7w.png
+  width: "1200"
+  height: "630"
   alt:  Fowsniff CTF Machine 🖥️
 ---
+
+
+| Machine     | <center>Details</center>                                                  |
+| ----------- | ------------------------------------------------------------------------- |
+| **Vulnhub** | https://www.vulnhub.com/entry/fowsniff-1,262/                             |
+| **Level**   | <center>beginner</center>                                                 |
+| **Creator** | <center>[berzerk0](https://www.vulnhub.com/author/berzerk0,600/)</center> |
+
 
 ### Lets check the IP address now →
 
@@ -57,7 +67,7 @@ On front page I noticed this text ➡️
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%203.png)
 
-So lets check the official Twitter handle of @fowsniffcorp —>
+So lets check the official Twitter handle of `@fowsniffcorp` —>
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%204.png)
 
@@ -65,11 +75,11 @@ Lets check the paste bin file —>
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%205.png)
 
-Now lets follow through to the link for “password dump“ —>
+Now lets follow through to the link for “`password dump`“ —>
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%206.png)
 
-Lets decode the passwords for pop3 service ➡️
+Lets decode the passwords for `pop3` service ➡️
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%207.png)
 
@@ -100,7 +110,9 @@ Lets retrieve  1 & 2 ➡️
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2010.png)
 
+```
 password : S1ck3nBluff+secureshell
+```
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2011.png)
 

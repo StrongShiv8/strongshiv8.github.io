@@ -3,7 +3,9 @@ title: EvilBox-One
 categories: [Proving Grounds Play]
 tags: [LFI, PrivEsc, passwd]
 image:
-  path: https://rotnemzero.com/wp-content/uploads/2023/07/featured-3.jpg
+  path: https://i0.wp.com/pentestguy.com/wp-content/uploads/2023/07/evilbox-one-vulnhub-ctf-walkthrough-pentestguy.png?fit=1080%2C720&ssl=1
+  width: "1200"
+  height: "630"
   alt:  EvilBox-One Machine 🖥️
 ---
 

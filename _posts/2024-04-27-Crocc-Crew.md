@@ -1,5 +1,4 @@
 ---
-author: StrongShiv8
 categories: [TryHackMe]
 tags: [ ASREPRoast, Active Directory, AllowedToDelegate, BloodHound, Kerberosting, PrivEsc, rdesktop, constrained_delegation, GetST.py, secretsdump, netexec, lookupsid.py]
 img_path: /assets/images/

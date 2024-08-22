@@ -1,7 +1,7 @@
 ---
 title: Glassglow
 categories: [Proving Grounds Play]
-tags: [Joomla, Password Generate, mysql, pspy64, PrivEsc]
+tags: [Joomla, Password Generate, mysql, pspy64, PrivEsc, cewl, CMS]
 image:
   path: /Vulnhub-Files/img/Glassglow/Untitled%201.png
   alt:  Glassglow Machine 🖥️
@@ -104,7 +104,7 @@ Now I got the password as `Gotham` , Lets login ➡️
 
 ![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%209.png)
 
-Now lets uplaod the reverse shell php code into Templates > Beez3 Details and Files > error.php ⬇️
+Now lets uplaod the reverse shell php code into <kbd>Templates</kbd> > <kbd>Beez3 Details and Files</kbd> > <kbd>error.php</kbd> ⬇️
 
 ![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2010.png)
 
@@ -127,7 +127,7 @@ Lets look into the mysql database —>
 
 ![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2013.png)
 
-I got rob as a user also so lets decode this encrypted value to get the password ⬇️
+I got `rob` as a user also so lets decode this encrypted value to get the password ⬇️
 
 ![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%2014.png)
 

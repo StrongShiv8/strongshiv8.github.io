@@ -10,16 +10,16 @@ image:
 ## **Description ⤵️**
 
 
-💡 [GoldenEye](https://vulnhub.com/entry/goldeneye-1,240/) ⤵️
-
-I recently got done creating an OSCP type vulnerable machine that is themed after the great James Bond film (and even better n64 game) GoldenEye. The goal is to get root and capture the secret GoldenEye codes - flag.txt.
-
-I'd rate it as Intermediate, it has a good variety of techniques needed to get root - no exploit development/buffer overflows. After completing the OSCP I think this would be a great one to practice on, plus there is a hint of CTF flavor.
-
-I've created and validated on VMware and VirtualBox. You would not need any extra tools other than what is on Kali by default. Will need to be setup as Host-Only, and on VMware you may need to click "retry" if prompted, upon initially starting it up because of formatting.
-
- Changelog Beta - 2018-05-02 v1 - 2018-05-04
-
+>💡 [GoldenEye](https://vulnhub.com/entry/goldeneye-1,240/) ⤵️
+>
+>I recently got done creating an OSCP type vulnerable machine that is themed after the great James Bond film (and even better n64 game) GoldenEye. The goal is to get root and capture the secret GoldenEye codes - flag.txt.
+>
+>I'd rate it as Intermediate, it has a good variety of techniques needed to get root - no exploit development/buffer overflows. After completing the OSCP I think this would be a great one to practice on, plus there is a hint of CTF flavor.
+>
+>I've created and validated on VMware and VirtualBox. You would not need any extra tools other than what is on Kali by default. Will need to be setup as Host-Only, and on VMware you may need to click "retry" if prompted, upon initially starting it up because of formatting.
+>
+> Changelog Beta - 2018-05-02 v1 - 2018-05-04
+{: .prompt-info }
 
 
 ### **Let’s find the IP Address first >>**
@@ -71,9 +71,9 @@ On checking Source code I got this →
 
 ![Untitled](/Vulnhub-Files/img/GoldenEye/Untitled%206.png)
 
-I have tried pop3 with these credentials but no luck so lets brute fore the password for pop3 login with these users →
+I have tried `pop3` with these credentials but no luck so lets brute fore the password for pop3 login with these users →
 
-`hydra -l boris -P **/**usr**/**share**/**wordlists**/**fasttrack.txt -f 10.0.2.20 -s 55007 pop3`
+`hydra -l boris -P /usr/share/wordlists/fasttrack.txt -f 10.0.2.20 -s 55007 pop3`
 
 ![Untitled](/Vulnhub-Files/img/GoldenEye/Untitled%207.png)
 
@@ -94,7 +94,7 @@ Lets check the pop3 service now and see what we can →
 
 ![79-9.png](/Vulnhub-Files/img/GoldenEye/79-9.png)
 
-Now lets check the password for natalya user →
+Now lets check the password for `natalya` user →
 
 ![79-10.png](/Vulnhub-Files/img/GoldenEye/79-10.png)
 
@@ -155,7 +155,11 @@ admin : xWinter1995x!
 ```
 {: .nolineno}
 
+Here I will be using metasploit to exploit this vulnerable moodle spelling site.
+
 ![79-22.png](/Vulnhub-Files/img/GoldenEye/79-22.png)
+
+Here I have to enable `pSpellShell` option and save it to get the spell checking exploit work.
 
 ![79-23.png](/Vulnhub-Files/img/GoldenEye/79-23.png)
 
@@ -165,7 +169,7 @@ Now included the python reverse shell →
 
 Now I get the reverse shell →
 
-As my shell called by the spell checker funciton →
+As my shell called by the spell checker function →
 
 ![80-1.png](/Vulnhub-Files/img/GoldenEye/80-1.png)
 
@@ -177,7 +181,7 @@ Here the OS is very outdated so lets find an exploit for it →
 
 Since gcc is not present in the victim machine so I replaced it with cc which used to run in the time of UNIX systems.
 
-Now After transfering the exploit to victim machine lets exploit it →
+Now After transferring the exploit to victim machine lets exploit it →
 
 ![80-4.png](/Vulnhub-Files/img/GoldenEye/80-4.png)
 
