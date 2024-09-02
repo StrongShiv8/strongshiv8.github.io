@@ -1,7 +1,7 @@
 ---
 categories: [HackTheBox]
 tags: [ Public Exploit, Port Forwarding, PrivEsc, Password Cracking]
-img_path: /assets/images/
+media_subpath: /assets/images/
 image:
   alt: Linux Medium Level Machine 🧭
   width: "1200"

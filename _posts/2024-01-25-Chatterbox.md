@@ -2,7 +2,7 @@
 title: Chatterbox
 categories: [HackTheBox]
 tags: [Buffer Overflow, PrivEsc, Public Exploit, Windows, icacls]
-img_path: /Vulnhub-Files/img/
+media_subpath: /Vulnhub-Files/img/
 image:
   path: Chatterbox/Untitled.png
   alt: Windows Easy level Machine 📂 ...

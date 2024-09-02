@@ -2,7 +2,7 @@
 categories: [TryHackMe]
 description: The foolish owl sits on his throne...
 tags: [ SNMP, hydra, PrivEsc, Windows, secretsdump, Password Bruteforce, UDP ]
-img_path: /assets/images/
+media_subpath: /assets/images/
 image:
   alt: Windows Hard Level Machine 👹
   width: "1200"

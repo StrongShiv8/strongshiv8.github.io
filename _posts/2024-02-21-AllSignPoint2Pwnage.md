@@ -2,7 +2,7 @@
 categories: [TryHackMe]
 tags: [ SeImpersonatePrivilege, PrivEsc, SMB, Windows]
 Level: 
-img_path: /assets/images/
+media_subpath: /assets/images/
 image:
   path: allsign.jpg
   width: "1200"

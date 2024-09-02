@@ -2,7 +2,7 @@
 title: TwoMillion
 categories: [HackTheBox]
 tags: [Command Injection, Public Exploit, Obfuscation, PrivEsc]
-img_path: /Vulnhub-Files/img/
+media_subpath: /Vulnhub-Files/img/
 image:
   path: TwoMillion/Untitled.png
   alt: 2Million Machine 💵

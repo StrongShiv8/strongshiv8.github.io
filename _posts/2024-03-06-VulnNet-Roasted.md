@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 tags: [ Active Directory, ASREPRoast, GetUserSPNs.py, GetNPUsers.py, PrivEsc, SMB, Kerberosting, icacls, recon]
-img_path: /assets/images/
+media_subpath: /assets/images/
 image:
   path: vulnNet-Roasted.png
   width: "1200"

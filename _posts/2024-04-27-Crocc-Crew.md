@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 tags: [ ASREPRoast, Active Directory, AllowedToDelegate, BloodHound, Kerberosting, PrivEsc, rdesktop, constrained_delegation, GetST.py, secretsdump, netexec, lookupsid.py]
-img_path: /assets/images/
+media_subpath: /assets/images/
 image:
   width: "1200"
   height: "630"
