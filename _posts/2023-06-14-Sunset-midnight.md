@@ -1,5 +1,5 @@
 ---
-title: Sunset Midnight
+title: "Sunset : Midnight"
 categories: [Proving Grounds Play, Sunset]
 tags: [Password Bruteforce, PrivEsc, SUIDs, mysql, status, Wordpress]
 image:

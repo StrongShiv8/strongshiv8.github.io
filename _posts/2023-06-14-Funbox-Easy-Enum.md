@@ -1,5 +1,5 @@
 ---
-title: Funbox-:-EasyEnum
+title: "Funbox : EasyEnum"
 categories: [Proving Grounds Play, Funbox]
 tags: [Recon, hashcat, mysql, PrivEsc, File Upload]
 image:

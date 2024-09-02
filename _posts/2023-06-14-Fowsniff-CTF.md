@@ -1,5 +1,5 @@
 ---
-title: Fowsniff-:-1
+title: "Fowsniff : 1"
 categories: [Proving Grounds Play]
 tags: [OSINT, POP3, Password Bruteforce, PrivEsc]
 image:
@@ -14,7 +14,7 @@ image:
 | ----------- | ------------------------------------------------------------------------- |
 | **Vulnhub** | https://www.vulnhub.com/entry/fowsniff-1,262/                             |
 | **Level**   | <center>beginner</center>                                                 |
-| **Creator** | <center>[berzerk0](https://www.vulnhub.com/author/berzerk0,600/)</center> |
+| **Creator** | <center><a href="https://www.vulnhub.com/author/berzerk0,600/">berzerk0</a></center> |
 
 
 ### Lets check the IP address now →

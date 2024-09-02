@@ -281,7 +281,7 @@ ___
 > - Got to learn so many things like cracking zip file was first time .
 > - Then user-agent configuration was new .
 > - Find FTP was very tricky part.
-> - New part was password generation with crunch with that combinations.
+> - New part was password generation with `crunch` with that combinations.
 > - Very Best machine lets you suffer very much , I did too , but enjoyed it.
 {: .prompt-tip }
 

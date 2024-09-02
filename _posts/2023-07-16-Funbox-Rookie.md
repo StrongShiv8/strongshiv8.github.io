@@ -1,5 +1,5 @@
 ---
-title: Funbox Rookie
+title: "Funbox : Rookie"
 categories: [Proving Grounds Play, Funbox]
 tags: [FTP, Public Exploit, Unzip, PrivEsc]
 image:

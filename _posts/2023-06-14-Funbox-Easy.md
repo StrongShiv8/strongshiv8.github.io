@@ -1,5 +1,5 @@
 ---
-title: Funbox-:-Easy
+title: "Funbox : Easy"
 categories: [Proving Grounds Play, Funbox]
 tags: [PrivEsc, Sqlmap, timedatectl, File Upload, time]
 image:
