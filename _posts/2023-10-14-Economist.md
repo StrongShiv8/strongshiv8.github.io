@@ -1,7 +1,7 @@
 ---
 categories: [HackMyVM]
 tags: [FTP, cewl, Password Bruteforce, PrivEsc]  
-img_path: /Vulnhub-Files/img/
+img_path: Vulnhub-Files/img/
 image:
   path: Economist/Untitled.png
   alt: HackMyVM Machine 💵

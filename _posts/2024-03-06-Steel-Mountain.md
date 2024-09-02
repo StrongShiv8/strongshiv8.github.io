@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 tags: [ Windows, HFS, Unquoted_Service_Path, Public Exploit, PrivEsc]
-img_path: /assets/images/
+img_path: assets/images/
 image:
   path: https://miro.medium.com/v2/resize:fit:1400/0*V8ENEIkiF6Ym5wbv.png
   width: "1200"

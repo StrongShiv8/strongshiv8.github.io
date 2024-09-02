@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 tags: [Chisel, Pivoting, Wordpress, Docker, PrivEsc]  
-img_path: /Vulnhub-Files/img/
+img_path: Vulnhub-Files/img/
 image:
   path: For%20Bussiness%20Reason/Untitled.png
   alt: TryHackMe For Bussiness Reason Machine 🐉

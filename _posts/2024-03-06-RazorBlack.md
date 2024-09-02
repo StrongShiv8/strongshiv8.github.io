@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 tags: [ ASREPRoast, Kerberosting, PrivEsc, NFS, Active Directory, GetNPUsers.py, GetUserSPNs.py, PSCredential, SeBackupPrivilege]
-img_path: /assets/images/
+img_path: assets/images/
 image:
   path: https://blog.apnic.net/wp-content/uploads/2019/10/ActiveDirectory_attack_banner-555x202.png?v=e8845f956b3e483ea2c96ce91004bf8e
   width: "1200"
