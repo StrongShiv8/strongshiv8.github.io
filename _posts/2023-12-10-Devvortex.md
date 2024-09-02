@@ -1,7 +1,7 @@
 ---
 categories: [HackTheBox]
 tags: [Joomla, Password Cracking, PrivEsc, apport-cli, mysql]
-img_path: Vulnhub-Files/img/
+img_path: /Vulnhub-Files/img/
 image:
   path: Devvortex/Untitled.png
   alt: HackTheBox Machine Devvortex ✌️

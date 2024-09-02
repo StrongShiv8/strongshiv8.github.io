@@ -2,7 +2,7 @@
 categories: [TryHackMe]
 description: Some pigs do fly...
 tags: [ Fuzzing, PrivEsc, SUIDs, pkexec, wfuzz, cewl]
-img_path: assets/images/
+img_path: /assets/images/
 image:
   alt: Linux Hard Level Machine 👹
   width: "1200"

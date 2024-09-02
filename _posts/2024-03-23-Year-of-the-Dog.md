@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 tags: [ SQLi, gitea, RFI, SUIDs, PrivEsc, socat, Port Forwording]
-img_path: assets/images/
+img_path: /assets/images/
 image:
   alt: Linux Hard Level Machine 👹
   width: "1200"

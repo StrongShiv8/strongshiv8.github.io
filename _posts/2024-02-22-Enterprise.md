@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 tags: [ Active Directory, Unquoted_Service_Path, GetUserSPNs.py, PrivEsc, OSINT, RDP]
-img_path: assets/images/
+img_path: /assets/images/
 image:
   alt: Active Directory Hard Level Machine 📂
   width: "1200"

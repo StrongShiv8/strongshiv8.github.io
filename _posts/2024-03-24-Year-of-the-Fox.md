@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 description: Don't underestimate the sly old fox...
-img_path: assets/images/
+img_path: /assets/images/
 tags: [ PrivEsc, Port Forwording, socat, shutdown, Password Bruteforce]
 image:
   alt: Linux Hard Level Machine 👹

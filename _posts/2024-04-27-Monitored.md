@@ -2,7 +2,7 @@
 categories: [HackTheBox]
 description: You will get to know about these vulnerabilities -> `Remote Code Execution`, `SQL Injection`, `Misconfiguration`.
 tags: [ api, Nagios, PrivEsc, UDP, SNMP, SQLi, sqlmap, CMS]
-img_path: assets/images/
+img_path: /assets/images/
 image:
   path: https://pbs.twimg.com/media/GDkfNA1asAAJz8P.jpg
   width: "1200"

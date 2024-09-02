@@ -1,7 +1,7 @@
 ---
 categories: [HackTheBox]
 tags: [Metasploit, PrivEsc, Public Exploit]  
-img_path: Vulnhub-Files/img/
+img_path: /Vulnhub-Files/img/
 image:
   path: Analytics/Untitled.png
   alt: Analytics Machine 🖥️

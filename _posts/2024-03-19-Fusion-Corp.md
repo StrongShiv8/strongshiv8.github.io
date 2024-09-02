@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 tags: [ SeBackupPrivilege, secretsdump, BloodHound, Active Directory, ASREPRoast, PrivEsc, Backup-ToSystem]
-img_path: assets/images/
+img_path: /assets/images/
 image:
   alt: Windows Hard Level Machine 👹
   width: "1200"

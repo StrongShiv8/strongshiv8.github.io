@@ -2,7 +2,7 @@
 title: Intelligence
 categories: [HackTheBox]
 tags: [Active Directory, AllowedToDelegate, BloodHound, PrivEsc, ReadGMSAPassword, Service Ticket, dnstool.py, GetST.py, krbrelayx, pdftotext]
-img_path: Vulnhub-Files/img/
+img_path: /Vulnhub-Files/img/
 image:
   path: Intelligence/Untitled.jpeg
   alt: Active Directory Medium level Machine 📂 ...

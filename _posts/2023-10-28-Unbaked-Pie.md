@@ -1,7 +1,7 @@
 ---
 categories: [TryHackMe]
 tags: [Chisel, Deserialization, Pivoting, PythonPATH, PrivEsc]  
-img_path: Vulnhub-Files/img/
+img_path: /Vulnhub-Files/img/
 image:
   path: Unbaked%20Pie/Untitled.png
   alt: TryHackMe Unbaked Pie Machine 🍰
