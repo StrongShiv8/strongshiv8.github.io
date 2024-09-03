@@ -1,6 +1,6 @@
 ---
 title: "Sunset : Midnight"
-categories: [Proving Grounds Play, Sunset]
+categories: [Proving Grounds, Play, Sunset]
 tags: [Password Bruteforce, PrivEsc, SUIDs, mysql, status, Wordpress]
 image:
   path: https://www.infosecarticles.com/content/images/2020/09/midnight.png
@@ -30,6 +30,7 @@ This works better with ViritualBox rather than VMware
 IP : 10.0.2.5
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -41,6 +42,7 @@ OPEN PORTS >
 80   HTTP
 3306 mysql
 ```
+{: .nolineno}
 {: .nolineno}
 
 
@@ -62,6 +64,7 @@ mysql credentials →
 root : robert
 ```
 {: .nolineno}
+{: .nolineno}
 
 from `wordpress_db database` →
 
@@ -72,6 +75,7 @@ username → admin
 
 password → $P$BaWk4oeAmrdn453hR6O6BvDqoF9yy6/
 ```
+{: .nolineno}
 {: .nolineno}
 
 from mysql database →
@@ -85,6 +89,7 @@ Command →
 
 update wp_users set user_pass="5f4dcc3b5aa765d61d832
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![153-8.png](/Vulnhub-Files/img/Sunset-midnight/153-8.png)
@@ -105,6 +110,7 @@ Finally after uploading the shell I got reverse shell →
 jose : 645dc5a8871d2a4269d4cbe23f6ae103
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![153-12.png](/Vulnhub-Files/img/Sunset-midnight/153-12.png)
 
@@ -113,6 +119,7 @@ jose : 645dc5a8871d2a4269d4cbe23f6ae103
 ```sql
 user.txt → 956a9564aa5632edca7b745c696f6575
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets check the SUIDs and GUIDs files →
@@ -134,6 +141,7 @@ Now I have to Abuse the SUID commands →
 ```bash
 root.txt → db2def9d4ddcb83902b884de39d426e6
 ```
+{: .nolineno}
 {: .nolineno}
 
 ---

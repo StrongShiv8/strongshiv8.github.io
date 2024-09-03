@@ -1,6 +1,6 @@
 ---
 title: Inclusiveness
-categories: [Proving Grounds Play]
+categories: [Proving Grounds, Play]
 tags: [FTP, LFI, PrivEsc]
 image:
   path: https://miro.medium.com/v2/resize:fit:1200/1*fiNtXsFnX5MR7BPQV_wBvg.png
@@ -15,6 +15,7 @@ image:
 ```bash
 IP : 10.10.2.50
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Port Scan Results ➡️
@@ -54,6 +55,7 @@ PORT   STATE SERVICE VERSION
 MAC Address: 08:00:27:6F:A3:19 (Oracle VirtualBox virtual NIC)
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Web Enumeration ➡️
@@ -122,6 +124,7 @@ drwxr-xr-x  2 tom  tom   4096 Feb  8  2020 Videos
 www-data@inclusiveness:/home/tom$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Lets check the `rootshell` file which executes as root and I have access to read `rootshell.c` file →
 
@@ -153,6 +156,7 @@ int main() {
 
 www-data@inclusiveness:/home/tom$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now In this program whoami should be equal to tom to get our shell so I have to make whoami which says echo’s tom and it will execute accordingly →
@@ -215,6 +219,7 @@ o
 flag{omg_you_did_it_YAY}
 root@inclusiveness:/root#
 ```
+{: .nolineno}
 
 > If you have any questions or suggestions, please leave a comment below.
 Thank You ! 

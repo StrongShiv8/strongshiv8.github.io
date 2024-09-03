@@ -1,6 +1,6 @@
 ---
 title: "Funbox : EasyEnum"
-categories: [Proving Grounds Play, Funbox]
+categories: [Proving Grounds, Play, Funbox]
 tags: [Recon, hashcat, mysql, PrivEsc, File Upload]
 image:
   path: https://miro.medium.com/v2/resize:fit:1400/1*we9s0xOUbsVCChFRJuPo7A.jpeg
@@ -44,6 +44,7 @@ This works better with VirtualBox rather than VMware
 IP : 10.0.2.18
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -54,6 +55,7 @@ OPEN PORTS >
 22  SSH
 80  HTTP
 ```
+{: .nolineno}
 {: .nolineno}
 
 <hr>
@@ -91,12 +93,14 @@ command →
 hashcat -m 500 pass.hash /usr/share/wordlists/rockyou.txt
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![165-10.png](/Vulnhub-Files/img/Funbox-Easy-Enum/165-10.png)
 
 ```bash
 oracle : hiphop
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets recon more on web →
@@ -110,6 +114,7 @@ Lets check →
 ```bash
 phpmyadmin : tgbzhnujm!
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![165-13.png](/Vulnhub-Files/img/Funbox-Easy-Enum/165-13.png)
@@ -145,6 +150,7 @@ I got result after 15-20 min →
 ```bash
 goat : thebest
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![165-20.png](/Vulnhub-Files/img/Funbox-Easy-Enum/165-20.png)

@@ -30,6 +30,7 @@ image:
 IP : 10.0.2.20
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -44,6 +45,7 @@ OPEN PORTS >
 55006  pop3
 55007  POP3
 ```
+{: .nolineno}
 {: .nolineno}
 
 ---
@@ -61,6 +63,7 @@ After Cracking it I got password for boris →
 ```bash
 boris : InvincibleHack3r
 ```
+{: .nolineno}
 {: .nolineno}
 
 After login I got this →
@@ -80,6 +83,7 @@ I have tried `pop3` with these credentials but no luck so lets brute fore the pa
 ```bash
 boris : secret1!
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets check the pop3 service now and see what we can →
@@ -102,6 +106,7 @@ Now lets check the password for `natalya` user →
 natalya : bird
 ```
 {: .nolineno}
+{: .nolineno}
 
 Lets try it out →
 
@@ -113,6 +118,7 @@ Lets try it out →
 username: xenia
 password: RCP90rulez!
 ```
+{: .nolineno}
 {: .nolineno}
 
 → **severnaya-station.com in `/etc/hosts`.**
@@ -131,6 +137,7 @@ Lets see the password for this user like that →
 doak : goat
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![79-17.png](/Vulnhub-Files/img/GoldenEye/79-17.png)
 
@@ -138,6 +145,7 @@ doak : goat
 username: dr_doak
 password: 4England!
 ```
+{: .nolineno}
 {: .nolineno}
 
 After login I got this file →
@@ -153,6 +161,7 @@ After login I got this file →
 ```bash
 admin : xWinter1995x!
 ```
+{: .nolineno}
 {: .nolineno}
 
 Here I will be using metasploit to exploit this vulnerable moodle spelling site.
@@ -192,6 +201,7 @@ Now After transferring the exploit to victim machine lets exploit it →
 ```bash
 flag.txt → 568628e0d993b1973adc718237da6e93
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![80-7.png](/Vulnhub-Files/img/GoldenEye/80-7.png)

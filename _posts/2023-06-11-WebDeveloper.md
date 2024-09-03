@@ -34,6 +34,7 @@ image:
 IP : 192.168.56.107
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -44,6 +45,7 @@ Open Ports >
 22	SSH
 80	HTTP
 ```
+{: .nolineno}
 {: .nolineno}
 
 ---
@@ -68,6 +70,7 @@ log = webdeveloper
 pwd = Te5eQg&4sBS!Yr$)wf%(DcAd
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/WebDeveloper/Untitled%205.png)
 
@@ -84,6 +87,7 @@ Got these credentials from wp-config.php file :
 ```bash
 Password : MasterOfTheUniverse
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/WebDeveloper/Untitled%208.png)
@@ -110,6 +114,7 @@ echo "$COMMAND" > $TFt
 chmod +x $TFt
 sudo tcpdump -ln -i lo -w /dev/null -W 1 -G 1 -z $TFt -Z root
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/WebDeveloper/Untitled%2011.png)

@@ -1,6 +1,6 @@
 ---
 title: Sunset Decoy
-categories: [Proving Grounds Play, Sunset]
+categories: [Proving Grounds, Play, Sunset]
 tags: [Public Exploit, chrootkit, fcrackzip, hashcat, vim, PrivEsc]
 image:
   path: https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2020/12/sunsetdecoy.png?fit=1200%2C864&w=640
@@ -15,6 +15,7 @@ image:
 ```bash
 IP : 10.0.2.49
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Port Scan Results ⤵️
@@ -43,6 +44,7 @@ MAC Address: 08:00:27:BA:A7:50 (Oracle VirtualBox virtual NIC)
 Service Info: Host: 127.0.0.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -69,6 +71,7 @@ Now I got the credentials of user →
 
 password : server
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now let’s SSH into it ➡️
@@ -97,6 +100,7 @@ Now lets also set the PATH file —>
 35253d886842075b2c6390f35946e41f
 296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:~$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now lets enumerate freely —>
@@ -127,6 +131,7 @@ After reading it I got the steps to perform this exploitation →
 296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:~$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Lets wait for cronjob to execute and wait for nc respomse →
 
@@ -152,6 +157,7 @@ cat root.txt
 Thanks for playing! - Felipe Winsnes (@whitecr0wz)
 root@60832e9f188106ec5bcc4eb7709ce592:~#
 ```
+{: .nolineno}
 
 > If you have any questions or suggestions, please leave a comment below.
 Thank You ! 

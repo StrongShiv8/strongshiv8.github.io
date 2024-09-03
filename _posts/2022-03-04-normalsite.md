@@ -38,6 +38,7 @@ image:
 This is a plaintext code snippet.
 ```
 {: .nolineno}
+{: .nolineno}
 
 <!-- ![Test](/Vulnhub-Files/img/Bob/Untitled%203.png "Test") -->
 <p>
@@ -53,6 +54,7 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
+{: .nolineno}
 
 > If you have any questions or suggestions, please leave a comment below.
 Thank You ! 

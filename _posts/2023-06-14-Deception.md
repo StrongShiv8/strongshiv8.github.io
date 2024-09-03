@@ -1,6 +1,6 @@
 ---
 title: Deception
-categories: [Proving Grounds Play]
+categories: [Proving Grounds, Play]
 tags: [Recon, SUIDs, python, Wordpress, PrivEsc, CMS]
 image:
   path: /Vulnhub-Files/img/Deception/Untitled%202.png
@@ -15,6 +15,7 @@ image:
 ```bash
 IP : 10.0.2.40
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Port Scan Results ➡️
@@ -40,6 +41,7 @@ PORT   STATE SERVICE VERSION
 MAC Address: 08:00:27:86:C5:24 (Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Web Enumeration ➡️
@@ -81,6 +83,7 @@ API new : 882CF99
 API token : 5F4DCC3B5AA765D61D8327DEB882CF99
 ```
 {: .nolineno}
+{: .nolineno}
 
 After decoding this md5 hash , I got this >>
 
@@ -95,6 +98,7 @@ Credentials for SSH >>
 username : you know it >> yash
 password : password    >> 5F4DCC3B5AA765D61D8327DEB882CF99
 ```
+{: .nolineno}
 {: .nolineno}
 
 ```bash
@@ -137,6 +141,7 @@ JUST BELIEVE IN YOU!!
 71C480DF93D6AE2F1EFAD1447C66C9525E316218CF51FC8D9ED832F2DAF18B73
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now lets check the SUIDs files ➡️
 
@@ -162,6 +167,7 @@ Attckers Machine >>
 second flag : FBC9446011CF5B198ED9596CEFBC79BB
 But still it is nooOBB!
 ```
+{: .nolineno}
 
 > If you have any questions or suggestions, please leave a comment below.
 Thank You ! 

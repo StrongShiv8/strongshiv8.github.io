@@ -52,6 +52,7 @@ ___
 IP : 10.0.2.16
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Port Scan Results ⤵️
 
@@ -67,6 +68,7 @@ OPEN PORTS ->
 80    HTTP (robot.txt found)
 8008  HTTP (Recon more require !)
 ```
+{: .nolineno}
 {: .nolineno}
 
 ---
@@ -84,6 +86,7 @@ robots.txt ➡️
 ```bash
 Flag 1 → B34rcl4ws
 ```
+{: .nolineno}
 {: .nolineno}
 
 This is the source code of main page →
@@ -104,6 +107,7 @@ users ->
 	michelle
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2010.png)
 
@@ -121,6 +125,7 @@ Lets decode this one →
 spanky
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2014.png)
 
@@ -128,12 +133,14 @@ spanky
 Flag #2: thisisthesecondflagyayyou.txt
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2015.png)
 
 ```bash
 Z4l1nsky
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2016.png)
@@ -167,6 +174,7 @@ feroxbuster -a "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKi
 Safari/8536.25" --url http://10.0.2.16:8008/NickIzL33t -w /usr/share/wordlists/rockyou.txt -t 100 -k
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2022.png)
 
@@ -197,6 +205,7 @@ Username: bigtommysenior
 Password: fatguyinalittlecoat
 ```
 {: .nolineno}
+{: .nolineno}
 
 Lets try wpscan for Tom now lets see if I can find password of his account →
 
@@ -206,6 +215,7 @@ Lets try wpscan for Tom now lets see if I can find password of his account →
 Username → tom
 Password  → tomtom1
 ```
+{: .nolineno}
 {: .nolineno}
 
 After loging in I got this →
@@ -221,6 +231,7 @@ Username: bigtommysenior
 Password: fatguyinalittlecoat1938!!
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2032.png)
 
@@ -230,6 +241,7 @@ Password: fatguyinalittlecoat1938!!
 EditButton
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2034.png)
 
@@ -238,6 +250,7 @@ My SQL Credentials ->
 user : wordpressuser
 pass : CaptainLimpWrist!!!
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2035.png)
@@ -268,6 +281,7 @@ Now lets combine all the flags →
 Flag 5 → Buttcrack
 LOOT.ZIP (password)→ B34rcl4wsZ4l1nskyTinyHeadEditButtonButtcrack
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/TommyBoy1dot0/Untitled%2042.png)

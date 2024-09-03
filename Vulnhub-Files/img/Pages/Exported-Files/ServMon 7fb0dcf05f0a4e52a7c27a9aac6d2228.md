@@ -74,6 +74,7 @@ PORT      STATE    SERVICE       VERSION
 49669/tcp open     msrpc         Microsoft Windows RPC
 49670/tcp open     msrpc         Microsoft Windows RPC
 ```
+{: .nolineno}
 
 ## FTP Enumeration ⤵️
 
@@ -143,6 +144,7 @@ File may not have transferred correctly.
 182 bytes received in 00:00 (0.70 KiB/s)
 ftp>
 ```
+{: .nolineno}
 
 These were the content of these files :
 
@@ -164,6 +166,7 @@ Nadine
 4) Remove public access to NVMS
 5) Place the secret files in SharePoint
 ```
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -203,6 +206,7 @@ IfH3s4b0Utg0t0H1sH0me
 Gr4etN3w5w17hMySk1Pa5$
 ++++++++++  END  ++++++++++
 ```
+{: .nolineno}
 
   
 
@@ -228,6 +232,7 @@ nadine
 Nathan
 Nadine
 ```
+{: .nolineno}
 
 ## SSH Login ⤵️
 
@@ -293,6 +298,7 @@ nadine@SERVMON C:\Users\Nadine>type Desktop\user.txt
 
 nadine@SERVMON C:\Users\Nadine>
 ```
+{: .nolineno}
 
 I don’t have very good privileges so I enumerated few other services like port 8443 which is running `NSClinet++` site.
 
@@ -314,6 +320,7 @@ Microsoft Windows [Version 10.0.17763.864]
 
 nadine@SERVMON C:\Users\Nadine> 
 ```
+{: .nolineno}
 
 I got this port 8443 on 127.0.0.1 (localhost) site so lets access the `NSClient++` site , and lets use that exploit to move further and find the password →
 
@@ -342,6 +349,7 @@ allowed hosts = 127.0.0.1
 ; Undocumented key
 ssl options = no-sslv2,no-sslv3
 ```
+{: .nolineno}
 
 I also noticed host 127.0.0.1 is allowed so lets use the password for login and After login I got this dashboard →
 

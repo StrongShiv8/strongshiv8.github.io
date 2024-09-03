@@ -1,6 +1,6 @@
 ---
 title: Boss Players CTF
-categories: [Proving Grounds Play]
+categories: [Proving Grounds, Play]
 tags: [Command Injection, Recon, SUIDs, find, PrivEsc, RFI, grep]
 image:
   path: https://miro.medium.com/v2/resize:fit:1200/1*fiNtXsFnX5MR7BPQV_wBvg.png
@@ -14,8 +14,10 @@ image:
 
 ```
 {: .nolineno}
+{: .nolineno}
 IP : 10.0.2.38
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Port Scan Results ⤵️
@@ -39,6 +41,7 @@ PORT   STATE SERVICE VERSION
 MAC Address: 08:00:27:E0:9B:01 (Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Web Enumeration ⬇️
@@ -73,6 +76,7 @@ cat root.txt
 Y29uZ3JhdHVsYXRpb25zCg==
 #
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%208.png)

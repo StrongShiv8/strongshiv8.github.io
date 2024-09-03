@@ -38,6 +38,7 @@ image:
 IP : 10.0.2.20
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -51,6 +52,7 @@ OPEN PORTS >
 80    HTTP
 33060 mysql
 ```
+{: .nolineno}
 {: .nolineno}
 
 ---
@@ -75,6 +77,7 @@ Now lets try Shell with this private key →
 Commands →  ssh oscp@10.0.2.21 -i private_key_openssl
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![91-1.png](/Vulnhub-Files/img/Infosec_prep_OSCP/91-1.png)
 
@@ -85,6 +88,7 @@ I checked the configuration file of the wordpress site that is `wp-config.php` f
 ```bash
 wordpress : Oscp12345!
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets check the mysql database from the victim machine and look for some interesting data.
@@ -104,6 +108,7 @@ As I got bash as SUID permission so it is easier said then done to be a root now
 ```bash
 flag.txt → d73b04b0e696b0945283defa3eee4538
 ```
+{: .nolineno}
 
 > If you have any questions or suggestions, please leave a comment below.
 Thank You ! 

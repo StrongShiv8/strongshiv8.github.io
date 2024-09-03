@@ -56,6 +56,7 @@ MAC Address: 08:00:27:E0:55:E3 (Oracle VirtualBox virtual NIC)
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -91,6 +92,7 @@ drwxr-xr-x    2 0        119          4096 Sep 13 14:30 ..
 ftp>
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I downloaded all the pdfs through `get <PDF_NAME>` →
 
@@ -122,6 +124,7 @@ Producer                        : LibreOffice 7.3
 Create Date                     : 2023:09:13 12:03:17+02:00
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I used some scripting techniques like this →
 
@@ -133,6 +136,7 @@ richard
 crystal
 catherine
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I put these names in `user.txt` file .
@@ -148,6 +152,7 @@ Afterthat I created the wordlist file from its website with cewl tool ⇒
 333
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now its time for SSH →
 
@@ -160,6 +165,7 @@ I will be using this wordlists for ssh bruteforce using hydra tool →
 ```bash
 joseph : wealthiest
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## SSH SHELL ⤵️
@@ -341,6 +347,7 @@ root@elite-economists:~# cat /home/joseph/user.txt
 Flag: HMV{FLAGFLAGFLAGFLAGFLAG}
 root@elite-economists:~#
 ```
+{: .nolineno}
 {: .nolineno}
 
 I am root now !!

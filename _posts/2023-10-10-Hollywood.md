@@ -165,6 +165,7 @@ Host script results:
 |_  System time: 2023-10-03T23:58:13+08:00
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -347,6 +348,7 @@ The command completed successfully.
 
 C:\>
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I have Administrators privileges too so , I can find all the FLAGs from here !!

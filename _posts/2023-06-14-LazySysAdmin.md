@@ -1,6 +1,6 @@
 ---
 title: LazySysAdmin
-categories: [Proving Grounds Play]
+categories: [Proving Grounds, Play]
 tags: [Password Bruteforce, PrivEsc]
 image:
   path: https://www.infosecarticles.com/content/images/2020/09/mondays.png
@@ -15,6 +15,7 @@ image:
 ```bash
 IP : 192.168.249.131
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Port Scan Results ➡️
@@ -56,6 +57,7 @@ PORT     STATE SERVICE     VERSION
 MAC Address: 00:0C:29:34:9D:0A (VMware)
 Service Info: Hosts: LAZYSYSADMIN, Admin.local; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+{: .nolineno}
 {: .nolineno}
 
 ## Web Enumeration ➡️
@@ -127,6 +129,7 @@ by Ben "epi" Risher 🤓                 ver: 2.9.1
 [####################] - 9m   1323276/1323276 2260/s  http://192.168.249.131/phpmyadmin/
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now Lets check the wordpress site now ⤵️
 
@@ -166,6 +169,7 @@ pf%&1nRpaj^68ZeV2St9GkdoDkj48Fl$MI97Zt2nebt02
 bhO!5Je65B6Z0bhZhQ3W64wL65wonnQ$@yw%Zhy0U19pu
 root@LazySysAdmin:/root#
 ```
+{: .nolineno}
 
 > If you have any questions or suggestions, please leave a comment below.
 Thank You ! 

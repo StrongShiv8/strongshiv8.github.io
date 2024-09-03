@@ -54,6 +54,7 @@ Host script results:
 |_  start_date: 2024-01-04T20:05:04
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Public Exploit Enumeration ⤵️
 
@@ -68,6 +69,7 @@ PORT     STATE SERVICE VERSION
 9256/tcp open  achat   AChat chat system
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I searched online related to this exploit and got it →
 
@@ -80,6 +82,7 @@ Now I searched online related to this exploit and got it →
 ┌──(kali㉿kali)-[~/Downloads/HTB/Chatterbox]
 └─$ open achat.py
 ```
+{: .nolineno}
 {: .nolineno}
 
 It is basically performing buffer overflow attack and I need to have latest payload modified from attacker machine to execute it →
@@ -104,6 +107,7 @@ buf += b"\x31\x41\x49\x41\x49\x41\x42\x41\x42\x41\x42\x51"
 ...
 ...
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I replaced the payload along with `server_address = ('10.10.10.74', 9256)` with victim machine IP address and started listener on port 4444 .
@@ -186,6 +190,7 @@ C:.
 
 C:\Users\Alfred>
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I ran winpeas in this box and got this password →
@@ -271,6 +276,7 @@ Successfully processed 1 files; Failed processing 0 files
 C:\Users\Administrator>
 ```
 {: .nolineno}
+{: .nolineno}
 
 Since root.txt file have only permission from Administrator so the user Alfred can’t open it but user Alfred can change the permissions of this file also like this →
 
@@ -293,6 +299,7 @@ type Desktop\root.txt
 
 C:\Users\Administrator>
 ```
+{: .nolineno}
 {: .nolineno}
 
 I am Administrator Now as I have full access !!

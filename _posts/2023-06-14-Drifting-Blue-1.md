@@ -1,6 +1,6 @@
 ---
 title: Drifting Blue 1
-categories: [Proving Grounds Play]
+categories: [Proving Grounds, Play]
 tags: [DirtyCow, Password Bruteforce, PrivEsc, fcrackzip, File Upload]
 image:
   path: /Vulnhub-Files/img/Drifting-Blue-1/166-3.png
@@ -28,6 +28,7 @@ get flags
 IP : 10.0.2.19
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -37,6 +38,7 @@ IP : 10.0.2.19
 OPEN PORT >
 80   HTTP
 ```
+{: .nolineno}
 {: .nolineno}
 
 ---
@@ -63,6 +65,7 @@ Now I have to crack the password for the sapmmer.zip file →
 myspace4
 ```
 {: .nolineno}
+{: .nolineno}
 
 ![166-9.png](/Vulnhub-Files/img/Drifting-Blue-1/166-9.png)
 
@@ -71,6 +74,7 @@ myspace4
 ```bash
 mayer : lionheart
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![166-11.png](/Vulnhub-Files/img/Drifting-Blue-1/166-11.png)
@@ -96,6 +100,7 @@ Now Only I have to load this url → **[http://10.0.2.19/textpattern/files/shell
 ```bash
 drifter : imjustdrifting31
 ```
+{: .nolineno}
 {: .nolineno}
 
 ![166-15.png](/Vulnhub-Files/img/Drifting-Blue-1/166-15.png)

