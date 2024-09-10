@@ -37,7 +37,6 @@ This works better with VirtualBox rather than VMware.
 IP : 10.0.2.17
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -49,7 +48,6 @@ OPEN PORTS >
 80     HTTP
 33060  mysql
 ```
-{: .nolineno}
 {: .nolineno}
 
 
@@ -69,7 +67,6 @@ command :
 sqlmap -u "<URL>" --risk 3 --level 5
 ```
 {: .nolineno}
-{: .nolineno}
 
 ![164-6.png](/Vulnhub-Files/img/Funbox-Easy/164-6.png)
 
@@ -78,7 +75,6 @@ sqlmap -u "<URL>" --risk 3 --level 5
 ```bash
 admin : admin
 ```
-{: .nolineno}
 {: .nolineno}
 
 ![164-8.png](/Vulnhub-Files/img/Funbox-Easy/164-8.png)
@@ -110,7 +106,6 @@ Now I got too much options so lets try least interesting one time →
 ```bash
 command : sudo /usr/bin/time /bin/sh
 ```
-{: .nolineno}
 {: .nolineno}
 
 ![164-14.png](/Vulnhub-Files/img/Funbox-Easy/164-14.png)

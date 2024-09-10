@@ -38,7 +38,6 @@ image:
 This is a plaintext code snippet.
 ```
 {: .nolineno}
-{: .nolineno}
 
 <!-- ![Test](/Vulnhub-Files/img/Bob/Untitled%203.png "Test") -->
 <p>

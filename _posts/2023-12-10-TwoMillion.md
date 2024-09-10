@@ -54,7 +54,6 @@ PORT      STATE    SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
-{: .nolineno}
 {: file='Nmap_Result.txt'}
 
 ## Web Enumeartion ⤵️
@@ -76,7 +75,6 @@ I checked the other .js file and this file is obfuscated so I used the deobfusca
 ```URL
 http://2million.htb/js/inviteapi.min.js
 ```
-{: .nolineno}
 {: .nolineno}
 
 ![Untitled](TwoMillion/Untitled%204.png)
@@ -117,7 +115,6 @@ function makeInviteCode() {
 }
 ```
 {: .nolineno}
-{: .nolineno}
 {: file='/js/inviteapi.min.js'}
 
 In this code I clearly see how code is generated so lets try it out →
@@ -136,10 +133,8 @@ I got the invite code encoded as base64 →
 
 ```
 {: .nolineno}
-{: .nolineno}
 31JEX-R97V8-RATI1-XIE4K
 ```
-{: .nolineno}
 {: .nolineno}
 
 Let’s use this invite code to register a user →
@@ -188,10 +183,8 @@ so I am admin as a user `shiv` , so lets generate the vpn file as admin →
 
 ```
 {: .nolineno}
-{: .nolineno}
 /api/v1/admin/vpn/generate
 ```
-{: .nolineno}
 {: .nolineno}
 
 ![Untitled](TwoMillion/Untitled%2018.png)
@@ -224,7 +217,6 @@ admin@2million:/$ which gcc
 admin@2million:/$
 ```
 {: .nolineno}
-{: .nolineno}
 
 I searched on web related to `/tmp/ovlcap/upper/magic` exploit or any payload and I got one that is [OverlayFS Local Privesc](https://github.com/briskets/CVE-2021-3493/tree/main) which is based on **CVE-2021-3493** but it did’t work so moved on to different exploit and also in a while I got some more info about the exploit from machine only through `/var/mail/admin` →
 
@@ -245,7 +237,6 @@ I am know you are working as fast as you can to do the DB migration. While we ar
 HTB Godfather
 admin@2million:/var/mail$
 ```
-{: .nolineno}
 {: .nolineno}
 
 > So I looked for CVEs from this year and I got one **[CVE-2023-0386](https://github.com/sxlmnwb/CVE-2023-0386)** and its exploit also so lets use it I downloaded the zip file in attackers machine and transfered that zip file into the victim machine through wget command and python web server and then I unziped it and used as instructed in the exploit README.md file .

@@ -14,10 +14,8 @@ image:
 
 ```
 {: .nolineno}
-{: .nolineno}
 IP : 10.0.2.38
 ```
-{: .nolineno}
 {: .nolineno}
 
 ## Port Scan Results ⤵️
@@ -41,7 +39,6 @@ PORT   STATE SERVICE VERSION
 MAC Address: 08:00:27:E0:9B:01 (Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
-{: .nolineno}
 {: .nolineno}
 
 ## Web Enumeration ⬇️
@@ -76,7 +73,6 @@ cat root.txt
 Y29uZ3JhdHVsYXRpb25zCg==
 #
 ```
-{: .nolineno}
 {: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/Boss-Players-CTF/Untitled%208.png)

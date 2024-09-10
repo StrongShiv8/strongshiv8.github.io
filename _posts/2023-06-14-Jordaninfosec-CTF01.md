@@ -16,7 +16,6 @@ image:
 IP : 10.0.2.46 
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -37,7 +36,6 @@ hint.txt —>
 -->
 ```
 {: .nolineno}
-{: .nolineno}
 
 Lets login into this site —> 
 
@@ -52,7 +50,6 @@ As ⬆️ I got success in uploading the files so lets load that shell file ➡�
 ```bash
 URL --> http://10.0.2.46/uploaded_files/shell.php
 ```
-{: .nolineno}
 {: .nolineno}
 
 In response to that I got this —> 
@@ -80,7 +77,6 @@ password : 3vilH@ksor
 www-data@Jordaninfosec-CTF01:/$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now thank god I got the credentials I was pissed so bad —>
 
@@ -94,7 +90,6 @@ whoami
 technawi
 technawi@Jordaninfosec-CTF01:/$
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now lets see how technawi can lead me to root —>
@@ -113,7 +108,6 @@ User technawi may run the following commands on Jordaninfosec-CTF01:
 technawi@Jordaninfosec-CTF01:/$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now its root time ➡️
 
@@ -125,7 +119,6 @@ whoami
 root
 root@Jordaninfosec-CTF01:/#
 ```
-{: .nolineno}
 {: .nolineno}
 
 Let’s find out the last flag ➡️

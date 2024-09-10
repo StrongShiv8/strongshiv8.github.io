@@ -72,7 +72,6 @@ Host script results:
 |_nbstat: NetBIOS name: STEELMOUNTAIN, NetBIOS user: <unknown>, NetBIOS MAC: 02:31:ea:79:46:4d (unknown)
 ```
 {: .nolineno}
-{: .nolineno}
 ## Web Enumeration ⤵️
 
 while checking port 8080 I got this <mark style="background: #ADCCFFA6;">HFS file server</mark> site and its version noticeable ->
@@ -106,7 +105,6 @@ steelmountain
 PS C:\Users\bill\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup> 
 ```
 {: .nolineno}
-{: .nolineno}
 
 I uploaded winpeas.exe Tool to enumerate further and I got some info 🔽
 ![Image](Pasted%20image%2020240304104921.png)
@@ -127,7 +125,6 @@ Payload size: 351 bytes
 Final size of exe file: 73802 bytes
 Saved as: Advanced.exe
 ```
-{: .nolineno}
 {: .nolineno}
 Lets upload it now ->
 ![Image](Pasted%20image%2020240304115351.png)
@@ -172,7 +169,6 @@ type Desktop\root.txt
 9af5f314f57607c00fd09803a587db80
 C:\Users\Administrator>
 ```
-{: .nolineno}
 {: .nolineno}
 I am Administrator Now !!
 

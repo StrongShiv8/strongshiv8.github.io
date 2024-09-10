@@ -21,7 +21,6 @@ image:
 IP : 10.0.2.25
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -36,7 +35,6 @@ OPEN PORTS >
 445  SMB
 8000 HTTP
 ```
-{: .nolineno}
 {: .nolineno}
 
 ---
@@ -75,7 +73,6 @@ ID     : daisa@photographer.com
 pass : babygirl
 ```
 {: .nolineno}
-{: .nolineno}
 
 I guess I got in successfully !
 
@@ -105,7 +102,6 @@ Then I executed the python reverse shell code and I got this →
 user.txt → d41d8cd98f00b204e9800998ecf8427e
 ```
 {: .nolineno}
-{: .nolineno}
 
 while cheching the SUID file I got this →
 
@@ -120,7 +116,6 @@ while cheching the SUID file I got this →
 ```bash
 proof.txt → d41d8cd98f00b204e9800998ecf8427e
 ```
-{: .nolineno}
 {: .nolineno}
 
 <hr>

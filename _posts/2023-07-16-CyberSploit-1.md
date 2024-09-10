@@ -27,7 +27,6 @@ FROM THIS VMs YOU WILL LEARN ABOUT ENCODER-DECODER & EXPLOIT-DB.
 IP : 192.168.195.92
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -50,7 +49,6 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
-{: .nolineno}
 
 ---
 
@@ -66,7 +64,6 @@ After checking the source code I got this →
 username:itsskv
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now lets check robots.txt file →
 
@@ -79,7 +76,6 @@ Now after decoding this base64 encoding I got this →
 └─$ echo "Y3liZXJzcGxvaXR7eW91dHViZS5jb20vYy9jeWJlcnNwbG9pdH0=" | base64 -d
 cybersploit{youtube.com/c/cybersploit}
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now lets use this ⬆️ above string to use as a password for ssh login So, lets give it a try at least →
@@ -107,7 +103,6 @@ Your Hardware Enablement Stack (HWE) is supported until April 2017.
 itsskv@cybersploit-CTF:~$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now when I am inside the shell lets try different things to get to root →
 
@@ -119,7 +114,6 @@ itsskv@cybersploit-CTF:~$ cat flag2.txt
 Your flag is in another file...
 itsskv@cybersploit-CTF:~$
 ```
-{: .nolineno}
 {: .nolineno}
 
 Lets check the SUIDs and GUIDs files →
@@ -177,7 +171,6 @@ itsskv@cybersploit-CTF:/$ find / -perm -g=s -type f 2>/dev/null
 itsskv@cybersploit-CTF:/$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now after checking so many things lets look for Kernel Exploitation →
 
@@ -186,7 +179,6 @@ itsskv@cybersploit-CTF:/home/cybersploit$ uname -a
 Linux cybersploit-CTF 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:50:54 UTC 2014 i686 athlon i386 GNU/Linux
 itsskv@cybersploit-CTF:/home/cybersploit$
 ```
-{: .nolineno}
 {: .nolineno}
 
 After reconing online I got an exploit → [https://www.exploit-db.com/raw/37292](https://www.exploit-db.com/raw/37292)
@@ -263,7 +255,6 @@ root@cybersploit-CTF:/root# ip a
        valid_lft forever preferred_lft forever
 root@cybersploit-CTF:/root#
 ```
-{: .nolineno}
 {: .nolineno}
 
 ---

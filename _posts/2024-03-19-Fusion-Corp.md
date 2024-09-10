@@ -78,7 +78,6 @@ Host script results:
 Service detection performed.
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -134,7 +133,6 @@ dpertersen
 
 ```
 {: .nolineno}
-{: .nolineno}
 
 Lets look for AS-REP-ROSTABLE users that can extract the TGT ticket which helps the attacker to crack the password out of it with <mark style="background: #FF5582A6;">GetNPUsers.py</mark> Tool.
 
@@ -155,7 +153,6 @@ Press 'q' or Ctrl-C to abort, almost any other key for status
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed.
 ```
-{: .nolineno}
 {: .nolineno}
 
 I got the password so lets see what privileges does this user have with <mark style="background: #FF5582A6;">netexec</mark> Tool.
@@ -210,7 +207,6 @@ THM{FLAG_FLAG_FLAG_FLAG_FLAG_FLAG}
 *Evil-WinRM* PS C:\Users\jmurphy> 
 ```
 {: .nolineno}
-{: .nolineno}
 
 I checked the privileges and found this user is a part of <mark style="background: #D2B3FFA6;">Backup Operator</mark> group so I tried this Tool [Backup-ToSystem.ps1](https://raw.githubusercontent.com/Hackplayers/PsCabesha-tools/master/Privesc/Backup-ToSystem.ps1) .
 
@@ -263,7 +259,6 @@ User claims unknown.
 Kerberos support for Dynamic Access Control on this device has been disabled.
 *Evil-WinRM* PS C:\Users\jmurphy>
 ```
-{: .nolineno}
 {: .nolineno}
 
 I found this Tool from this [Blog](https://www.hackplayers.com/2020/06/backup-tosystem-abusando-de-los.html) post . The tool mainly checks the <mark style="background: #BBFABBA6;">SeBackupPrivilege</mark> Enable and then apply changes according to the ACL permissions like to add a user or doing any task as `nt \authority system` user. 
@@ -322,7 +317,6 @@ cat D*Evil-WinRM* PS C:\Users\Administrator> cat Desktop/flag.txt
 THM{FLAG_FLAG_FLAG_FLAG_FLAG}
 *Evil-WinRM* PS C:\Users\Administrator>
 ```
-{: .nolineno}
 {: .nolineno}
 
 I am Administrator Now !!

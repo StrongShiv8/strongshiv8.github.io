@@ -16,7 +16,6 @@ image:
 IP : 192.168.249.131
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Port Scan Results ➡️
 
@@ -58,13 +57,12 @@ MAC Address: 00:0C:29:34:9D:0A (VMware)
 Service Info: Hosts: LAZYSYSADMIN, Admin.local; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Web Enumeration ➡️
 
 ![Untitled](/Vulnhub-Files/img/LazySysAdmin/Untitled%201.png)
 
-### Directory Traversal ⤵️
+### Directory / Files Bruteforcing ⤵️
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Lazysysadmin]
@@ -128,7 +126,6 @@ by Ben "epi" Risher 🤓                 ver: 2.9.1
 [####################] - 11m  1323276/1323276 1957/s  http://192.168.249.131/javascript/ 
 [####################] - 9m   1323276/1323276 2260/s  http://192.168.249.131/phpmyadmin/
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now Lets check the wordpress site now ⤵️

