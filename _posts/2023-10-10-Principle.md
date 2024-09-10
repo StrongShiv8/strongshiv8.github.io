@@ -37,7 +37,7 @@ I found this page on port 80 →
 
 ![Untitled](/Vulnhub-Files/img/Principle/Untitled%201.png)
 
-After Directory Traversal I got some directories like robots.txt file also →
+After directory or files bruteforcing I got some files like robots.txt also →
 
 ![Untitled](/Vulnhub-Files/img/Principle/Untitled%202.png)
 
@@ -118,7 +118,7 @@ hellfire                [Status: 200, Size: 1659, Words: 688, Lines: 52, Duratio
 
 ![Untitled](/Vulnhub-Files/img/Principle/Untitled%207.png)
 
-Now with directory traversal on this domain I got upload.php page that takes input in image format only so lets upload our RFI payload with null byte to invade the image format issue →
+Now with directory or files bruteforcing on this domain I got upload.php page that takes input in image format only so lets upload our RFI payload with null byte to invade the image format issue →
 
 ![Untitled](/Vulnhub-Files/img/Principle/Untitled%208.png)
 

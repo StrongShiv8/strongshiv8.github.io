@@ -123,7 +123,7 @@ PORT      STATE  SERVICE          VERSION
 
 ![Untitled](/Vulnhub-Files/img/Amaterasu/Untitled%201.png)
 
-Now I have to use feroxbuster for Directory Traversal →
+Now I have to use feroxbuster for directory or files bruteforcing →
 
 ![Untitled](/Vulnhub-Files/img/Amaterasu/Untitled%202.png)
 

@@ -74,7 +74,7 @@ Now lets look at this directory —>
 
 ![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled%203.png)
 
-Lets check for english link which leads me for directory traversal attack → `/etc/passwd` →
+Lets check for english link which leads me for directory or files bruteforcing attack → `/etc/passwd` →
 
 ![Untitled](/Vulnhub-Files/img/Inclusiveness/Untitled%204.png)
 

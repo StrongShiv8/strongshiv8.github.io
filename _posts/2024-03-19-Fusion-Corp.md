@@ -87,7 +87,7 @@ I checked port 80 and found this static page no any interesting Users found thro
 ![Image](Pasted%20image%2020240320222825.png)
 _Dashboard Page_
 
-I then looked for directory traversal and I found some indexed directories through <mark style="background: #FF5582A6;">feroxbuster</mark> Tool like this 🔻
+I then looked for directory or files bruteforcing and I found some indexed directories through <mark style="background: #FF5582A6;">feroxbuster</mark> Tool like this 🔻
 
 ![Image](Pasted%20image%2020240320223659.png)
 _Feroxbuster Output_

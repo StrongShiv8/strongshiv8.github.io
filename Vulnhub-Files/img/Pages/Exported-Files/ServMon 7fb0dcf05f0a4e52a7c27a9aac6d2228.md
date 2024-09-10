@@ -174,9 +174,9 @@ I checked port 80 and got this `NVMS-1000` CMS site :
 
 ![Untitled](ServMon%207fb0dcf05f0a4e52a7c27a9aac6d2228/Untitled.png)
 
-I checked online about its vulnerability and I got one exploit related to Directory Traversal so lets use this exploit →
+I checked online about its vulnerability and I got one exploit related to directory or files bruteforcing so lets use this exploit →
 
-[TVT NVMS 1000 - Directory Traversal](https://www.exploit-db.com/exploits/48311)
+[TVT NVMS 1000 - directory or files bruteforcing](https://www.exploit-db.com/exploits/48311)
 
 I used this exploit but it throws some error so I used another same exploit from this github →
 

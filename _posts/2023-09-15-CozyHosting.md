@@ -48,9 +48,9 @@ After searching on web about this error I got this page →
 
 [https://springhow.com/this-application-has-no-explicit-mapping-for-error/](https://springhow.com/this-application-has-no-explicit-mapping-for-error/)
 
-here it is using org.springframework.boot so I used this into the directory traversal,
+here it is using org.springframework.boot so I used this into the directory or files bruteforcing,
 
-Lets see the directory traversal of Spring Boot file system →
+Lets see the directory or files bruteforcing of Spring Boot file system →
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/HTB/CozyHosting]

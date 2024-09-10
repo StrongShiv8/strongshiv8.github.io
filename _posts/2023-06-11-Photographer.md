@@ -45,7 +45,7 @@ OPEN PORTS >
 
 ![125-1.png](/Vulnhub-Files/img/Photographer/125-1.png)
 
-Lets first do some directory traversal through `feroxbuster` Tool →
+Lets first do some directory or files bruteforcing through `feroxbuster` Tool →
 
 ![127-1.png](/Vulnhub-Files/img/Photographer/127-1.png)
 

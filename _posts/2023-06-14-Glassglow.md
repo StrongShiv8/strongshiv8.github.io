@@ -46,7 +46,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ![Untitled](/Vulnhub-Files/img/Glassglow/Untitled%201.png)
 
-while Directory Traversal I got these directories →
+while directory or files bruteforcing I got these directories →
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Glasglow]

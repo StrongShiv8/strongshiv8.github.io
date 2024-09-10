@@ -42,7 +42,7 @@ Now lets set the hosts file name as pilgrimage.htb for the IP address that we go
 
 ![Untitled](/Vulnhub-Files/img/Pilgrimage/Untitled%201.png)
 
-After Directory Traversal I got the .git file so lets dump that with git-dumper Tool .
+After directory or files bruteforcing I got the .git file so lets dump that with git-dumper Tool .
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/HTB/Pilgrimage]

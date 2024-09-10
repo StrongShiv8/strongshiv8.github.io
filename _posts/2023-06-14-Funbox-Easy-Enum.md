@@ -68,7 +68,7 @@ OPEN PORTS >
 
 ![165-5.png](/Vulnhub-Files/img/Funbox-Easy-Enum/165-5.png)
 
-Lets look into directory traversal files / folders →
+Lets look into directory or files bruteforcing files / folders →
 
 ![165-6.png](/Vulnhub-Files/img/Funbox-Easy-Enum/165-6.png)
 

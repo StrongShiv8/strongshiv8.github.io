@@ -61,7 +61,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%201.png)
 
-From directory traversal I got different files / directories —>
+From directory or files bruteforcing I got this —>
 
 ![Untitled](/Vulnhub-Files/img/Fowsniff-CTF/Untitled%202.png)
 

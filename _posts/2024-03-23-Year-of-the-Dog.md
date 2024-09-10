@@ -82,7 +82,7 @@ That is why I got confirmed that this database have 2 columns so lets try <mark 
 
 ![Untitled](Untitled%205.png)
 
-I tried to read the `config.php` file that I got from directory traversal so lets see →
+I tried to read the `config.php` file that I got from directory or files bruteforcing so lets see →
 
 ![Untitled](Untitled%206.png)
 

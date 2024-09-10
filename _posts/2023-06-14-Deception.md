@@ -48,7 +48,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ![Untitled](/Vulnhub-Files/img/Deception/Untitled%202.png)
 
-Now with directory traversal through `feroxbuster` Tool, I got wordpress site ➡️
+Now with directory or files bruteforcing through `feroxbuster` Tool, I got wordpress site ➡️
 
 ![Untitled](/Vulnhub-Files/img/Deception/Untitled%203.png)
 

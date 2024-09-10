@@ -104,7 +104,7 @@ while entering the creds I got this error which require token so lets see ⏬
 ![Image](Pasted%20image%2020240417145014.png)
 _Authentication failed due to token expiration_
 
-So I had to dig deeper into the <mark style="background: #D2B3FFA6;">api</mark> section in order to get the token so I did some directory traversal and found these ⏬
+So I had to dig deeper into the <mark style="background: #D2B3FFA6;">api</mark> section in order to get the token so I did some directory or files bruteforcing and found these ⏬
 
 ```bash
 feroxbuster -u https://nagios.monitored.htb/ -k -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-large-directories-lowercase.txt -t 100 --depth 5 -C 403,404,503,502 -o ferox_all.json

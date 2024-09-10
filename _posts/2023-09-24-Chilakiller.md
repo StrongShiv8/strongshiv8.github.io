@@ -161,7 +161,7 @@ Lets check port 80 →
 
 ![Untitled](/Vulnhub-Files/img/Chilakiller/Untitled%201.png)
 
-I got a nginx server runing so lets now see the directory traversal , first I couldn’t find anything than with different wordlists I got a hit and got a drupal site →
+I got a nginx server runing so lets now see the directory or files bruteforcing , first I couldn’t find anything than with different wordlists I got a hit and got a drupal site →
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10.150.150.182]
