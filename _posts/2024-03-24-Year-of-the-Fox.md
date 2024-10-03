@@ -12,8 +12,8 @@ image:
 
 | Machine Link       | [https://tryhackme.com/r/room/yotf](https://tryhackme.com/r/room/yotf) |
 | ------------------ | ---------------------------------------------------------------------- |
-| Operating System   | Linux                                                                  |
-| Difficulty         | Hard                                                                   |
+| Operating System   | <mark style="background: #FFF3A3A6;">Linux</mark>                                                                  |
+| Difficulty         | <mark style="background: #FF5582A6;"> Hard </mark>                                                                   |
 | Machine Created by | [MuirlandOracle](https://tryhackme.com/p/MuirlandOracle)               |
 
 ## Port Scan Results ⤵️

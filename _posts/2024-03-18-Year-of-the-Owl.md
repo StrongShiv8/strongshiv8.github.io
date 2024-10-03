@@ -13,8 +13,8 @@ image:
 
 | Machine Link       | [https://tryhackme.com/r/room/yearoftheowl](https://tryhackme.com/r/room/yearoftheowl) |
 | ------------------ | -------------------------------------------------------------------------------------- |
-| Operating System   | Windows                                                                                |
-| Difficulty         | Hard                                                                                   |
+| Operating System   | <mark style="background: #ADCCFFA6;"> Windows </mark>                                                                                |
+| Difficulty         | <mark style="background: #FF5582A6;"> Hard </mark>                                                                                   |
 | Machine Created by | [MuirlandOracle](https://tryhackme.com/p/MuirlandOracle)                               |
 
 ## Port Scan Results ⤵️

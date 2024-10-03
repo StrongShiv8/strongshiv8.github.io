@@ -12,8 +12,8 @@ image:
 
 | Machine Link       | [https://app.hackthebox.com/machines/Monitored](https://app.hackthebox.com/machines/Monitored)                   |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| Operating System   | Linux                                                                                                            |
-| Difficulty         | Medium                                                                                                           |
+| Operating System   | <mark style="background: #FFF3A3A6;">Linux</mark>                                                                                                            |
+| Difficulty         | <mark style="background: #FFB86CA6;"> Medium </mark>                                                                                                           |
 | Machine Created by | [TheCyberGeek &](https://app.hackthebox.com/users/114053) & [ruycr4ft](https://app.hackthebox.com/users/1253217) |
 
 ## Port Scan Results ⤵️

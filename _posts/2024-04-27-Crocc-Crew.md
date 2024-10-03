@@ -11,8 +11,8 @@ image:
 
 | Machine Link       | [https://tryhackme.com/r/room/crocccrew](https://tryhackme.com/r/room/crocccrew) |
 | ------------------ | -------------------------------------------------------------------------------- |
-| Operating System   | Windows (Active Directory)                                                       |
-| Difficulty         | Insane                                                                           |
+| Operating System   | <mark style="background: #FFB86CA6;">Windows (Active Directory)</mark>                                                       |
+| Difficulty         | <mark style="background: #FFB8EBA6;"> Insane </mark>                                                                           |
 | Machine Created by | [tryhackme](https://tryhackme.com/p/tryhackme)                                   |
 
 ## Port Scan Results ⤵️

@@ -11,8 +11,8 @@ image:
 
 | Machine Link       | [https://tryhackme.com/r/room/fusioncorp](https://tryhackme.com/r/room/fusioncorp) |
 | ------------------ | ---------------------------------------------------------------------------------- |
-| Operating System   | Windows (Active Directory)                                                         |
-| Difficulty         | Hard                                                                               |
+| Operating System   | <mark style="background: #FFB86CA6;">Windows (Active Directory)</mark>                                                         |
+| Difficulty         | <mark style="background: #FF5582A6;"> Hard </mark>                                                                               |
 | Machine Created by | [MrSeth6797](https://tryhackme.com/p/MrSeth6797)                                   |
 
 ## Port Scan Results ⤵️
