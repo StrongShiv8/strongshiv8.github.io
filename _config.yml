@@ -5,25 +5,18 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-
 baseurl: ""
+
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-
 lang: en
-
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Kolkata
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
-
-
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
-
 
 title: StrongShiv8 # the main title
 
@@ -41,28 +34,9 @@ github:
 twitter:
   username: StrongShiv8 # change to your twitter username
 
-title: Chirpy # the main title
-
-tagline: A text-focused Jekyll theme # it will display as the subtitle
-
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
-
-github:
-  username: github_username # change to your GitHub username
-
-twitter:
-  username: twitter_username # change to your Twitter username
-
-
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-
   name: Shivendra Prajapati
   email: lht.shivendra@gmail.com # change to your email address
   links:
@@ -72,18 +46,6 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/shivendra-prajapati-a788401a5/
-
-google_site_verification: # fill in to your verification string
-
-  name: your_full_name
-  email: example@domain.com # change to your email address
-  links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
 webmaster_verifications:
@@ -95,9 +57,11 @@ webmaster_verifications:
   facebook: # fill in your Facebook verification code
 
 
+
+google_site_verification: # fill in to your verification string
+
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
-
 
 google_analytics:
   id: # fill in your Google Analytics ID
@@ -127,24 +91,7 @@ analytics:
 pageviews:
   provider: # now only supports 'goatcounter'
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
 
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
-theme_mode: # [light|dark]
-
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
 # e.g. 'https://cdn.com'
 img_cdn:
 
@@ -163,26 +110,16 @@ theme_mode: # [light | dark]
 # e.g. 'https://cdn.com'
 cdn:
 
-# the avatar on sidebar, support local or CORS resources
-avatar:
-
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources
-
 
 # boolean type, the global switch for TOC in posts.
 toc: true
 
 comments:
-
   provider: giscus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
-
-  # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
-
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
@@ -191,7 +128,6 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-
     repo:               "StrongShiv8/strongshiv8.github.io" # <gh-username>/<repo>
     repo_id:            "R_kgDOJuXAnw"
     category:           "Comments"
@@ -202,43 +138,24 @@ comments:
     reactions_enabled:  '1'        # optional, default to the value of `1`
     theme:              "preferred_color_scheme"
 
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
-
-
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
     enabled: # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-
     env: # [development|production]
 
 pwa:
   enabled: true # the option for PWA feature
-
-paginate: 10
-
-
-env: # [development | production]
-
-pwa:
-  enabled: true # The option for PWA feature (installable)
   cache:
-    enabled: true # The option for PWA offline cache
+    enabled: true
     # Paths defined here will be excluded from the PWA cache.
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+
 
 paginate: 10
 
@@ -286,7 +203,6 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-
   - scope:
       path: assets/images/favicons
     values:
@@ -298,11 +214,6 @@ defaults:
 
 sass:
   quiet_deps: true
-
-
-sass:
-
-  style: compressed
 
 compress_html:
   clippings: all
@@ -316,7 +227,6 @@ compress_html:
 exclude:
   - "*.gem"
   - "*.gemspec"
-
   - tools
   - README.md
   - CHANGELOG.md
