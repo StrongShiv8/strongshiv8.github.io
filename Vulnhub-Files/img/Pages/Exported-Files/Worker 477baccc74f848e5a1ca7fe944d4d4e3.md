@@ -254,15 +254,13 @@ USER INFORMATION
 ----------------
 
 User Name                  SID                                                          
-========================== =============================================================
-iis apppool\defaultapppool S-1-5-82-3006700770-424185619-1745488364-794895919-4004696415
+========================== ======================================================iis apppool\defaultapppool S-1-5-82-3006700770-424185619-1745488364-794895919-4004696415
 
 GROUP INFORMATION
 -----------------
 
 Group Name                           Type             SID          Attributes                                        
-==================================== ================ ============ ==================================================
-Mandatory Label\High Mandatory Level Label            S-1-16-12288                                                   
+==================================== ================ ============ ===========================================Mandatory Label\High Mandatory Level Label            S-1-16-12288                                                   
 Everyone                             Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group
 BUILTIN\Users                        Alias            S-1-5-32-545 Mandatory group, Enabled by default, Enabled group
 NT AUTHORITY\SERVICE                 Well-known group S-1-5-6      Mandatory group, Enabled by default, Enabled group
@@ -277,8 +275,7 @@ PRIVILEGES INFORMATION
 ----------------------
 
 Privilege Name                Description                               State   
-============================= ========================================= ========
-SeAssignPrimaryTokenPrivilege Replace a process level token             Disabled
+============================= ========================================= =SeAssignPrimaryTokenPrivilege Replace a process level token             Disabled
 SeIncreaseQuotaPrivilege      Adjust memory quotas for a process        Disabled
 SeAuditPrivilege              Generate security audits                  Disabled
 SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled 

@@ -154,8 +154,7 @@ with `samdump2 Tool` and arguments as `SAM` and `SYSTEM` I can access the NTLM h
 hashcat (v6.2.6) starting
 
 OpenCL API (OpenCL 3.0 PoCL 4.0+debian  Linux, None+Asserts, RELOC, SPIR, LLVM 15.0.7, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
-=====================================================================
-* Device #1: cpu-penryn-Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz, 2913/5891 MB (1024 MB allocatable), 2MCU
+==============================================================* Device #1: cpu-penryn-Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz, 2913/5891 MB (1024 MB allocatable), 2MCU
 
 ...
 ...

@@ -55,8 +55,7 @@ I used it with metasploit like this →
 msf6 > search metabase
 
 Matching Modules
-================
-
+=========
    #  Name                                         Disclosure Date  Rank       Check  Description
    -  ----                                         ---------------  ----       -----  -----------
    0  exploit/linux/http/metabase_setup_token_rce  2023-07-22       excellent  Yes    Metabase Setup Token RCE

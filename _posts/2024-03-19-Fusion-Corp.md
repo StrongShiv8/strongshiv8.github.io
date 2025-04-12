@@ -217,16 +217,14 @@ USER INFORMATION
 ----------------
 
 User Name      SID
-============== =============================================
-fusion\jmurphy S-1-5-21-1898838421-3672757654-990739655-1104
+============== ======================================fusion\jmurphy S-1-5-21-1898838421-3672757654-990739655-1104
 
 
 GROUP INFORMATION
 -----------------
 
 Group Name                                 Type             SID          Attributes
-========================================== ================ ============ ==================================================
-Everyone                                   Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group
+========================================== ================ ============ ===========================================Everyone                                   Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group
 BUILTIN\Backup Operators                   Alias            S-1-5-32-551 Mandatory group, Enabled by default, Enabled group
 BUILTIN\Remote Management Users            Alias            S-1-5-32-580 Mandatory group, Enabled by default, Enabled group
 BUILTIN\Users                              Alias            S-1-5-32-545 Mandatory group, Enabled by default, Enabled group
@@ -242,8 +240,7 @@ PRIVILEGES INFORMATION
 ----------------------
 
 Privilege Name                Description                    State
-============================= ============================== =======
-SeMachineAccountPrivilege     Add workstations to domain     Enabled
+============================= ============================== SeMachineAccountPrivilege     Add workstations to domain     Enabled
 SeBackupPrivilege             Back up files and directories  Enabled
 SeRestorePrivilege            Restore files and directories  Enabled
 SeShutdownPrivilege           Shut down the system           Enabled

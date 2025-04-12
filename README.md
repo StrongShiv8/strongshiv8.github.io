@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Blog
 Check it out at [strongshiv8.github.io](https://strongshiv8.github.io)
 
@@ -60,7 +60,6 @@ $ docker cp cover.webp kungfux.github.io:/workspaces/kungfux.github.io/assets/me
   - `assets/css/jekyll-theme-chirpy.scss`
 - Meta `author` tag
   - `_includes/head.html`
-=======
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
@@ -104,4 +103,4 @@ This work is published under [MIT][mit] License.
 [chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
 [CD]: https://en.wikipedia.org/wiki/Continuous_deployment
 [mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
->>>>>>> v7.2.4
+

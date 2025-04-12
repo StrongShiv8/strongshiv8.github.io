@@ -118,8 +118,7 @@ PORT      STATE    SERVICE        VERSION
 |     MaxInactivityDuration
 |_    MaxInactivityDurationInitalDelay
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5672-TCP:V=7.94%I=7%D=10/3%Time=651C3189%P=x86_64-pc-linux-gnu%r(Ge
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)=======SF-Port5672-TCP:V=7.94%I=7%D=10/3%Time=651C3189%P=x86_64-pc-linux-gnu%r(Ge
 SF:tRequest,8,"AMQP\0\x01\0\0")%r(HTTPOptions,8,"AMQP\0\x01\0\0")%r(RTSPRe
 SF:quest,8,"AMQP\0\x01\0\0")%r(RPCCheck,8,"AMQP\0\x01\0\0")%r(DNSVersionBi
 SF:ndReqTCP,8,"AMQP\0\x01\0\0")%r(DNSStatusRequestTCP,8,"AMQP\0\x01\0\0")%
@@ -133,8 +132,7 @@ SF:alServer,8,"AMQP\0\x01\0\0")%r(NCP,8,"AMQP\0\x01\0\0")%r(NotesRPC,8,"AM
 SF:QP\0\x01\0\0")%r(WMSRequest,8,"AMQP\0\x01\0\0")%r(oracle-tns,8,"AMQP\0\
 SF:x01\0\0")%r(ms-sql-s,8,"AMQP\0\x01\0\0")%r(afp,8,"AMQP\0\x01\0\0")%r(gi
 SF:op,8,"AMQP\0\x01\0\0");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port61616-TCP:V=7.94%I=7%D=10/3%Time=651C3183%P=x86_64-pc-linux-gnu%r(N
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)=======SF-Port61616-TCP:V=7.94%I=7%D=10/3%Time=651C3183%P=x86_64-pc-linux-gnu%r(N
 SF:ULL,F4,"\0\0\0\xf0\x01ActiveMQ\0\0\0\n\x01\0\0\0\xde\0\0\0\t\0\x11TcpNo
 SF:DelayEnabled\x01\x01\0\x12SizePrefixDisabled\x01\0\0\tCacheSize\x05\0\0
 SF:\x04\0\0\x11StackTraceEnabled\x01\x01\0\x0cCacheEnabled\x01\x01\0\x14Ti
@@ -277,15 +275,13 @@ USER INFORMATION
 ----------------
 
 User Name      SID                                           
-============== ==============================================
-hollywood\user S-1-5-21-2591336358-2979681539-3579421877-1000
+============== =======================================hollywood\user S-1-5-21-2591336358-2979681539-3579421877-1000
 
 GROUP INFORMATION
 -----------------
 
 Group Name                                                    Type             SID                                            Attributes                                        
-============================================================= ================ ============================================== ==================================================
-Everyone                                                      Well-known group S-1-1-0                                        Mandatory group, Enabled by default, Enabled group
+============================================================= ================ ============================================== ===========================================Everyone                                                      Well-known group S-1-1-0                                        Mandatory group, Enabled by default, Enabled group
 NT AUTHORITY\Local account and member of Administrators group Well-known group S-1-5-114                                      Group used for deny only                          
 HOLLYWOOD\HomeUsers                                           Alias            S-1-5-21-2591336358-2979681539-3579421877-1001 Mandatory group, Enabled by default, Enabled group
 BUILTIN\Administrators                                        Alias            S-1-5-32-544                                   Group used for deny only                          
@@ -303,8 +299,7 @@ PRIVILEGES INFORMATION
 ----------------------
 
 Privilege Name                Description                          State   
-============================= ==================================== ========
-SeShutdownPrivilege           Shut down the system                 Disabled
+============================= ==================================== =SeShutdownPrivilege           Shut down the system                 Disabled
 SeChangeNotifyPrivilege       Bypass traverse checking             Enabled 
 SeUndockPrivilege             Remove computer from docking station Disabled
 SeIncreaseWorkingSetPrivilege Increase a process working set       Disabled

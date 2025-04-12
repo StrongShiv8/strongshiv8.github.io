@@ -6,7 +6,7 @@
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
-<<<<<<< HEAD
+
 #- type: email
 #  icon: "fas fa-envelope"
 #  noblank: true # open link in current tab
@@ -14,7 +14,7 @@
 #- type: rss
 #  icon: "fas fa-rss"
 #  noblank: true
-=======
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
@@ -22,14 +22,14 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
->>>>>>> v7.2.4
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 #
-<<<<<<< HEAD
+
 - type: hackthebox
   icon: 'fa-solid fa-cube'
   url: 'https://app.hackthebox.com/users/595651'
@@ -37,17 +37,17 @@
 - type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/shivendra-prajapati-a788401a5/'                  # Fill with your Linkedin homepage
-=======
+
 # - type: linkedin
 #   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Linkedin homepage
->>>>>>> v7.2.4
+
 #
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
-<<<<<<< HEAD
-=======
+
+
 #
 # - type: bluesky
 #   icon: 'fa-brands fa-bluesky'
@@ -60,4 +60,4 @@
 # - type: threads
 #   icon: 'fa-brands fa-threads'
 #   url: ''                   # Fill with your Threads profile link
->>>>>>> v7.2.4
+

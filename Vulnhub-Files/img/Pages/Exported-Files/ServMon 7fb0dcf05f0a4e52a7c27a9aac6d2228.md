@@ -263,8 +263,7 @@ PRIVILEGES INFORMATION
 ----------------------
 
 Privilege Name                Description                    State
-============================= ============================== =======
-SeChangeNotifyPrivilege       Bypass traverse checking       Enabled
+============================= ============================== SeChangeNotifyPrivilege       Bypass traverse checking       Enabled
 SeIncreaseWorkingSetPrivilege Increase a process working set Enabled
 
 nadine@SERVMON C:\Users\Nadine>

@@ -51,20 +51,17 @@ and I don’t have the credentials so I enumerated the SMB shares with a Tools c
 └─$ enum4linux -a 10.10.81.15         
 Starting enum4linux v0.9.1 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Thu Sep 21 13:00:46 2023
 
- =========================================( Target Information )=========================================
-
+ =========================================( Target Information )==================================
 Target ........... 10.10.81.15
 RID Range ........ 500-550,1000-1050
 Username ......... ''
 Password ......... ''
 Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
 
- ============================( Enumerating Workgroup/Domain on 10.10.81.15 )============================
-
+ ============================( Enumerating Workgroup/Domain on 10.10.81.15 )=====================
 [+] Got domain/workgroup name: YEAROFTHEFOX
 
- ================================( Nbtstat Information for 10.10.81.15 )================================
-
+ ================================( Nbtstat Information for 10.10.81.15 )=========================
 Looking up status of 10.10.81.15
 	YEAR-OF-THE-FOX <00> -         B <ACTIVE>  Workstation Service
 	YEAR-OF-THE-FOX <03> -         B <ACTIVE>  Messenger Service
@@ -76,19 +73,16 @@ Looking up status of 10.10.81.15
 
 	MAC Address = 00-00-00-00-00-00
 
- ====================================( Session Check on 10.10.81.15 )====================================
-
+ ====================================( Session Check on 10.10.81.15 )=============================
 [+] Server 10.10.81.15 allows sessions using username '', password ''
 
- =================================( Getting domain SID for 10.10.81.15 )=================================
-
+ =================================( Getting domain SID for 10.10.81.15 )==========================
 Domain Name: YEAROFTHEFOX
 Domain Sid: (NULL SID)
 
 [+] Cant determine if host is part of domain or part of a workgroup
 
- ===================================( OS information on 10.10.81.15 )===================================
-
+ ===================================( OS information on 10.10.81.15 )============================
 [E] Cant get OS info with smbclient
 
 [+] Got OS info for 10.10.81.15 from srvinfo: 
@@ -97,14 +91,12 @@ Domain Sid: (NULL SID)
 	os version      :	6.1
 	server type     :	0x809a03
 
- ========================================( Users on 10.10.81.15 )========================================
-
+ ========================================( Users on 10.10.81.15 )=================================
 index: 0x1 RID: 0x3e8 acb: 0x00000010 Account: fox	Name: fox	Desc: 
 
 user:[fox] rid:[0x3e8]
 
- ==================================( Share Enumeration on 10.10.81.15 )==================================
-
+ ==================================( Share Enumeration on 10.10.81.15 )===========================
 	Sharename       Type      Comment
 	---------       ----      -------
 	yotf            Disk      Foxs Stuff -- keep out!
@@ -127,8 +119,7 @@ Reconnecting with SMB1 for workgroup listing.
 NT_STATUS_OBJECT_NAME_NOT_FOUND listing \*
 //10.10.81.15/IPC$	Mapping: N/A Listing: N/A Writing: N/A
 
- ============================( Password Policy Information for 10.10.81.15 )============================
-
+ ============================( Password Policy Information for 10.10.81.15 )=====================
 [+] Attaching to 10.10.81.15 using a NULL share
 
 [+] Trying protocol 139/SMB...
@@ -163,8 +154,7 @@ NT_STATUS_OBJECT_NAME_NOT_FOUND listing \*
 Password Complexity: Disabled
 Minimum Password Length: 5
 
- =======================================( Groups on 10.10.81.15 )=======================================
-
+ =======================================( Groups on 10.10.81.15 )================================
 [+] Getting builtin groups:
 
 [+]  Getting builtin group memberships:
@@ -177,8 +167,7 @@ Minimum Password Length: 5
 
 [+]  Getting domain group memberships:
 
- ===================( Users on 10.10.81.15 via RID cycling (RIDS: 500-550,1000-1050) )===================
-
+ ===================( Users on 10.10.81.15 via RID cycling (RIDS: 500-550,1000-1050) )============
 [I] Found new SID: 
 S-1-22-1
 
@@ -215,8 +204,7 @@ S-1-5-21-978893743-2663913856-222388731-501 YEAR-OF-THE-FOX\nobody (Local User)
 S-1-5-21-978893743-2663913856-222388731-513 YEAR-OF-THE-FOX\None (Domain Group)
 S-1-5-21-978893743-2663913856-222388731-1000 YEAR-OF-THE-FOX\fox (Local User)
 
- ================================( Getting printer info for 10.10.81.15 )================================
-
+ ================================( Getting printer info for 10.10.81.15 )=========================
 No printers returned.
 
 enum4linux complete on Thu Sep 21 13:13:48 2023

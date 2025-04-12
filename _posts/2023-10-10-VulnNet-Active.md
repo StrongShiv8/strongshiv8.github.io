@@ -527,15 +527,13 @@ USER INFORMATION
 ----------------
 
 User Name                   SID                                         
-=========================== ============================================
-vulnnet\enterprise-security S-1-5-21-1405206085-1650434706-76331420-1103
+=========================== =====================================vulnnet\enterprise-security S-1-5-21-1405206085-1650434706-76331420-1103
 
 GROUP INFORMATION
 -----------------
 
 Group Name                                 Type             SID          Attributes                                        
-========================================== ================ ============ ==================================================
-Everyone                                   Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group
+========================================== ================ ============ ===========================================Everyone                                   Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group
 BUILTIN\Users                              Alias            S-1-5-32-545 Mandatory group, Enabled by default, Enabled group
 BUILTIN\Pre-Windows 2000 Compatible Access Alias            S-1-5-32-554 Mandatory group, Enabled by default, Enabled group
 NT AUTHORITY\SERVICE                       Well-known group S-1-5-6      Mandatory group, Enabled by default, Enabled group
@@ -550,8 +548,7 @@ PRIVILEGES INFORMATION
 ----------------------
 
 Privilege Name                Description                               State   
-============================= ========================================= ========
-SeMachineAccountPrivilege     Add workstations to domain                Disabled
+============================= ========================================= =SeMachineAccountPrivilege     Add workstations to domain                Disabled
 SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled 
 SeImpersonatePrivilege        Impersonate a client after authentication Enabled 
 SeCreateGlobalPrivilege       Create global objects                     Enabled 

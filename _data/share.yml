@@ -16,7 +16,7 @@ platforms:
 
   # Uncomment below if you need to.
   #
-<<<<<<< HEAD
+
   - type: Linkedin
     icon: "fab fa-linkedin"
     link: "https://www.linkedin.com/sharing/share-offsite/?url=URL"
@@ -25,7 +25,6 @@ platforms:
   # - type: Weibo
   #   icon: "fab fa-weibo"
   #   link: "http://service.weibo.com/share/share.php?title=TITLE&url=URL"
-=======
   # - type: Linkedin
   #   icon: "fab fa-linkedin"
   #   link: "https://www.linkedin.com/sharing/share-offsite/?url=URL"
@@ -58,4 +57,4 @@ platforms:
   # - type: Threads
   #   icon: "fa-brands fa-square-threads"
   #   link: "https://www.threads.net/intent/post?text=TITLE%20URL"
->>>>>>> v7.2.4
+
