@@ -4,6 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
+<<<<<<< HEAD
 ## Introduction ⤵️
 
 I am a Cyber Security Learner, and I usually practice on different fields like **Tryhackme**, **Hackthebox**, **Proving Ground Play**, **Proving Ground Practice**, and **Vulnhub** sites. Currently, I am enhancing my knowledge in the **Red Teaming field**, and I had an internship from **Gurugram Cyber Cell Police** in 2022. I graduated from **GLA University** with a specialization in **Cyber Security and Forensics** in the year 2022.
@@ -41,3 +42,7 @@ You can contact me at my email address: [**lh.tshiv.endra@gmail.com**](mailto:lh
 If you have any questions or would like to connect with me further, please don't hesitate to reach out. I am always open to new opportunities and collaborations related to cyber security, programming, and web development.
 
 Thank you for taking the time to learn more about me.
+=======
+> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+{: .prompt-tip }
+>>>>>>> v7.2.4
