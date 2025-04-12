@@ -378,7 +378,7 @@ The script is scheduled to run every 5 minutes, as indicated by the comment at t
 
 Since this script is iterating over a DNS record start with “web” , so I know a Tool that will include a DNS record into this Active directory machine with LDAP.
 
-**[dnstool.py](http://dnstool.py) that work on [krbrelayx](https://github.com/dirkjanm/krbrelayx) via LDAP.**
+**[dnstool.py](https://dnstool.py) that work on [krbrelayx](https://github.com/dirkjanm/krbrelayx) via LDAP.**
 
 ```bash
 ┌──(kali㉿kali)-[~/Downloads/HTB/Intelligence]

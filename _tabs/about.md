@@ -42,6 +42,6 @@ You can contact me at my email address: [**lh.tshiv.endra@gmail.com**](mailto:lh
 If you have any questions or would like to connect with me further, please don't hesitate to reach out. I am always open to new opportunities and collaborations related to cyber security, programming, and web development.
 
 Thank you for taking the time to learn more about me.
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+
+
 

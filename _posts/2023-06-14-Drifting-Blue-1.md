@@ -79,7 +79,7 @@ Now I got in lets try for reverse shell →
 
 ![166-12.png](/Vulnhub-Files/img/Drifting-Blue-1/166-12.png)
 
-Now Only I have to load this url → **[http://10.0.2.19/textpattern/files/shell.php](http://10.0.2.19/textpattern/files/shell.php)**
+Now Only I have to load this url → **[http://10.0.2.19/textpattern/files/shell.php](https://10.0.2.19/textpattern/files/shell.php)**
 
 ![166-13.png](/Vulnhub-Files/img/Drifting-Blue-1/166-13.png)
 

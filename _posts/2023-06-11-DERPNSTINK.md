@@ -66,7 +66,7 @@ I checked the port 80 :
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%203.png)
 
-set the `/etc/hosts` as 10.0.2.14 [derpnstink.local](http://derpnstink.local/) →
+set the `/etc/hosts` as 10.0.2.14 [derpnstink.local](https://derpnstink.local/) →
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%204.png)
 
@@ -130,7 +130,7 @@ Lets identify the hash →
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%2019.png)
 
-This result is from [hashes.com](http://hashes.com/)  →
+This result is from [hashes.com](https://hashes.com/)  →
 
 ![Untitled](/Vulnhub-Files/img/DERPNSTINK/Untitled%2020.png)
 
