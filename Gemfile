@@ -2,11 +2,9 @@
 
 source "https://rubygems.org"
 
-<<<<<<< HEAD
-gemspec
-=======
-gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
->>>>>>> v7.2.4
+
+gem "jekyll-theme-chirpy", "~> 7.2.4"
+
 
 gem "html-proofer", "~> 5.0", group: :test
 
@@ -16,15 +14,14 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
-<<<<<<< HEAD
+
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+#gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Lock jekyll-sass-converter to 2.x on Linux-musl
 if RUBY_PLATFORM =~ /linux-musl/
   gem "jekyll-sass-converter", "~> 2.0"
 end
-=======
->>>>>>> v7.2.4
+
