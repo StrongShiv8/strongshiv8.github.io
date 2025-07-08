@@ -1757,6 +1757,10 @@ progress {
   opacity: 0.75 !important;
 }
 
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
 .d-block {
   display: block !important;
 }
@@ -2061,6 +2065,10 @@ progress {
 
 .z-1 {
   z-index: 1 !important;
+}
+
+.z-2 {
+  z-index: 2 !important;
 }
 
 .z-3 {
