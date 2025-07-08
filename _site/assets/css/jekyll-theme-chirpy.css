@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* Bootstrap  v5.3.5 (https://getbootstrap.com/)
+* Bootstrap  v5.3.7 (https://getbootstrap.com/)
 * Copyright 2011-2025 The Bootstrap Authors
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
 */
@@ -329,6 +329,10 @@ iframe {
 summary {
   display: list-item;
   cursor: pointer;
+}
+
+progress {
+  vertical-align: baseline;
 }
 
 [hidden] {
@@ -1447,6 +1451,19 @@ summary {
   background-color: var(--bs-alert-bg);
   border: var(--bs-alert-border);
   border-radius: var(--bs-alert-border-radius);
+}
+
+.progress {
+  --bs-progress-height:1rem;
+  --bs-progress-font-size:0.75rem;
+  --bs-progress-bg:var(--bs-secondary-bg);
+  --bs-progress-border-radius:var(--bs-border-radius);
+  display: flex;
+  height: var(--bs-progress-height);
+  overflow: hidden;
+  font-size: var(--bs-progress-font-size);
+  background-color: var(--bs-progress-bg);
+  border-radius: var(--bs-progress-border-radius);
 }
 
 .list-group {
