@@ -5624,6 +5624,55 @@ header h1 + .post-meta {
   margin-bottom: -1px; /* Avoid jumping */
 }
 
-/* append your custom style below */
+/*
+ * Theme styles
+ */
+#access-lastmod a:hover {
+  color: #007bff !important;
+  border-bottom: 1px solid #007bff;
+}
+
+#post-list .card .card-body .card-title {
+  -webkit-line-clamp: 1;
+}
+
+/*
+ * Page styles
+ */
+#progress-circle {
+  margin: -1px -1px;
+  top: -2.75rem;
+  position: relative;
+  transform: rotate(-90deg);
+}
+#progress-circle circle {
+  stroke: var(--toc-highlight);
+  stroke-dasharray: 125.6;
+  stroke-dashoffset: 125.6;
+  transition: stroke-dashoffset 0.2s;
+}
+
+/*
+ * Post styles
+ */
+div.highlighter-rouge {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/*
+ * Bootstrap
+ */
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.m-auto {
+  margin: auto;
+}
 
 /*# sourceMappingURL=jekyll-theme-chirpy.css.map */
