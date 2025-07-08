@@ -231,17 +231,11 @@ exclude:
   - README.md
   - CHANGELOG.md
   - LICENSE
-  - rollup.config.js
+  - "*.config.js"
   - node_modules
-  - package*.json
-
-  - docs
-  - tools
-  - README.md
-  - LICENSE
-  - purgecss.js
-  - rollup.config.js
   - "package*.json"
+  - docs
+  - purgecss.js
 
 
 jekyll-archives:
