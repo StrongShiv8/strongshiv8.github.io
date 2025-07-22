@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>StrongShiv8</title>
   <subtitle>Response and Report of my work.</subtitle>
-  <updated>2025-07-19T16:30:21+05:30</updated>
+  <updated>2025-07-22T15:10:58+05:30</updated>
   <author>
     <name>Shivendra Prajapati</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,35 @@
 
   
   <entry>
+    <title>Dog</title>
+    <link href="http://localhost:4000/posts/Dog/" rel="alternate" type="text/html" title="Dog" />
+    <published>2025-07-22T00:00:00+05:30</published>
+  
+    <updated>2025-07-22T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Dog/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Dog/" />
+    <author>
+      <name>Shivendra Prajapati</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+  
+
+  <summary>This machine is based on reconnaissance as well as Backdrop CMS public Exploit !</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Cat</title>
     <link href="http://localhost:4000/posts/Cat/" rel="alternate" type="text/html" title="Cat" />
     <published>2025-07-19T00:00:00+05:30</published>
   
-    <updated>2025-07-19T00:00:00+05:30</updated>
+    <updated>2025-07-19T16:40:07+05:30</updated>
   
     <id>http://localhost:4000/posts/Cat/</id>
     <content type="text/html" src="http://localhost:4000/posts/Cat/" />
@@ -111,30 +135,6 @@
   
 
   <summary>Focus on Enumeration, This box is quite easy one !</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Insomnia</title>
-    <link href="http://localhost:4000/posts/Insomnia/" rel="alternate" type="text/html" title="Insomnia" />
-    <published>2025-06-30T00:00:00+05:30</published>
-  
-    <updated>2025-06-30T00:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Insomnia/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Insomnia/" />
-    <author>
-      <name>Shivendra Prajapati</name>
-    </author>
-
-  
-    
-    <category term="HackMyVM" />
-    
-  
-
-  <summary>This machine is based on command injection some parameter mining or bruteforce.</summary>
 
   </entry>
 

@@ -1,5 +1,13 @@
 [
   {
+    "title": "Dog",
+    "url": "/posts/Dog/",
+    "categories": "HackTheBox",
+    "tags": "Backdrop, CMS, git, Public_Exploit, PrivEsc",
+    "date": "2025-07-22 00:00:00 +0530",
+    "content": "This machine is based on reconnaissance as well as Backdrop CMS public Exploit !"
+  },
+  {
     "title": "Cat",
     "url": "/posts/Cat/",
     "categories": "HackTheBox",
