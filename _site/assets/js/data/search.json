@@ -1,5 +1,13 @@
 [
   {
+    "title": "Griffin",
+    "url": "/posts/Griffin/",
+    "categories": "HackMyVM",
+    "tags": "Captcha, Password_Bruteforce, PrivEsc, Port_Forwarding, socat, mg, ocr, ddddocr",
+    "date": "2025-07-29 00:00:00 +0530",
+    "content": "This machine is based on multiple attack surfaces, including a Werkzeug server, CAPTCHA-protected login, and internal services."
+  },
+  {
     "title": "Dog",
     "url": "/posts/Dog/",
     "categories": "HackTheBox",
