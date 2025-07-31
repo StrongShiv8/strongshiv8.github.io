@@ -1,5 +1,13 @@
 [
   {
+    "title": "Takedown",
+    "url": "/posts/Takedown/",
+    "categories": "HackMyVM",
+    "tags": "SSTI, Jinja2, Werkzeug, RSA, RSA_key_decryption, vim, PrivEsc",
+    "date": "2025-07-31 00:00:00 +0530",
+    "content": "This machine is based on SSTI vulnerability, Werkzeug Console PIN generation,  RSA private key generation and some binary exploitations."
+  },
+  {
     "title": "Griffin",
     "url": "/posts/Griffin/",
     "categories": "HackMyVM",
