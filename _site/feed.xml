@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>StrongShiv8</title>
   <subtitle>Response and Report of my work.</subtitle>
-  <updated>2025-07-31T17:41:06+05:30</updated>
+  <updated>2025-08-01T16:37:45+05:30</updated>
   <author>
     <name>Shivendra Prajapati</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Sabulaji</title>
+    <link href="http://localhost:4000/posts/Sabulaji/" rel="alternate" type="text/html" title="Sabulaji" />
+    <published>2025-08-01T00:00:00+05:30</published>
+  
+    <updated>2025-08-01T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Sabulaji/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Sabulaji/" />
+    <author>
+      <name>Shivendra Prajapati</name>
+    </author>
+
+  
+    
+    <category term="HackMyVM" />
+    
+  
+
+  <summary>This machine is based on rsync and enumeration !</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>This machine involves Stored XSS with public exploits very much fun to solve!</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Strutted</title>
-    <link href="http://localhost:4000/posts/Strutted/" rel="alternate" type="text/html" title="Strutted" />
-    <published>2025-07-10T00:00:00+05:30</published>
-  
-    <updated>2025-07-10T00:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Strutted/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Strutted/" />
-    <author>
-      <name>Shivendra Prajapati</name>
-    </author>
-
-  
-    
-    <category term="HackTheBox" />
-    
-  
-
-  <summary>This machine is based on Public Exploit !</summary>
 
   </entry>
 

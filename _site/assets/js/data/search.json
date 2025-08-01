@@ -1,5 +1,13 @@
 [
   {
+    "title": "Sabulaji",
+    "url": "/posts/Sabulaji/",
+    "categories": "HackMyVM",
+    "tags": "rsync, PrivEsc, locate",
+    "date": "2025-08-01 00:00:00 +0530",
+    "content": "This machine is based on rsync and enumeration !"
+  },
+  {
     "title": "Takedown",
     "url": "/posts/Takedown/",
     "categories": "HackMyVM",
