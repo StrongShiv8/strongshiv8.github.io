@@ -1181,17 +1181,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -1350,7 +1339,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="4416 words"
+  title="4374 words"
 >
   <em>24 min</em> read</span>
 
@@ -1578,59 +1567,57 @@ MAC Address: 08:00:27:1A:E1:C4 <span class="o">(</span>PCS Systemtechnik/Oracle 
     </ul>
   </li>
   <li><strong>Detailed Explanation:</strong><br />
-The <code class="language-plaintext highlighter-rouge">X-Forwarded-For</code> header is commonly used to track the original client IP through proxies or load balancers. However, when a server relies solely on this header for access control without verifying its authenticity (e.g., via trusted proxy IPs), it becomes exploitable. Here, the <code class="language-plaintext highlighter-rouge">/service/</code> endpoint likely checks if the XFF header matches an allowed IP (e.g., the server’s own IP), making it susceptible to manipulation.
-    <h3 id="why-attackers-use-x-forwarded-for-victim-ip"><span class="me-2"><strong>Why Attackers Use <code class="language-plaintext highlighter-rouge">X-Forwarded-For: &lt;victim IP&gt;</code></strong></span><a href="#why-attackers-use-x-forwarded-for-victim-ip" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-  </li>
+The <code class="language-plaintext highlighter-rouge">X-Forwarded-For</code> header is commonly used to track the original client IP through proxies or load balancers. However, when a server relies solely on this header for access control without verifying its authenticity (e.g., via trusted proxy IPs), it becomes exploitable. Here, the <code class="language-plaintext highlighter-rouge">/service/</code> endpoint likely checks if the XFF header matches an allowed IP (e.g., the server’s own IP), making it susceptible to manipulation.</li>
 </ul>
 
-<p>In security testing/pentesting, manipulating this header serves several purposes:</p>
-<h4 id="1-bypassing-ip-based-restrictions"><span class="me-2">1. <strong>Bypassing IP-Based Restrictions</strong></span><a href="#1-bypassing-ip-based-restrictions" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h3 id="why-attackers-use-x-forwarded-for-victim-ip"><span class="me-2"><strong>Why Attackers Use <code class="language-plaintext highlighter-rouge">X-Forwarded-For: &lt;victim IP&gt;</code></strong></span><a href="#why-attackers-use-x-forwarded-for-victim-ip" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<p>In security testing/pentesting, manipulating this header serves several purposes:</p>
+
+<ol>
+  <li>
+    <p><strong>Bypassing IP-Based Restrictions</strong></p>
+
+    <div class="language-http nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Http"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-</pre></td><td class="rouge-code"><pre>```http
-GET /admin HTTP/1.1
-Host: target.com
-X-Forwarded-For: 192.168.1.100  # Victim's trusted IP
-```
-{: .nolineno }
+</pre></td><td class="rouge-code"><pre><span class="err"> </span><span class="nf">GET</span> <span class="nn">/admin</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="s"> Host: target.com</span>
+<span class="s"> X-Forwarded-For: 10.0.2.34  # Victim's trusted IP</span>
+</pre></td></tr></tbody></table></code></div>    </div>
 
-- If the server only allows admin access from `192.168.1.100`
-- Attacker spoofs this IP in XFF to bypass the restriction #### 2. **Evading Detection/Blocking**
-
-- WAF/IPS might block external IPs but trust internal ones
-- Makes attacks appear to come from "inside" the network #### 3. **SSRF (Server-Side Request Forgery)**
-
-- Tricks internal services into thinking requests come from trusted locations
-- Can access internal resources (like cloud metadata services) #### 4. **Log Poisoning**
-
-- If logs are displayed/parsed unsafely, can lead to code execution
-- Makes malicious code appear in logs as if from localhost #### 5. **IP Reputation Abuse**
-
-- Makes requests appear to come from reputable IPs
-- Bypasses rate limiting or IP-based security measures
-</pre></td></tr></tbody></table></code></div></div>
+    <ul>
+      <li>If the server only allows admin access from <code class="language-plaintext highlighter-rouge">10.0.2.34</code></li>
+      <li>Attacker spoofs this IP in XFF to bypass the restriction</li>
+    </ul>
+  </li>
+  <li><strong>Evading Detection/Blocking</strong>
+    <ul>
+      <li>WAF/IPS might block external IPs but trust internal ones</li>
+      <li>Makes attacks appear to come from “inside” the network</li>
+    </ul>
+  </li>
+  <li><strong>SSRF (Server-Side Request Forgery)</strong>
+    <ul>
+      <li>Tricks internal services into thinking requests come from trusted locations</li>
+      <li>Can access internal resources (like cloud metadata services)</li>
+    </ul>
+  </li>
+  <li><strong>Log Poisoning</strong>
+    <ul>
+      <li>If logs are displayed/parsed unsafely, can lead to code execution</li>
+      <li>Makes malicious code appear in logs as if from localhost</li>
+    </ul>
+  </li>
+  <li><strong>IP Reputation Abuse</strong>
+    <ul>
+      <li>Makes requests appear to come from reputable IPs</li>
+      <li>Bypasses rate limiting or IP-based security measures</li>
+    </ul>
+  </li>
+</ol>
 
 <p>So lets bypass IP based restrictions 🔻</p>
 
@@ -2706,17 +2693,15 @@ homelab:~<span class="err">$</span>
 
 <h5 id="step-2-convert-0x401266-to-little-endian"><span class="me-2"><strong>Step 2: Convert 0x401266 to Little-Endian</strong>:</span><a href="#step-2-convert-0x401266-to-little-endian" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
-<ol class="nolineno">
+<ol>
   <li><strong>Full 64-bit representation</strong>: <code class="language-plaintext highlighter-rouge">0x0000000000401266</code></li>
   <li><strong>Break into bytes</strong> (from least to most significant):
-    <div class="language-plaintext highlighter-rouge"><div class="code-header">
+    <div class="language-plaintext nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>66 12 40 00 00 00 00 00
+</pre></td><td class="rouge-code"><pre> 66 12 40 00 00 00 00 00
 </pre></td></tr></tbody></table></code></div>    </div>
   </li>
-</ol>
-<ol>
   <li><strong>Little-endian byte sequence</strong>: <code class="language-plaintext highlighter-rouge">\x66\x12\x40\x00\x00\x00\x00\x00</code></li>
 </ol>
 
