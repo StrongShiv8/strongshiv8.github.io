@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>StrongShiv8</title>
   <subtitle>Response and Report of my work.</subtitle>
-  <updated>2025-08-01T16:37:45+05:30</updated>
+  <updated>2025-08-03T19:13:54+05:30</updated>
   <author>
     <name>Shivendra Prajapati</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Homelab</title>
+    <link href="http://localhost:4000/posts/Homelab/" rel="alternate" type="text/html" title="Homelab" />
+    <published>2025-08-03T00:00:00+05:30</published>
+  
+    <updated>2025-08-03T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Homelab/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Homelab/" />
+    <author>
+      <name>Shivendra Prajapati</name>
+    </author>
+
+  
+    
+    <category term="HackMyVM" />
+    
+  
+
+  <summary>This machine is based on IP Bypass restrictions, OpenVPN and Buffer Overflow Attack.</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>This machine is based on reconnaissance as well as Backdrop CMS public Exploit !</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Cat</title>
-    <link href="http://localhost:4000/posts/Cat/" rel="alternate" type="text/html" title="Cat" />
-    <published>2025-07-19T00:00:00+05:30</published>
-  
-    <updated>2025-07-19T16:40:07+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Cat/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Cat/" />
-    <author>
-      <name>Shivendra Prajapati</name>
-    </author>
-
-  
-    
-    <category term="HackTheBox" />
-    
-  
-
-  <summary>This machine involves Stored XSS with public exploits very much fun to solve!</summary>
 
   </entry>
 
