@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>StrongShiv8</title>
   <subtitle>Response and Report of my work.</subtitle>
-  <updated>2025-08-03T19:37:51+05:30</updated>
+  <updated>2025-08-10T14:18:33+05:30</updated>
   <author>
     <name>Shivendra Prajapati</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,35 @@
 
   
   <entry>
+    <title>Matrioshka</title>
+    <link href="http://localhost:4000/posts/Matrioshka/" rel="alternate" type="text/html" title="Matrioshka" />
+    <published>2025-08-10T00:00:00+05:30</published>
+  
+    <updated>2025-08-10T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Matrioshka/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Matrioshka/" />
+    <author>
+      <name>Shivendra Prajapati</name>
+    </author>
+
+  
+    
+    <category term="HackMyVM" />
+    
+  
+
+  <summary>This machine is based on Wordpress CMS and its public exploits with HFS exploits !</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Homelab</title>
     <link href="http://localhost:4000/posts/Homelab/" rel="alternate" type="text/html" title="Homelab" />
     <published>2025-08-03T00:00:00+05:30</published>
   
-    <updated>2025-08-03T00:00:00+05:30</updated>
+    <updated>2025-08-03T19:38:40+05:30</updated>
   
     <id>http://localhost:4000/posts/Homelab/</id>
     <content type="text/html" src="http://localhost:4000/posts/Homelab/" />
@@ -111,30 +135,6 @@
   
 
   <summary>This machine is based on multiple attack surfaces, including a Werkzeug server, CAPTCHA-protected login, and internal services.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Dog</title>
-    <link href="http://localhost:4000/posts/Dog/" rel="alternate" type="text/html" title="Dog" />
-    <published>2025-07-22T00:00:00+05:30</published>
-  
-    <updated>2025-07-22T00:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Dog/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Dog/" />
-    <author>
-      <name>Shivendra Prajapati</name>
-    </author>
-
-  
-    
-    <category term="HackTheBox" />
-    
-  
-
-  <summary>This machine is based on reconnaissance as well as Backdrop CMS public Exploit !</summary>
 
   </entry>
 

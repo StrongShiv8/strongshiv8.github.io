@@ -1,5 +1,13 @@
 [
   {
+    "title": "Matrioshka",
+    "url": "/posts/Matrioshka/",
+    "categories": "HackMyVM",
+    "tags": "Wordpress, wpscan, Public_Exploit, Metasploit, HFS, CVE-2024-39943, Docker, Port_Forwarding, PrivEsc",
+    "date": "2025-08-10 00:00:00 +0530",
+    "content": "This machine is based on Wordpress CMS and its public exploits with HFS exploits !"
+  },
+  {
     "title": "Homelab",
     "url": "/posts/Homelab/",
     "categories": "HackMyVM",
