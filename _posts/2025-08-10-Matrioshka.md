@@ -157,7 +157,7 @@ Lets check if this plugin is vulnerable or not.
 - **Links:**
 
 	- [NVD](https://nvd.nist.gov/vuln/detail/CVE-2024-27956)
-	- [Metasploit module](exploit/multi/http/wp_automatic_sqli_to_rce)
+	- [Metasploit module](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/wp_automatic_sqli_to_rce.rb)
 
 ---
 
