@@ -1,7 +1,10 @@
-//import { basic, initSidebar, initTopbar } from './modules/layouts';
-import {
-  getClapCounts
-} from './modules/plugins';
+import { basic, initSidebar, initTopbar } from './modules/layouts';
+import { loadImg, imgPopup, initClipboard } from './modules/plugins';
 
+basic();
+initSidebar();
+initTopbar();
+imgPopup();
+initClipboard();
+loadImg();
 
-getClapCounts();

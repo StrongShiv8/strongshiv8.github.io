@@ -1,3 +1,7 @@
-import { getClapCountsForCats } from './modules/plugins';
+import { basic, initSidebar, initTopbar } from './modules/layouts';
+import { initLocaleDatetime } from './modules/components';
 
-getClapCountsForCats();
+initSidebar();
+initTopbar();
+initLocaleDatetime();
+basic();
