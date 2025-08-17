@@ -1,195 +1,219 @@
 [
+  
   {
     "title": "Matrioshka",
     "url": "/posts/Matrioshka/",
     "categories": "HackMyVM",
     "tags": "Wordpress, wpscan, Public_Exploit, Metasploit, HFS, CVE-2024-39943, Docker, Port_Forwarding, PrivEsc",
     "date": "2025-08-10 00:00:00 +0530",
-    "content": "This machine is based on Wordpress CMS and its public exploits with HFS exploits !"
+    "content": This machine is based on Wordpress CMS and its public exploits with HFS exploits !
   },
+  
   {
     "title": "Homelab",
     "url": "/posts/Homelab/",
     "categories": "HackMyVM",
     "tags": "OpenVPN, crt, buffer_overflow, OpenSSL, Little_Endian, X-Forwarded-For, PrivEsc",
     "date": "2025-08-03 00:00:00 +0530",
-    "content": "This machine is based on IP Bypass restrictions, OpenVPN and Buffer Overflow Attack."
+    "content": This machine is based on IP Bypass restrictions, OpenVPN and Buffer Overflow Attack.
   },
+  
   {
     "title": "Sabulaji",
     "url": "/posts/Sabulaji/",
     "categories": "HackMyVM",
     "tags": "rsync, PrivEsc, locate",
     "date": "2025-08-01 00:00:00 +0530",
-    "content": "This machine is based on rsync and enumeration !"
+    "content": This machine is based on rsync and enumeration !
   },
+  
   {
     "title": "Takedown",
     "url": "/posts/Takedown/",
     "categories": "HackMyVM",
     "tags": "SSTI, Jinja2, Werkzeug, RSA, RSA_key_decryption, vim, PrivEsc",
     "date": "2025-07-31 00:00:00 +0530",
-    "content": "This machine is based on SSTI vulnerability, Werkzeug Console PIN generation,  RSA private key generation and some binary exploitations."
+    "content": This machine is based on SSTI vulnerability, Werkzeug Console PIN generation,  RSA private key generation and some binary exploitations.
   },
+  
   {
     "title": "Griffin",
     "url": "/posts/Griffin/",
     "categories": "HackMyVM",
     "tags": "Captcha, Password_Bruteforce, PrivEsc, Port_Forwarding, socat, mg, ocr, ddddocr",
     "date": "2025-07-29 00:00:00 +0530",
-    "content": "This machine is based on multiple attack surfaces, including a Werkzeug server, CAPTCHA-protected login, and internal services."
+    "content": This machine is based on multiple attack surfaces, including a Werkzeug server, CAPTCHA-protected login, and internal services.
   },
+  
   {
     "title": "Dog",
     "url": "/posts/Dog/",
     "categories": "HackTheBox",
     "tags": "Backdrop, CMS, git, Public_Exploit, PrivEsc",
     "date": "2025-07-22 00:00:00 +0530",
-    "content": "This machine is based on reconnaissance as well as Backdrop CMS public Exploit !"
+    "content": This machine is based on reconnaissance as well as Backdrop CMS public Exploit !
   },
+  
   {
     "title": "Cat",
     "url": "/posts/Cat/",
     "categories": "HackTheBox",
     "tags": "adm, xss, cookie, gitea, PrivEsc, SQLite, SQLi, JS, git",
     "date": "2025-07-19 00:00:00 +0530",
-    "content": "This machine involves Stored XSS with public exploits very much fun to solve!"
+    "content": This machine involves Stored XSS with public exploits very much fun to solve!
   },
+  
   {
     "title": "Strutted",
     "url": "/posts/Strutted/",
     "categories": "HackTheBox",
     "tags": "Public_Exploit, Webshell, tcpdump, PrivEsc",
     "date": "2025-07-10 00:00:00 +0530",
-    "content": "This machine is based on Public Exploit !"
+    "content": This machine is based on Public Exploit !
   },
+  
   {
     "title": "Billing",
     "url": "/posts/Billing/",
     "categories": "TryHackMe",
     "tags": "Metasploit, Public_Exploit, PrivEsc, Fail2Ban",
     "date": "2025-07-02 00:00:00 +0530",
-    "content": "This machine is very straight forward based on public exploit."
+    "content": This machine is very straight forward based on public exploit.
   },
+  
   {
     "title": "Sea",
     "url": "/posts/Sea/",
     "categories": "HackTheBox",
     "tags": "Public_Exploit, LFI, sudoers, PrivEsc, CMS, WonderCMS",
     "date": "2025-06-30 00:00:00 +0530",
-    "content": "Focus on Enumeration, This box is quite easy one !"
+    "content": Focus on Enumeration, This box is quite easy one !
   },
+  
   {
     "title": "Insomnia",
     "url": "/posts/Insomnia/",
     "categories": "HackMyVM",
     "tags": "Command_Injection, PrivEsc, parameter_bruteforce",
     "date": "2025-06-30 00:00:00 +0530",
-    "content": "This machine is based on command injection some parameter mining or bruteforce."
+    "content": This machine is based on command injection some parameter mining or bruteforce.
   },
+  
   {
     "title": "Boxing",
     "url": "/posts/Boxing/",
     "categories": "HackMyVM",
     "tags": "SSRF, PrivEsc, crunch, race_condition, symlink",
     "date": "2025-06-30 00:00:00 +0530",
-    "content": "This machine teaches about the race conditions along with symlinks."
+    "content": This machine teaches about the race conditions along with symlinks.
   },
+  
   {
     "title": "Talk",
     "url": "/posts/Talk/",
     "categories": "HackMyVM",
     "tags": "SQLi, sqlmap, PrivEsc, lynx",
     "date": "2025-06-29 00:00:00 +0530",
-    "content": "This machine is based on sqli"
+    "content": This machine is based on sqli
   },
+  
   {
     "title": "Cicada",
     "url": "/posts/Cicada/",
     "categories": "HackTheBox",
     "tags": "SMB, Active Directory, recon, SeBackupPrivilege, PrivEsc",
     "date": "2024-10-09 00:00:00 +0530",
-    "content": "AD Machine with SeBackupPrivilege Enabled"
+    "content": AD Machine with SeBackupPrivilege Enabled
   },
+  
   {
     "title": "Vector",
     "url": "/posts/Vector/",
     "categories": "Proving Grounds, Practice",
     "tags": "Public Exploit, PrivEsc, Windows, RDP, Padding_Oracle_Attack, cryptography",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Hard Level Machine ! You mainly gona learn about Cryptography and Padding Oracle Attack."
+    "content": Proving Ground Practice Hard Level Machine ! You mainly gona learn about Cryptography and Padding Oracle Attack.
   },
+  
   {
     "title": "Usage",
     "url": "/posts/Usage/",
     "categories": "HackTheBox",
     "tags": "SQLi, RFI, PrivEsc, recon, 7z",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "SQL Injection, Weak Credentials, Misconfiguration, Insecure Design, RCE, Arbitrary File Upload, Arbitrary File Read, Clear Text Credentials"
+    "content": SQL Injection, Weak Credentials, Misconfiguration, Insecure Design, RCE, Arbitrary File Upload, Arbitrary File Read, Clear Text Credentials
   },
+  
   {
     "title": "Twiggy",
     "url": "/posts/Twiggy/",
     "categories": "Proving Grounds, Practice",
     "tags": "Public Exploit, ZeroMQ_ZMTP_2_0, ssh-keygen",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Easy Level Machine !"
+    "content": Proving Ground Practice Easy Level Machine !
   },
+  
   {
     "title": "Squid",
     "url": "/posts/Squid/",
     "categories": "Proving Grounds, Practice",
     "tags": "Squid, spose, RFI, PrivEsc, default_creds",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Easy Level Machine ! you gona learn about Squid Connections and RFI."
+    "content": Proving Ground Practice Easy Level Machine ! you gona learn about Squid Connections and RFI.
   },
+  
   {
     "title": "Slort",
     "url": "/posts/Slort/",
     "categories": "Proving Grounds, Practice",
     "tags": "Windows, LFI, RFI, PrivEsc",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Easy Level Machine ! you gona learn about LFI and RFI."
+    "content": Proving Ground Practice Easy Level Machine ! you gona learn about LFI and RFI.
   },
+  
   {
     "title": "Resourced",
     "url": "/posts/Resourced/",
     "categories": "Proving Grounds, Practice",
     "tags": "Active Directory, RCBD, GenericAll, BloodHound, enum4linux, SMB, secretsdump, PrivEsc, ticketconverter, s4u, Rubeus",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Medium Level AD Machine ! you gona learn about GenericAll ACL permissions."
+    "content": Proving Ground Practice Medium Level AD Machine ! you gona learn about GenericAll ACL permissions.
   },
+  
   {
     "title": "Nagoya",
     "url": "/posts/Nagoya/",
     "categories": "Proving Grounds, Practice",
     "tags": "Active Directory, ASREPRoast, rpcclient, BloodHound, GenericAll, Silver_Ticket, MSSQL, chisel, Port Forwarding, SeImpersonatePrivilege, PrintSpoofer, Reverse_Engineering",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Hard Level AD Machine ! You gona learn about Silver Ticket, GenericAll, Reverse Engineering, and may more."
+    "content": Proving Ground Practice Hard Level AD Machine ! You gona learn about Silver Ticket, GenericAll, Reverse Engineering, and may more.
   },
+  
   {
     "title": "Hutch",
     "url": "/posts/Hutch/",
     "categories": "Proving Grounds, Practice",
     "tags": "ReadLAPSPassword, Active Directory, LDAP, PrivEsc, BloodHound",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Medium Level AD Machine ! You gona learn about ReadLDAPPassword ACL permissions."
+    "content": Proving Ground Practice Medium Level AD Machine ! You gona learn about ReadLDAPPassword ACL permissions.
   },
+  
   {
     "title": "Heist",
     "url": "/posts/Heist/",
     "categories": "Proving Grounds, Practice",
     "tags": "SeRestorePrivilege, BloodHound, ReadGMSAPassword, Active Directory, responder, NTLM_relay, PrivEsc",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Hard Level AD Machine ! You gona learn about SeRestorePrivilege and ReadGMSAPassword."
+    "content": Proving Ground Practice Hard Level AD Machine ! You gona learn about SeRestorePrivilege and ReadGMSAPassword.
   },
+  
   {
     "title": "Exfiltration",
     "url": "/posts/Exfiltration/",
     "categories": "Proving Grounds, Practice",
     "tags": "pkexec, CMS, subrion, Public Exploit, default_creds",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://tryhackme.com/room/set
     
   
@@ -205,63 +229,70 @@
     
       Machine Created by
       4ndr34zz
-  ..."
+  ...
   },
+  
   {
     "title": "Craft2",
     "url": "/posts/Craft2/",
     "categories": "Proving Grounds, Practice",
     "tags": "Windows, mysql, SMB, odt, WerTrigger, Privileged_File_Write, Port Forwarding, chisel, File Upload, Public Exploit",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Hard Level Machine ! You gona learn about odt files, Privilege File Write, WerTrigger and Port Forwarding."
+    "content": Proving Ground Practice Hard Level Machine ! You gona learn about odt files, Privilege File Write, WerTrigger and Port Forwarding.
   },
+  
   {
     "title": "Clue",
     "url": "/posts/Clue/",
     "categories": "Proving Grounds, Practice",
     "tags": "LFI, PrivEsc, Public Exploit, FreeSWITCH, Cassandra Web, Recon",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Hard Level Machine ! You gona learn about LFI and Cassandra Web also about FreeSWITCH."
+    "content": Proving Ground Practice Hard Level Machine ! You gona learn about LFI and Cassandra Web also about FreeSWITCH.
   },
+  
   {
     "title": "Blackgate",
     "url": "/posts/BlackGate/",
     "categories": "Proving Grounds, Practice",
     "tags": "redis, Public Exploit, pkexec, PrivEsc",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Hard Level Machine ! You gona learn about Redis."
+    "content": Proving Ground Practice Hard Level Machine ! You gona learn about Redis.
   },
+  
   {
     "title": "Authby",
     "url": "/posts/AuthBy/",
     "categories": "Proving Grounds, Practice",
     "tags": "Windows, Juicy, Potato, SeImpersonatePrivilege, FTP",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Medium Level Machine !"
+    "content": Proving Ground Practice Medium Level Machine !
   },
+  
   {
     "title": "Access",
     "url": "/posts/Access/",
     "categories": "Proving Grounds, Practice",
     "tags": "SeManageVolumePrivilege, Rubeus, PowerView, Kerberosting, dll hijacking, PrivEsc, Windows, RunAsCs, File Upload, SPN, Active Directory",
     "date": "2024-09-03 00:00:00 +0530",
-    "content": "Proving Ground Practice Medium Level AD Machine, You gona learn about SeManageVolumePrivilege and dll hijacking !"
+    "content": Proving Ground Practice Medium Level AD Machine, You gona learn about SeManageVolumePrivilege and dll hijacking !
   },
+  
   {
     "title": "Year Of The Pig",
     "url": "/posts/Year-of-the-Pig/",
     "categories": "TryHackMe",
     "tags": "Fuzzing, PrivEsc, SUIDs, pkexec, wfuzz, cewl",
     "date": "2024-04-27 00:00:00 +0530",
-    "content": "Some pigs do fly..."
+    "content": Some pigs do fly...
   },
+  
   {
     "title": "Skynet",
     "url": "/posts/SkyNet/",
     "categories": "TryHackMe",
     "tags": "Squirrel_Mail, SMB, SUIDs, pkexec, cronjobs, RFI, LFI, Public Exploit, CMS, Cuppa_CMS, PrivEsc",
     "date": "2024-04-27 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://tryhackme.com/r/room/skynet
     
   
@@ -277,47 +308,52 @@
     
       Machine Created by
       tryhackme
-..."
+...
   },
+  
   {
     "title": "Pov",
     "url": "/posts/Pov/",
     "categories": "HackTheBox",
     "tags": "SeDebugPrivilege, ViewState, Deserialization, ysoserial, ASP_Net, PSCredential, PrivEsc, LFI",
     "date": "2024-04-27 00:00:00 +0530",
-    "content": "You will get to know about these vulnerabilities -&gt; `Deserialization`,`Arbitrary File Read`,`Information Disclosure`,`Remote Code Execution`."
+    "content": You will get to know about these vulnerabilities -&gt; `Deserialization`,`Arbitrary File Read`,`Information Disclosure`,`Remote Code Execution`.
   },
+  
   {
     "title": "Office",
     "url": "/posts/Office/",
     "categories": "HackTheBox",
     "tags": "SharpGPOAbuse, Wireshark, keytab, Active Directory, Port Forwarding, Joomla, DPAPI, Public Exploit, File Upload, PrivEsc, CMS",
     "date": "2024-04-27 00:00:00 +0530",
-    "content": "You will get to know about these vulnerabilities -&gt; `Group Membership`, `Information Disclosure`, `Weak Credentials`, `Misconfiguration`."
+    "content": You will get to know about these vulnerabilities -&gt; `Group Membership`, `Information Disclosure`, `Weak Credentials`, `Misconfiguration`.
   },
+  
   {
     "title": "Monitored",
     "url": "/posts/Monitored/",
     "categories": "HackTheBox",
     "tags": "api, Nagios, PrivEsc, UDP, SNMP, SQLi, sqlmap, CMS",
     "date": "2024-04-27 00:00:00 +0530",
-    "content": "You will get to know about these vulnerabilities -&gt; `Remote Code Execution`, `SQL Injection`, `Misconfiguration`."
+    "content": You will get to know about these vulnerabilities -&gt; `Remote Code Execution`, `SQL Injection`, `Misconfiguration`.
   },
+  
   {
     "title": "Jab",
     "url": "/posts/Jab/",
     "categories": "HackTheBox",
     "tags": "MSRPC, Jabber, ASREPRoast, Active Directory, Pidgin, Gajim, XMPP_Client, Port Forwarding, Public Exploit, dcomexec.py, DCOM, PrivEsc",
     "date": "2024-04-27 00:00:00 +0530",
-    "content": "You will get to know about these vulnerabilities -&gt; `Clear Text Credentials`, `Weak Permissions`, `Weak Credentials`."
+    "content": You will get to know about these vulnerabilities -&gt; `Clear Text Credentials`, `Weak Permissions`, `Weak Credentials`.
   },
+  
   {
     "title": "Game Zone",
     "url": "/posts/Game-Zone/",
     "categories": "TryHackMe",
     "tags": "pkexec, PrivEsc, SQLi, sqlmap, SUIDs, Port Forwarding, Webmin, CMS, Metasploit",
     "date": "2024-04-27 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://tryhackme.com/r/room/gamezone
     
   
@@ -332,15 +368,16 @@
     
     
       Machine Created by
-      Security..."
+      Security...
   },
+  
   {
     "title": "Crocc Crew",
     "url": "/posts/Crocc-Crew/",
     "categories": "TryHackMe",
     "tags": "ASREPRoast, Active Directory, AllowedToDelegate, BloodHound, Kerberosting, PrivEsc, rdesktop, constrained_delegation, GetST.py, secretsdump, netexec, lookupsid.py",
     "date": "2024-04-27 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://tryhackme.com/r/room/crocccrew
     
   
@@ -354,15 +391,16 @@
        Insane 
     
     
-      Machine C..."
+      Machine C...
   },
+  
   {
     "title": "Crafty",
     "url": "/posts/Crafty/",
     "categories": "HackTheBox",
     "tags": "log4j, Public Exploit, minecraft, RunAsCs, PrivEsc",
     "date": "2024-04-27 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://app.hackthebox.com/machines/Crafty
     
   
@@ -377,15 +415,16 @@
     
     
       Machine Created by
-     ..."
+     ...
   },
+  
   {
     "title": "Hospital",
     "url": "/posts/Hospital/",
     "categories": "HackTheBox",
     "tags": "PrivEsc, Public Exploit, Ghostscript, File Upload, Windows",
     "date": "2024-04-03 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://app.hackthebox.com/machines/Hospital
     
   
@@ -399,23 +438,25 @@
        Medium 
     
     
-      Machine Crea..."
+      Machine Crea...
   },
+  
   {
     "title": "Year Of The Fox",
     "url": "/posts/Year-of-the-Fox/",
     "categories": "TryHackMe",
     "tags": "PrivEsc, Port Forwording, socat, shutdown, Password Bruteforce",
     "date": "2024-03-24 00:00:00 +0530",
-    "content": "Don&#39;t underestimate the sly old fox..."
+    "content": Don&#39;t underestimate the sly old fox...
   },
+  
   {
     "title": "Year Of The Dog",
     "url": "/posts/Year-of-the-Dog/",
     "categories": "TryHackMe",
     "tags": "SQLi, gitea, RFI, SUIDs, PrivEsc, socat, Port Forwording",
     "date": "2024-03-23 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://tryhackme.com/r/room/yearofthedog
     
   
@@ -430,15 +471,16 @@
     
     
       Machine Created by
-      Muir..."
+      Muir...
   },
+  
   {
     "title": "Iron Corp",
     "url": "/posts/Iron-Corp/",
     "categories": "TryHackMe",
     "tags": "SSRF, Windows, PrivEsc, Command Injection",
     "date": "2024-03-21 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://tryhackme.com/r/room/ironcorp
     
   
@@ -453,15 +495,16 @@
     
     
       Machine Created by
-      MrSe..."
+      MrSe...
   },
+  
   {
     "title": "Fusion Corp",
     "url": "/posts/Fusion-Corp/",
     "categories": "TryHackMe",
     "tags": "SeBackupPrivilege, secretsdump, BloodHound, Active Directory, ASREPRoast, PrivEsc, Backup-ToSystem",
     "date": "2024-03-19 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://tryhackme.com/r/room/fusioncorp
     
   
@@ -475,23 +518,25 @@
        Hard 
     
     
-      Machine Cr..."
+      Machine Cr...
   },
+  
   {
     "title": "Year Of The Owl",
     "url": "/posts/Year-of-the-Owl/",
     "categories": "TryHackMe",
     "tags": "SNMP, hydra, PrivEsc, Windows, secretsdump, Password Bruteforce, UDP",
     "date": "2024-03-18 00:00:00 +0530",
-    "content": "The foolish owl sits on his throne..."
+    "content": The foolish owl sits on his throne...
   },
+  
   {
     "title": "Set",
     "url": "/posts/Set/",
     "categories": "TryHackMe",
     "tags": "Active Directory, Fuzzing, SMB, plink, Metasploit, mslink, PrivEsc",
     "date": "2024-03-09 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       Set
     
   
@@ -511,15 +556,16 @@
   
 
 
-Por..."
+Por...
   },
+  
   {
     "title": "Ra 2",
     "url": "/posts/Ra-2/",
     "categories": "TryHackMe",
     "tags": "Active Directory, SeImpersonatePrivilege, GodPotato, ADCS, OpenSSL, pfx, responder, nsupdate, dig, crackpkcs12",
     "date": "2024-03-08 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://tryhackme.com/room/ra2
     
   
@@ -534,423 +580,105 @@ Por..."
     
     
       Machine Created by
-..."
+...
   },
+  
   {
     "title": "Weasel",
     "url": "/posts/Weasel/",
     "categories": "TryHackMe",
     "tags": "Windows, PrivEsc",
     "date": "2024-03-06 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-┌──(kali㉿kali)-[~..."
+    "content": Port Scan Results ⤵️
+┌──(kali㉿kali)-[~/Downloads/Tryhackme/Weasel]
+└─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.161.35 -Pn
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-03-03 21:07...
   },
+  
   {
     "title": "Vulnnet Roasted",
     "url": "/posts/VulnNet-Roasted/",
     "categories": "TryHackMe",
     "tags": "Active Directory, ASREPRoast, GetUserSPNs.py, GetNPUsers.py, PrivEsc, SMB, Kerberosting, icacls, recon",
     "date": "2024-03-06 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
+    "content": Port Scan Results ⤵️
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/VulnNet_Roasted]
-└─$ sudo nmap -s..."
+└─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.138.220 -Pn
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-0...
   },
+  
   {
     "title": "Surveillance",
     "url": "/posts/Surveillance/",
     "categories": "HackTheBox",
     "tags": "Public Exploit, Port Forwarding, PrivEsc, Password Cracking",
     "date": "2024-03-06 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
+    "content": Port Scan Results ⤵️
 ┌──(kali🔥kali)-[~/Downloads/HTB/Surveillance]
 └─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.11.245 -Pn
-Nmap scan report for 10..."
+Nmap scan report for 10.10.11.245
+Host is up (0.29s latency).
+...
   },
+  
   {
     "title": "Steel Mountain",
     "url": "/posts/Steel-Mountain/",
     "categories": "TryHackMe",
     "tags": "Windows, HFS, Unquoted_Service_Path, Public Exploit, PrivEsc",
     "date": "2024-03-06 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-┌──(k..."
+    "content": Port Scan Results ⤵️
+┌──(kali㉿kali)-[~/Downloads/Tryhackme/steel_mountain]
+└─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.161.188 -Pn
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( ht...
   },
+  
   {
     "title": "Services",
     "url": "/posts/Services/",
     "categories": "TryHackMe",
     "tags": "netexec, PrivEsc, ASREPRoast, GetNPUsers.py, Service_Operators, Windows",
     "date": "2024-03-06 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-┌──(kali🔥ka..."
+    "content": Port Scan Results ⤵️
+┌──(kali🔥kali)-[~/Downloads/Tryhackme/Service]
+└─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.239.246 -Pn
+Nmap scan report for 10.10.239.246
+Host is up (0.17s latency...
   },
+  
   {
     "title": "Reset",
     "url": "/posts/Reset/",
     "categories": "TryHackMe",
     "tags": "GetST.py, Forced_Change_Password, Active Directory, ASREPRoast, GetNPUsers.py, SMB, GenericAll, AllowedToDelegate, PrivEsc",
     "date": "2024-03-06 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-┌──(kali㉿kali)-[~/Download..."
+    "content": Port Scan Results ⤵️
+┌──(kali㉿kali)-[~/Downloads/Tryhackme/Reset]
+└─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.199.27 -Pn 
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://nma...
   },
+  
   {
     "title": "Razorblack",
     "url": "/posts/RazorBlack/",
     "categories": "TryHackMe",
     "tags": "ASREPRoast, Kerberosting, PrivEsc, NFS, Active Directory, GetNPUsers.py, GetUserSPNs.py, PSCredential, SeBackupPrivilege",
     "date": "2024-03-06 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62..."
+    "content": Port Scan Results ⤵️
+┌──(kali🔥kali)-[~/Downloads/Tryhackme/RazorBlack]
+└─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.69.53 -Pn
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-02-27 20...
   },
+  
   {
     "title": "HackPark",
     "url": "/posts/HackPark/",
     "categories": "TryHackMe",
     "tags": "EfsPotato, Windows, Public Exploit, SeImpersonatePrivilege, hydra",
     "date": "2024-03-05 00:00:00 +0530",
-    "content": "Machine Link
+    "content": Machine Link
       https://tryhackme.com/room/hackpark
     
   
@@ -965,1902 +693,665 @@ Nmap scan report for 10..."
     
     
       Machine Created by
-      tryh..."
+      tryh...
   },
+  
   {
     "title": "Enterprise",
     "url": "/posts/Enterprise/",
     "categories": "TryHackMe",
     "tags": "Active Directory, Unquoted_Service_Path, GetUserSPNs.py, PrivEsc, OSINT, RDP",
     "date": "2024-02-22 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-nmap -sV -T5 -p- -oN Nmap_Result..."
+    "content": Port Scan Results ⤵️
+nmap -sV -T5 -p- -oN Nmap_Results.txt -Pn 10.10.62.184
+Warning: 10.10.62.184 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.10.62.184
+Host is up ...
   },
+  
   {
     "title": "Allsignpoint2pwnage",
     "url": "/posts/AllSignPoint2Pwnage/",
     "categories": "TryHackMe",
     "tags": "SeImpersonatePrivilege, PrivEsc, SMB, Windows",
     "date": "2024-02-21 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
+    "content": Port Scan Results ⤵️
 
 
 FTP Enumeration 🔽
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
 ┌──(kali🔥kali)-[~/Downloads/Tryhackme/AllSignPoint2Pwnage]
 └─$ ftp 10.10.146.103
-Connected to ..."
+Connected to 10.10.146.103.
+220 Microsoft FTP Service
+Name (10.10.146.103:k...
   },
+  
   {
     "title": "Expose",
     "url": "/posts/Expose/",
     "categories": "TryHackMe",
     "tags": "PrivEsc, SUIDs, sqlmap, LFI",
     "date": "2024-02-20 00:00:00 +0530",
-    "content": "Machine Link : https://tryhackme.com/room/expose
+    "content": Machine Link : https://tryhackme.com/room/expose
 Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-4..."
+┌──(kali🔥kali)-[~/Downloads/Tryhackme/Expose]
+└─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.2.163 -Pn
+Nmap scan repo...
   },
+  
   {
     "title": "Builder",
     "url": "/posts/Builder/",
     "categories": "HackTheBox",
     "tags": "CMS, Jenkins, Public Exploit, PrivEsc",
     "date": "2024-02-14 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
+    "content": Port Scan Results ⤵️
 ┌──(kali🔥kali)-[~/Downloads/HTB/Builder]
 └─$ nmap -sC -sV -T4 -p- -oN Nmap_Results.txt -Pn 10.10.11.10
 PORT     STATE SERVICE     VERSION
-22/tcp   open  ssh  ..."
+22/tcp   open  ssh         OpenSSH 8.9...
   },
+  
   {
     "title": "Bizness",
     "url": "/posts/Bizness/",
     "categories": "HackTheBox",
     "tags": "Ofbiz, SHA-1, PrivEsc",
     "date": "2024-02-12 00:00:00 +0530",
-    "content": "Detailed Port Scan Results ⤵️
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
+    "content": Detailed Port Scan Results ⤵️
 ┌──(kali🔥kali)-[~/Downloads/HTB/Bizness]
-└─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.11...."
+└─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.11.252 
+Nmap scan report for 10.10.11.252
+Host is up (0.16s latency)....
   },
+  
   {
     "title": "Umbrella",
     "url": "/posts/Umbrella/",
     "categories": "TryHackMe",
     "tags": "PrivEsc, Docker_Registry, Node.js, eval, mysql",
     "date": "2024-02-03 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
 ┌──(kali㉿kali)-[~/Downloads/Tryhackme/umbrella]
 └─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.161.195 -Pn
-[sudo] passwor..."
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://...
   },
+  
   {
     "title": "Worker",
     "url": "/posts/Worker/",
     "categories": "HackTheBox",
     "tags": "Azure DevOps, GodPotato, PrivEsc, SeImpersonatePrivilege, Subversion, Windows",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
 ┌──(kali㉿kali)-[~/Downloads/HTB/Worker]
 └─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.10.203 -Pn
 Nmap scan report for 10.10.10.203
-Host is up..."
+Host is up (0.10s latency).
+Not sh...
   },
+  
   {
     "title": "UpDown",
     "url": "/posts/UpDown/",
     "categories": "HackTheBox",
     "tags": "LFI, PrivEsc, Request-Header, SUIDs, git, python",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
 ┌──(kali㉿kali)-[~/Downloads/HTB/UpDown]
 └─$ nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.11.177
 Nmap scan report for 10.10.11.177
-Host is..."
+Host is up (0.50s latency).
+Not shown: 6553...
   },
+  
   {
     "title": "Support",
     "url": "/posts/Support/",
     "categories": "HackTheBox",
     "tags": "BloodHound, GenericAll, Rubeus, ldapsearch, powermad",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
 ┌──(kali㉿kali)-[~/Downloads/HTB/Support]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.11.174 -Pn
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://nmap.org...
   },
+  
   {
     "title": "ServMon",
     "url": "/posts/ServMon/",
     "categories": "HackTheBox",
     "tags": "Password Bruteforce, Port Forwarding, PrivEsc, Public Exploit, Windows",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-6..."
+┌──(kali㉿kali)-[~/Downloads/HTB/ServMon]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.10.184
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://nmap.org ) a...
   },
+  
   {
     "title": "SecNotes",
     "url": "/posts/SecNotes/",
     "categories": "HackTheBox",
     "tags": "JuicyPotato, PrivEsc, SMB, SQLi, Windows",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
 ┌──(kali㉿kali)-[~/Downloads/HTB/SecNotes]
-└─$ sudo nmap -sC -sV -p- -T5 -oN Nma..."
+└─$ sudo nmap -sC -sV -p- -T5 -oN Nmap_Result.txt 10.10.10.97
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://nmap.org ) a...
   },
+  
   {
     "title": "Sauna",
     "url": "/posts/Sauna/",
     "categories": "HackTheBox",
     "tags": "Active Directory, BloodHound, DCSync, PrivEsc, kerbrute, ldapsearch",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
 ┌──(kali㉿kali)-[~/Downloads/HTB/Sauna]
-└─$ sudo nmap..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.10.175 -Pn
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://nmap.org )...
   },
+  
   {
     "title": "Return",
     "url": "/posts/Return/",
     "categories": "HackTheBox",
     "tags": "Active Directory, PrivEsc, Server Operators",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-┌──(kali㉿kali)-[~/Downloads/HTB..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Return]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.11.108 -Pn
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-20 21:47 IST
+N...
   },
+  
   {
     "title": "Pandora",
     "url": "/posts/Pandora/",
     "categories": "HackTheBox",
     "tags": "Port Forwarding, PrivEsc, Public Exploit, RFI, SNMP, SUIDs, UDP",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
 In all scans I got the port 22,80 open only but though UDP scan I got the SNMP port as open port so lets see into it .
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-2..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Pandora]
+└─$ sudo nmap ...
   },
+  
   {
     "title": "Omni",
     "url": "/posts/Omni/",
     "categories": "HackTheBox",
     "tags": "Import-Clixml, PowerShell, PrivEsc, Public Exploit, Windows",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
 ┌──(kali㉿kali)-[~/Downloads/HTB/Omni]
 └─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.10.204
-Nmap scan report for 10.10.10..."
+Nmap scan report for 10.10.10.204
+Host is up (0.11s latency).
+Not shown: 6...
   },
+  
   {
     "title": "Object",
     "url": "/posts/Object/",
     "categories": "HackTheBox",
     "tags": "Active Directory, BloodHound, ForceChangePassword, GenericWrite, Jenkins, PrivEsc, Rubeus, WriteOwner",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
 ┌──(kali㉿kali)-[~/Downloads/HTB/Object]
 └─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.11.132 -Pn
-Starting Nmap 7.94SVN ( https..."
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-18 13:57 IST
+N...
   },
+  
   {
     "title": "Love",
     "url": "/posts/Love/",
     "categories": "HackTheBox",
     "tags": "AlwaysInstallElevated, File Upload, PrivEsc, SQLi, SSRF, Windows, sqlmap",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-┌──(..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Love]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.10.239 -Pn
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://nmap.org ) ...
   },
+  
   {
     "title": "Legacy",
     "url": "/posts/Legacy/",
     "categories": "HackTheBox",
     "tags": "Public Exploit, SMB, Windows",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-6..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Legacy]
+└─$ rustscan -t 5000 -a 10.10.10.4 --ulimit 5000
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+| {}  }| { } |{ {__ {_   _}{ ...
   },
+  
   {
     "title": "Jeeves",
     "url": "/posts/Jeeves/",
     "categories": "HackTheBox",
     "tags": "Jenkins, JuicyPotato, PrivEsc, SeImpersonatePrivilege, Windows",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
 ┌──(kali㉿kali)-[~/Downloads/HTB/Jeeves]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.tx..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.10.63
+Nmap scan report for 10.10.10.63
+Host is up (0.36s latency).
+Not shown: 6...
   },
+  
   {
     "title": "Intelligence",
     "url": "/posts/Intelligence/",
     "categories": "HackTheBox",
     "tags": "Active Directory, AllowedToDelegate, BloodHound, PrivEsc, ReadGMSAPassword, Service Ticket, dnstool.py, GetST.py, krbrelayx, pdftotext",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-6..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Intelligence]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.10.248 -Pn
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-14 16:35...
   },
+  
   {
     "title": "Escape",
     "url": "/posts/Escape/",
     "categories": "HackTheBox",
     "tags": "ADCS, Active Directory, Certify, MSSQL, PrivEsc, Rubeus, SMB, mssqlclient.py",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-6..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Escape]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.11.202 -Pn
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://nmap.org ...
   },
+  
   {
     "title": "Chatterbox",
     "url": "/posts/Chatterbox/",
     "categories": "HackTheBox",
     "tags": "Buffer Overflow, PrivEsc, Public Exploit, Windows, icacls",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
 ┌──(kali㉿kali)-[~/Downloads/HTB/Chatterbox]
-└─$ nmap -sC -sV -p- -T..."
+└─$ nmap -sC -sV -p- -T5 -oN Nmap_Result.txt -Pn 10.10.10.74
+Nmap scan report for 10.10.10.74
+Host is up (0.24s latency).
+Not shown...
   },
+  
   {
     "title": "Cascade",
     "url": "/posts/Cascade/",
     "categories": "HackTheBox",
     "tags": "AD Recycle Bin, Active Directory, PrivEsc, SMB, disassemble, ldapsearch",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
 ┌──(kali㉿kali)-[~/Downloads/HTB/Cascade]
-└─$ sudo nmap -sC -sV -p- -T4 -o..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.10.182 -Pn
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://nmap.org...
   },
+  
   {
     "title": "Busqueda",
     "url": "/posts/Busqueda/",
     "categories": "HackTheBox",
     "tags": "PrivEsc, Public Exploit, gitea, searcher",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
 ┌──(kali㉿kali)-[~/Downloads/HTB/Busqueda]
 └─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.11.208
-[sudo] password for..."
+[sudo] password for kali: 
+Starting Nmap 7.94SVN ( https://nmap.org ) ...
   },
+  
   {
     "title": "Buff",
     "url": "/posts/Buff/",
     "categories": "HackTheBox",
     "tags": "Port Forwarding, PrivEsc, Public Exploit, Windows, Chisel",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
 ┌──(kali㉿kali)-[~/Downloads/HTB/Buff]
 └─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.10.198
 [sudo] password for kali: 
-Starting Nmap ..."
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2...
   },
+  
   {
     "title": "Bounty",
     "url": "/posts/Bounty/",
     "categories": "HackTheBox",
     "tags": "File Upload, JuicyPotato, PrivEsc, SeImpersonatePrivilege, Windows, config",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
 ┌──(kali㉿kali)-[~/Downloads/HTB/Bounty]
 └─$ sudo nmap -sC -sV -p- -T5 -oN Nmap_Result.txt 10.10.10.93
 [sudo] password for kali: 
-Startin..."
+Starting Nmap 7.94SVN ( https://nmap.org ) at ...
   },
+  
   {
     "title": "Bastion",
     "url": "/posts/Bastion/",
     "categories": "HackTheBox",
     "tags": "Password Cracking, PrivEsc, SMB, Windows, guestmount, mRemoteNG, mount",
     "date": "2024-01-25 00:00:00 +0530",
-    "content": "Port Scan Result ⤵️
+    "content": Port Scan Result ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-┌──(kali㉿kali)-[~..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Bastion]
+└─$ nmap -sC -sV -p- -T5 -oN Nmap_Result.txt 10.10.10.134
+Warning: 10.10.10.134 giving up on port because retransmission cap hit (2).
+N...
   },
+  
   {
     "title": "TwoMillion",
     "url": "/posts/TwoMillion/",
     "categories": "HackTheBox",
     "tags": "Command Injection, Public Exploit, Obfuscation, PrivEsc",
     "date": "2023-12-10 00:00:00 +0530",
-    "content": "HackTheBox Easy Machine TwoMillion
+    "content": HackTheBox Easy Machine TwoMillion
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-┌──(kali㉿kali)-[~/Downloads/HTB/T..."
+┌──(kali㉿kali)-[~/Downloads/HTB/TwoMillion]
+└─$ nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.11.221
+Warning: 10.10.11.221 giving up on p...
   },
+  
   {
     "title": "Stealth",
     "url": "/posts/Stealth/",
     "categories": "TryHackMe",
     "tags": "File Upload, GodPotato, Windows, PrivEsc",
     "date": "2023-12-10 00:00:00 +0530",
-    "content": "TryHackme Medium Machine Stealth
+    "content": TryHackme Medium Machine Stealth
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50..."
+┌──(kali㉿kali)-[~/Downloads/Tryhackme/Stealth]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.102.82
+[sudo] password for kali: 
+Sta...
   },
+  
   {
     "title": "My-CMSMS",
     "url": "/posts/My-CMSMS/",
     "categories": "Proving Grounds, Play",
     "tags": "CMS, Public Exploit, mysql, sudo exploit, PrivEsc",
     "date": "2023-12-10 00:00:00 +0530",
-    "content": "You can also find this machine on VulnHub : My-CMSMS
+    "content": You can also find this machine on VulnHub : My-CMSMS
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-┌──(kali㉿kali)-[~/Downloads/Provi..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/MY-CMSMS]
+└─$ nmap -sC -sV -p- -T4 -oN Nmap_results.txt 192.168.171.74
+Nmap s...
   },
+  
   {
     "title": "Moneybox",
     "url": "/posts/Moneybox/",
     "categories": "Proving Grounds, Play",
     "tags": "FTP, Password Bruteforce, PrivEsc, perl",
     "date": "2023-12-10 00:00:00 +0530",
-    "content": "You can also find this machine on VulnHub : Moneybox
+    "content": You can also find this machine on VulnHub : Moneybox
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-┌──(kali㉿kali)-[~/Downloads..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Moneybox]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 192.168.171.230  ...
   },
+  
   {
     "title": "Devvortex",
     "url": "/posts/Devvortex/",
     "categories": "HackTheBox",
     "tags": "Joomla, Password Cracking, PrivEsc, apport-cli, mysql",
     "date": "2023-12-10 00:00:00 +0530",
-    "content": "HackTheBox Easy Machine Devvortex
+    "content": HackTheBox Easy Machine Devvortex
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
 ┌──(kali㉿kali)-[~/Downloads/HTB/Devvortex]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.1..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.11.242 -Pn
+Starting Nmap 7.94SVN ( https...
   },
+  
   {
     "title": "Deception : 1.1",
     "url": "/posts/Deception-1.1/",
     "categories": "VulnHub",
     "tags": "Password Bruteforce, Recon, SUIDs, Password Generate, pkexec",
     "date": "2023-12-10 00:00:00 +0530",
-    "content": "Description➡️
+    "content": Description➡️
 
 
 💡 This machine is the next part of [Deception](https://www.vulnhub.com/entry/haclabs-deception11,440/) machine. This time try harder to get root!
 
-To complete this challenge you nee..."
+To complete this challenge you nee...
   },
+  
   {
     "title": "Broker",
     "url": "/posts/Broker/",
     "categories": "HackTheBox",
     "tags": "ActiveMQ, Metasploit, Nginx, PrivEsc, Public Exploit",
     "date": "2023-12-10 00:00:00 +0530",
-    "content": "HackTheBox Easy Machine Broker
+    "content": HackTheBox Easy Machine Broker
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-5..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Broken]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.11.243                                        ...
   },
+  
   {
     "title": "Blogger",
     "url": "/posts/Blogger/",
     "categories": "VulnHub",
     "tags": "File Upload, Hid&Trial, PrivEsc, Wordpress",
     "date": "2023-12-10 00:00:00 +0530",
-    "content": "VulnHub Easy Machine blogger: 1
+    "content": VulnHub Easy Machine blogger: 1
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
 ┌──(kali㉿kali)-[~/Downloads/Vulnhub/Blogger]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.tx..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.0.2.15
+Starting Nmap 7.94SVN ( https://nmap...
   },
+  
   {
     "title": "AVenger",
     "url": "/posts/Avenger/",
     "categories": "TryHackMe",
     "tags": "Antivirus Evasion, Public Exploit, UAC, Wordpress, Windows",
     "date": "2023-12-10 00:00:00 +0530",
-    "content": "TryHackMe AVenger
+    "content": TryHackMe AVenger
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55..."
+┌──(kali㉿kali)-[~/Downloads/Tryhackme/Avenger]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_Result.txt 10.10.159.75 
+[sudo] password for kali: 
+Starting Nmap 7.9...
   },
+  
   {
     "title": "Valley",
     "url": "/posts/Valley/",
     "categories": "TryHackMe",
     "tags": "FTP, PrivEsc, UPX, pcapng, python",
     "date": "2023-11-28 00:00:00 +0530",
-    "content": "TryHackMe Machine ➡️   Easy                            
+    "content": TryHackMe Machine ➡️   Easy                            
 #FTP  #UPX  #pcapng  #python                     
 
 https://tryhackme.com/room/valleype
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-1..."
+┌──(kali㉿kali)-[~/Downloads/Try...
   },
+  
   {
     "title": "Observer",
     "url": "/posts/Observer/",
     "categories": "HackMyVM",
     "tags": "Fuzzing, PrivEsc, Soft_Link",
     "date": "2023-11-27 00:00:00 +0530",
-    "content": "HackMyVM Machine ➡️   Easy                   
+    "content": HackMyVM Machine ➡️   Easy                   
 #Fuzzing  #Soft_Link                         
 
 Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30..."
+┌──(kali㉿kali)-[~/Downloads/HackMyVM/Observer]
+└─$ sudo nmap -sC -sV -p- -T4 -oN...
   },
+  
   {
     "title": "Deeper",
     "url": "/posts/Deeper/",
     "categories": "HackMyVM",
     "tags": "PrivEsc, enum, fcrackzip, scp",
     "date": "2023-11-27 00:00:00 +0530",
-    "content": "HackMyVM Machine ➡️   Easy                   
+    "content": HackMyVM Machine ➡️   Easy                   
 #scp  #fcrackzip  #enum                       
 
 Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-┌──(kali㉿kali)-[~/Downloads/HackMyVM/Dee..."
+┌──(kali㉿kali)-[~/Downloads/HackMyVM/Deeper]
+└─$ sudo nmap -sC -sV -p- -T4 -oN ...
   },
+  
   {
     "title": "Clicker",
     "url": "/posts/Clicker/",
     "categories": "HackTheBox",
     "tags": "CRLF, NFS, RFI, perl, putty_gen, PrivEsc",
     "date": "2023-11-18 00:00:00 +0530",
-    "content": "HackTheBox Machine ➡️   Medium                   
+    "content": HackTheBox Machine ➡️   Medium                   
 #CRLF  #NFS  #RFI  #perl  #putty_gen                   
 
 Description ⤵️
 
-This machine from HackTheBox , is categorized as Medium Level Machine . It..."
+This machine from HackTheBox , is categorized as Medium Level Machine . It...
   },
+  
   {
     "title": "Opacity",
     "url": "/posts/Opacity/",
     "categories": "TryHackMe",
     "tags": "File Upload, Password Bruteforce, PrivEsc, Keepass",
     "date": "2023-11-17 00:00:00 +0530",
-    "content": "TryHackMe Machine ➡️   Easy                   
+    "content": TryHackMe Machine ➡️   Easy                   
 #File Upload  #Password Bruteforce  #keepass                       
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23..."
+┌──(kali㉿kali)-[~/Downloads/Tryhackme/Opacity]
+└─$ sudo nma...
   },
+  
   {
     "title": "Tiny",
     "url": "/posts/Tiny/",
     "categories": "HackMyVM",
     "tags": "Port Forwarding, PrivEsc, SQLi, Shortcode, Wordpress, pspy64, socat",
     "date": "2023-11-10 00:00:00 +0530",
-    "content": "HackMyVM Machine ➡️   Hard                   
+    "content": HackMyVM Machine ➡️   Hard                   
 #Port Forwarding  #SQLi  #Shortcode  #Wordpress  #pspy64  #socat                 
 
 Port Scan Results ➡️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18..."
+┌──(kali㉿kali)-[~/Downloads/HackMyVM/Tiny]
+└...
   },
+  
   {
     "title": "Codify",
     "url": "/posts/Codify/",
     "categories": "HackTheBox",
     "tags": "Node.js, Password Bruteforce, PrivEsc, Public Exploit, sqlite",
     "date": "2023-11-10 00:00:00 +0530",
-    "content": "HackTheBox Machine ➡️   Easy                   
+    "content": HackTheBox Machine ➡️   Easy                   
 #Node.js  #sqlite  #Password Bruteforce  #Public Exploit                   
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Codify]
+└─$ nmap -...
   },
+  
   {
     "title": "For Bussiness Reason",
     "url": "/posts/For-Bussiness-Reason/",
     "categories": "TryHackMe",
     "tags": "Chisel, Pivoting, Wordpress, Docker, PrivEsc",
     "date": "2023-11-03 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 This machine is For Bussiness Reasons , It is from TryHackMe Platform and categorized as Medium machine . This Machine is based on Pivoting .
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-..."
+┌──(kali㉿kali)-[...
   },
+  
   {
     "title": "Flossy",
     "url": "/posts/Flossy/",
     "categories": "HackMyVM",
     "tags": "Graphql, Network_Reset, tty, PrivEsc",
     "date": "2023-10-31 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 This machine is Flossy , It is from HackMyVM Platform and categorized as Medium machine . I learned about the tty function in detailed in this machine.
 
@@ -2868,41 +1359,31 @@ Port Scan Results ⤵️
 
 
 
-1
-2
-..."
+┌──(...
   },
+  
   {
     "title": "Unbaked Pie",
     "url": "/posts/Unbaked-Pie/",
     "categories": "TryHackMe",
     "tags": "Chisel, Deserialization, Pivoting, PythonPATH, PrivEsc",
     "date": "2023-10-28 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 This machine is Unbaked Pie , It is from TryHackMe Platform and categorized as Medium machine . This Machine has pickle vulnerability .
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-1..."
+┌──(kali㉿kali)-[~/Down...
   },
+  
   {
     "title": "Simple",
     "url": "/posts/Simple/",
     "categories": "HackMyVM",
     "tags": "CrackMapExec, GodPotato, Windows, PrivEsc",
     "date": "2023-10-28 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 This machine is *Simple* , It is from HackMyVM Platform and categorized as Medium machine . Recon is the Essential thing to exploit this machine.
 
@@ -2910,92 +1391,59 @@ Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-..."
+┌──(kali㉿k...
   },
+  
   {
     "title": "Napping : 1.0.1",
     "url": "/posts/Napping-1.0.1/",
     "categories": "VulnHub",
     "tags": "PrivEsc, Public Exploit, target='_blank'",
     "date": "2023-10-25 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/napping1.0.1]
 └─$ nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.75
-Nmap scan..."
+Nmap scan report for 10.0.2.75
+Host is up (0.00082s latency)...
   },
+  
   {
     "title": "Analytics",
     "url": "/posts/Analytics/",
     "categories": "HackTheBox",
     "tags": "Metasploit, PrivEsc, Public Exploit",
     "date": "2023-10-25 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 This is a *Analytics* machine writeup/walkthrough, from HackTheBox platform.
 This Machine is vulnerable to Metabase version .
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14..."
+┌──(kali㉿kali)-[~/Downloads/HTB/...
   },
+  
   {
     "title": "Vega",
     "url": "/posts/Vega/",
     "categories": "PwnTillDawn",
     "tags": "Password Bruteforce, Hid&Trial, PrivEsc",
     "date": "2023-10-15 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
-This is a *Hollywood* machine writeup/walkthrough, from PwnTillDawn platform -&amp;gt; https://online.pwntilldawn.com/ with is maintain through wizlynx group -&amp;gt; https://www.wizlynxgr..."
+This is a *Hollywood* machine writeup/walkthrough, from PwnTillDawn platform -&amp;gt; https://online.pwntilldawn.com/ with is maintain through wizlynx group -&amp;gt; https://www.wizlynxgr...
   },
+  
   {
     "title": "Economist",
     "url": "/posts/Economist/",
     "categories": "HackMyVM",
     "tags": "FTP, cewl, Password Bruteforce, PrivEsc",
     "date": "2023-10-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 This machine is *Economist* , It is from HackMyVM Platform and categorized as Medium machine . Recon is the Essential thing to exploit this machine.
 
@@ -3003,152 +1451,93 @@ Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4..."
+┌──(kal...
   },
+  
   {
     "title": "DoomOps",
     "url": "/posts/DOOMOPS/",
     "categories": "PwnTillDawn",
     "tags": "Active Directory, BloodHound, CrackMapExec, GetNPUsers.py, LDAP, Mimikatz, SMB, Windows, ldapsearch, PrivEsc",
     "date": "2023-10-14 00:00:00 +0530",
-    "content": "PwnTillDawn Machine ➡️   Easy                          
+    "content": PwnTillDawn Machine ➡️   Easy                          
 #Active Directory  #BloodHound  #CrackMapExec  #GetNPUsers.py  #LDAP  #Mimikatz  #SMB  #ldapsearch                   
 
 Port Scan Results ⤵️
 
-..."
+...
   },
+  
   {
     "title": "Logan2",
     "url": "/posts/Logan2/",
     "categories": "HackMyVM",
     "tags": "LFI, Metasploit, SQLi, SUIDs, Werkzeug, gitea, php, PrivEsc",
     "date": "2023-10-12 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
-This machine is *Logan2* , It is from HackMyVM Platform and categorized as Medium machine . This machine have a vulnerability of Local File Inclusion (LFI) and gitea that leads to t..."
+This machine is *Logan2* , It is from HackMyVM Platform and categorized as Medium machine . This machine have a vulnerability of Local File Inclusion (LFI) and gitea that leads to t...
   },
+  
   {
     "title": "Za1",
     "url": "/posts/Za1/",
     "categories": "HackMyVM",
     "tags": "CMS, PrivEsc, Typecho",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
-This machine name is Za1. It is from HackMyVM Platform .it is categorised as Easy machine and basically it is Chinese Language so for decoding that into english I used an extension ..."
+This machine name is Za1. It is from HackMyVM Platform .it is categorised as Easy machine and basically it is Chinese Language so for decoding that into english I used an extension ...
   },
+  
   {
     "title": "VulnNet Active",
     "url": "/posts/VulnNet-Active/",
     "categories": "TryHackMe",
     "tags": "Active Directory, SMB, redis-cli, responder, PrivEsc, SharpHound, BloodHound, GenericWrite, SharpGPOAbuse, GPO, PrivEsc",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
 ┌──(kali㉿kali)-[~/Downloads/Tryhackme/VulnNet]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_re..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.75.19  
+[sudo] password for kali: 
+Starting Nmap 7.94 ( https://nmap.or...
   },
+  
   {
     "title": "Turtle",
     "url": "/posts/Turtle/",
     "categories": "TryHackMe",
     "tags": "PrivEsc, ShellShock, sudo exploit",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Port Scan Resutls ⤵️
+    "content": Port Scan Resutls ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
 ┌──(kali㉿kali)-[~/Downloads/Tryhackme/0day]
 └─$ rustscan -t 5000 -a 10.10.106.27 --ulimit 5000
-.----. .-. .-. .----..---.  .----. ..."
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+| {}  }| { } |{ {__ {_ ...
   },
+  
   {
     "title": "Topology",
     "url": "/posts/Topology/",
     "categories": "HackTheBox",
     "tags": "LaTeX, subdomain, PrivEsc",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
 ┌──(kali㉿kali)-[~/Downloads/HTB/Topology]
 └─$ cat Nmap_results.txt 
-# Nmap 7.94 scan initiated Wed Oct  4 21:24:34 2023 as: nmap -sC -sV..."
+# Nmap 7.94 scan initiated Wed Oct  4 21:24:34 2023 as: nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.11....
   },
+  
   {
     "title": "Suidy",
     "url": "/posts/Suidy/",
     "categories": "HackMyVM",
     "tags": "Fuzzing, Hid&Trial, PrivEsc, SUIDs",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 This machine is Suidy , It is from HackMyVM Platform and categorized as Medium machine .
 
@@ -3156,60 +1545,33 @@ Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-┌──(kali㉿kali)-[~/Downloa..."
+┌──(kali㉿kali)-[~/Downloads/HackMyVM/Suidy]
+└─$ sudo nmap -sC -sV -...
   },
+  
   {
     "title": "Principle",
     "url": "/posts/Principle/",
     "categories": "HackMyVM",
     "tags": "Fuzzing, RFI, SSH keys, SUIDs, python, subdomain, PrivEsc",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 This machine is *Principle* , It is from HackMyVM Platform and categorized as Medium machine .
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-┌──(kali㉿kali)-[~/Downloads/Ha..."
+┌──(kali㉿kali)-[~/Downloads/HackMyVM/Principle]
+└─$ sudo nmap -...
   },
+  
   {
     "title": "Inkplot",
     "url": "/posts/Inkplot/",
     "categories": "HackMyVM",
     "tags": "PrivEsc, RC4, Cryptography, Password Bruteforce, WebSocat",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 This machine is Inkploit , It is from HackMyVM Platform and categorized as Medium machine .
 
@@ -3217,730 +1579,281 @@ Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-┌──(kali㉿kali)-[~/Downloads/Hac..."
+┌──(kali㉿kali)-[~/Downloads/HackMyVM/Inkplot]
+└─$ sudo nmap -sC ...
   },
+  
   {
     "title": "Hollywood",
     "url": "/posts/Hollywood/",
     "categories": "PwnTillDawn",
     "tags": "Metasploit, Public Exploit, Windows, PrivEsc",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
-This is a Hollywood machine writeup/walkthrough, from PwnTillDawn platform -&amp;gt; https://online.pwntilldawn.com/ with is maintain through wizlynx group -&amp;gt; https://www.wizlynxgrou..."
+This is a Hollywood machine writeup/walkthrough, from PwnTillDawn platform -&amp;gt; https://online.pwntilldawn.com/ with is maintain through wizlynx group -&amp;gt; https://www.wizlynxgrou...
   },
+  
   {
     "title": "Django",
     "url": "/posts/Django/",
     "categories": "PwnTillDawn",
     "tags": "FTP, PhpMyAdmin, Windows, PrivEsc",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
-This is a Django machine writeup/walkthrough, from PwnTillDawn platform -&amp;gt; https://online.pwntilldawn.com/ with is maintain through wizlynx group -&amp;gt; https://www.wizlynxgroup.c..."
+This is a Django machine writeup/walkthrough, from PwnTillDawn platform -&amp;gt; https://online.pwntilldawn.com/ with is maintain through wizlynx group -&amp;gt; https://www.wizlynxgroup.c...
   },
+  
   {
     "title": "Breach 1",
     "url": "/posts/Breach-1/",
     "categories": "VulnHub",
     "tags": "PrivEsc, SUIDs, keystore, keytool, pkexec, Wireshark",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
-This Machine is from VulnHub Platform, and categorized as Easy-Intermediate Level. To set the Host Only Adapter got to VirtualBox &amp;gt; Tools &amp;gt; Network and then follow this image ..."
+This Machine is from VulnHub Platform, and categorized as Easy-Intermediate Level. To set the Host Only Adapter got to VirtualBox &amp;gt; Tools &amp;gt; Network and then follow this image ...
   },
+  
   {
     "title": "Assersion 101",
     "url": "/posts/Assersion-101/",
     "categories": "Proving Grounds, Play",
     "tags": "LFI, PrivEsc, RCE, sudo exploit",
     "date": "2023-10-10 00:00:00 +0530",
-    "content": "Port Scan Results ➡️
+    "content": Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Assertion101]
 └─$ cat Nmap_results.txt
-# Nmap 7.94 scan initiated Tue Jul 18 21:13:55 2023..."
+# Nmap 7.94 scan initiated Tue Jul 18 21:13:55 2023 as: nmap -sC -sV -p- -T4 -oN Nmap_results...
   },
+  
   {
     "title": "Stuntman Mike",
     "url": "/posts/Stuntman/",
     "categories": "PwnTillDawn",
     "tags": "SSH Bruteforce",
     "date": "2023-09-24 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
 ┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10.150.150.166]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.150.150.166..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.150.150.166
+Nmap scan report for 10.150.150.166
+Host is up (0.19s...
   },
+  
   {
     "title": "Silence",
     "url": "/posts/Silence/",
     "categories": "PwnTillDawn",
     "tags": "FTP, LFI, SSH Bruteforce, authorized_keys",
     "date": "2023-09-24 00:00:00 +0530",
-    "content": "Port Scan Results ➡️
+    "content": Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
 ┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10.150.150.55]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nm..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.150.150.55
+[sudo] password for kali: 
+Starting Nmap 7.94 ( https:/...
   },
+  
   {
     "title": "PC",
     "url": "/posts/PC/",
     "categories": "HackTheBox",
     "tags": "gRPC, SQLi, Port Forwarding, Public Exploit",
     "date": "2023-09-24 00:00:00 +0530",
-    "content": "Port Scan Results ➡️
+    "content": Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
 ┌──(kali㉿kali)-[~/Downloads/HTB/PC]
 └─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.11.214
 [sudo] password for kali: 
-Starting Nmap 7..."
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-...
   },
+  
   {
     "title": "Morty",
     "url": "/posts/Morty/",
     "categories": "PwnTillDawn",
     "tags": "Public Exploit, PrivEsc, subdomain",
     "date": "2023-09-24 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
 ┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10.150.150.57]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.150..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.150.150.57
+[sudo] password for kali: 
+Starting Nmap 7.94 ( https:/...
   },
+  
   {
     "title": "Juniordev",
     "url": "/posts/JuniorDev/",
     "categories": "PwnTillDawn",
     "tags": "Jenkins, Password Cracking, Port Forwarding, Python Command Injection",
     "date": "2023-09-24 00:00:00 +0530",
-    "content": "Port Scan Results ➡️
+    "content": Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
 ┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10.150.150.38]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.150.150.38     ..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.150.150.38                                   
+[sudo] password for ...
   },
+  
   {
     "title": "ICSS CTF",
     "url": "/posts/ICSS_team_CTF/",
     "categories": "VulnHub",
     "tags": "Fuzzing, LFI, SUIDs",
     "date": "2023-09-24 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-┌──(kali㉿kali)-[~/Downloads/Vulnhu..."
+┌──(kali㉿kali)-[~/Downloads/Vulnhub/ICSS]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.65     
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-19 10:13 IST
+Nma...
   },
+  
   {
     "title": "Fullmounty",
     "url": "/posts/FullMounty/",
     "categories": "PwnTillDawn",
     "tags": "Kernel Exploit, DirtyCow, NFS",
     "date": "2023-09-24 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
 ┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10.150.150.134]
-└─$ cat Nmap_resu..."
+└─$ cat Nmap_results.txt 
+# Nmap 7.94 scan initiated Sun Aug 20 22:14:12 2023 as: nmap -sC -sV -p- -T4 -oN Nmap_results...
   },
+  
   {
     "title": "ElMariachi-PC",
     "url": "/posts/ElMariachi-PC/",
     "categories": "PwnTillDawn",
     "tags": "Public Exploit, PrivEsc",
     "date": "2023-09-24 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10...."
+┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10.150.150.69]
+└─$ sudo nmap -sV -sC -p- -A -T4 -oN Nmap_results.txt 10.150.150.69
+Nmap scan report for 10.150.150.69
+Host is up (0.17s...
   },
+  
   {
     "title": "Chilakiller",
     "url": "/posts/Chilakiller/",
     "categories": "PwnTillDawn",
     "tags": "Drupal, Hid&Trial, .config, Metasploit",
     "date": "2023-09-24 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-6..."
+┌──(kali㉿kali)-[~/Downloads/PwnTillDawn/10.150.150.182]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.150.150.182
+[sudo] password for kali: 
+Starting Nmap 7.94 ( https...
   },
+  
   {
     "title": "Torment",
     "url": "/posts/Torment/",
     "categories": "VulnHub",
-    "tags": "FTP, RPC, apache2.conf, ngIRCd, smtp-user-enum, PrivEsc",
+    "tags": "FTP, RPC, apache2.conf, ngIRCd, smtp-user-enum, PrivEsc, IRC, Pidgin",
     "date": "2023-09-15 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61..."
+┌──(kali㉿kali)-[~/Downloads/Vulnhub/Torment]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 192.168.249.135                                                          1 ⚙
+...
   },
+  
   {
     "title": "SkyTower",
     "url": "/posts/Skytower/",
     "categories": "VulnHub",
     "tags": "Port Forwarding, Proxytunnel, SQLi, PrivEsc",
     "date": "2023-09-15 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   Welcome to SkyTower:1
 
-This CTF was designed by Telspace Systems for the CTF at the ITWeb Security Summit and BSidesCPT (Cape Town). The aim is to test intermediate to advanced s..."
+This CTF was designed by Telspace Systems for the CTF at the ITWeb Security Summit and BSidesCPT (Cape Town). The aim is to test intermediate to advanced s...
   },
+  
   {
     "title": "Pilgrimage",
     "url": "/posts/Pilgrimage/",
     "categories": "HackTheBox",
     "tags": "PrivEsc, Public Exploit, git",
     "date": "2023-09-15 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
 ┌──(kali㉿kali)-[~/Downloads/HTB/Pilgrimage]
 └─$ sudo nmap -sC -sV -T4 10.10.11.219 -oN Nmap_results.txt
-[sudo] password f..."
+[sudo] password for kali: 
+Starting Nmap 7.94 ( https://nmap.org ) at 2...
   },
+  
   {
     "title": "Cozyhosting",
     "url": "/posts/CozyHosting/",
     "categories": "HackTheBox",
     "tags": "Command  Injection, GTFObin, PostgreSQL, Session Hijacking, springframework",
     "date": "2023-09-15 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
 ┌──(kali㉿kali)-[~/Downloads/HTB/CozyHosting]
 └─$ sudo nmap -sC -sV -T4 -oN Nmap_results.txt 10.10.11.230
 [sudo] password for kali: 
-Star..."
+Starting Nmap 7.94 ( https://nmap.org ) at ...
   },
+  
   {
     "title": "CIA 1",
     "url": "/posts/CIA/",
     "categories": "VulnHub",
     "tags": "Password Bruteforce, Public Exploit, SUIDs, mysql",
     "date": "2023-09-15 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
 
 
-1
 IP : 10.0.2.60
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-┌──(kali㉿kali)-[~/Downloads/Vulnhub/CIA1..."
+┌──(kali㉿kali)-[~/Downloads/Vulnhub/CIA1]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.64
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-1...
   },
+  
   {
     "title": "Traverxec",
     "url": "/posts/Traverxec/",
     "categories": "HackTheBox",
     "tags": "Password Cracking, PrivEsc, Public Exploit",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "Lets see the IP address →
+    "content": Lets see the IP address →
 
-1
 IP : 10.10.10.165
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
 ┌──(kali㉿kali)-[~/Downloads/HTB/Traverxec]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results...."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.10.165
+[sudo] password for k...
   },
+  
   {
     "title": "Soccer",
     "url": "/posts/Soccer/",
     "categories": "HackTheBox",
     "tags": "CMS, PrivEsc, Public Exploit, SQLi, subdomain",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "1
-2
-3
-nano /etc/hosts 
+    "content": nano /etc/hosts 
 
 10.10.11.194     soccer.htb
 
@@ -3949,116 +1862,33 @@ PORT Scan ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-4..."
+sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.11.194
+
+PORT     STATE SERVICE         VERSION
+22/tcp   open  ssh             Op...
   },
+  
   {
     "title": "Sau",
     "url": "/posts/Sau/",
     "categories": "HackTheBox",
     "tags": "PrivEsc, Public Exploit, SSRF",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "Port Scan Results ➡️
+    "content": Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
 ┌──(kali㉿kali)-[~/Downloads/HTB/Sau]
-└─$ sudo nmap -sC -sV -T..."
+└─$ sudo nmap -sC -sV -T4 10.10.11.224 -oN Nmap_results.txt
+[sudo] password for kali: 
+Starting Nmap 7.94 ( https:/nmap.org ) at 2023-08-2...
   },
+  
   {
     "title": "Precious",
     "url": "/posts/Precious/",
     "categories": "HackTheBox",
     "tags": "PrivEsc, Public Exploit",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "1
-2
-3
-4
- IP : 10.10.11.189
+    "content": IP : 10.10.11.189
 
 sudo nano /etc/hosts
 10.10.11.189    precious.htb
@@ -4068,376 +1898,154 @@ PORT SCAN RESULTS ➡️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
 ┌──(kali㉿kali)-[~/Downloads/HTB/Precious]
-└─$ **sudo n..."
+└─$ **sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.1...
   },
+  
   {
     "title": "Nodeblog",
     "url": "/posts/NodeBlog/",
     "categories": "HackTheBox",
     "tags": "Deserialization, Mongo, NoSQL, PrivEsc, XXE",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "Lets see the IP address →
+    "content": Lets see the IP address →
 
-1
 IP : 10.10.11.139
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
 ┌──(kali㉿kali)-[~/Downloads/HTB/NodeBlog]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt ..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.11.139
+Nmap scan report for 1...
   },
+  
   {
     "title": "Meta 2",
     "url": "/posts/Meta-2/",
     "categories": "HackTheBox",
     "tags": "FTP, PrivEsc, Public Exploit, Wordpress",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "1
-IP : 10.10.11.186
+    "content": IP : 10.10.11.186
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
 ┌──(kali㉿kali)-[~/Downloads/metatwo]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.11.186
+[sudo] password for kali: 
+Starting Nmap 7.93 ( https:...
   },
+  
   {
     "title": "Keeper",
     "url": "/posts/Keeper/",
     "categories": "HackTheBox",
     "tags": "Keepass, PrivEsc, putty_gen",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "⭐ Box Profile
+    "content": ⭐ Box Profile
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
 ┌──(kali㉿kali)-[~/Downloads/HTB/Keeper]
 └─$ sudo nmap -sC -sV -T4 10.10.11.227 -oN Nmap_results.txt
 
-Starting Nmap 7.94 ( ht..."
+Starting Nmap 7.94 ( https:/nmap.org ) at 2023-08-28 13:17 ...
   },
+  
   {
     "title": "Delivery",
     "url": "/posts/Delivery/",
     "categories": "HackTheBox",
     "tags": "Password Cracking, hashcat, mysql",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "Lets see the IP address →
+    "content": Lets see the IP address →
 
-1
 IP : 10.10.10.222
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-┌──(kali㉿kal..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Delivery]
+└─$ cat Nmap_results.txt 
+# Nmap 7.94 scan initiated Sat Jul 22 20:50:05 2023 as: nmap...
   },
+  
   {
     "title": "Beep",
     "url": "/posts/Beep/",
     "categories": "HackTheBox",
     "tags": "PrivEsc, Public Exploit",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "Let see the IP Address first →
+    "content": Let see the IP Address first →
 
-1
 IP : 10.10.10.7
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-..."
+┌──(kali㉿kali)-[~/Downloads/HTB/Beep]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.10.7      
+[sudo] password for...
   },
+  
   {
     "title": "Active",
     "url": "/posts/Active/",
     "categories": "HackTheBox",
     "tags": "GPP password, Kerberos, Metasploit, SMB, impacket module",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "Port Scan Results ⤵️
+    "content": Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
 ┌──(kali㉿kali)-[~/Downloads/HTB/Active]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.10.100
+Starting Nmap 7.94 ( https:/nmap.org ) at 2023-08-07 14:43 IST
+Nmap sca...
   },
+  
   {
     "title": "Academy",
     "url": "/posts/Academy/",
     "categories": "HackTheBox",
     "tags": "Metasploit, PrivEsc, Recon",
     "date": "2023-09-01 00:00:00 +0530",
-    "content": "Lets see the IP address →
+    "content": Lets see the IP address →
 
-1
 IP : 10.10.10.215
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
 ┌──(kali㉿kali)-[~/Downloads/HTB/Academy]
-└─$ sudo nmap -sC -sV -p- -T..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.10.10.215
+[sudo] password for kal...
   },
+  
   {
     "title": "Tre",
     "url": "/posts/Tre/",
     "categories": "Proving Grounds, Play",
     "tags": "PrivEsc, SUIDs, mysql",
     "date": "2023-07-16 00:00:00 +0530",
-    "content": "Lets see the IP address →
+    "content": Lets see the IP address →
 
-1
 IP : 192.168.249.142
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/TRE]
-└─$ sudo nmap -sC -sV -p..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 192.168.249.142
+Starting N...
   },
+  
   {
     "title": "Solstice",
     "url": "/posts/Solstice/",
     "categories": "Proving Grounds, Play",
     "tags": "LFI, PrivEsc",
     "date": "2023-07-16 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
@@ -4448,50 +2056,25 @@ Let’s find the IP Address first »
 
 
 
-1
 IP : 10.0.2.59
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Solstice]
+└─$ sudo nmap -sC...
   },
+  
   {
     "title": "Seppuku",
     "url": "/posts/Seppuku/",
     "categories": "Proving Grounds, Play",
     "tags": "FTP, Lateral Movement, PrivEsc",
     "date": "2023-07-16 00:00:00 +0530",
-    "content": "Now lets check the IP of Victim Machine →
+    "content": Now lets check the IP of Victim Machine →
 
 
 
-1
 IP : 192.168.249.132
 
 
@@ -4503,45 +2086,34 @@ Port Scan Results ➡️
 
 Open Ports are →
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
 HTTP &amp;gt;
 	80			nginx 1.14.2
 	7080		LiteSpeed httpd
-	..."
+	7601		Apache httpd 2.4.38 ((Debi...
   },
+  
   {
     "title": "Funbox : Rookie",
     "url": "/posts/Funbox-Rookie/",
     "categories": "Proving Grounds, Play, Funbox",
     "tags": "FTP, Public Exploit, Unzip, PrivEsc",
     "date": "2023-07-16 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
   💡 Funbox : Rookie
 
-Boot2Root ! This can be a real life scenario if rockies becomes admins. Easy going in round about 15 mins. Bit more, if you are find and stuck in the rabbit-h..."
+Boot2Root ! This can be a real life scenario if rockies becomes admins. Easy going in round about 15 mins. Bit more, if you are find and stuck in the rabbit-h...
   },
+  
   {
     "title": "Empire Breakout",
     "url": "/posts/Empire-breakout/",
     "categories": "Proving Grounds, Play",
     "tags": "PrivEsc, SUIDs",
     "date": "2023-07-16 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 This machine consists of username enumeration through bruteforce then access the webshell after that play with SUIDs comamds for root !
@@ -4549,16 +2121,16 @@ Boot2Root ! This can be a real life scenario if rockies becomes admins. Easy goi
 
 Let’s find the IP Address first »
 
-1
-I..."
+IP ...
   },
+  
   {
     "title": "CyberSploit 1",
     "url": "/posts/CyberSploit-1/",
     "categories": "Proving Grounds, Play",
     "tags": "Kernel Exploit, PrivEsc",
     "date": "2023-07-16 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
@@ -4571,15 +2143,16 @@ THERE ARE THREE FALGS AVAILABLE IN THIS VM.
 FROM THIS VMs YOU WILL LEARN ABOUT ENCODER-DECODER &amp;amp; EXPLOIT-DB.
 
 
-..."
+...
   },
+  
   {
     "title": "Amaterasu",
     "url": "/posts/Amaterasu/",
     "categories": "Proving Grounds, Play",
     "tags": "authorized_keys, crontab, PrivEsc",
     "date": "2023-07-16 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
@@ -4588,18 +2161,17 @@ FROM THIS VMs YOU WILL LEARN ABOUT ENCODER-DECODER &amp;amp; EXPLOIT-DB.
 
 Let’s find the IP Address first »
 
-1
-IP : 192.168.171..."
+IP : 192.168.171.2...
   },
+  
   {
     "title": "OnSystemShellDredd",
     "url": "/posts/OnSystemShellDredd/",
     "categories": "Proving Grounds, Play",
     "tags": "FTP, PrivEsc, SUIDs",
     "date": "2023-06-27 00:00:00 +0530",
-    "content": "Let’s find the IP Address first »
+    "content": Let’s find the IP Address first »
 
-1
 IP : 192.168.222.130
 
 
@@ -4607,9 +2179,6 @@ Port Scan Results ➡️
 
 
 
-1
-2
-3
 OPEN PORTS &amp;gt;
 21     FTP (Try Anonymous)
 61000  SSH
@@ -4619,15 +2188,16 @@ OPEN PORTS &amp;gt;
 
 FTP Enumeration ⤵️
 
-Now Lets try Anonymous Login ..."
+Now Lets try Anonymous Login into the...
   },
+  
   {
     "title": "Sumo",
     "url": "/posts/Sumo/",
     "categories": "Proving Grounds, Play",
     "tags": "DirtyCow, PrivEsc, ShellShock",
     "date": "2023-06-26 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
@@ -4638,15 +2208,16 @@ Now Lets try Anonymous Login ..."
     - Difficulty: Beginner
     - Tested: VMware Workstation 15.x Pro
     - DHCP: Enabled
-    - Goal: Get t..."
+    - Goal: Get t...
   },
+  
   {
     "title": "Loly",
     "url": "/posts/Loly/",
     "categories": "Proving Grounds, Play",
     "tags": "Kernel Exploit, LFI, Wordpress, PrivEsc",
     "date": "2023-06-22 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 Loly ➡️
@@ -4654,20 +2225,19 @@ Now Lets try Anonymous Login ..."
   
     Difficulty: Easy
     Tested: VMware Workstation 15.x Pro (This works better with VMware rather than VirtualBox)
-    Goal: Get the root shell i.e.(root@localhost..."
+    Goal: Get the root shell i.e.(root@localhost...
   },
+  
   {
     "title": "Y0usef",
     "url": "/posts/Y0usef/",
     "categories": "Proving Grounds, Play",
     "tags": "X-Forwarded-For, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the Victim Machine IP Address ⤵️
+    "content": Lets check the Victim Machine IP Address ⤵️
 
 
 
-1
-2
 {: .nolineno}
  IP : 10.0.2.39
 
@@ -4676,112 +2246,59 @@ Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-┌──(kali㉿kali)-[~/Downloads/Proving_Ground/y0..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/y0usef]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_resu...
   },
+  
   {
     "title": "Wpwn",
     "url": "/posts/Wpwn/",
     "categories": "Proving Grounds, Play",
     "tags": "PrivEsc, RFI, Wordpress",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s find the IP Address first »
+    "content": Let’s find the IP Address first »
 
 
 
-1
 IP : 192.168.249.141
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/wpwn]
-└─$ sudo nmap -s..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 192.168.249.141...
   },
+  
   {
     "title": "Vegeta",
     "url": "/posts/Vegeta/",
     "categories": "Proving Grounds, Play",
     "tags": "Cryptography, Recon, passwd, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s find the IP Address first »
+    "content": Let’s find the IP Address first »
 
 
 
-1
 IP : 10.0.2.56
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Vegita]
-└─$ sudo nmap -sC -sV -p- ..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.56
+Starting ...
   },
+  
   {
     "title": "USV CTF-2017",
     "url": "/posts/USV_CTF_2017/",
     "categories": "Proving Grounds, Play",
     "tags": "LFI, Recon, hccapx, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets find out the Victim machines IP ⬇️IP :
+    "content": Lets find out the Victim machines IP ⬇️IP :
 
 
 
-1
-2
 {: .nolineno}
 IP : 10.0.2.35
 
@@ -4790,48 +2307,17 @@ Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-3..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/CTF_2017]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_res...
   },
+  
   {
     "title": "Sunset : Midnight",
     "url": "/posts/Sunset-midnight/",
     "categories": "Proving Grounds, Play, Sunset",
     "tags": "Password Bruteforce, PrivEsc, SUIDs, mysql, status, Wordpress",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
@@ -4839,113 +2325,71 @@ Port Scan Results ⤵️
 
 Difficulty: Intermediate
 
-Important!: Before auditing this machine make sure you add the host “sunset-midnight” to your /etc/hosts file, otherwise it may ..."
+Important!: Before auditing this machine make sure you add the host “sunset-midnight” to your /etc/hosts file, otherwise it may ...
   },
+  
   {
     "title": "Sunset Decoy",
     "url": "/posts/Sunset-Decoy/",
     "categories": "Proving Grounds, Play, Sunset",
     "tags": "Public Exploit, chrootkit, fcrackzip, hashcat, vim, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the IP address first —&amp;gt;
+    "content": Lets check the IP address first —&amp;gt;
 
 
 
-1
 IP : 10.0.2.49
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Decoy]
-└─$ sudo nm..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.49
+Starti...
   },
+  
   {
     "title": "So Simple",
     "url": "/posts/So-Simple/",
     "categories": "Proving Grounds, Play",
     "tags": "LFI, PrivEsc, Public Exploit, service, Wordpress",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
   💡 So Simple : 1 ⤵️
 This is an easy level VM with some rabbitholes. Enumeration is key to find your way in. There are three flags (2 user and 1 root flag).
 
-The VM is tested on V..."
+The VM is tested on V...
   },
+  
   {
     "title": "PxExp",
     "url": "/posts/Pxexp/",
     "categories": "Proving Grounds, Play",
     "tags": "Password Bruteforce, PrivEsc, mysql",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s find the IP Address first »
+    "content": Let’s find the IP Address first »
 
 
 
-1
 IP : 192.168.249.139
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/pyexp]
-..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 192.168.249.13...
   },
+  
   {
     "title": "Pwned",
     "url": "/posts/Pwned/",
     "categories": "Proving Grounds, Play",
     "tags": "Docker Exploit, FTP, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
@@ -4961,19 +2405,19 @@ This works better with VirtualBox rather than VMware
   
 
 
-Let’s find the IP Addre..."
+Let’s find the IP Addre...
   },
+  
   {
     "title": "PwnLab",
     "url": "/posts/PwnLab/",
     "categories": "Proving Grounds, Play",
     "tags": "LFI, PrivEsc, mysql",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s Find the Victim Machines IP Address ⤵️
+    "content": Let’s Find the Victim Machines IP Address ⤵️
 
 
 
-1
 IP : 10.0.2.33
 
 
@@ -4981,91 +2425,39 @@ Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-┌──(kali㉿kali)-[..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/pwnlab]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2...
   },
+  
   {
     "title": "Potato",
     "url": "/posts/Potato/",
     "categories": "Proving Grounds, Play",
     "tags": "LFI, NoSQLi, PrivEsc, Recon, hashcat",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the IP address of the victim Machine →
+    "content": Lets check the IP address of the victim Machine →
 
 
 
-1
 IP : 10.0.2.58
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-┌──(kali㉿kali)-[~/Downloads/Proving_Ground/potato..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/potato]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10....
   },
+  
   {
     "title": "NullByte",
     "url": "/posts/NullByte/",
     "categories": "Proving Grounds, Play",
     "tags": "Exiftool, Password BruteForce, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s find the IP Address first »
+    "content": Let’s find the IP Address first »
 
 
 
-1
 IP : 10.0.2.32
 
 
@@ -5073,134 +2465,62 @@ Port Scan Results ➡️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-┌──(kali㉿kali)-[~/Downloads/Proving_..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/NullByte]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.32
+[sudo...
   },
+  
   {
     "title": "NoName",
     "url": "/posts/NoName/",
     "categories": "Proving Grounds, Play",
     "tags": "Command  Injection, PrivEsc, SUIDs, Steghide, find",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "This machine crashes alot so frustrating Machine →
+    "content": This machine crashes alot so frustrating Machine →
 
 
 Let’s find the IP Address first »
 
 
 
-1
 IP : 10.0.2.57
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-┌──(kali㉿kali)-[~/Downloads/Proving_Ground..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Noname]
+└─$ sudo nmap -sC...
   },
+  
   {
     "title": "LazySysAdmin",
     "url": "/posts/LazySysAdmin/",
     "categories": "Proving Grounds, Play",
     "tags": "Password Bruteforce, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the Victim Machine’s IP address ⤵️
+    "content": Lets check the Victim Machine’s IP address ⤵️
 
 
 
-1
 IP : 192.168.249.131
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-┌──(k..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Lazysysadmin]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results...
   },
+  
   {
     "title": "Jordan Infosec CTF01",
     "url": "/posts/Jordaninfosec-CTF01/",
     "categories": "Proving Grounds, Play",
     "tags": "File Upload, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s check the IP address of the victim machine →
+    "content": Let’s check the IP address of the victim machine →
 
 
 
-1
 IP : 10.0.2.46 
 
 
@@ -5216,72 +2536,38 @@ hint.txt —&amp;gt;
 
 
 
-1
-2
-3
-4
 &amp;lt;!--	username : admin
 	password : 3v1l_H@ck3r
-	The 2nd flag is : {74..."
+	The 2nd flag is : {741257412587...
   },
+  
   {
     "title": "Inclusiveness",
     "url": "/posts/Inclusiveness/",
     "categories": "Proving Grounds, Play",
     "tags": "FTP, LFI, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the IP address ➡️
+    "content": Lets check the IP address ➡️
 
 
 
-1
 IP : 10.10.2.50
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-┌──(kali㉿kali)-[~/Downloads/Provi..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Inclusiveness]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.50
+Starti...
   },
+  
   {
     "title": "ICMP",
     "url": "/posts/ICMP/",
     "categories": "Proving Grounds, Play",
     "tags": "Public Exploit, hping3, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
@@ -5296,7 +2582,6 @@ Let’s find the IP Address first »
 
 
 
-1
 IP : 10.0.2.24
 
 
@@ -5304,166 +2589,89 @@ Port Scan Results ➡️
 
 
 
-1
-..."
+OPEN...
   },
+  
   {
     "title": "Ha Natraj",
     "url": "/posts/Ha-Natraj/",
     "categories": "Proving Grounds, Play",
     "tags": "LFI, PrivEsc, auth.log, sudo exploit",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s find the IP Address first »
+    "content": Let’s find the IP Address first »
 
 
 
-1
 IP : 192.168.249.135
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Ha_natraj]
-└─$ sudo nmap -sC..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 192.168.24...
   },
+  
   {
     "title": "HA HARDY",
     "url": "/posts/HA-HARDY/",
     "categories": "Proving Grounds, Play",
     "tags": "Metasploit, Public Exploit, SUIDs, cp, wget, Wordpress, PrivEsc, CMS",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets Check the IP address of the victim machine ⤵️
+    "content": Lets Check the IP address of the victim machine ⤵️
 
 
 
-1
-2
 {: .nolineno}
 IP : 10.0.2.36
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/ha_hardy]
-└─$ sudo nma..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nma...
   },
+  
   {
     "title": "Glassglow",
     "url": "/posts/Glassglow/",
     "categories": "Proving Grounds, Play",
     "tags": "Joomla, Password Generate, mysql, pspy64, PrivEsc, cewl, CMS",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the IP address of this Victim machine →
+    "content": Lets check the IP address of this Victim machine →
 
 
 
-1
 IP : 192.168.249.134
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Glasglow]
-└..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_result...
   },
+  
   {
     "title": "Gitroot",
     "url": "/posts/Gitroot/",
     "categories": "Proving Grounds, Play",
     "tags": "Password Bruteforce, git, Wordpress, PrivEsc, vhost, CMS, git-dumper",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
 {: .nolineno}
 
           .&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;%%&amp;amp;&amp;amp;&amp;amp;
-       #&amp;..."
+       #&amp;amp;&amp;amp;%&amp;amp;%%%%%%%%%%%&amp;amp;&amp;amp;&amp;amp;(
+     #&amp;amp;%%&amp;amp;%&amp;amp;%&amp;amp;%&amp;amp;%&amp;amp;%&amp;amp;%&amp;...
   },
+  
   {
     "title": "Geisha : 1",
     "url": "/posts/Geisha/",
     "categories": "Proving Grounds, Play",
     "tags": "Lateral Movement, Password Bruteforce, SUIDs, base32, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Machine
+    "content": Machine
       Details
     
   
@@ -5479,15 +2687,16 @@ Port Scan Results ⤵️
     
       Creator
       SunCSR Team
-    ..."
+    ...
   },
+  
   {
     "title": "Funbox : Easy",
     "url": "/posts/Funbox-Easy/",
     "categories": "Proving Grounds, Play, Funbox",
     "tags": "PrivEsc, Sqlmap, timedatectl, File Upload, time",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Machine
+    "content": Machine
       Details
     
   
@@ -5507,15 +2716,16 @@ Port Scan Results ⤵️
   
 
 
-..."
+...
   },
+  
   {
     "title": "Funbox : EasyEnum",
     "url": "/posts/Funbox-Easy-Enum/",
     "categories": "Proving Grounds, Play, Funbox",
     "tags": "Recon, hashcat, mysql, PrivEsc, File Upload",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Machine
+    "content": Machine
       Details
     
   
@@ -5532,15 +2742,16 @@ Port Scan Results ⤵️
       Creator
       0815R2d2
     
- ..."
+ ...
   },
+  
   {
     "title": "Fowsniff : 1",
     "url": "/posts/Fowsniff-CTF/",
     "categories": "Proving Grounds, Play",
     "tags": "OSINT, POP3, Password Bruteforce, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Machine
+    "content": Machine
       Details
     
   
@@ -5560,15 +2771,16 @@ Port Scan Results ⤵️
   
 
 
-Lets ch..."
+Lets ch...
   },
+  
   {
     "title": "Five86 : 2",
     "url": "/posts/Five86-2/",
     "categories": "Proving Grounds, Play",
     "tags": "Public Exploit, RFI, service, tcpdump, Wordpress, PrivEsc, CMS",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Machine
+    "content": Machine
       Details
     
   
@@ -5584,87 +2796,55 @@ Lets ch..."
     
       Creator
       @m0tl3ycr3w and @syed__umar
-..."
+...
   },
+  
   {
     "title": "EvilBox-One",
     "url": "/posts/EvilBox-One/",
     "categories": "Proving Grounds, Play",
     "tags": "LFI, PrivEsc, passwd",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets find out the IP of this Machine First ➡️
+    "content": Lets find out the IP of this Machine First ➡️
 
 
 
-1
 IP : 10.10.2.51
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/EvilBox-One]
-└─$ sudo..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 1...
   },
+  
   {
     "title": "Election 1",
     "url": "/posts/Election-1/",
     "categories": "Proving Grounds, Play",
     "tags": "CMS, Public Exploit, SUIDs, Sqlmap, election_2.0_CMS, PrivEsc, Serv-U",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s find the IP Address first »
+    "content": Let’s find the IP Address first »
 
 
 
-1
 IP : 10.0.2.53
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Electron]
-└─$ sudo nmap -sC -sV -p..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.53
+Startin...
   },
+  
   {
     "title": "Drifting Blue 1",
     "url": "/posts/Drifting-Blue-1/",
     "categories": "Proving Grounds, Play",
     "tags": "DirtyCow, Password Bruteforce, PrivEsc, fcrackzip, File Upload",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
@@ -5674,51 +2854,39 @@ get flags
 
 difficulty: easy
 
-about vm: tested and exported from virtualbox. dhcp and nested vtx/amdv enabled. you can contact me by email (it should be on my..."
+about vm: tested and exported from virtualbox. dhcp and nested vtx/amdv enabled. you can contact me by email (it should be on my...
   },
+  
   {
     "title": "DepthB2R",
     "url": "/posts/DepthB2R/",
     "categories": "Proving Grounds, Play",
     "tags": "Firewall Disable, Recon, nikto, PrivEsc, Command Injection",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the IP address →
+    "content": Lets check the IP address →
 
 
 
-1
 IP : 10.0.2.44
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/DepthB2R]
-└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_res..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.44
+Starting Nmap...
   },
+  
   {
     "title": "Deception",
     "url": "/posts/Deception/",
     "categories": "Proving Grounds, Play",
     "tags": "Recon, SUIDs, python, Wordpress, PrivEsc, CMS",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the Victim Machines IP address ⤵️
+    "content": Lets check the Victim Machines IP address ⤵️
 
 
 
-1
 IP : 10.0.2.40
 
 
@@ -5726,33 +2894,17 @@ Port Scan Results ➡️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Deception]
-└─$ sudo n..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10....
   },
+  
   {
     "title": "DJINN 3",
     "url": "/posts/DJINN-3/",
     "categories": "Proving Grounds, Play",
     "tags": "Public Exploit, SSTI, PrivEsc, sudo exploit, jinja",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
@@ -5761,142 +2913,150 @@ Port Scan Results ➡️
   
     Level: Intermediate
     flags: root.txt
-    Description: The machine is VirtualBox as well as VMWare compatible. The DHCP will assign an IP automatically. You’..."
+    Description: The machine is VirtualBox as well as VMWare compatible. The DHCP will assign an IP automatically. You’...
   },
+  
   {
     "title": "DC : 9",
     "url": "/posts/DC-9/",
     "categories": "Proving Grounds, Play, DC",
     "tags": "Password Bruteforce, Knocking Ports, LFI, Sqlmap, PrivEsc, DC",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
   💡 DC-9 is another purposely built vulnerable lab with the intent of gaining experience in the world of penetration testing.
 
-The ultimate goal of this challenge is to get root a..."
+The ultimate goal of this challenge is to get root a...
   },
+  
   {
     "title": "DC : 8",
     "url": "/posts/DC-8/",
     "categories": "Proving Grounds, Play, DC",
     "tags": "Password Bruteforce, Drupal, Public Exploit, SQLi, SUIDs, Sqlmap, exim4, PrivEsc, DC, CMS",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 DC-8 is another purposely built vulnerable lab with the intent of gaining experience in the world of penetration testing.
 
-This challenge is a bit of a hybrid between being an ..."
+This challenge is a bit of a hybrid between being an ...
   },
+  
   {
     "title": "DC : 7",
     "url": "/posts/DC-7/",
     "categories": "Proving Grounds, Play, DC",
     "tags": "Drupal, OSINT, Public Exploit, PrivEsc, DC, CMS",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 DC-7 is another purposely built vulnerable lab with the intent of gaining experience in the world of penetration testing.
 
-While this is not an overly technical challenge, it i..."
+While this is not an overly technical challenge, it i...
   },
+  
   {
     "title": "DC : 6",
     "url": "/posts/DC-6/",
     "categories": "Proving Grounds, Play, DC",
     "tags": "Public Exploit, Recon, Wordpress, PrivEsc, DC, CMS, nmap",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
 
   💡 DC-6 is another purposely built vulnerable lab with the intent of gaining experience in the world of penetration testing.
 
-This is not an overly difficult challenge so should ..."
+This is not an overly difficult challenge so should ...
   },
+  
   {
     "title": "DC : 5",
     "url": "/posts/DC-5/",
     "categories": "Proving Grounds, Play, DC",
     "tags": "LFI, SUIDs, Screen 4.5.0, PrivEsc, DC",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 DC-5 is another purposely built vulnerable lab with the intent of gaining experience in the world of penetration testing.
 
-The plan was for DC-5 to kick it up a notch, so this ..."
+The plan was for DC-5 to kick it up a notch, so this ...
   },
+  
   {
     "title": "DC : 4",
     "url": "/posts/DC-4/",
     "categories": "Proving Grounds, Play, DC",
     "tags": "Password Bruteforce, LFI, PrivEsc, DC, Command Injection",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 DC-4 is another purposely built vulnerable lab with the intent of gaining experience in the world of penetration testing.
 
-Unlike the previous DC releases, this one is designed..."
+Unlike the previous DC releases, this one is designed...
   },
+  
   {
     "title": "DC : 3",
     "url": "/posts/DC-3/",
     "categories": "Proving Grounds, Play, DC",
     "tags": "Joomla, Kernel Exploit, Sqlmap, PrivEsc, DC, CMS",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 DC-3 is another purposely built vulnerable lab with the intent of gaining experience in the world of penetration testing.
 
-As with the previous DC releases, this one is designe..."
+As with the previous DC releases, this one is designe...
   },
+  
   {
     "title": "DC : 2",
     "url": "/posts/DC-2/",
     "categories": "Proving Grounds, Play, DC",
     "tags": "Password Generate, rbash, Wordpress, PrivEsc, cewl, DC, CMS, git",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 DC :2 ➡️
 
 Much like DC-1, DC-2 is another purposely built vulnerable lab for the purpose of gaining experience in the world of penetration testing.
 
-As with the original DC-1, ..."
+As with the original DC-1, ...
   },
+  
   {
     "title": "DC : 1",
     "url": "/posts/DC-1/",
     "categories": "Proving Grounds, Play, DC",
     "tags": "Drupal, Public Exploit, SUIDs, find, PrivEsc, DC, CMS",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 DC-1 
 It is a purposely built vulnerable lab for the purpose of gaining experience in the world of penetration testing.
 
-It was designed to be a challenge for beginners, but ju..."
+It was designed to be a challenge for beginners, but ju...
   },
+  
   {
     "title": "Covfefe",
     "url": "/posts/Covfefe/",
     "categories": "Proving Grounds, Play",
     "tags": "Buffer Overflow, authorized_keys, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets find out the victim IP address ⤵️
+    "content": Lets find out the victim IP address ⤵️
 
 
 
-1
-2
 {: .nolineno}
 IP : 10.0.2.34
 
@@ -5905,122 +3065,59 @@ Port Scan Results ➡️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-┌──(kali㉿kali)-[~/Downloads/Proving_Ground..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/covfefe]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.t...
   },
+  
   {
     "title": "Broken",
     "url": "/posts/Broken/",
     "categories": "Proving Grounds, Play",
     "tags": "Password Bruteforce, Recon, timedatectl, PrivEsc, reboot",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the Victim Machine IP address ⬇️
+    "content": Lets check the Victim Machine IP address ⬇️
 
 
 
-1
 IP : 192.168.249.132
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-┌──(kali㉿kali)-[~/Downloads/Provin..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Broken]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 192...
   },
+  
   {
     "title": "Boss Players CTF",
     "url": "/posts/Boss-Players-CTF/",
     "categories": "Proving Grounds, Play",
     "tags": "Command Injection, Recon, SUIDs, find, PrivEsc, RFI, grep",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s find the IP Address first »
+    "content": Let’s find the IP Address first »
 
 
 
-1
-2
 {: .nolineno}
 IP : 10.0.2.38
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
 ┌──(kali㉿kali)-[~/Downloads/Proving_Ground/bossplayerCTF]
-└─$..."
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.tx...
   },
+  
   {
     "title": "Born2Root",
     "url": "/posts/Born2Root/",
     "categories": "Proving Grounds, Play",
     "tags": "Password Bruteforce, Recon, cronjob, PrivEsc",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the IP Address Now ⤵️
+    "content": Lets check the IP Address Now ⤵️
 
 
 
-1
 IP : 10.0.2.42
 
 
@@ -6028,150 +3125,56 @@ Port Scan Results ⤵️
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-┌──(kali㉿kali)-[~/Downloads/Pro..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/Born2Root]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 10.0.2.42
+Start...
   },
+  
   {
     "title": "BTRsys : 1",
     "url": "/posts/BTRsys-1/",
     "categories": "Proving Grounds, Play",
     "tags": "mysql, Wordpress, PrivEsc, CMS",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Let’s find the IP Address first »
+    "content": Let’s find the IP Address first »
 
 
 
-1
 IP : 192.168.249.138
 
 
 Port Scan Results ➡️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-┌──(kali㉿kali)-[~/Do..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/BTRsys]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt 192.168.249.1...
   },
+  
   {
     "title": "BBSCute",
     "url": "/posts/BBSCute/",
     "categories": "Proving Grounds, Play",
     "tags": "CMS, CuteNews_CMS, RFI, hping3, PrivEsc, Public Exploit, File Upload, SUIDs",
     "date": "2023-06-14 00:00:00 +0530",
-    "content": "Lets check the IP address of victim machine first ➡️
+    "content": Lets check the IP address of victim machine first ➡️
 
 
 
-1
 IP : 10.0.2.48
 
 
 Port Scan Results ⤵️
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-┌──(kali㉿k..."
+┌──(kali㉿kali)-[~/Downloads/Proving_Ground/BBSCute]
+└─$ sudo nmap -sC -sV -p- -T4 -oN Nmap_results.txt...
   },
+  
   {
     "title": "Webdeveloper",
     "url": "/posts/WebDeveloper/",
     "categories": "VulnHub",
     "tags": "Wordpress, Wireshark, PrivEsc, CMS, tcpdump",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 A machine using the newest
@@ -6189,28 +3192,30 @@ Port Scan Results ⤵️
     ## Changelog v1 - 2018/11/05 Beta - 2018/9/22
 
 
-..."
+...
   },
+  
   {
     "title": "W34kn3ss",
     "url": "/posts/W34kn3ss/",
     "categories": "VulnHub",
     "tags": "Public Exploit, Python Compiled (.pyc), PrivEsc",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 W34kn3ss ➡️
 
-  The matrix is controlling this machine, neo is trying to escape from it and take back the control on it , your goal is to help neo to gain access as a “root” to ..."
+  The matrix is controlling this machine, neo is trying to escape from it and take back the control on it , your goal is to help neo to gain access as a “root” to ...
   },
+  
   {
     "title": "Vuln OS",
     "url": "/posts/VulnOS/",
     "categories": "VulnHub",
     "tags": "opendocman, Sqlmap, Kernel Exploit, Public Exploit, PrivEsc",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 VulnOS are a series of vulnerable operating systems packed as virtual images to enhance penetration testing skills
@@ -6220,15 +3225,16 @@ Port Scan Results ⤵️
 
     Smaller, less chaotic !
 
-As ..."
+As ...
   },
+  
   {
     "title": "Toppo : 1",
     "url": "/posts/Toppo/",
     "categories": "VulnHub",
     "tags": "Recon, SUIDs, python, PrivEsc",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 💡 Toppo ➡️
 
@@ -6238,57 +3244,61 @@ Level : Beginner
 
 DHCP : activated
 
-Inside the zip you will find a vmdk file , and I think you..."
+Inside the zip you will find a vmdk file , and I think you...
   },
+  
   {
     "title": "TommyBoy v1.0",
     "url": "/posts/TommyBoy1dot0/",
     "categories": "VulnHub",
     "tags": "PrivEsc, Wordpress, OSINT, FTP, Password Generate, fcrackzip, Password Bruteforce, SUIDs, CMS, crunch, User-Agent, RFI",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "DESCRIPTION ⤵️
+    "content": DESCRIPTION ⤵️
 
 
 
 HOLY SCHNIKES! Tommy Boy needs your help!
 
-The Callahan Auto company has finally entered the world of modern technology and stood up a Web server for their customers to use for or..."
+The Callahan Auto company has finally entered the world of modern technology and stood up a Web server for their customers to use for or...
   },
+  
   {
     "title": "Tiki",
     "url": "/posts/Tiki/",
     "categories": "VulnHub",
     "tags": "PrivEsc, Public Exploit, SMB, CMS, Tiki_Wiki_CMS",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 Tiki ⤵️
 
   Oh no our webserver got compromised. The attacker used an 0day, so we dont know how he got into the admin panel. Investigate that.
 
-  This is an OSCP Prep Box, its b..."
+  This is an OSCP Prep Box, its b...
   },
+  
   {
     "title": "Straylight",
     "url": "/posts/Straylight/",
     "categories": "VulnHub",
     "tags": "PrivEsc, LFI, SMTP, iptable, screen 4.5.0, pivoting",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Straylight
+    "content": Straylight
 
 Description ⤵️
 
 
-  💡 A new OSCP style lab involving 2 vulnerable machines, themed after the cyberpunk classic Neuromancer - a must read for any cyber-security enthusiast. This lab makes..."
+  💡 A new OSCP style lab involving 2 vulnerable machines, themed after the cyberpunk classic Neuromancer - a must read for any cyber-security enthusiast. This lab makes...
   },
+  
   {
     "title": "Sar",
     "url": "/posts/Sar/",
     "categories": "VulnHub",
     "tags": "sar2html, Public Exploit, PrivEsc",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 💡 Sar is an OSCP-Like VM with the intent of gaining experience in the world of penetration testing.
 
@@ -6296,7 +3306,6 @@ Let’s find the IP Address first »
 
 
 
-1
 IP : 10.0.2.11
 
 
@@ -6304,29 +3313,31 @@ Port Scan Results ➡️
 
 
 
-..."
+OP...
   },
+  
   {
     "title": "Photographer",
     "url": "/posts/Photographer/",
     "categories": "VulnHub",
     "tags": "CMS, PrivEsc, RFI, SUIDs, SMB, koken_CMS, php",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 💡 Photographer : 1 ⤵️
 
 This machine was developed to prepare for OSCP. It is boot2root, tested on VirtualBox (but works on VMWare) and has two flags: user.txt and proof.txt.
 
-Let’s ..."
+Let’s ...
   },
+  
   {
     "title": "Neuromancer",
     "url": "/posts/Neuromancer/",
     "categories": "VulnHub",
     "tags": "PrivEsc",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Neuromancer
+    "content": Neuromancer
 
 Lets Network check with Nmap Scan →
 
@@ -6336,41 +3347,44 @@ Lets scan it with all ports flag -p- →
 
 
 
-As I know that after solving the straylight I can go for Neuromancer Machine And As I have found this i..."
+As I know that after solving the straylight I can go for Neuromancer Machine And As I have found this i...
   },
+  
   {
     "title": "Load of the Root : 1.0.1",
     "url": "/posts/Load/",
     "categories": "VulnHub",
     "tags": "PrivEsc, Recon, Kernel Exploit, mysql",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   [!Info] 💡 Lord Of The Root: 1.0.1 →
 
-  I created this machine to help others learn some basic CTF hacking strategies and some tools. I aimed this machine to be very similar in di..."
+  I created this machine to help others learn some basic CTF hacking strategies and some tools. I aimed this machine to be very similar in di...
   },
+  
   {
     "title": "InfoSec Prep OSCP",
     "url": "/posts/Infosec_prep_OSCP/",
     "categories": "VulnHub",
     "tags": "PrivEsc, Recon, SUIDs, Wordpress",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 InfoSec Prep: OSCP ⤵️
 
-  This box should be easy. This machine was created for the InfoSec Prep Discord Server (https://discord.gg/RRgKaep) as a give way for a 30d voucher to t..."
+  This box should be easy. This machine was created for the InfoSec Prep Discord Server (https://discord.gg/RRgKaep) as a give way for a 30d voucher to t...
   },
+  
   {
     "title": "Hack Me Please : 1",
     "url": "/posts/Hack/",
     "categories": "VulnHub",
     "tags": "CMS, PrivEsc, Public Exploit, Recon, mysql, Seeddms",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 Hack Me Please: 1 ➡️
@@ -6382,28 +3396,30 @@ As I know that after solving the straylight I can go for Neuromancer Machine And
   Aim: To get root shell
 
 
-Let’s find the IP Address fir..."
+Let’s find the IP Address fir...
   },
+  
   {
     "title": "GoldenEye",
     "url": "/posts/GoldenEye/",
     "categories": "VulnHub",
     "tags": "POP3, Password Bruteforce, PrivEsc, Kernel Exploit, moodle",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 GoldenEye ⤵️
 
-  I recently got done creating an OSCP type vulnerable machine that is themed after the great James Bond film (and even better n64 game) GoldenEye. The goal is to..."
+  I recently got done creating an OSCP type vulnerable machine that is themed after the great James Bond film (and even better n64 game) GoldenEye. The goal is to...
   },
+  
   {
     "title": "EVM : 1",
     "url": "/posts/EVM_1/",
     "categories": "VulnHub",
     "tags": "Wordpress, Password Bruteforce, PrivEsc, Public Exploit, Metasploit",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 💡 EVM_1
 
@@ -6416,45 +3432,47 @@ Let’s find the IP Address first »
 
 
 
-1
 IP : 10.0.2.13
 
 
-Port..."
+Port S...
   },
+  
   {
     "title": "Devguru",
     "url": "/posts/Devguru/",
     "categories": "VulnHub",
     "tags": "CMS, PrivEsc, Public Exploit, git, gitea, Password Generate, sudo exploit, OCTOBER CMS",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
-  💡 DevGuru is a fictional web development company hiring you for a pentest assessment. You have been tasked with finding vulnerabilities on their corporate website and obtaining r..."
+  💡 DevGuru is a fictional web development company hiring you for a pentest assessment. You have been tasked with finding vulnerabilities on their corporate website and obtaining r...
   },
+  
   {
     "title": "DJINN",
     "url": "/posts/DJINN/",
     "categories": "VulnHub",
     "tags": "FTP, Command Injection, PrivEsc, Python Compiled (.pyc)",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 💡 DJINN
 
 
   Level: Beginner-Intermediate
   flags: user.txt and root.txt
-  Description: The machine is VirtualBox as well as VMWare compatible. The DHCP will assign an IP automatical..."
+  Description: The machine is VirtualBox as well as VMWare compatible. The DHCP will assign an IP automatical...
   },
+  
   {
     "title": "DERPNSTINK 1",
     "url": "/posts/DERPNSTINK/",
     "categories": "VulnHub",
     "tags": "Wordpress, OSINT, mysql, Wireshark, PrivEsc",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 DIFFICULTY → DerpNStink
@@ -6463,30 +3481,32 @@ Port..."
 
   ABOUT →
 
-  Mr. Derp and Uncle Stinky are two system administrators who are starting their own company, DerpNStink. Instead of hir..."
+  Mr. Derp and Uncle Stinky are two system administrators who are starting their own company, DerpNStink. Instead of hir...
   },
+  
   {
     "title": "Bob",
     "url": "/posts/Bob/",
     "categories": "VulnHub",
     "tags": "Command Injection, gpg, Recon, PrivEsc",
     "date": "2023-06-11 00:00:00 +0530",
-    "content": "Description ⤵️
+    "content": Description ⤵️
 
 
   💡 Difficulty: Beginner/Intermediate → Bob
 
     Bob is my first CTF VM that I have ever made so be easy on me if it is not perfect.
 
-    The Milburg Highschool Server has just bee..."
+    The Milburg Highschool Server has just bee...
   },
+  
   {
     "title": "Demo Site",
     "url": "/posts/normalsite/",
     "categories": "Demo",
     "tags": "PrivEsc",
     "date": "2022-03-04 00:00:00 +0530",
-    "content": "Demo !"
+    "content": Demo !
   }
   
 ]
