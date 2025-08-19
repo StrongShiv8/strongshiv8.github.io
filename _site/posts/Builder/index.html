@@ -12,6 +12,19 @@
 
 
 
+    <!-- Load Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/assets/js/firebase-init.js"></script>
+
+    <!-- Load clap-counts.js -->
+    <script src="/assets/js/data/clap-counts.js"></script>
+
+
+
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" >
@@ -48,6 +61,7 @@
 <meta name="twitter:image:alt" content="Linux Medium Level Machine 🧭" />
 <meta property="twitter:title" content="Builder" />
 <meta name="twitter:site" content="@StrongShiv8" />
+<meta name="google-site-verification" content="G-K1FV42N2FD" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-10T22:25:35+05:30","datePublished":"2024-02-14T00:00:00+05:30","description":"Port Scan Results ⤵️ 1 2 3 4 5 6 7 8 9 ┌──(kali🔥kali)-[~/Downloads/HTB/Builder] └─$ nmap -sC -sV -T4 -p- -oN Nmap_Results.txt -Pn 10.10.11.10 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0) | ssh-hostkey: | 256 3e:ea:45:4b:c5:d1:6d:6f:e2:d4:d1:3b:0a:3d:a9:4f (ECDSA) |_ 256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 (ED25519) 8080/tcp open http-proxy? Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel Web Enumeration ⤵️","headline":"Builder","image":{"alt":"Linux Medium Level Machine 🧭","width":"1200","height":"630","url":"https://pbs.twimg.com/media/GGO2z9zXcAEUDTY?format=jpg&name=large","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Builder/"},"url":"http://localhost:4000/posts/Builder/"}</script>
 <!-- End Jekyll SEO tag -->
@@ -282,7 +296,9 @@
 <script src="/assets/js/auto-update.js" defer></script>
 </head>
 
-
+  <head>
+    
+  </head>
   <body>
     <!-- The Side Bar -->
 
@@ -452,6 +468,8 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+
 
 
     <div id="main-wrapper" class="d-flex justify-content-center">
@@ -1274,7 +1292,8 @@
 
 
 
-
+<script src="/assets/js/firebase-init.js"></script>
+<script src="/assets/js/data/clap-counts.js"></script>
 
 
 
@@ -1288,8 +1307,8 @@
     <h1 data-toc-skip>Builder</h1>
     
     
-      <link rel="stylesheet" href="https://unpkg.com/applause-button@4.0.1/dist/applause-button.css">
-      <script src="/assets/js/data/applause-button.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+      <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
     
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -14770,6 +14789,18 @@ Port Scan Results ⤵️
         rel="noopener"
       >Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
   </p>
+
+  <!-- Load Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/assets/js/firebase-init.js"></script>
+
+  <!-- Load clap-counts.js -->
+  <script src="/assets/js/data/clap-counts.js"></script>
+  
 </footer>
           </div>
         </div>

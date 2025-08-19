@@ -14,8 +14,6 @@ script_includes:
 
 
 
-
-
 {% include toc-status.html %}
 
 <article class="px-1" data-toc="{{ enable_toc }}">
@@ -25,8 +23,8 @@ script_includes:
       <p class="post-desc fw-light mb-4">{{ page.description }}</p>
     {% endif %}
     {% if page.applause_button %}
-      <link rel="stylesheet" href="https://unpkg.com/applause-button@4.0.1/dist/applause-button.css">
-      <script src="{{ site.baseurl }}/assets/js/data/applause-button.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+      <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
     {% endif %}
     <div class="post-meta text-muted">
       <!-- published date -->

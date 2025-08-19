@@ -12,6 +12,19 @@
 
 
 
+    <!-- Load Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/assets/js/firebase-init.js"></script>
+
+    <!-- Load clap-counts.js -->
+    <script src="/assets/js/data/clap-counts.js"></script>
+
+
+
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" >
@@ -48,6 +61,7 @@
 <meta name="twitter:image:alt" content="Windows Medium Level Machine 🎯" />
 <meta property="twitter:title" content="Weasel" />
 <meta name="twitter:site" content="@StrongShiv8" />
+<meta name="google-site-verification" content="G-K1FV42N2FD" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-12T11:47:06+05:30","datePublished":"2024-03-06T00:00:00+05:30","description":"Port Scan Results ⤵️ ```bash ┌──(kali㉿kali)-[~/Downloads/Tryhackme/Weasel] └─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.161.35 -Pn Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-03-03 21:07 IST Nmap scan report for 10.10.161.35 Host is up (0.18s latency). Not shown: 65520 closed tcp ports (reset) PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH for_Windows_7.7 (protocol 2.0) | ssh-hostkey: | 2048 2b:17:d8:8a:1e:8c:99:bc:5b:f5:3d:0a:5e:ff:5e:5e (RSA) | 256 3c:c0:fd:b5:c1:57:ab:75:ac:81:10:ae:e2:98:12:0d (ECDSA) |_ 256 e9:f0:30:be:e6:cf:ef:fe:2d:14:21:a0:ac:45:7b:70 (ED25519) 135/tcp open msrpc Microsoft Windows RPC 139/tcp open netbios-ssn Microsoft Windows netbios-ssn 445/tcp open microsoft-ds? 3389/tcp open ms-wbt-server Microsoft Terminal Services | rdp-ntlm-info: | Target_Name: DEV-DATASCI-JUP | NetBIOS_Domain_Name: DEV-DATASCI-JUP | NetBIOS_Computer_Name: DEV-DATASCI-JUP | DNS_Domain_Name: DEV-DATASCI-JUP | DNS_Computer_Name: DEV-DATASCI-JUP | Product_Version: 10.0.17763 |_ System_Time: 2024-03-03T15:43:45+00:00 |ssl-date: 2024-03-03T15:43:55+00:00; 0s from scanner time. | ssl-cert: Subject: commonName=DEV-DATASCI-JUP | Not valid before: 2024-03-02T15:32:27 |_Not valid after: 2024-09-01T15:32:27 5985/tcp open http Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP) |_http-title: Not Found |_http-server-header: Microsoft-HTTPAPI/2.0 8888/tcp open http Tornado httpd 6.0.3 | http-robots.txt: 1 disallowed entry |/ | http-title: Jupyter Notebook |_Requested resource was /login?next=%2Ftree%3F |_http-server-header: TornadoServer/6.0.3 47001/tcp open http Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP) |_http-server-header: Microsoft-HTTPAPI/2.0 |_http-title: Not Found 49664/tcp open msrpc Microsoft Windows RPC 49665/tcp open msrpc Microsoft Windows RPC 49667/tcp open msrpc Microsoft Windows RPC 49668/tcp open msrpc Microsoft Windows RPC 49669/tcp open msrpc Microsoft Windows RPC 49670/tcp open msrpc Microsoft Windows RPC 49672/tcp open msrpc Microsoft Windows RPC Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows","headline":"Weasel","image":{"width":"1200","height":"630","alt":"Windows Medium Level Machine 🎯","url":"https://pbs.twimg.com/media/FwgniWCWwAMl6xJ.jpg:large","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Weasel/"},"url":"http://localhost:4000/posts/Weasel/"}</script>
 <!-- End Jekyll SEO tag -->
@@ -282,7 +296,9 @@
 <script src="/assets/js/auto-update.js" defer></script>
 </head>
 
-
+  <head>
+    
+  </head>
   <body>
     <!-- The Side Bar -->
 
@@ -452,6 +468,8 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+
 
 
     <div id="main-wrapper" class="d-flex justify-content-center">
@@ -1116,7 +1134,8 @@
 
 
 
-
+<script src="/assets/js/firebase-init.js"></script>
+<script src="/assets/js/data/clap-counts.js"></script>
 
 
 
@@ -1130,8 +1149,8 @@
     <h1 data-toc-skip>Weasel</h1>
     
     
-      <link rel="stylesheet" href="https://unpkg.com/applause-button@4.0.1/dist/applause-button.css">
-      <script src="/assets/js/data/applause-button.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+      <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
     
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -14649,6 +14668,18 @@ Thank You !</p>
         rel="noopener"
       >Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
   </p>
+
+  <!-- Load Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/assets/js/firebase-init.js"></script>
+
+  <!-- Load clap-counts.js -->
+  <script src="/assets/js/data/clap-counts.js"></script>
+  
 </footer>
           </div>
         </div>

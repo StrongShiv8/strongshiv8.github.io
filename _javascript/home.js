@@ -1,9 +1,9 @@
 import { basic, initSidebar, initTopbar } from './modules/layouts';
-import { initLocaleDatetime, imgLazy, getClapCounts } from './modules/plugins';
+import { initLocaleDatetime, loadImg, getClapCounts } from './modules/plugins';
 
-basic();
+loadImg();
+initLocaleDatetime();
 initSidebar();
 initTopbar();
-initLocaleDatetime();
-imgLazy();
+basic();
 getClapCounts();

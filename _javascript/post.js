@@ -1,10 +1,13 @@
-import { basic, initSidebar, initTopbar } from './modules/layouts';
+import { basic, initTopbar, initSidebar } from './modules/layouts';
+
 import {
   loadImg,
   imgPopup,
   initLocaleDatetime,
   initClipboard,
+  loadMermaid,
   toc,
+  getClapCounts
 } from './modules/plugins';
 
 loadImg();
@@ -15,3 +18,4 @@ initLocaleDatetime();
 initClipboard();
 initTopbar();
 basic();
+getClapCounts();

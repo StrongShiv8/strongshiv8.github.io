@@ -12,6 +12,19 @@
 
 
 
+    <!-- Load Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/assets/js/firebase-init.js"></script>
+
+    <!-- Load clap-counts.js -->
+    <script src="/assets/js/data/clap-counts.js"></script>
+
+
+
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" >
@@ -48,6 +61,7 @@
 <meta name="twitter:image:alt" content="Linux Easy Level Machine 💵" />
 <meta property="twitter:title" content="Bizness" />
 <meta name="twitter:site" content="@StrongShiv8" />
+<meta name="google-site-verification" content="G-K1FV42N2FD" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-10T22:25:35+05:30","datePublished":"2024-02-12T00:00:00+05:30","description":"Detailed Port Scan Results ⤵️ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 ┌──(kali🔥kali)-[~/Downloads/HTB/Bizness] └─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.11.252 Nmap scan report for 10.10.11.252 Host is up (0.16s latency). Not shown: 65427 closed tcp ports (reset), 104 filtered tcp ports (no-response) PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0) | ssh-hostkey: | 3072 3e:21:d5:dc:2e:61:eb:8f:a6:3b:24:2a:b7:1c:05:d3 (RSA) | 256 39:11:42:3f:0c:25:00:08:d7:2f:1b:51:e0:43:9d:85 (ECDSA) |_ 256 b0:6f:a0:0a:9e:df:b1:7a:49:78:86:b2:35:40:ec:95 (ED25519) 80/tcp open http nginx 1.18.0 |_http-title: Did not follow redirect to https://bizness.htb/ 443/tcp open ssl/http nginx 1.18.0 | tls-nextprotoneg: |_ http/1.1 |_http-title: Did not follow redirect to https://bizness.htb/ |_ssl-date: TLS randomness does not represent time | tls-alpn: |_ http/1.1 | ssl-cert: Subject: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=Some-State/countryName=UK | Not valid before: 2023-12-14T20:03:40 |_Not valid after: 2328-11-10T20:03:40 45257/tcp open tcpwrapped Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel Exploring the Web Interface ⤵️","headline":"Bizness","image":{"alt":"Linux Easy Level Machine 💵","width":"1200","height":"630","url":"http://localhost:4000/assets/images/GDA3faiXQAA_He5.jpg","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Bizness/"},"url":"http://localhost:4000/posts/Bizness/"}</script>
 <!-- End Jekyll SEO tag -->
@@ -282,7 +296,9 @@
 <script src="/assets/js/auto-update.js" defer></script>
 </head>
 
-
+  <head>
+    
+  </head>
   <body>
     <!-- The Side Bar -->
 
@@ -452,6 +468,8 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+
 
 
     <div id="main-wrapper" class="d-flex justify-content-center">
@@ -948,7 +966,8 @@
 
 
 
-
+<script src="/assets/js/firebase-init.js"></script>
+<script src="/assets/js/data/clap-counts.js"></script>
 
 
 
@@ -962,8 +981,8 @@
     <h1 data-toc-skip>Bizness</h1>
     
     
-      <link rel="stylesheet" href="https://unpkg.com/applause-button@4.0.1/dist/applause-button.css">
-      <script src="/assets/js/data/applause-button.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+      <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
     
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -14387,6 +14406,18 @@ Port Scan Results ⤵️
         rel="noopener"
       >Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
   </p>
+
+  <!-- Load Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/assets/js/firebase-init.js"></script>
+
+  <!-- Load clap-counts.js -->
+  <script src="/assets/js/data/clap-counts.js"></script>
+  
 </footer>
           </div>
         </div>

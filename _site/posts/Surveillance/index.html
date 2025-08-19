@@ -12,6 +12,19 @@
 
 
 
+    <!-- Load Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/assets/js/firebase-init.js"></script>
+
+    <!-- Load clap-counts.js -->
+    <script src="/assets/js/data/clap-counts.js"></script>
+
+
+
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" >
@@ -48,6 +61,7 @@
 <meta name="twitter:image:alt" content="Linux Medium Level Machine 🧭" />
 <meta property="twitter:title" content="Surveillance" />
 <meta name="twitter:site" content="@StrongShiv8" />
+<meta name="google-site-verification" content="G-K1FV42N2FD" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-10T22:25:35+05:30","datePublished":"2024-03-06T00:00:00+05:30","description":"Port Scan Results ⤵️ ```bash ┌──(kali🔥kali)-[~/Downloads/HTB/Surveillance] └─$ sudo nmap -sC -sV -T4 -p- -oN Nmap_Results.txt 10.10.11.245 -Pn Nmap scan report for 10.10.11.245 Host is up (0.29s latency). Not shown: 65531 closed tcp ports (reset) PORT STATE SERVICE VERSION 22/tcp open tcpwrapped | ssh-hostkey: | 256 96:07:1c:c6:77:3e:07:a0:cc:6f:24:19:74:4d:57:0b (ECDSA) |_ 256 0b:a4:c0:cf:e2:3b:95:ae:f6:f5:df:7d:0c:88:d6:ce (ED25519) 80/tcp open tcpwrapped |_http-title: Did not follow redirect to http://surveillance.htb/ |_http-server-header: nginx/1.18.0 (Ubuntu) 20485/tcp filtered unknown 56302/tcp filtered unknown","headline":"Surveillance","image":{"alt":"Linux Medium Level Machine 🧭","width":"1200","height":"630","url":"https://pbs.twimg.com/media/GAwK6LdWcAQTTOO.jpg","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Surveillance/"},"url":"http://localhost:4000/posts/Surveillance/"}</script>
 <!-- End Jekyll SEO tag -->
@@ -282,7 +296,9 @@
 <script src="/assets/js/auto-update.js" defer></script>
 </head>
 
-
+  <head>
+    
+  </head>
   <body>
     <!-- The Side Bar -->
 
@@ -452,6 +468,8 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+
 
 
     <div id="main-wrapper" class="d-flex justify-content-center">
@@ -1042,7 +1060,8 @@
 
 
 
-
+<script src="/assets/js/firebase-init.js"></script>
+<script src="/assets/js/data/clap-counts.js"></script>
 
 
 
@@ -1056,8 +1075,8 @@
     <h1 data-toc-skip>Surveillance</h1>
     
     
-      <link rel="stylesheet" href="https://unpkg.com/applause-button@4.0.1/dist/applause-button.css">
-      <script src="/assets/js/data/applause-button.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+      <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
     
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -14740,6 +14759,18 @@ Starting Nmap 7.94SVN ( https://nmap.org ) a...</p>
         rel="noopener"
       >Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
   </p>
+
+  <!-- Load Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/assets/js/firebase-init.js"></script>
+
+  <!-- Load clap-counts.js -->
+  <script src="/assets/js/data/clap-counts.js"></script>
+  
 </footer>
           </div>
         </div>
