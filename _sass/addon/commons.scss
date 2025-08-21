@@ -1602,32 +1602,32 @@ applause-button {
 }
 
 .card-header[aria-expanded="true"] .rotate-180 {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 
 .card-header[aria-expanded="false"] .rotate-180 {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 .level2-header {
   font-weight: bold;
   background-color: #f8f9fa;
   padding: 0.75rem 1rem;
-  margin-top: 0.5rem;
+  margin: 1rem;
+}
+
+.level3-header, .level4-header {
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5rem;
 }
 
 .level3-header {
-  font-weight: bold;
   background-color: #f0f0f0;
-  padding: 0.75rem 1.25rem;
-  margin-top: 0.5rem;
 }
 
 .level4-header {
-  font-weight: bold;
   background-color: #e9ecef;
-  padding: 0.75rem 1.5rem;
-  margin-top: 0.5rem;
 }
 
 .d-flex .text-muted {
@@ -1636,6 +1636,7 @@ applause-button {
 
 .content ul {
   padding-left: 1.5rem;
+  margin: 0;
 }
 
 .category-trigger.disabled {
@@ -1645,4 +1646,9 @@ applause-button {
 
 .hide-border-bottom {
   border-bottom: none;
+}
+
+.collapse {
+  margin: 0;
+  padding: 0;
 }
