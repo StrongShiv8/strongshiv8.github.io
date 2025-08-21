@@ -1596,3 +1596,53 @@ applause-button {
     fill: var(--text-muted-color);
   }
 }
+
+.card-header .rotate-180 {
+  transition: transform 0.3s ease;
+}
+
+.card-header[aria-expanded="true"] .rotate-180 {
+  transform: rotate(0deg);
+}
+
+.card-header[aria-expanded="false"] .rotate-180 {
+  transform: rotate(90deg);
+}
+
+.level2-header {
+  font-weight: bold;
+  background-color: #f8f9fa;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.level3-header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 0.75rem 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.level4-header {
+  font-weight: bold;
+  background-color: #e9ecef;
+  padding: 0.75rem 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.d-flex .text-muted {
+  color: #6c757d !important;
+}
+
+.content ul {
+  padding-left: 1.5rem;
+}
+
+.category-trigger.disabled {
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.hide-border-bottom {
+  border-bottom: none;
+}
