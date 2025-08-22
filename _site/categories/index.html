@@ -40,14 +40,14 @@
 <meta property="og:url" content="http://localhost:4000/categories/" />
 <meta property="og:site_name" content="StrongShiv8" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-08-22T12:14:17+05:30" />
+<meta property="article:published_time" content="2025-08-22T12:25:05+05:30" />
 <meta property="og:image" content="http://localhost:4000/assets/img/HA_Natraj.png" /><meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:image" content="http://localhost:4000/assets/img/HA_Natraj.png" />
 <meta property="twitter:title" content="Categories" />
 <meta name="twitter:site" content="@StrongShiv8" />
 <meta name="google-site-verification" content="G-K1FV42N2FD" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-22T12:14:17+05:30","datePublished":"2025-08-22T12:14:17+05:30","description":"Response and Report of my work.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-22T12:25:05+05:30","datePublished":"2025-08-22T12:25:05+05:30","description":"Response and Report of my work.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -435,24 +435,36 @@
 <style>
   .collapse {
     margin: 0;
-    padding: 0; /* Remove excessive padding */
+    padding: 0; /* Remove padding to eliminate gaps */
   }
   .content ul {
-    padding-left: 1.5rem; /* Consistent left padding */
-    margin: 0; /* Remove margin to eliminate gaps */
+    padding-left: 1.5rem; /* Consistent left indentation */
+    margin: 0; /* Remove margin to prevent gaps */
   }
   .level3-header, .level4-header {
     margin: 0;
     padding: 0.5rem 1.25rem;
   }
   .list-group, .list-group-item {
-    color: #05d4d4 !important; /* Maintain custom color */
+    color: #05d4d4 !important; /* Custom teal color */
   }
   .list-group-item a {
     color: #05d4d4 !important;
   }
   .list-group-item a:hover {
-    color: #04b3b3 !important;
+    color: #04b3b3 !important; /* Slightly darker teal on hover */
+  }
+  /* Specific adjustments for Level 3 and 4 to remove gaps */
+  .collapse .collapse {
+    padding: 0; /* Ensure nested collapses have no extra padding */
+  }
+  .collapse .content ul {
+    padding-left: 3rem; /* Increase indentation for deeper levels */
+    margin: 0;
+  }
+  /* Reduce excessive padding from d-flex items */
+  .list-group-item {
+    padding: 0.25rem 0; /* Minimize vertical spacing */
   }
 </style><!-- Group posts by their top-level category --><!-- Render top-level categories with subcategories hidden until toggled --><div class="card categories">
     <!-- Top-level category -->

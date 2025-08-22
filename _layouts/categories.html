@@ -8,24 +8,36 @@ permalink: /categories/
 <style>
   .collapse {
     margin: 0;
-    padding: 0; /* Remove excessive padding */
+    padding: 0; /* Remove padding to eliminate gaps */
   }
   .content ul {
-    padding-left: 1.5rem; /* Consistent left padding */
-    margin: 0; /* Remove margin to eliminate gaps */
+    padding-left: 1.5rem; /* Consistent left indentation */
+    margin: 0; /* Remove margin to prevent gaps */
   }
   .level3-header, .level4-header {
     margin: 0;
     padding: 0.5rem 1.25rem;
   }
   .list-group, .list-group-item {
-    color: #05d4d4 !important; /* Maintain custom color */
+    color: #05d4d4 !important; /* Custom teal color */
   }
   .list-group-item a {
     color: #05d4d4 !important;
   }
   .list-group-item a:hover {
-    color: #04b3b3 !important;
+    color: #04b3b3 !important; /* Slightly darker teal on hover */
+  }
+  /* Specific adjustments for Level 3 and 4 to remove gaps */
+  .collapse .collapse {
+    padding: 0; /* Ensure nested collapses have no extra padding */
+  }
+  .collapse .content ul {
+    padding-left: 3rem; /* Increase indentation for deeper levels */
+    margin: 0;
+  }
+  /* Reduce excessive padding from d-flex items */
+  .list-group-item {
+    padding: 0.25rem 0; /* Minimize vertical spacing */
   }
 </style>
 {%- assign HEAD_PREFIX = 'h_' -%}
