@@ -35,18 +35,19 @@ permalink: /categories/
     padding-left: 3rem; /* Increase indentation for deeper levels */
     margin: 0;
   }
-  /* Fix side-by-side issue and enforce vertical stacking within li */
-  .list-group-item {
-    padding: 0.25rem 0; /* Minimize vertical spacing */
-    display: block; /* Ensure block-level behavior */
+  /* Target only the opened content (e.g., file lists) for vertical stacking */
+  .list-group-item.d-flex > ul > li,
+  .list-group-item.d-flex > ul > li.d-flex {
+    flex-direction: column !important; /* Stack opened content vertically */
+    align-items: flex-start !important; /* Align items to the start */
+    gap: 0.25rem !important; /* Consistent spacing between elements */
   }
-  
-  .list-group-item.d-flexi {
-    flex-direction: column !important;  /* Stack contents vertically */
-    align-items: flex-start; /* Align items to the start */
-    gap: 0.25rem; /* Small gap between stacked elements */
+  .list-group-item.d-flex > ul > li span,
+  .list-group-item.d-flex > ul > li a {
+    display: block !important; /* Force block-level for content */
+    width: 100%; /* Ensure full width */
   }
-  /* Reset padding and margins for internal elements */
+  /* Reset padding and margins for internal elements in headers */
   .list-group-item .ms-4,
   .list-group-item .ms-6,
   .list-group-item .ms-8,
@@ -54,17 +55,14 @@ permalink: /categories/
   .list-group-item .px-md-5,
   .list-group-item .px-md-7,
   .list-group-item .px-md-9 {
-    margin-left: 0 !important; /* Reset margin-left */
-    padding-left: 0 !important; /* Reset padding-left */
-    padding-right: 0 !important; /* Reset padding-right */
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-  /* Ensure spans and links stack vertically */
-  .list-group-item span,
-  .list-group-item a {
- /* Force block-level to prevent side-by-side */
-  }
+  /* Position arrow below content in headers (unchanged) */
   .category-trigger {
-    margin-top: 0.25rem; /* Space below the last span before the arrow */
+    margin-top: 0.25rem !important; /* Space below the last span */
+    align-self: flex-start !important; /* Align arrow to the start */
   }
 </style>
 {%- assign HEAD_PREFIX = 'h_' -%}
@@ -172,7 +170,7 @@ permalink: /categories/
                   {%- assign level3_posts = level2_posts | where_exp: "post", "post.categories contains level3" | sort: 'date' | reverse -%}
                   {%- assign level3_total_posts = level3_posts | size -%}
                   {%- if level3_total_posts > 0 -%}
-                    <li class="list-group-item d-flexi justify-content-between px-md-3">
+                    <li class="list-group-item d-flex justify-content-between px-md-3">
                       <span class="ms-6">
                         <i class="far fa-folder{% if level3_subcategory_count > 0 %}-open{% endif %} fa-fw"></i>
                         <span class="mx-2">{{ level3 }}</span>
@@ -213,7 +211,7 @@ permalink: /categories/
                           {%- assign level4_posts = level3_posts | where_exp: "post", "post.categories contains level4" | sort: 'date' | reverse -%}
                           {%- assign level4_total_posts = level4_posts | size -%}
                           {%- if level4_total_posts > 0 -%}
-                            <li class="list-group-item d-flexi justify-content-between px-md-3">
+                            <li class="list-group-item d-flex justify-content-between px-md-3">
                               <span class="ms-8">
                                 <i class="far fa-folder{% if level4_subcategory_count > 0 %}-open{% endif %} fa-fw"></i>
                                 <span class="mx-2">{{ level4 }}</span>

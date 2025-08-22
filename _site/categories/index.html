@@ -40,14 +40,14 @@
 <meta property="og:url" content="http://localhost:4000/categories/" />
 <meta property="og:site_name" content="StrongShiv8" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-08-22T17:22:28+05:30" />
+<meta property="article:published_time" content="2025-08-22T17:54:41+05:30" />
 <meta property="og:image" content="http://localhost:4000/assets/img/HA_Natraj.png" /><meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:image" content="http://localhost:4000/assets/img/HA_Natraj.png" />
 <meta property="twitter:title" content="Categories" />
 <meta name="twitter:site" content="@StrongShiv8" />
 <meta name="google-site-verification" content="G-K1FV42N2FD" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-22T17:22:28+05:30","datePublished":"2025-08-22T17:22:28+05:30","description":"Response and Report of my work.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-22T17:54:41+05:30","datePublished":"2025-08-22T17:54:41+05:30","description":"Response and Report of my work.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -462,18 +462,19 @@
     padding-left: 3rem; /* Increase indentation for deeper levels */
     margin: 0;
   }
-  /* Fix side-by-side issue and enforce vertical stacking within li */
-  .list-group-item {
-    padding: 0.25rem 0; /* Minimize vertical spacing */
-    display: block; /* Ensure block-level behavior */
+  /* Target only the opened content (e.g., file lists) for vertical stacking */
+  .list-group-item.d-flex > ul > li,
+  .list-group-item.d-flex > ul > li.d-flex {
+    flex-direction: column !important; /* Stack opened content vertically */
+    align-items: flex-start !important; /* Align items to the start */
+    gap: 0.25rem !important; /* Consistent spacing between elements */
   }
-  
-  .list-group-item.d-flexi {
-    flex-direction: column !important;  /* Stack contents vertically */
-    align-items: flex-start; /* Align items to the start */
-    gap: 0.25rem; /* Small gap between stacked elements */
+  .list-group-item.d-flex > ul > li span,
+  .list-group-item.d-flex > ul > li a {
+    display: block !important; /* Force block-level for content */
+    width: 100%; /* Ensure full width */
   }
-  /* Reset padding and margins for internal elements */
+  /* Reset padding and margins for internal elements in headers */
   .list-group-item .ms-4,
   .list-group-item .ms-6,
   .list-group-item .ms-8,
@@ -481,17 +482,14 @@
   .list-group-item .px-md-5,
   .list-group-item .px-md-7,
   .list-group-item .px-md-9 {
-    margin-left: 0 !important; /* Reset margin-left */
-    padding-left: 0 !important; /* Reset padding-left */
-    padding-right: 0 !important; /* Reset padding-right */
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-  /* Ensure spans and links stack vertically */
-  .list-group-item span,
-  .list-group-item a {
- /* Force block-level to prevent side-by-side */
-  }
+  /* Position arrow below content in headers (unchanged) */
   .category-trigger {
-    margin-top: 0.25rem; /* Space below the last span before the arrow */
+    margin-top: 0.25rem !important; /* Space below the last span */
+    align-self: flex-start !important; /* Align arrow to the start */
   }
 </style><!-- Group posts by their top-level category --><!-- Render top-level categories with subcategories hidden until toggled --><div class="card categories">
     <!-- Top-level category -->
@@ -3151,7 +3149,7 @@
             <!-- Level 3 nesting (hidden until toggled) -->
             <div id="l_3-play" class="collapse" aria-labelledby="h_3-play">
               <ul class="content list-group ps-0">
-                <!-- Build level 3 subcategories --><li class="list-group-item d-flexi justify-content-between px-md-3">
+                <!-- Build level 3 subcategories --><li class="list-group-item d-flex justify-content-between px-md-3">
                       <span class="ms-6">
                         <i class="far fa-folder-open fa-fw"></i>
                         <span class="mx-2">Funbox</span><span class="text-muted small font-weight-light"> 3 posts</span></span>
@@ -3230,7 +3228,7 @@
   Jun 14, 2023
 </time>
 </li></ul>
-                    </div><li class="list-group-item d-flexi justify-content-between px-md-3">
+                    </div><li class="list-group-item d-flex justify-content-between px-md-3">
                       <span class="ms-6">
                         <i class="far fa-folder-open fa-fw"></i>
                         <span class="mx-2">Sunset</span><span class="text-muted small font-weight-light"> 2 posts</span></span>
@@ -3288,7 +3286,7 @@
   Jun 14, 2023
 </time>
 </li></ul>
-                    </div><li class="list-group-item d-flexi justify-content-between px-md-3">
+                    </div><li class="list-group-item d-flex justify-content-between px-md-3">
                       <span class="ms-6">
                         <i class="far fa-folder-open fa-fw"></i>
                         <span class="mx-2">DC</span><span class="text-muted small font-weight-light"> 9 posts</span></span>
