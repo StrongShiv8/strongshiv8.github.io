@@ -40,14 +40,14 @@
 <meta property="og:url" content="http://localhost:4000/categories/" />
 <meta property="og:site_name" content="StrongShiv8" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-08-21T14:45:47+05:30" />
+<meta property="article:published_time" content="2025-08-22T11:46:46+05:30" />
 <meta property="og:image" content="http://localhost:4000/assets/img/HA_Natraj.png" /><meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:image" content="http://localhost:4000/assets/img/HA_Natraj.png" />
 <meta property="twitter:title" content="Categories" />
 <meta name="twitter:site" content="@StrongShiv8" />
 <meta name="google-site-verification" content="G-K1FV42N2FD" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-21T14:45:47+05:30","datePublished":"2025-08-21T14:45:47+05:30","description":"Response and Report of my work.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-22T11:46:46+05:30","datePublished":"2025-08-22T11:46:46+05:30","description":"Response and Report of my work.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -432,52 +432,37 @@
     <div class="content">
       <!-- strongshiv8 -->
 
-
-
 <style>
   .collapse {
     margin: 0;
-    padding: 0;
+    padding: 1.5rem;
   }
   .content ul {
     padding-left: 1.5rem;
     margin: 1.5rem;
   }
   .level3-header, .level4-header {
-    margin: 0.5rem;
-    padding: 1rem 1rem;
+    margin: 0rem;
+    padding: 0.5rem 1.25rem;
   }
-</style>
-
-
-
-
-<!-- Group posts by their top-level category -->
-
-
-
-<!-- Render top-level categories with subcategories hidden until toggled -->
-
-  
-  
-  
-  <div class="card categories">
+  /* Override list-group and list-group-item color */
+  .list-group, .list-group-item {
+    color: #05d4d4 !important;
+  }
+  /* Ensure links inherit the color */
+  .list-group-item a {
+    color: #05d4d4 !important;
+  }
+  .list-group-item a:hover {
+    color: #04b3b3 !important; /* Slightly darker teal on hover */
+  }
+</style><!-- Group posts by their top-level category --><!-- Render top-level categories with subcategories hidden until toggled --><div class="card categories">
     <!-- Top-level category -->
     <div
       id="h_0"
-      class="card-header d-flex justify-content-between hide-border-bottom"
-    >
+      class="card-header d-flex justify-content-between hide-border-bottom">
       <span class="ms-2">
-        <i class="far fa-folder fa-fw"></i>
-        
-        <a href="/categories/hackmyvm/" class="mx-2" target="_self">HackMyVM</a>
-        
-        
-        
-        
-          <span class="text-muted small font-weight-light"> 19 posts</span>
-        
-      </span>
+        <i class="far fa-folder fa-fw"></i><a href="/categories/hackmyvm/" class="mx-2" target="_self">HackMyVM</a><span class="text-muted small font-weight-light"> 19 posts</span></span>
       <!-- Arrow -->
       <a
         href="#l_0"
@@ -491,17 +476,11 @@
     </div>
     <!-- Sub-categories and posts (hidden until toggled) -->
     <div id="l_0" class="collapse" aria-labelledby="h_0">
-      <ul class="content ps-0">
-        <!-- Build level 2 subcategories for this top category -->
-        
-        <!-- List posts without level 2 (direct under top category) -->
-        
-        
-          <li class="d-flex justify-content-between px-md-3">
+      <ul class="content list-group ps-0">
+        <!-- Build level 2 subcategories for this top category --><!-- List posts without level 2 (direct under top category) --><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Matrioshka/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Matrioshka</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Matrioshka/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -519,14 +498,10 @@
 >
   Aug 10, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Homelab/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Homelab</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Homelab/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -544,14 +519,10 @@
 >
   Aug  3, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Sabulaji/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Sabulaji</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Sabulaji/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -569,14 +540,10 @@
 >
   Aug  1, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Takedown/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Takedown</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Takedown/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -594,14 +561,10 @@
 >
   Jul 31, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Griffin/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Griffin</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Griffin/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -619,14 +582,10 @@
 >
   Jul 29, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Insomnia/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Insomnia</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Insomnia/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -644,14 +603,10 @@
 >
   Jun 30, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Boxing/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Boxing</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Boxing/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -669,14 +624,10 @@
 >
   Jun 30, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Talk/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Talk</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Talk/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -694,14 +645,10 @@
 >
   Jun 29, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Observer/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Observer</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Observer/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -719,14 +666,10 @@
 >
   Nov 27, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Deeper/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Deeper</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Deeper/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -744,14 +687,10 @@
 >
   Nov 27, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Tiny/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Tiny</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Tiny/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -769,14 +708,10 @@
 >
   Nov 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Flossy/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Flossy</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Flossy/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -794,14 +729,10 @@
 >
   Oct 31, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Simple/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Simple</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Simple/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -819,14 +750,10 @@
 >
   Oct 28, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Economist/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Economist</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Economist/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -844,14 +771,10 @@
 >
   Oct 14, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Logan2/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Logan2</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Logan2/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -869,14 +792,10 @@
 >
   Oct 12, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Za1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Za1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Za1/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -894,14 +813,10 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Suidy/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Suidy</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Suidy/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -919,14 +834,10 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Principle/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Principle</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Principle/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -944,14 +855,10 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Inkplot/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Inkplot</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Inkplot/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -969,34 +876,15 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-      </ul>
+</li></ul>
     </div>
-  </div>
-  
-
-  
-  
-  
-  <div class="card categories">
+  </div><div class="card categories">
     <!-- Top-level category -->
     <div
       id="h_1"
-      class="card-header d-flex justify-content-between hide-border-bottom"
-    >
+      class="card-header d-flex justify-content-between hide-border-bottom">
       <span class="ms-2">
-        <i class="far fa-folder fa-fw"></i>
-        
-        <a href="/categories/hackthebox/" class="mx-2" target="_self">HackTheBox</a>
-        
-        
-        
-        
-          <span class="text-muted small font-weight-light"> 57 posts</span>
-        
-      </span>
+        <i class="far fa-folder fa-fw"></i><a href="/categories/hackthebox/" class="mx-2" target="_self">HackTheBox</a><span class="text-muted small font-weight-light"> 57 posts</span></span>
       <!-- Arrow -->
       <a
         href="#l_1"
@@ -1010,17 +898,11 @@
     </div>
     <!-- Sub-categories and posts (hidden until toggled) -->
     <div id="l_1" class="collapse" aria-labelledby="h_1">
-      <ul class="content ps-0">
-        <!-- Build level 2 subcategories for this top category -->
-        
-        <!-- List posts without level 2 (direct under top category) -->
-        
-        
-          <li class="d-flex justify-content-between px-md-3">
+      <ul class="content list-group ps-0">
+        <!-- Build level 2 subcategories for this top category --><!-- List posts without level 2 (direct under top category) --><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Dog/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Dog</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Dog/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1038,14 +920,10 @@
 >
   Jul 22, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Cat/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Cat</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Cat/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1063,14 +941,10 @@
 >
   Jul 19, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Strutted/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Strutted</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Strutted/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1088,14 +962,10 @@
 >
   Jul 10, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Sea/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Sea</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Sea/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1113,14 +983,10 @@
 >
   Jun 30, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Cicada/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Cicada</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Cicada/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1138,14 +1004,10 @@
 >
   Oct  9, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Usage/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Usage</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Usage/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1163,14 +1025,10 @@
 >
   Sep  3, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Pov/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Pov</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Pov/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1188,14 +1046,10 @@
 >
   Apr 27, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Office/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Office</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Office/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1213,14 +1067,10 @@
 >
   Apr 27, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Monitored/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Monitored</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Monitored/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1238,14 +1088,10 @@
 >
   Apr 27, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Jab/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Jab</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Jab/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1263,14 +1109,10 @@
 >
   Apr 27, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Crafty/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Crafty</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Crafty/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1288,14 +1130,10 @@
 >
   Apr 27, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Hospital/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Hospital</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Hospital/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1313,14 +1151,10 @@
 >
   Apr  3, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Surveillance/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Surveillance</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Surveillance/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1338,14 +1172,10 @@
 >
   Mar  6, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Builder/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Builder</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Builder/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1363,14 +1193,10 @@
 >
   Feb 14, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Bizness/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Bizness</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Bizness/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1388,14 +1214,10 @@
 >
   Feb 12, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Worker/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Worker</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Worker/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1413,14 +1235,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/UpDown/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;UpDown</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/UpDown/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1438,14 +1256,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Support/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Support</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Support/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1463,14 +1277,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/ServMon/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;ServMon</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/ServMon/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1488,14 +1298,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/SecNotes/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;SecNotes</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/SecNotes/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1513,14 +1319,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Sauna/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Sauna</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Sauna/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1538,14 +1340,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Return/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Return</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Return/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1563,14 +1361,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Pandora/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Pandora</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Pandora/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1588,14 +1382,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Omni/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Omni</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Omni/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1613,14 +1403,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Object/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Object</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Object/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1638,14 +1424,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Love/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Love</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Love/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1663,14 +1445,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Legacy/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Legacy</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Legacy/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1688,14 +1466,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Jeeves/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Jeeves</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Jeeves/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1713,14 +1487,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Intelligence/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Intelligence</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Intelligence/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1738,14 +1508,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Escape/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Escape</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Escape/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1763,14 +1529,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Chatterbox/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Chatterbox</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Chatterbox/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1788,14 +1550,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Cascade/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Cascade</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Cascade/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1813,14 +1571,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Busqueda/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Busqueda</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Busqueda/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1838,14 +1592,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Buff/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Buff</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Buff/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1863,14 +1613,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Bounty/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Bounty</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Bounty/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1888,14 +1634,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Bastion/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Bastion</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Bastion/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1913,14 +1655,10 @@
 >
   Jan 25, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/TwoMillion/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;TwoMillion</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/TwoMillion/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1938,14 +1676,10 @@
 >
   Dec 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Devvortex/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Devvortex</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Devvortex/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1963,14 +1697,10 @@
 >
   Dec 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Broker/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Broker</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Broker/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1988,14 +1718,10 @@
 >
   Dec 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Clicker/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Clicker</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Clicker/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2013,14 +1739,10 @@
 >
   Nov 18, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Codify/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Codify</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Codify/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2038,14 +1760,10 @@
 >
   Nov 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Analytics/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Analytics</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Analytics/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2063,14 +1781,10 @@
 >
   Oct 25, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Topology/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Topology</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Topology/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2088,14 +1802,10 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/PC/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;PC</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/PC/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2113,14 +1823,10 @@
 >
   Sep 24, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Pilgrimage/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Pilgrimage</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Pilgrimage/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2138,14 +1844,10 @@
 >
   Sep 15, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/CozyHosting/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Cozyhosting</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/CozyHosting/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2163,14 +1865,10 @@
 >
   Sep 15, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Traverxec/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Traverxec</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Traverxec/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2188,14 +1886,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Soccer/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Soccer</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Soccer/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2213,14 +1907,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Sau/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Sau</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Sau/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2238,14 +1928,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Precious/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Precious</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Precious/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2263,14 +1949,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/NodeBlog/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Nodeblog</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/NodeBlog/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2288,14 +1970,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Meta-2/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Meta 2</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Meta-2/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2313,14 +1991,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Keeper/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Keeper</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Keeper/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2338,14 +2012,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Delivery/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Delivery</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Delivery/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2363,14 +2033,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Beep/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Beep</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Beep/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2388,14 +2054,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Active/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Active</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Active/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2413,14 +2075,10 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Academy/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Academy</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Academy/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2438,34 +2096,15 @@
 >
   Sep  1, 2023
 </time>
-
-          </li>
-        
-      </ul>
+</li></ul>
     </div>
-  </div>
-  
-
-  
-  
-  
-  <div class="card categories">
+  </div><div class="card categories">
     <!-- Top-level category -->
     <div
       id="h_2"
-      class="card-header d-flex justify-content-between hide-border-bottom"
-    >
+      class="card-header d-flex justify-content-between hide-border-bottom">
       <span class="ms-2">
-        <i class="far fa-folder fa-fw"></i>
-        
-        <a href="/categories/tryhackme/" class="mx-2" target="_self">TryHackMe</a>
-        
-        
-        
-        
-          <span class="text-muted small font-weight-light"> 31 posts</span>
-        
-      </span>
+        <i class="far fa-folder fa-fw"></i><a href="/categories/tryhackme/" class="mx-2" target="_self">TryHackMe</a><span class="text-muted small font-weight-light"> 31 posts</span></span>
       <!-- Arrow -->
       <a
         href="#l_2"
@@ -2479,17 +2118,11 @@
     </div>
     <!-- Sub-categories and posts (hidden until toggled) -->
     <div id="l_2" class="collapse" aria-labelledby="h_2">
-      <ul class="content ps-0">
-        <!-- Build level 2 subcategories for this top category -->
-        
-        <!-- List posts without level 2 (direct under top category) -->
-        
-        
-          <li class="d-flex justify-content-between px-md-3">
+      <ul class="content list-group ps-0">
+        <!-- Build level 2 subcategories for this top category --><!-- List posts without level 2 (direct under top category) --><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Billing/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Billing</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Billing/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2507,14 +2140,10 @@
 >
   Jul  2, 2025
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Year-of-the-Pig/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Year Of The Pig</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Year-of-the-Pig/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2532,14 +2161,10 @@
 >
   Apr 27, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/SkyNet/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Skynet</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/SkyNet/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2557,14 +2182,10 @@
 >
   Apr 27, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Game-Zone/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Game Zone</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Game-Zone/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2582,14 +2203,10 @@
 >
   Apr 27, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Crocc-Crew/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Crocc Crew</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Crocc-Crew/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2607,14 +2224,10 @@
 >
   Apr 27, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Year-of-the-Fox/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Year Of The Fox</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Year-of-the-Fox/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2632,14 +2245,10 @@
 >
   Mar 24, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Year-of-the-Dog/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Year Of The Dog</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Year-of-the-Dog/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2657,14 +2266,10 @@
 >
   Mar 23, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Iron-Corp/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Iron Corp</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Iron-Corp/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2682,14 +2287,10 @@
 >
   Mar 21, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Fusion-Corp/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Fusion Corp</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Fusion-Corp/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2707,14 +2308,10 @@
 >
   Mar 19, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Year-of-the-Owl/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Year Of The Owl</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Year-of-the-Owl/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2732,14 +2329,10 @@
 >
   Mar 18, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Set/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Set</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Set/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2757,14 +2350,10 @@
 >
   Mar  9, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Ra-2/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Ra 2</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Ra-2/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2782,14 +2371,10 @@
 >
   Mar  8, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Weasel/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Weasel</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Weasel/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2807,14 +2392,10 @@
 >
   Mar  6, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/VulnNet-Roasted/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Vulnnet Roasted</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/VulnNet-Roasted/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2832,14 +2413,10 @@
 >
   Mar  6, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Steel-Mountain/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Steel Mountain</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Steel-Mountain/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2857,14 +2434,10 @@
 >
   Mar  6, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Services/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Services</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Services/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2882,14 +2455,10 @@
 >
   Mar  6, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Reset/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Reset</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Reset/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2907,14 +2476,10 @@
 >
   Mar  6, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/RazorBlack/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Razorblack</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/RazorBlack/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2932,14 +2497,10 @@
 >
   Mar  6, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/HackPark/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;HackPark</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/HackPark/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2957,14 +2518,10 @@
 >
   Mar  5, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Enterprise/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Enterprise</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Enterprise/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -2982,14 +2539,10 @@
 >
   Feb 22, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/AllSignPoint2Pwnage/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Allsignpoint2pwnage</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/AllSignPoint2Pwnage/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3007,14 +2560,10 @@
 >
   Feb 21, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Expose/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Expose</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Expose/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3032,14 +2581,10 @@
 >
   Feb 20, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Umbrella/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Umbrella</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Umbrella/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3057,14 +2602,10 @@
 >
   Feb  3, 2024
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Stealth/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Stealth</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Stealth/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3082,14 +2623,10 @@
 >
   Dec 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Avenger/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;AVenger</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Avenger/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3107,14 +2644,10 @@
 >
   Dec 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Valley/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Valley</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Valley/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3132,14 +2665,10 @@
 >
   Nov 28, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Opacity/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Opacity</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Opacity/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3157,14 +2686,10 @@
 >
   Nov 17, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/For-Bussiness-Reason/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;For Bussiness Reason</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/For-Bussiness-Reason/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3182,14 +2707,10 @@
 >
   Nov  3, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Unbaked-Pie/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Unbaked Pie</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Unbaked-Pie/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3207,14 +2728,10 @@
 >
   Oct 28, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/VulnNet-Active/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;VulnNet Active</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/VulnNet-Active/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3232,14 +2749,10 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Turtle/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Turtle</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Turtle/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3257,34 +2770,15 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-      </ul>
+</li></ul>
     </div>
-  </div>
-  
-
-  
-  
-  
-  <div class="card categories">
+  </div><div class="card categories">
     <!-- Top-level category -->
     <div
       id="h_3"
-      class="card-header d-flex justify-content-between hide-border-bottom"
-    >
+      class="card-header d-flex justify-content-between hide-border-bottom">
       <span class="ms-2">
-        <i class="far fa-folder fa-fw"></i>
-        
-        <a href="/categories/proving-grounds/" class="mx-2" target="_self">Proving Grounds</a>
-        
-        
-        
-        
-          <span class="text-muted small font-weight-light"> 2 categories, 74 posts</span>
-        
-      </span>
+        <i class="far fa-folder fa-fw"></i><a href="/categories/proving-grounds/" class="mx-2" target="_self">Proving Grounds</a><span class="text-muted small font-weight-light"> 2 categories, 74 posts</span></span>
       <!-- Arrow -->
       <a
         href="#l_3"
@@ -3298,27 +2792,12 @@
     </div>
     <!-- Sub-categories and posts (hidden until toggled) -->
     <div id="l_3" class="collapse" aria-labelledby="h_3">
-      <ul class="content ps-0">
-        <!-- Build level 2 subcategories for this top category -->
-        
-          
-          
-          
-            <li class="d-flex justify-content-between px-md-3 level2-header">
+      <ul class="content list-group ps-0">
+        <!-- Build level 2 subcategories for this top category --><li class="list-group-item d-flex justify-content-between px-md-3">
               <span class="ms-4">
                 <i class="far fa-folder-open fa-fw"></i>
-                <span class="mx-2">Practice</span>
-                
-                
-                
-                
-                
-                  <span class="text-muted small font-weight-light"> 14 posts</span>
-                
-              </span>
-              <!-- Arrow for level 3 toggle -->
-              
-                <a
+                <span class="mx-2">Practice</span><span class="text-muted small font-weight-light"> 14 posts</span></span>
+              <!-- Arrow for level 3 toggle --><a
                   href="#l_3-practice"
                   data-bs-toggle="collapse"
                   aria-expanded="false"
@@ -3326,22 +2805,14 @@
                   class="category-trigger hide-border-bottom"
                 >
                   <i class="fas fa-fw fa-angle-down rotate-180"></i>
-                </a>
-              
-            </li>
+                </a></li>
             <!-- Level 3 nesting (hidden until toggled) -->
             <div id="l_3-practice" class="collapse" aria-labelledby="h_3-practice">
-              <ul class="content ps-0">
-                <!-- Build level 3 subcategories -->
-                
-                <!-- List posts without level 3 (direct under level 2) -->
-                
-                
-                  <li class="d-flex justify-content-between px-md-5">
+              <ul class="content list-group ps-0">
+                <!-- Build level 3 subcategories --><!-- List posts without level 3 (direct under level 2) --><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Access/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Access</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Access/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3359,14 +2830,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/AuthBy/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Authby</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/AuthBy/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3384,14 +2851,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/BlackGate/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Blackgate</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/BlackGate/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3409,14 +2872,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Clue/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Clue</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Clue/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3434,14 +2893,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Craft2/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Craft2</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Craft2/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3459,14 +2914,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Exfiltration/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Exfiltration</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Exfiltration/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3484,14 +2935,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Heist/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Heist</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Heist/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3509,14 +2956,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Hutch/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Hutch</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Hutch/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3534,14 +2977,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Nagoya/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Nagoya</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Nagoya/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3559,14 +2998,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Resourced/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Resourced</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Resourced/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3584,14 +3019,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Slort/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Slort</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Slort/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3609,14 +3040,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Squid/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Squid</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Squid/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3634,14 +3061,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Twiggy/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Twiggy</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Twiggy/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3659,14 +3082,10 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Vector/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Vector</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Vector/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3684,31 +3103,12 @@
 >
   Sep  3, 2024
 </time>
-
-                  </li>
-                
-              </ul>
-            </div>
-          
-        
-          
-          
-          
-            <li class="d-flex justify-content-between px-md-3 level2-header">
+</li></ul>
+            </div><li class="list-group-item d-flex justify-content-between px-md-3">
               <span class="ms-4">
                 <i class="far fa-folder-open fa-fw"></i>
-                <span class="mx-2">Play</span>
-                
-                
-                
-                
-                
-                  <span class="text-muted small font-weight-light"> 3 categories, 60 posts</span>
-                
-              </span>
-              <!-- Arrow for level 3 toggle -->
-              
-                <a
+                <span class="mx-2">Play</span><span class="text-muted small font-weight-light"> 3 categories, 60 posts</span></span>
+              <!-- Arrow for level 3 toggle --><a
                   href="#l_3-play"
                   data-bs-toggle="collapse"
                   aria-expanded="false"
@@ -3716,32 +3116,15 @@
                   class="category-trigger hide-border-bottom"
                 >
                   <i class="fas fa-fw fa-angle-down rotate-180"></i>
-                </a>
-              
-            </li>
+                </a></li>
             <!-- Level 3 nesting (hidden until toggled) -->
             <div id="l_3-play" class="collapse" aria-labelledby="h_3-play">
-              <ul class="content ps-0">
-                <!-- Build level 3 subcategories -->
-                
-                  
-                  
-                  
-                    <li class="d-flex justify-content-between px-md-5 level3-header">
+              <ul class="content list-group ps-0">
+                <!-- Build level 3 subcategories --><li class="list-group-item d-flex justify-content-between px-md-3">
                       <span class="ms-6">
                         <i class="far fa-folder-open fa-fw"></i>
-                        <span class="mx-2">Funbox</span>
-                        
-                        
-                        
-                        
-                        
-                          <span class="text-muted small font-weight-light"> 3 posts</span>
-                        
-                      </span>
-                      <!-- Arrow for level 4 toggle -->
-                      
-                        <a
+                        <span class="mx-2">Funbox</span><span class="text-muted small font-weight-light"> 3 posts</span></span>
+                      <!-- Arrow for level 4 toggle --><a
                           href="#l_3-play-funbox"
                           data-bs-toggle="collapse"
                           aria-expanded="false"
@@ -3749,22 +3132,14 @@
                           class="category-trigger hide-border-bottom"
                         >
                           <i class="fas fa-fw fa-angle-down rotate-180"></i>
-                        </a>
-                      
-                    </li>
+                        </a></li>
                     <!-- Level 4 nesting (hidden until toggled) -->
                     <div id="l_3-play-funbox" class="collapse" aria-labelledby="h_3-play-funbox">
-                      <ul class="content ps-0">
-                        <!-- Build level 4 subcategories -->
-                        
-                        <!-- List posts without level 4 (direct under level 3) -->
-                        
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+                      <ul class="content ps-0 list-group">
+                        <!-- Build level 4 subcategories --><!-- List posts without level 4 (direct under level 3) --><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/Funbox-Rookie/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Funbox : Rookie</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Funbox-Rookie/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3782,14 +3157,10 @@
 >
   Jul 16, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/Funbox-Easy/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Funbox : Easy</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Funbox-Easy/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3807,14 +3178,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/Funbox-Easy-Enum/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Funbox : EasyEnum</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Funbox-Easy-Enum/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3832,31 +3199,12 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                      </ul>
-                    </div>
-                  
-                
-                  
-                  
-                  
-                    <li class="d-flex justify-content-between px-md-5 level3-header">
+</li></ul>
+                    </div><li class="list-group-item d-flex justify-content-between px-md-3">
                       <span class="ms-6">
                         <i class="far fa-folder-open fa-fw"></i>
-                        <span class="mx-2">Sunset</span>
-                        
-                        
-                        
-                        
-                        
-                          <span class="text-muted small font-weight-light"> 2 posts</span>
-                        
-                      </span>
-                      <!-- Arrow for level 4 toggle -->
-                      
-                        <a
+                        <span class="mx-2">Sunset</span><span class="text-muted small font-weight-light"> 2 posts</span></span>
+                      <!-- Arrow for level 4 toggle --><a
                           href="#l_3-play-sunset"
                           data-bs-toggle="collapse"
                           aria-expanded="false"
@@ -3864,22 +3212,14 @@
                           class="category-trigger hide-border-bottom"
                         >
                           <i class="fas fa-fw fa-angle-down rotate-180"></i>
-                        </a>
-                      
-                    </li>
+                        </a></li>
                     <!-- Level 4 nesting (hidden until toggled) -->
                     <div id="l_3-play-sunset" class="collapse" aria-labelledby="h_3-play-sunset">
-                      <ul class="content ps-0">
-                        <!-- Build level 4 subcategories -->
-                        
-                        <!-- List posts without level 4 (direct under level 3) -->
-                        
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+                      <ul class="content ps-0 list-group">
+                        <!-- Build level 4 subcategories --><!-- List posts without level 4 (direct under level 3) --><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/Sunset-midnight/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Sunset : Midnight</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Sunset-midnight/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3897,14 +3237,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/Sunset-Decoy/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Sunset Decoy</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Sunset-Decoy/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3922,31 +3258,12 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                      </ul>
-                    </div>
-                  
-                
-                  
-                  
-                  
-                    <li class="d-flex justify-content-between px-md-5 level3-header">
+</li></ul>
+                    </div><li class="list-group-item d-flex justify-content-between px-md-3">
                       <span class="ms-6">
                         <i class="far fa-folder-open fa-fw"></i>
-                        <span class="mx-2">DC</span>
-                        
-                        
-                        
-                        
-                        
-                          <span class="text-muted small font-weight-light"> 9 posts</span>
-                        
-                      </span>
-                      <!-- Arrow for level 4 toggle -->
-                      
-                        <a
+                        <span class="mx-2">DC</span><span class="text-muted small font-weight-light"> 9 posts</span></span>
+                      <!-- Arrow for level 4 toggle --><a
                           href="#l_3-play-dc"
                           data-bs-toggle="collapse"
                           aria-expanded="false"
@@ -3954,22 +3271,14 @@
                           class="category-trigger hide-border-bottom"
                         >
                           <i class="fas fa-fw fa-angle-down rotate-180"></i>
-                        </a>
-                      
-                    </li>
+                        </a></li>
                     <!-- Level 4 nesting (hidden until toggled) -->
                     <div id="l_3-play-dc" class="collapse" aria-labelledby="h_3-play-dc">
-                      <ul class="content ps-0">
-                        <!-- Build level 4 subcategories -->
-                        
-                        <!-- List posts without level 4 (direct under level 3) -->
-                        
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+                      <ul class="content ps-0 list-group">
+                        <!-- Build level 4 subcategories --><!-- List posts without level 4 (direct under level 3) --><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/DC-9/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DC : 9</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DC-9/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -3987,14 +3296,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/DC-8/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DC : 8</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DC-8/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4012,14 +3317,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/DC-7/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DC : 7</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DC-7/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4037,14 +3338,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/DC-6/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DC : 6</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DC-6/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4062,14 +3359,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/DC-5/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DC : 5</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DC-5/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4087,14 +3380,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/DC-4/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DC : 4</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DC-4/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4112,14 +3401,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/DC-3/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DC : 3</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DC-3/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4137,14 +3422,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/DC-2/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DC : 2</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DC-2/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4162,14 +3443,10 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                          <li class="d-flex justify-content-between px-md-7">
+</li><li class="d-flex justify-content-between px-md-7">
                             <a href="/posts/DC-1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DC : 1</a>
                             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DC-1/"></span>
-                            <span class="dash flex-grow-1"></span>
-                            <!--
+                            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4187,21 +3464,11 @@
 >
   Jun 14, 2023
 </time>
-
-                          </li>
-                        
-                      </ul>
-                    </div>
-                  
-                
-                <!-- List posts without level 3 (direct under level 2) -->
-                
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li></ul>
+                    </div><!-- List posts without level 3 (direct under level 2) --><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Moneybox/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Moneybox</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Moneybox/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4219,14 +3486,10 @@
 >
   Dec 10, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/My-CMSMS/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;My-CMSMS</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/My-CMSMS/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4244,14 +3507,10 @@
 >
   Dec 10, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Assersion-101/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Assersion 101</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Assersion-101/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4269,14 +3528,10 @@
 >
   Oct 10, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Amaterasu/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Amaterasu</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Amaterasu/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4294,14 +3549,10 @@
 >
   Jul 16, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/CyberSploit-1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;CyberSploit 1</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/CyberSploit-1/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4319,14 +3570,10 @@
 >
   Jul 16, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Empire-breakout/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Empire Breakout</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Empire-breakout/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4344,14 +3591,10 @@
 >
   Jul 16, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Seppuku/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Seppuku</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Seppuku/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4369,14 +3612,10 @@
 >
   Jul 16, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Solstice/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Solstice</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Solstice/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4394,14 +3633,10 @@
 >
   Jul 16, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Tre/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Tre</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Tre/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4419,14 +3654,10 @@
 >
   Jul 16, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/OnSystemShellDredd/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;OnSystemShellDredd</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/OnSystemShellDredd/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4444,14 +3675,10 @@
 >
   Jun 27, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Sumo/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Sumo</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Sumo/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4469,14 +3696,10 @@
 >
   Jun 26, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Loly/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Loly</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Loly/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4494,14 +3717,10 @@
 >
   Jun 22, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/BBSCute/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;BBSCute</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/BBSCute/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4519,14 +3738,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/BTRsys-1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;BTRsys : 1</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/BTRsys-1/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4544,14 +3759,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Born2Root/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Born2Root</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Born2Root/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4569,14 +3780,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Boss-Players-CTF/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Boss Players CTF</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Boss-Players-CTF/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4594,14 +3801,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Broken/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Broken</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Broken/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4619,14 +3822,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Covfefe/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Covfefe</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Covfefe/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4644,14 +3843,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/DJINN-3/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DJINN 3</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/DJINN-3/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4669,14 +3864,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Deception/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Deception</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Deception/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4694,14 +3885,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/DepthB2R/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DepthB2R</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/DepthB2R/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4719,14 +3906,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Drifting-Blue-1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Drifting Blue 1</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Drifting-Blue-1/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4744,14 +3927,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Election-1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Election 1</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Election-1/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4769,14 +3948,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/EvilBox-One/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;EvilBox-One</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/EvilBox-One/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4794,14 +3969,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Five86-2/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Five86 : 2</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Five86-2/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4819,14 +3990,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Fowsniff-CTF/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Fowsniff : 1</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Fowsniff-CTF/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4844,14 +4011,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Geisha/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Geisha : 1</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Geisha/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4869,14 +4032,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Gitroot/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Gitroot</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Gitroot/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4894,14 +4053,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Glassglow/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Glassglow</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Glassglow/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4919,14 +4074,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/HA-HARDY/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;HA HARDY</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/HA-HARDY/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4944,14 +4095,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Ha-Natraj/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Ha Natraj</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Ha-Natraj/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4969,14 +4116,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/ICMP/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;ICMP</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/ICMP/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -4994,14 +4137,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Inclusiveness/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Inclusiveness</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Inclusiveness/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5019,14 +4158,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Jordaninfosec-CTF01/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Jordan Infosec CTF01</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Jordaninfosec-CTF01/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5044,14 +4179,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/LazySysAdmin/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;LazySysAdmin</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/LazySysAdmin/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5069,14 +4200,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/NoName/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;NoName</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/NoName/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5094,14 +4221,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/NullByte/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;NullByte</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/NullByte/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5119,14 +4242,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Potato/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Potato</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Potato/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5144,14 +4263,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/PwnLab/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;PwnLab</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/PwnLab/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5169,14 +4284,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Pwned/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Pwned</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Pwned/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5194,14 +4305,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Pxexp/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;PxExp</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Pxexp/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5219,14 +4326,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/So-Simple/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;So Simple</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/So-Simple/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5244,14 +4347,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/USV_CTF_2017/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;USV CTF-2017</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/USV_CTF_2017/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5269,14 +4368,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Vegeta/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Vegeta</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Vegeta/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5294,14 +4389,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Wpwn/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Wpwn</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Wpwn/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5319,14 +4410,10 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-                  <li class="d-flex justify-content-between px-md-5">
+</li><li class="d-flex justify-content-between px-md-5">
                     <a href="/posts/Y0usef/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Y0usef</a>
                     <span class="clap-count-cat" data-url="http://localhost:4000/posts/Y0usef/"></span>
-                    <span class="dash flex-grow-1"></span>
-                    <!--
+                    <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5344,41 +4431,16 @@
 >
   Jun 14, 2023
 </time>
-
-                  </li>
-                
-              </ul>
-            </div>
-          
-        
-        <!-- List posts without level 2 (direct under top category) -->
-        
-        
-      </ul>
+</li></ul>
+            </div><!-- List posts without level 2 (direct under top category) --></ul>
     </div>
-  </div>
-  
-
-  
-  
-  
-  <div class="card categories">
+  </div><div class="card categories">
     <!-- Top-level category -->
     <div
       id="h_4"
-      class="card-header d-flex justify-content-between hide-border-bottom"
-    >
+      class="card-header d-flex justify-content-between hide-border-bottom">
       <span class="ms-2">
-        <i class="far fa-folder fa-fw"></i>
-        
-        <a href="/categories/vulnhub/" class="mx-2" target="_self">VulnHub</a>
-        
-        
-        
-        
-          <span class="text-muted small font-weight-light"> 27 posts</span>
-        
-      </span>
+        <i class="far fa-folder fa-fw"></i><a href="/categories/vulnhub/" class="mx-2" target="_self">VulnHub</a><span class="text-muted small font-weight-light"> 27 posts</span></span>
       <!-- Arrow -->
       <a
         href="#l_4"
@@ -5392,17 +4454,11 @@
     </div>
     <!-- Sub-categories and posts (hidden until toggled) -->
     <div id="l_4" class="collapse" aria-labelledby="h_4">
-      <ul class="content ps-0">
-        <!-- Build level 2 subcategories for this top category -->
-        
-        <!-- List posts without level 2 (direct under top category) -->
-        
-        
-          <li class="d-flex justify-content-between px-md-3">
+      <ul class="content list-group ps-0">
+        <!-- Build level 2 subcategories for this top category --><!-- List posts without level 2 (direct under top category) --><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Deception-1.1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Deception : 1.1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Deception-1.1/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5420,14 +4476,10 @@
 >
   Dec 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Blogger/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Blogger</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Blogger/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5445,14 +4497,10 @@
 >
   Dec 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Napping-1.0.1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Napping : 1.0.1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Napping-1.0.1/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5470,14 +4518,10 @@
 >
   Oct 25, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Breach-1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Breach 1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Breach-1/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5495,14 +4539,10 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/ICSS_team_CTF/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;ICSS CTF</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/ICSS_team_CTF/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5520,14 +4560,10 @@
 >
   Sep 24, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Torment/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Torment</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Torment/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5545,14 +4581,10 @@
 >
   Sep 15, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Skytower/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;SkyTower</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Skytower/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5570,14 +4602,10 @@
 >
   Sep 15, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/CIA/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;CIA 1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/CIA/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5595,14 +4623,10 @@
 >
   Sep 15, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/WebDeveloper/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Webdeveloper</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/WebDeveloper/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5620,14 +4644,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/W34kn3ss/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;W34kn3ss</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/W34kn3ss/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5645,14 +4665,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/VulnOS/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Vuln OS</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/VulnOS/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5670,14 +4686,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Toppo/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Toppo : 1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Toppo/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5695,14 +4707,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/TommyBoy1dot0/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;TommyBoy v1.0</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/TommyBoy1dot0/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5720,14 +4728,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Tiki/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Tiki</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Tiki/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5745,14 +4749,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Straylight/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Straylight</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Straylight/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5770,14 +4770,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Sar/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Sar</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Sar/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5795,14 +4791,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Photographer/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Photographer</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Photographer/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5820,14 +4812,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Neuromancer/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Neuromancer</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Neuromancer/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5845,14 +4833,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Load/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Load of the Root : 1.0.1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Load/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5870,14 +4854,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Infosec_prep_OSCP/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;InfoSec Prep OSCP</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Infosec_prep_OSCP/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5895,14 +4875,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Hack/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Hack Me Please : 1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Hack/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5920,14 +4896,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/GoldenEye/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;GoldenEye</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/GoldenEye/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5945,14 +4917,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/EVM_1/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;EVM : 1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/EVM_1/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5970,14 +4938,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Devguru/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Devguru</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Devguru/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -5995,14 +4959,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/DJINN/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DJINN</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DJINN/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6020,14 +4980,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/DERPNSTINK/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DERPNSTINK 1</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DERPNSTINK/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6045,14 +5001,10 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Bob/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Bob</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Bob/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6070,34 +5022,15 @@
 >
   Jun 11, 2023
 </time>
-
-          </li>
-        
-      </ul>
+</li></ul>
     </div>
-  </div>
-  
-
-  
-  
-  
-  <div class="card categories">
+  </div><div class="card categories">
     <!-- Top-level category -->
     <div
       id="h_5"
-      class="card-header d-flex justify-content-between hide-border-bottom"
-    >
+      class="card-header d-flex justify-content-between hide-border-bottom">
       <span class="ms-2">
-        <i class="far fa-folder fa-fw"></i>
-        
-        <a href="/categories/pwntilldawn/" class="mx-2" target="_self">PwnTillDawn</a>
-        
-        
-        
-        
-          <span class="text-muted small font-weight-light"> 11 posts</span>
-        
-      </span>
+        <i class="far fa-folder fa-fw"></i><a href="/categories/pwntilldawn/" class="mx-2" target="_self">PwnTillDawn</a><span class="text-muted small font-weight-light"> 11 posts</span></span>
       <!-- Arrow -->
       <a
         href="#l_5"
@@ -6111,17 +5044,11 @@
     </div>
     <!-- Sub-categories and posts (hidden until toggled) -->
     <div id="l_5" class="collapse" aria-labelledby="h_5">
-      <ul class="content ps-0">
-        <!-- Build level 2 subcategories for this top category -->
-        
-        <!-- List posts without level 2 (direct under top category) -->
-        
-        
-          <li class="d-flex justify-content-between px-md-3">
+      <ul class="content list-group ps-0">
+        <!-- Build level 2 subcategories for this top category --><!-- List posts without level 2 (direct under top category) --><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Vega/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Vega</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Vega/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6139,14 +5066,10 @@
 >
   Oct 15, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/DOOMOPS/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;DoomOps</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/DOOMOPS/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6164,14 +5087,10 @@
 >
   Oct 14, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Hollywood/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Hollywood</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Hollywood/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6189,14 +5108,10 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Django/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Django</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Django/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6214,14 +5129,10 @@
 >
   Oct 10, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Stuntman/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Stuntman Mike</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Stuntman/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6239,14 +5150,10 @@
 >
   Sep 24, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Silence/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Silence</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Silence/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6264,14 +5171,10 @@
 >
   Sep 24, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Morty/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Morty</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Morty/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6289,14 +5192,10 @@
 >
   Sep 24, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/JuniorDev/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Juniordev</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/JuniorDev/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6314,14 +5213,10 @@
 >
   Sep 24, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/FullMounty/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Fullmounty</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/FullMounty/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6339,14 +5234,10 @@
 >
   Sep 24, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/ElMariachi-PC/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;ElMariachi-PC</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/ElMariachi-PC/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6364,14 +5255,10 @@
 >
   Sep 24, 2023
 </time>
-
-          </li>
-        
-          <li class="d-flex justify-content-between px-md-3">
+</li><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/Chilakiller/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Chilakiller</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/Chilakiller/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6389,34 +5276,15 @@
 >
   Sep 24, 2023
 </time>
-
-          </li>
-        
-      </ul>
+</li></ul>
     </div>
-  </div>
-  
-
-  
-  
-  
-  <div class="card categories">
+  </div><div class="card categories">
     <!-- Top-level category -->
     <div
       id="h_6"
-      class="card-header d-flex justify-content-between hide-border-bottom"
-    >
+      class="card-header d-flex justify-content-between hide-border-bottom">
       <span class="ms-2">
-        <i class="far fa-folder fa-fw"></i>
-        
-        <a href="/categories/demo/" class="mx-2" target="_self">Demo</a>
-        
-        
-        
-        
-          <span class="text-muted small font-weight-light"> 1 posts</span>
-        
-      </span>
+        <i class="far fa-folder fa-fw"></i><a href="/categories/demo/" class="mx-2" target="_self">Demo</a><span class="text-muted small font-weight-light"> 1 posts</span></span>
       <!-- Arrow -->
       <a
         href="#l_6"
@@ -6430,17 +5298,11 @@
     </div>
     <!-- Sub-categories and posts (hidden until toggled) -->
     <div id="l_6" class="collapse" aria-labelledby="h_6">
-      <ul class="content ps-0">
-        <!-- Build level 2 subcategories for this top category -->
-        
-        <!-- List posts without level 2 (direct under top category) -->
-        
-        
-          <li class="d-flex justify-content-between px-md-3">
+      <ul class="content list-group ps-0">
+        <!-- Build level 2 subcategories for this top category --><!-- List posts without level 2 (direct under top category) --><li class="d-flex justify-content-between px-md-3">
             <a href="/posts/normalsite/" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;Demo Site</a>
             <span class="clap-count-cat" data-url="http://localhost:4000/posts/normalsite/"></span>
-            <span class="dash flex-grow-1"></span>
-            <!--
+            <span class="dash flex-grow-1"></span><!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -6458,14 +5320,9 @@
 >
   Mar  4, 2022
 </time>
-
-          </li>
-        
-      </ul>
+</li></ul>
     </div>
   </div>
-  
-
     </div>
   
 </article>

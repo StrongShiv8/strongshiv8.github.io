@@ -1611,9 +1611,10 @@ applause-button {
 
 .level2-header {
   font-weight: bold;
+  color: #1b8df2;
   background-color: #f8f9fa;
   padding: 0.75rem 1rem;
-  margin: 1rem;
+  margin: 0.25rem;
 }
 
 .level3-header, .level4-header {
@@ -1623,30 +1624,16 @@ applause-button {
 }
 
 .level3-header {
-  background-color: #f0f0f0;
+  color: #1b8df2;
+  background-color: var(--kbd-bg-color);
 }
 
-.level4-header {
-  background-color: #e9ecef;
-}
-
-.d-flex .text-muted {
-  color: #6c757d !important;
-}
-
-.content ul {
-  padding-left: 1.5rem;
-  margin: 0;
-}
 
 .category-trigger.disabled {
   color: #6c757d;
   cursor: not-allowed;
 }
 
-.hide-border-bottom {
-  border-bottom: none;
-}
 
 .collapse {
   margin: 0;
