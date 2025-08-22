@@ -35,9 +35,31 @@ permalink: /categories/
     padding-left: 3rem; /* Increase indentation for deeper levels */
     margin: 0;
   }
-  /* Reduce excessive padding from d-flex items */
+  /* Fix side-by-side issue */
   .list-group-item {
     padding: 0.25rem 0; /* Minimize vertical spacing */
+    display: block; /* Ensure block-level behavior */
+  }
+  .list-group-item.d-flex {
+    flex-direction: column; /* Force vertical stacking */
+    align-items: flex-start; /* Align items to the start */
+  }
+  /* Remove excessive padding that might cause horizontal overflow */
+  .list-group-item .ms-4,
+  .list-group-item .ms-6,
+  .list-group-item .ms-8,
+  .list-group-item .px-md-3,
+  .list-group-item .px-md-5,
+  .list-group-item .px-md-7,
+  .list-group-item .px-md-9 {
+    margin-left: 0 !important; /* Reset margin-left */
+    padding-left: 0 !important; /* Reset padding-left */
+    padding-right: 0 !important; /* Reset padding-right */
+  }
+  /* Ensure spans and links stack vertically */
+  .list-group-item span,
+  .list-group-item a {
+    display: block; /* Force block-level to prevent side-by-side */
   }
 </style>
 {%- assign HEAD_PREFIX = 'h_' -%}
