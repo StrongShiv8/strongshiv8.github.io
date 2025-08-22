@@ -40,14 +40,14 @@
 <meta property="og:url" content="http://localhost:4000/categories/" />
 <meta property="og:site_name" content="StrongShiv8" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-08-22T12:25:05+05:30" />
+<meta property="article:published_time" content="2025-08-22T16:03:15+05:30" />
 <meta property="og:image" content="http://localhost:4000/assets/img/HA_Natraj.png" /><meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:image" content="http://localhost:4000/assets/img/HA_Natraj.png" />
 <meta property="twitter:title" content="Categories" />
 <meta name="twitter:site" content="@StrongShiv8" />
 <meta name="google-site-verification" content="G-K1FV42N2FD" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-22T12:25:05+05:30","datePublished":"2025-08-22T12:25:05+05:30","description":"Response and Report of my work.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-22T16:03:15+05:30","datePublished":"2025-08-22T16:03:15+05:30","description":"Response and Report of my work.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -462,9 +462,36 @@
     padding-left: 3rem; /* Increase indentation for deeper levels */
     margin: 0;
   }
-  /* Reduce excessive padding from d-flex items */
+  /* Fix side-by-side issue and enforce vertical stacking within li */
   .list-group-item {
     padding: 0.25rem 0; /* Minimize vertical spacing */
+    display: block; /* Ensure block-level behavior */
+  }
+  
+  .list-group-item.d-flex {
+     /* Stack contents vertically */
+    align-items: flex-start; /* Align items to the start */
+    gap: 0.25rem; /* Small gap between stacked elements */
+  }
+  /* Reset padding and margins for internal elements */
+  .list-group-item .ms-4,
+  .list-group-item .ms-6,
+  .list-group-item .ms-8,
+  .list-group-item .px-md-3,
+  .list-group-item .px-md-5,
+  .list-group-item .px-md-7,
+  .list-group-item .px-md-9 {
+    margin-left: 0 !important; /* Reset margin-left */
+    padding-left: 0 !important; /* Reset padding-left */
+    padding-right: 0 !important; /* Reset padding-right */
+  }
+  /* Ensure spans and links stack vertically */
+  .list-group-item span,
+  .list-group-item a {
+ /* Force block-level to prevent side-by-side */
+  }
+  .category-trigger {
+    margin-top: 0.25rem; /* Space below the last span before the arrow */
   }
 </style><!-- Group posts by their top-level category --><!-- Render top-level categories with subcategories hidden until toggled --><div class="card categories">
     <!-- Top-level category -->

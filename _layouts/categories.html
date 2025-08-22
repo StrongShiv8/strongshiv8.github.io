@@ -35,16 +35,18 @@ permalink: /categories/
     padding-left: 3rem; /* Increase indentation for deeper levels */
     margin: 0;
   }
-  /* Fix side-by-side issue */
+  /* Fix side-by-side issue and enforce vertical stacking within li */
   .list-group-item {
     padding: 0.25rem 0; /* Minimize vertical spacing */
     display: block; /* Ensure block-level behavior */
   }
+  
   .list-group-item.d-flex {
-    flex-direction: column; /* Force vertical stacking */
+     /* Stack contents vertically */
     align-items: flex-start; /* Align items to the start */
+    gap: 0.25rem; /* Small gap between stacked elements */
   }
-  /* Remove excessive padding that might cause horizontal overflow */
+  /* Reset padding and margins for internal elements */
   .list-group-item .ms-4,
   .list-group-item .ms-6,
   .list-group-item .ms-8,
@@ -59,7 +61,10 @@ permalink: /categories/
   /* Ensure spans and links stack vertically */
   .list-group-item span,
   .list-group-item a {
-    display: block; /* Force block-level to prevent side-by-side */
+ /* Force block-level to prevent side-by-side */
+  }
+  .category-trigger {
+    margin-top: 0.25rem; /* Space below the last span before the arrow */
   }
 </style>
 {%- assign HEAD_PREFIX = 'h_' -%}
