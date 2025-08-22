@@ -8,26 +8,24 @@ permalink: /categories/
 <style>
   .collapse {
     margin: 0;
-    padding: 1.5rem;
+    padding: 0; /* Remove excessive padding */
   }
   .content ul {
-    padding-left: 1.5rem;
-    margin: 1.5rem;
+    padding-left: 1.5rem; /* Consistent left padding */
+    margin: 0; /* Remove margin to eliminate gaps */
   }
   .level3-header, .level4-header {
-    margin: 0rem;
+    margin: 0;
     padding: 0.5rem 1.25rem;
   }
-  /* Override list-group and list-group-item color */
   .list-group, .list-group-item {
-    color: #05d4d4 !important;
+    color: #05d4d4 !important; /* Maintain custom color */
   }
-  /* Ensure links inherit the color */
   .list-group-item a {
     color: #05d4d4 !important;
   }
   .list-group-item a:hover {
-    color: #04b3b3 !important; /* Slightly darker teal on hover */
+    color: #04b3b3 !important;
   }
 </style>
 {%- assign HEAD_PREFIX = 'h_' -%}
@@ -82,8 +80,7 @@ permalink: /categories/
         data-bs-toggle="collapse"
         aria-expanded="false"
         aria-controls="{{ LIST_PREFIX }}{{ group_index }}"
-        class="category-trigger hide-border-bottom"
-      >
+        class="category-trigger hide-border-bottom">
         <i class="fas fa-fw fa-angle-down rotate-180"></i>
       </a>
     </div>
@@ -123,8 +120,7 @@ permalink: /categories/
                   data-bs-toggle="collapse"
                   aria-expanded="false"
                   aria-controls="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}"
-                  class="category-trigger hide-border-bottom"
-                >
+                  class="category-trigger hide-border-bottom">
                   <i class="fas fa-fw fa-angle-down rotate-180"></i>
                 </a>
               {%- endif -%}
@@ -165,15 +161,14 @@ permalink: /categories/
                           data-bs-toggle="collapse"
                           aria-expanded="false"
                           aria-controls="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}"
-                          class="category-trigger hide-border-bottom"
-                        >
+                          class="category-trigger hide-border-bottom">
                           <i class="fas fa-fw fa-angle-down rotate-180"></i>
                         </a>
                       {%- endif -%}
                     </li>
                     <!-- Level 4 nesting (hidden until toggled) -->
                     <div id="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}" class="collapse" aria-labelledby="{{ HEAD_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}">
-                      <ul class="content ps-0 list-group">
+                      <ul class="content list-group ps-0">
                         <!-- Build level 4 subcategories -->
                         {%- for level4 in level4_cats -%}
                           {%- assign level4_posts = level3_posts | where_exp: "post", "post.categories contains level4" | sort: 'date' | reverse -%}
@@ -183,7 +178,7 @@ permalink: /categories/
                               <span class="ms-8">
                                 <i class="far fa-folder{% if level4_subcategory_count > 0 %}-open{% endif %} fa-fw"></i>
                                 <span class="mx-2">{{ level4 }}</span>
-                                <span class="text-muted small font-weight-light">  {{ level4_total_posts }} posts</span>
+                                <span class="text-muted small font-weight-light"> {{ level4_total_posts }} posts</span>
                               </span>
                             </li>
                             <!-- List posts under level 4 subcategory -->
