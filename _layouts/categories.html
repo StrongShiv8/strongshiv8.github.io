@@ -8,46 +8,43 @@ permalink: /categories/
 <style>
   .collapse {
     margin: 0;
-    padding: 0; /* Remove padding to eliminate gaps */
+    padding: 0;
   }
   .content ul {
-    padding-left: 1.5rem; /* Consistent left indentation */
-    margin: 0; /* Remove margin to prevent gaps */
+    padding-left: 1.5rem;
+    margin: 0;
   }
   .level3-header, .level4-header {
     margin: 0;
     padding: 0.5rem 1.25rem;
   }
   .list-group, .list-group-item {
-    color: #05d4d4 !important; /* Custom teal color */
+    color: #05d4d4 !important;
   }
   .list-group-item a {
     color: #05d4d4 !important;
   }
   .list-group-item a:hover {
-    color: #04b3b3 !important; /* Slightly darker teal on hover */
+    color: #04b3b3 !important;
   }
-  /* Specific adjustments for Level 3 and 4 to remove gaps */
   .collapse .collapse {
-    padding: 0; /* Ensure nested collapses have no extra padding */
+    padding: 0;
   }
   .collapse .content ul {
-    padding-left: 3rem; /* Increase indentation for deeper levels */
+    padding-left: 3rem;
     margin: 0;
   }
-  /* Target only the opened content (e.g., file lists) for vertical stacking */
   .list-group-item.d-flex > ul > li,
   .list-group-item.d-flex > ul > li.d-flex {
-    flex-direction: column !important; /* Stack opened content vertically */
-    align-items: flex-start !important; /* Align items to the start */
-    gap: 0.25rem !important; /* Consistent spacing between elements */
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.25rem !important;
   }
   .list-group-item.d-flex > ul > li span,
   .list-group-item.d-flex > ul > li a {
-    display: block !important; /* Force block-level for content */
-    width: 100%; /* Ensure full width */
+    display: block !important;
+    width: 100%;
   }
-  /* Reset padding and margins for internal elements in headers */
   .list-group-item .ms-4,
   .list-group-item .ms-6,
   .list-group-item .ms-8,
@@ -59,17 +56,15 @@ permalink: /categories/
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  /* Position arrow below content in headers (unchanged) */
   .category-trigger {
-    margin-top: 0.25rem !important; /* Space below the last span */
-    align-self: flex-start !important; /* Align arrow to the start */
+    margin-top: 0.25rem !important;
+    align-self: flex-start !important;
   }
 </style>
 {%- assign HEAD_PREFIX = 'h_' -%}
 {%- assign LIST_PREFIX = 'l_' -%}
 {%- assign group_index = 0 -%}
 
-<!-- Group posts by their top-level category -->
 {%- assign top_level_cats = '' | split: '' -%}
 {%- for post in site.posts -%}
   {%- if post.categories and post.categories.size > 0 -%}
@@ -80,17 +75,13 @@ permalink: /categories/
   {%- endif -%}
 {%- endfor -%}
 
-<!-- Render top-level categories with subcategories hidden until toggled -->
 {%- for top_cat in top_level_cats -%}
   {%- assign top_name = top_cat -%}
   {%- assign posts = site.posts | where_exp: "post", "post.categories contains top_name" | sort: 'date' | reverse -%}
   {%- assign total_posts = posts | size -%}
 
   <div class="card categories">
-    <!-- Top-level category -->
-    <div
-      id="{{ HEAD_PREFIX }}{{ group_index }}"
-      class="card-header d-flex justify-content-between hide-border-bottom">
+    <div id="{{ HEAD_PREFIX }}{{ group_index }}" class="card-header d-flex justify-content-between hide-border-bottom">
       <span class="ms-2">
         <i class="far fa-folder{% if post.categories.size > 0 %}-open{% endif %} fa-fw"></i>
         {%- capture _category_url -%}/categories/{{ top_name | slugify | url_encode }}/{%- endcapture -%}
@@ -111,20 +102,13 @@ permalink: /categories/
           <span class="text-muted small font-weight-light"> {{ total_posts }} posts</span>
         {%- endif -%}
       </span>
-      <!-- Arrow -->
-      <a
-        href="#{{ LIST_PREFIX }}{{ group_index }}"
-        data-bs-toggle="collapse"
-        aria-expanded="false"
-        aria-controls="{{ LIST_PREFIX }}{{ group_index }}"
-        class="category-trigger hide-border-bottom">
+      <a href="#{{ LIST_PREFIX }}{{ group_index }}" data-bs-toggle="collapse" aria-expanded="false" aria-controls="{{ LIST_PREFIX }}{{ group_index }}" class="category-trigger hide-border-bottom">
         <i class="fas fa-fw fa-angle-down rotate-180"></i>
       </a>
     </div>
-    <!-- Sub-categories and posts (hidden until toggled) -->
+
     <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse" aria-labelledby="{{ HEAD_PREFIX }}{{ group_index }}">
       <ul class="content list-group ps-0">
-        <!-- Build level 2 subcategories for this top category -->
         {%- for level2 in level2_cats -%}
           {%- assign level2_posts = posts | where_exp: "post", "post.categories contains level2" | sort: 'date' | reverse -%}
           {%- assign level2_total_posts = level2_posts | size -%}
@@ -150,114 +134,105 @@ permalink: /categories/
                   <span class="text-muted small font-weight-light"> {{ level2_total_posts }} posts</span>
                 {%- endif -%}
               </span>
-              <!-- Arrow for level 3 toggle -->
               {%- if level3_cats | size > 0 or level3_direct_posts_count > 0 -%}
-                <a
-                  href="#{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  aria-controls="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}"
-                  class="category-trigger hide-border-bottom">
+                <a href="#{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}" data-bs-toggle="collapse" aria-expanded="false" aria-controls="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}" class="category-trigger hide-border-bottom">
                   <i class="fas fa-fw fa-angle-down rotate-180"></i>
                 </a>
               {%- endif -%}
             </li>
-            <!-- Level 3 nesting (hidden until toggled) -->
-            <div id="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}" class="collapse" aria-labelledby="{{ HEAD_PREFIX }}{{ group_index }}-{{ level2 | slugify }}">
-              <ul class="content list-group ps-0">
-                <!-- Build level 3 subcategories -->
-                {%- for level3 in level3_cats -%}
-                  {%- assign level3_posts = level2_posts | where_exp: "post", "post.categories contains level3" | sort: 'date' | reverse -%}
-                  {%- assign level3_total_posts = level3_posts | size -%}
-                  {%- if level3_total_posts > 0 -%}
-                    <li class="list-group-item d-flex justify-content-between px-md-3">
-                      <span class="ms-6">
-                        <i class="far fa-folder{% if level3_subcategory_count > 0 %}-open{% endif %} fa-fw"></i>
-                        <span class="mx-2">{{ level3 }}</span>
-                        {%- assign level4_cats = '' | split: '' -%}
-                        {%- for post in level3_posts -%}
-                          {%- if post.categories.size > 3 -%}
-                            {%- assign level4_category = post.categories[3] -%}
-                            {%- unless level4_cats contains level4_category -%}
-                              {%- assign level4_cats = level4_cats | push: level4_category -%}
-                            {%- endunless -%}
+
+            <!-- ✅ FIXED: Level-2 → Level-3 collapse wrapped in li -->
+            <li class="list-group-item p-0 w-100">
+              <div id="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}" class="collapse w-100" aria-labelledby="{{ HEAD_PREFIX }}{{ group_index }}-{{ level2 | slugify }}">
+                <ul class="content list-group ps-0">
+                  {%- for level3 in level3_cats -%}
+                    {%- assign level3_posts = level2_posts | where_exp: "post", "post.categories contains level3" | sort: 'date' | reverse -%}
+                    {%- assign level3_total_posts = level3_posts | size -%}
+                    {%- if level3_total_posts > 0 -%}
+                      <li class="list-group-item d-flex justify-content-between px-md-3">
+                        <span class="ms-6">
+                          <i class="far fa-folder{% if level3_subcategory_count > 0 %}-open{% endif %} fa-fw"></i>
+                          <span class="mx-2">{{ level3 }}</span>
+                          {%- assign level4_cats = '' | split: '' -%}
+                          {%- for post in level3_posts -%}
+                            {%- if post.categories.size > 3 -%}
+                              {%- assign level4_category = post.categories[3] -%}
+                              {%- unless level4_cats contains level4_category -%}
+                                {%- assign level4_cats = level4_cats | push: level4_category -%}
+                              {%- endunless -%}
+                            {%- endif -%}
+                          {%- endfor -%}
+                          {%- assign level4_subcategory_count = level4_cats | size -%}
+                          {%- assign level4_direct_posts_count = level3_posts | where_exp: "post", "post.categories.size == 4" | size -%}
+                          {%- if level4_subcategory_count > 0 or level4_direct_posts_count > 0 -%}
+                            <span class="text-muted small font-weight-light"> {{ level4_subcategory_count }} categories, {{ level3_total_posts }} posts</span>
+                          {%- else -%}
+                            <span class="text-muted small font-weight-light"> {{ level3_total_posts }} posts</span>
                           {%- endif -%}
-                        {%- endfor -%}
-                        {%- assign level4_subcategory_count = level4_cats | size -%}
-                        {%- assign level4_direct_posts_count = level3_posts | where_exp: "post", "post.categories.size == 4" | size -%}
-                        {%- if level4_subcategory_count > 0 or level4_direct_posts_count > 0 -%}
-                          <span class="text-muted small font-weight-light"> {{ level4_subcategory_count }} categories, {{ level3_total_posts }} posts</span>
-                        {%- else -%}
-                          <span class="text-muted small font-weight-light"> {{ level3_total_posts }} posts</span>
+                        </span>
+                        {%- if level4_cats | size > 0 or level4_direct_posts_count > 0 -%}
+                          <a href="#{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}" data-bs-toggle="collapse" aria-expanded="false" aria-controls="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}" class="category-trigger hide-border-bottom">
+                            <i class="fas fa-fw fa-angle-down rotate-180"></i>
+                          </a>
                         {%- endif -%}
-                      </span>
-                      <!-- Arrow for level 4 toggle -->
-                      {%- if level4_cats | size > 0 or level4_direct_posts_count > 0 -%}
-                        <a
-                          href="#{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}"
-                          data-bs-toggle="collapse"
-                          aria-expanded="false"
-                          aria-controls="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}"
-                          class="category-trigger hide-border-bottom">
-                          <i class="fas fa-fw fa-angle-down rotate-180"></i>
-                        </a>
-                      {%- endif -%}
-                    </li>
-                    <!-- Level 4 nesting (hidden until toggled) -->
-                    <div id="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}" class="collapse" aria-labelledby="{{ HEAD_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}">
-                      <ul class="content list-group ps-0">
-                        <!-- Build level 4 subcategories -->
-                        {%- for level4 in level4_cats -%}
-                          {%- assign level4_posts = level3_posts | where_exp: "post", "post.categories contains level4" | sort: 'date' | reverse -%}
-                          {%- assign level4_total_posts = level4_posts | size -%}
-                          {%- if level4_total_posts > 0 -%}
-                            <li class="list-group-item d-flex justify-content-between px-md-3">
-                              <span class="ms-8">
-                                <i class="far fa-folder{% if level4_subcategory_count > 0 %}-open{% endif %} fa-fw"></i>
-                                <span class="mx-2">{{ level4 }}</span>
-                                <span class="text-muted small font-weight-light"> {{ level4_total_posts }} posts</span>
-                              </span>
-                            </li>
-                            <!-- List posts under level 4 subcategory -->
-                            {%- for post in level4_posts -%}
-                              <li class="d-flex justify-content-between px-md-9">
+                      </li>
+
+                      <!-- ✅ FIXED: Level-3 → Level-4 collapse wrapped in li -->
+                      <li class="list-group-item p-0 w-100">
+                        <div id="{{ LIST_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}" class="collapse w-100" aria-labelledby="{{ HEAD_PREFIX }}{{ group_index }}-{{ level2 | slugify }}-{{ level3 | slugify }}">
+                          <ul class="content list-group ps-0">
+                            {%- for level4 in level4_cats -%}
+                              {%- assign level4_posts = level3_posts | where_exp: "post", "post.categories contains level4" | sort: 'date' | reverse -%}
+                              {%- assign level4_total_posts = level4_posts | size -%}
+                              {%- if level4_total_posts > 0 -%}
+                                <li class="list-group-item d-flex justify-content-between px-md-3">
+                                  <span class="ms-8">
+                                    <i class="far fa-folder{% if level4_subcategory_count > 0 %}-open{% endif %} fa-fw"></i>
+                                    <span class="mx-2">{{ level4 }}</span>
+                                    <span class="text-muted small font-weight-light"> {{ level4_total_posts }} posts</span>
+                                  </span>
+                                </li>
+                                {%- for post in level4_posts -%}
+                                  <li class="d-flex justify-content-between px-md-9">
+                                    <a href="{{ post.url | relative_url }}" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;{{ post.title | truncate: 70 }}</a>
+                                    <span class="clap-count-cat" data-url="{{ post.url | absolute_url }}"></span>
+                                    <span class="dash flex-grow-1"></span>
+                                    {%- include datetime.html date=post.date wrap='span' class='text-muted small' lang=lang -%}
+                                  </li>
+                                {%- endfor -%}
+                              {%- endif -%}
+                            {%- endfor -%}
+
+                            {%- assign level3_direct_posts = level3_posts | where_exp: "post", "post.categories.size == 3" | sort: 'date' | reverse -%}
+                            {%- for post in level3_direct_posts -%}
+                              <li class="d-flex justify-content-between px-md-7">
                                 <a href="{{ post.url | relative_url }}" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;{{ post.title | truncate: 70 }}</a>
                                 <span class="clap-count-cat" data-url="{{ post.url | absolute_url }}"></span>
                                 <span class="dash flex-grow-1"></span>
                                 {%- include datetime.html date=post.date wrap='span' class='text-muted small' lang=lang -%}
                               </li>
                             {%- endfor -%}
-                          {%- endif -%}
-                        {%- endfor -%}
-                        <!-- List posts without level 4 (direct under level 3) -->
-                        {%- assign level3_direct_posts = level3_posts | where_exp: "post", "post.categories.size == 3" | sort: 'date' | reverse -%}
-                        {%- for post in level3_direct_posts -%}
-                          <li class="d-flex justify-content-between px-md-7">
-                            <a href="{{ post.url | relative_url }}" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;{{ post.title | truncate: 70 }}</a>
-                            <span class="clap-count-cat" data-url="{{ post.url | absolute_url }}"></span>
-                            <span class="dash flex-grow-1"></span>
-                            {%- include datetime.html date=post.date wrap='span' class='text-muted small' lang=lang -%}
-                          </li>
-                        {%- endfor -%}
-                      </ul>
-                    </div>
-                  {%- endif -%}
-                {%- endfor -%}
-                <!-- List posts without level 3 (direct under level 2) -->
-                {%- assign level2_direct_posts = level2_posts | where_exp: "post", "post.categories.size == 2" | sort: 'date' | reverse -%}
-                {%- for post in level2_direct_posts -%}
-                  <li class="d-flex justify-content-between px-md-5">
-                    <a href="{{ post.url | relative_url }}" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;{{ post.title | truncate: 70 }}</a>
-                    <span class="clap-count-cat" data-url="{{ post.url | absolute_url }}"></span>
-                    <span class="dash flex-grow-1"></span>
-                    {%- include datetime.html date=post.date wrap='span' class='text-muted small' lang=lang -%}
-                  </li>
-                {%- endfor -%}
-              </ul>
-            </div>
+                          </ul>
+                        </div>
+                      </li>
+                    {%- endif -%}
+                  {%- endfor -%}
+
+                  {%- assign level2_direct_posts = level2_posts | where_exp: "post", "post.categories.size == 2" | sort: 'date' | reverse -%}
+                  {%- for post in level2_direct_posts -%}
+                    <li class="d-flex justify-content-between px-md-5">
+                      <a href="{{ post.url | relative_url }}" class="mx-2"><i class="far fa-file"></i>&nbsp;&nbsp;{{ post.title | truncate: 70 }}</a>
+                      <span class="clap-count-cat" data-url="{{ post.url | absolute_url }}"></span>
+                      <span class="dash flex-grow-1"></span>
+                      {%- include datetime.html date=post.date wrap='span' class='text-muted small' lang=lang -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </li>
           {%- endif -%}
         {%- endfor -%}
-        <!-- List posts without level 2 (direct under top category) -->
+
         {%- assign direct_posts = posts | where_exp: "post", "post.categories.size == 1" | sort: 'date' | reverse -%}
         {%- for post in direct_posts -%}
           <li class="d-flex justify-content-between px-md-3">
