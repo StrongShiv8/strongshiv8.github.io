@@ -1,5 +1,13 @@
 [
   {
+    "title": "Planning",
+    "url": "/posts/Planning/",
+    "categories": "HackTheBox",
+    "tags": "Public_Exploit, Grafana, Subdomain, cronjobs, PrivEsc, CVE-2024-9264",
+    "date": "2025-08-24 00:00:00 +0530",
+    "content": "This machine is based on Public Exploit and Misconfigurations !"
+  },
+  {
     "title": "Matrioshka",
     "url": "/posts/Matrioshka/",
     "categories": "HackMyVM",

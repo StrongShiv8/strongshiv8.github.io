@@ -1599,6 +1599,7 @@ applause-button {
 
 .card-header .rotate-180 {
   transition: transform 0.3s ease;
+
 }
 
 .card-header[aria-expanded="true"] .rotate-180 {
@@ -1609,33 +1610,8 @@ applause-button {
   transform: rotate(0deg);
 }
 
-.level2-header {
-  font-weight: bold;
-  color: #1b8df2;
-  background-color: #f8f9fa;
-  padding: 0.75rem 1rem;
-  margin: 0.25rem;
-}
-
-.level3-header, .level4-header {
-  font-weight: bold;
-  margin: 0;
-  padding: 0.5rem;
-}
-
-.level3-header {
-  color: #1b8df2;
-  background-color: var(--kbd-bg-color);
-}
-
 
 .category-trigger.disabled {
   color: #6c757d;
   cursor: not-allowed;
-}
-
-
-.collapse {
-  margin: 0;
-  padding: 0;
 }

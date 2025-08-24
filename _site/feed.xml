@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>StrongShiv8</title>
   <subtitle>Response and Report of my work.</subtitle>
-  <updated>2025-08-23T09:08:06+05:30</updated>
+  <updated>2025-08-24T17:15:01+05:30</updated>
   <author>
     <name>Shivendra Prajapati</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Planning</title>
+    <link href="http://localhost:4000/posts/Planning/" rel="alternate" type="text/html" title="Planning" />
+    <published>2025-08-24T00:00:00+05:30</published>
+  
+    <updated>2025-08-24T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Planning/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Planning/" />
+    <author>
+      <name>Shivendra Prajapati</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+  
+
+  <summary>This machine is based on Public Exploit and Misconfigurations !</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>This machine is based on SSTI vulnerability, Werkzeug Console PIN generation,  RSA private key generation and some binary exploitations.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Griffin</title>
-    <link href="http://localhost:4000/posts/Griffin/" rel="alternate" type="text/html" title="Griffin" />
-    <published>2025-07-29T00:00:00+05:30</published>
-  
-    <updated>2025-07-29T00:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Griffin/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Griffin/" />
-    <author>
-      <name>Shivendra Prajapati</name>
-    </author>
-
-  
-    
-    <category term="HackMyVM" />
-    
-  
-
-  <summary>This machine is based on multiple attack surfaces, including a Werkzeug server, CAPTCHA-protected login, and internal services.</summary>
 
   </entry>
 
