@@ -1,5 +1,13 @@
 [
   {
+    "title": "Hoshi",
+    "url": "/posts/Hoshi/",
+    "categories": "HackMyVM",
+    "tags": "LFI, PrivEsc, penelope, cewl, File_Poisioning",
+    "date": "2025-08-29 00:00:00 +0530",
+    "content": "This machine is based on interesting LFI, File Poisoning !"
+  },
+  {
     "title": "Planning",
     "url": "/posts/Planning/",
     "categories": "HackTheBox",
