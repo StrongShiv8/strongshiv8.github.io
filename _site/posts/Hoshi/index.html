@@ -1404,6 +1404,69 @@
     <!-- combine -->
     
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
 
   
 
@@ -1744,9 +1807,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2128 words"
+  title="2252 words"
 >
-  <em>11 min</em> read</span>
+  <em>12 min</em> read</span>
 
         </div>
       </div>
@@ -2029,7 +2092,43 @@ CeWL 6.2.1 <span class="o">(</span>More Fixes<span class="o">)</span> Robin Wood
 <p><a href="/assets/images/Pasted%20image%2020250828103524.png" class="popup img-link  shimmer"><img src="/assets/images/Pasted%20image%2020250828103524.png" alt="" loading="lazy"></a>
 <em>Admin page and it has delete functionality for uploaded feedback data</em></p>
 
-<p>I was stuck here for a long time and with a clue I tried the machine name as directory name <code class="language-plaintext highlighter-rouge">/hoshi/</code> and boom I got a file from it called <code class="language-plaintext highlighter-rouge">gift.php</code> file.</p>
+<p>I got a the hint from <code class="language-plaintext highlighter-rouge">robots.txt</code> that was about <mark style="background: #D2B3FFA6;">Blind Watermarking</mark> on images :</p>
+
+<p>I found this repository that does the deeds 🔻</p>
+
+<div class="language-bash nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git clone https://github.com/chishaxie/BlindWaterMark.git
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>And for the images I require 2 of them for this method to work.</p>
+
+<ol>
+  <li>I got First one from the <code class="language-plaintext highlighter-rouge">robots.txt</code> disallow section that says <code class="language-plaintext highlighter-rouge">Disallow: /img/QQ.png</code>. So I got the image from <code class="language-plaintext highlighter-rouge">http://10.0.2.57/QQ.png</code>.</li>
+  <li>Secondly, I got the other image from <code class="language-plaintext highlighter-rouge">https://maze-sec.com/img/QQ.png</code></li>
+</ol>
+
+<p>I downloaded them locally and used this above script to extract the Blind Watermarked text ouput in a image like this 🔻</p>
+
+<p><strong>Command</strong> :</p>
+<div class="language-bash nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>└─<span class="nv">$ </span>python3 bwmforpy3.py decode ../QQ.png ../QQ_mazesec.png ../Out.png 
+
+image&lt;../QQ.png&gt; + image<span class="o">(</span>encoded<span class="o">)</span>&lt;../QQ_mazesec.png&gt; -&gt; watermark&lt;../Out.png&gt;
+<span class="o">[</span> WARN:0@4.908] global loadsave.cpp:1063 imwrite_ Unsupported depth image <span class="k">for </span>selected encoder is fallbacked to CV_8U.
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><strong>Output</strong> : 
+<a href="/assets/images/Pasted%20image%2020250830103805.png" class="popup img-link  shimmer"><img src="/assets/images/Pasted%20image%2020250830103805.png" alt="" loading="lazy"></a>
+<em>Extracted image from the above Blind Watermarking</em></p>
+
+<p>And this look like the machine name as directory name <code class="language-plaintext highlighter-rouge">/hoshi/</code> and boom I got a file from it called <code class="language-plaintext highlighter-rouge">gift.php</code> file.</p>
 
 <p><a href="/assets/images/Pasted%20image%2020250828103740.png" class="popup img-link  shimmer"><img src="/assets/images/Pasted%20image%2020250828103740.png" alt="" loading="lazy"></a>
 <em>File gift.php that asks for a file</em></p>
