@@ -310,7 +310,7 @@ I checked the port 80 and got this course site that lets me register and login a
 ![](Pasted%20image%2020250912093842.png)
 _Register user `hacker` as student_
 
-Now I navigated to [Home](http://certificate.htb/index.php) >> [Courses](http://certificate.htb/courses.php) >> [Course Details](http://certificate.htb/course-details.php) >> <kbd>Enroll the Course</kbd> >> <kbd>After that scroll down there is a quiz submit option click that</kbd> >> <kbd>upload page</kbd>
+Now I navigated to <kbd>Home</kbd> >> <kbd>Courses</kbd> >> <kbd>Course Details</kbd> >> <kbd>Enroll the Course</kbd> >> <kbd>After that scroll down there is a quiz submit option click that</kbd> >> <kbd>upload page</kbd>
 
 ![](Pasted%20image%2020250912094330.png)
 _Quiz Submit option_
