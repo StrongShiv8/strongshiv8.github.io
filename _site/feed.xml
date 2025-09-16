@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>StrongShiv8</title>
   <subtitle>Response and Report of my work.</subtitle>
-  <updated>2025-08-30T10:42:10+05:30</updated>
+  <updated>2025-09-16T11:00:56+05:30</updated>
   <author>
     <name>Shivendra Prajapati</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,83 @@
 
   
   <entry>
+    <title>Fluffy</title>
+    <link href="http://localhost:4000/posts/Fluffy/" rel="alternate" type="text/html" title="Fluffy" />
+    <published>2025-09-16T00:00:00+05:30</published>
+  
+    <updated>2025-09-16T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Fluffy/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Fluffy/" />
+    <author>
+      <name>Shivendra Prajapati</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+  
+
+  <summary>This AD machine is based on Enumeration through its domain and dealing with ADCS Vulnerabilities.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Environment</title>
+    <link href="http://localhost:4000/posts/Environment/" rel="alternate" type="text/html" title="Environment" />
+    <published>2025-09-16T00:00:00+05:30</published>
+  
+    <updated>2025-09-16T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Environment/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Environment/" />
+    <author>
+      <name>Shivendra Prajapati</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+  
+
+  <summary>This machine is based on Laravel public exploit vulnerability and gpg password extraction.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Certificate</title>
+    <link href="http://localhost:4000/posts/Certificate/" rel="alternate" type="text/html" title="Certificate" />
+    <published>2025-09-16T00:00:00+05:30</published>
+  
+    <updated>2025-09-16T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Certificate/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Certificate/" />
+    <author>
+      <name>Shivendra Prajapati</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+  
+
+  <summary>This is a AD machine where you have to deal with Golden Certificate Attack.</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Hoshi</title>
     <link href="http://localhost:4000/posts/Hoshi/" rel="alternate" type="text/html" title="Hoshi" />
     <published>2025-08-29T00:00:00+05:30</published>
   
-    <updated>2025-08-29T00:00:00+05:30</updated>
+    <updated>2025-08-30T10:47:03+05:30</updated>
   
     <id>http://localhost:4000/posts/Hoshi/</id>
     <content type="text/html" src="http://localhost:4000/posts/Hoshi/" />
@@ -38,7 +110,7 @@
     
   
 
-  <summary>This machine is based on interesting LFI, File Poisoning !</summary>
+  <summary>This machine is based on interesting LFI, File Poisoning and Steganography !</summary>
 
   </entry>
 
@@ -63,78 +135,6 @@
   
 
   <summary>This machine is based on Public Exploit and Misconfigurations !</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Matrioshka</title>
-    <link href="http://localhost:4000/posts/Matrioshka/" rel="alternate" type="text/html" title="Matrioshka" />
-    <published>2025-08-10T00:00:00+05:30</published>
-  
-    <updated>2025-08-10T14:27:25+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Matrioshka/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Matrioshka/" />
-    <author>
-      <name>Shivendra Prajapati</name>
-    </author>
-
-  
-    
-    <category term="HackMyVM" />
-    
-  
-
-  <summary>This machine is based on Wordpress CMS and its public exploits with HFS exploits !</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Homelab</title>
-    <link href="http://localhost:4000/posts/Homelab/" rel="alternate" type="text/html" title="Homelab" />
-    <published>2025-08-03T00:00:00+05:30</published>
-  
-    <updated>2025-08-03T19:38:40+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Homelab/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Homelab/" />
-    <author>
-      <name>Shivendra Prajapati</name>
-    </author>
-
-  
-    
-    <category term="HackMyVM" />
-    
-  
-
-  <summary>This machine is based on IP Bypass restrictions, OpenVPN and Buffer Overflow Attack.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Sabulaji</title>
-    <link href="http://localhost:4000/posts/Sabulaji/" rel="alternate" type="text/html" title="Sabulaji" />
-    <published>2025-08-01T00:00:00+05:30</published>
-  
-    <updated>2025-08-01T00:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Sabulaji/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Sabulaji/" />
-    <author>
-      <name>Shivendra Prajapati</name>
-    </author>
-
-  
-    
-    <category term="HackMyVM" />
-    
-  
-
-  <summary>This machine is based on rsync and enumeration !</summary>
 
   </entry>
 

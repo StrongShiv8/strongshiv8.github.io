@@ -1,11 +1,35 @@
 [
   {
+    "title": "Fluffy",
+    "url": "/posts/Fluffy/",
+    "categories": "HackTheBox",
+    "tags": "Active_Directory, ADCS, ESC16, Public_Exploit, responder, BloodHound, bloodyAD, Shadow_Credentials_Attack, Certipy-ad, PrivEsc, CVE-2025-24071, Kerberosting",
+    "date": "2025-09-16 00:00:00 +0530",
+    "content": "This AD machine is based on Enumeration through its domain and dealing with ADCS Vulnerabilities."
+  },
+  {
+    "title": "Environment",
+    "url": "/posts/Environment/",
+    "categories": "HackTheBox",
+    "tags": "Environment_Variable, PrivEsc, gpg, File_Upload, Laravel, gnupg",
+    "date": "2025-09-16 00:00:00 +0530",
+    "content": "This machine is based on Laravel public exploit vulnerability and gpg password extraction."
+  },
+  {
+    "title": "Certificate",
+    "url": "/posts/Certificate/",
+    "categories": "HackTheBox",
+    "tags": "Active_Directory, ADCS, Golden_Certificate, ESC3, SeManageVolumePrivilege, certutil, BloodHound, PrivEsc, Certipy-ad",
+    "date": "2025-09-16 00:00:00 +0530",
+    "content": "This is a AD machine where you have to deal with Golden Certificate Attack."
+  },
+  {
     "title": "Hoshi",
     "url": "/posts/Hoshi/",
     "categories": "HackMyVM",
-    "tags": "LFI, PrivEsc, penelope, cewl, File_Poisioning",
+    "tags": "LFI, PrivEsc, penelope, cewl, File_Poisioning, Blind_Watermarking_Images, Steganography",
     "date": "2025-08-29 00:00:00 +0530",
-    "content": "This machine is based on interesting LFI, File Poisoning !"
+    "content": "This machine is based on interesting LFI, File Poisoning and Steganography !"
   },
   {
     "title": "Planning",
