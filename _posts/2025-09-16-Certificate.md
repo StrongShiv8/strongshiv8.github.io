@@ -21,7 +21,7 @@ ___
 
 ## 1️⃣ Introduction
 
-**Vulnerabilities/Concepts:** Web file upload bypass via ZIP exploit, reverse shell, database credential extraction, password hash cracking, Kerberos pre-authentication hash extraction from PCAP, ADCS vulnerabilities (ESC3), SeManageVolumePrivilege abuse, Golden Certificate Attack for domain admin escalation. 
+**Vulnerabilities/Concepts:** I got these : Web file upload bypass via ZIP exploit, reverse shell, database credential extraction, password hash cracking, Kerberos pre-authentication hash extraction from PCAP, ADCS vulnerabilities (ESC3), SeManageVolumePrivilege abuse, Golden Certificate Attack for domain admin escalation. 
 
 **Learning goals**: Understanding Active Directory Certificate Services (ADCS) misconfigurations, Windows privilege escalation techniques, Kerberos authentication flaws, and certificate-based attacks in domain environments. 
 
