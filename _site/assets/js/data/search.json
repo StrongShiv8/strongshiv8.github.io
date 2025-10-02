@@ -1,5 +1,13 @@
 [
   {
+    "title": "Multi",
+    "url": "/posts/Multi/",
+    "categories": "HackMyVM",
+    "tags": "SQLi, bettercap, DNS_Spoofing, ARP_Spoofing, cupp, sqlmap, PrivEsc",
+    "date": "2025-10-02 00:00:00 +0530",
+    "content": "This machine is based on enumeration and using DNS Spoofing."
+  },
+  {
     "title": "Fluffy",
     "url": "/posts/Fluffy/",
     "categories": "HackTheBox",

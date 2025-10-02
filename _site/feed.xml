@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>StrongShiv8</title>
   <subtitle>Response and Report of my work.</subtitle>
-  <updated>2025-09-16T11:00:56+05:30</updated>
+  <updated>2025-10-02T11:11:31+05:30</updated>
   <author>
     <name>Shivendra Prajapati</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,35 @@
 
   
   <entry>
+    <title>Multi</title>
+    <link href="http://localhost:4000/posts/Multi/" rel="alternate" type="text/html" title="Multi" />
+    <published>2025-10-02T00:00:00+05:30</published>
+  
+    <updated>2025-10-02T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Multi/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Multi/" />
+    <author>
+      <name>Shivendra Prajapati</name>
+    </author>
+
+  
+    
+    <category term="HackMyVM" />
+    
+  
+
+  <summary>This machine is based on enumeration and using DNS Spoofing.</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Fluffy</title>
     <link href="http://localhost:4000/posts/Fluffy/" rel="alternate" type="text/html" title="Fluffy" />
     <published>2025-09-16T00:00:00+05:30</published>
   
-    <updated>2025-09-16T00:00:00+05:30</updated>
+    <updated>2025-09-16T11:29:03+05:30</updated>
   
     <id>http://localhost:4000/posts/Fluffy/</id>
     <content type="text/html" src="http://localhost:4000/posts/Fluffy/" />
@@ -48,7 +72,7 @@
     <link href="http://localhost:4000/posts/Environment/" rel="alternate" type="text/html" title="Environment" />
     <published>2025-09-16T00:00:00+05:30</published>
   
-    <updated>2025-09-16T00:00:00+05:30</updated>
+    <updated>2025-09-16T11:29:03+05:30</updated>
   
     <id>http://localhost:4000/posts/Environment/</id>
     <content type="text/html" src="http://localhost:4000/posts/Environment/" />
@@ -72,7 +96,7 @@
     <link href="http://localhost:4000/posts/Certificate/" rel="alternate" type="text/html" title="Certificate" />
     <published>2025-09-16T00:00:00+05:30</published>
   
-    <updated>2025-09-16T00:00:00+05:30</updated>
+    <updated>2025-09-16T11:44:20+05:30</updated>
   
     <id>http://localhost:4000/posts/Certificate/</id>
     <content type="text/html" src="http://localhost:4000/posts/Certificate/" />
@@ -96,7 +120,7 @@
     <link href="http://localhost:4000/posts/Hoshi/" rel="alternate" type="text/html" title="Hoshi" />
     <published>2025-08-29T00:00:00+05:30</published>
   
-    <updated>2025-08-30T10:47:03+05:30</updated>
+    <updated>2025-09-16T11:03:21+05:30</updated>
   
     <id>http://localhost:4000/posts/Hoshi/</id>
     <content type="text/html" src="http://localhost:4000/posts/Hoshi/" />
@@ -111,30 +135,6 @@
   
 
   <summary>This machine is based on interesting LFI, File Poisoning and Steganography !</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Planning</title>
-    <link href="http://localhost:4000/posts/Planning/" rel="alternate" type="text/html" title="Planning" />
-    <published>2025-08-24T00:00:00+05:30</published>
-  
-    <updated>2025-08-24T00:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Planning/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Planning/" />
-    <author>
-      <name>Shivendra Prajapati</name>
-    </author>
-
-  
-    
-    <category term="HackTheBox" />
-    
-  
-
-  <summary>This machine is based on Public Exploit and Misconfigurations !</summary>
 
   </entry>
 
